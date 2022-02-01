@@ -1,22 +1,37 @@
-# MetaMask Module Template
-
-This TypeScript module is maintained in the style of the MetaMask team.
-
 ## Installation
 
-`yarn add @metamask/this-module`
+# `@metamask/metamask-design-tokens`
 
-or
+A collection of design tokens based on MetaMask's design system.
 
-`npm install @metamask/this-module`
+## Table of Contents
+
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Usage
 
-_Add examples here_
+First, install the package.
 
-## API
+```sh
+yarn add @metamask/metamask-design-tokens
+```
 
-_Add examples here_
+Then, utilize design tokens in code:
+
+```js
+import { colors } from '@metamask/metamask-design-tokens';
+
+/* Example: Implementation may vary */
+const dynamicStyles = useCallback(() => {
+  return {
+    container: {
+      backgroundColor: colors.background.default,
+    },
+  };
+}, [colors]);
+```
 
 ## Contributing
 

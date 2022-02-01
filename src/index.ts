@@ -1,9 +1,3 @@
-/**
- * Example function that returns a greeting for the given name.
- *
- * @param name - The name to greet.
- * @returns The greeting.
- */
-export default function greeter(name: string): string {
-  return `Hello, ${name}!`;
-}
+export { default as colors } from './colors';
+export { default as spacing } from './spacing';
+export { default as typography } from './typography';
