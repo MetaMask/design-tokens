@@ -1,4 +1,4 @@
-export default {
+const colors = {
   light: {
     background: {
       default: 'hsla(0, 0%, 100%, 1)',
@@ -108,3 +108,5 @@ export default {
     },
   },
 };
+
+export default colors;
