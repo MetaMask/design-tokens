@@ -1,9 +1,10 @@
-// import greeter from '.';
+import { colors as importableColors } from '.';
+const designTokens = require('./figma/tokens.json');
 
-// describe('Test', () => {
-//   it('greets', () => {
-//     const name = 'Huey';
-//     const result = greeter(name);
-//     expect(result).toStrictEqual('Hello, Huey!');
-//   });
-// });
+describe('Colors', () => {
+  it('Importable colors match figma colors', () => {
+    expect(importableColors.dark.background.default).toStrictEqual(
+      designTokens.dark.colors.background.default.value,
+    );
+  });
+});
