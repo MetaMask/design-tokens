@@ -1,4 +1,6 @@
+/* eslint-ignore @typescript-eslint/no-var-requires, @typescript-eslint/no-require-imports */
 import { colors as importableColors } from '.';
+
 const designTokens = require('./figma/tokens.json');
 
 describe('Colors', () => {
