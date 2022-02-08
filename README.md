@@ -1,6 +1,6 @@
 ## Installation
 
-# `@metamask/metamask-design-tokens`
+# `@metamask/design-tokens`
 
 A collection of design tokens based on MetaMask's design system.
 
@@ -15,23 +15,22 @@ A collection of design tokens based on MetaMask's design system.
 First, install the package.
 
 ```sh
-yarn add @metamask/metamask-design-tokens
+yarn add @metamask/design-tokens
 ```
 
 Then, utilize design tokens in code:
 
 ```js
-import { colors } from '@metamask/metamask-design-tokens';
-
-/* Example: Implementation may vary */
-const dynamicStyles = useCallback(() => {
-  return {
-    container: {
-      backgroundColor: colors.background.default,
-    },
-  };
-}, [colors]);
+import { colors } from '@metamask/design-tokens';
 ```
+
+### Functional Components
+
+WIP
+
+### Class Components
+
+WIP
 
 ## Contributing
 
