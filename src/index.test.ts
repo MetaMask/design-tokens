@@ -1,9 +1,12 @@
-import greeter from '.';
+/* eslint-disable @typescript-eslint/no-var-requires, @typescript-eslint/no-require-imports */
+import { colors as importableColors } from '.';
 
-describe('Test', () => {
-  it('greets', () => {
-    const name = 'Huey';
-    const result = greeter(name);
-    expect(result).toStrictEqual('Hello, Huey!');
+const designTokens = require('./figma/tokens.json');
+
+describe('Colors', () => {
+  it('importable colors match figma colors', () => {
+    expect(importableColors.dark.background.default).toStrictEqual(
+      designTokens.dark.colors.background.default.value,
+    );
   });
 });
