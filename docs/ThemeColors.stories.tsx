@@ -14,9 +14,9 @@ export default {
       page: README,
     },
   },
-} as ComponentMeta<typeof ThemeColors>;
+} as ComponentMeta<typeof ColorSwatchGroup>;
 
-const Template: ComponentStory<typeof ThemeColors> = (args) => (
+const Template: ComponentStory<typeof ColorSwatchGroup> = (args) => (
   <ColorSwatchGroup {...args} />
 );
 

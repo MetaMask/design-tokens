@@ -1,4 +1,5 @@
 import { Meta } from '@storybook/addon-docs';
+import { colors } from '../src';
 
 import designTokenDiagramImage from './images/design.token.graphic.svg';
 
@@ -12,7 +13,13 @@ Color is used to express style and communicate meaning.
 
 We follow a 3 tiered system for color design tokens.
 
-<div style={{ textAlign: 'center', backgroundColor: '#F2F4F6', padding: 32 }}>
+<div
+  style={{
+    textAlign: 'center',
+    backgroundColor: colors.background.alternative,
+    padding: 32,
+  }}
+>
   <img width="80%" src={designTokenDiagramImage} />
 </div>
 
