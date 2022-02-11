@@ -1,0 +1,31 @@
+import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+
+import tokens from '../src/figma/tokens.json';
+
+<Meta title="Design Tokens/Theme Colors" />
+
+# Theme Colors (second tier)
+
+Theme colors take the first tier [**Brand Colors**](/docs/colors-brandcolors--default-story) and start applying them to high-level applications within the UI. They are considered second tier tokens and can be used in the code directly. Theme colors should be used liberally throughout the codebase and create theme compatibility in your components.
+
+## Light Theme Colors
+
+Light theme colors to be used in the styles for MetaMask UI.
+
+<Canvas>
+  <Story id="colors-themecolors--light-theme-colors" />
+</Canvas>
+
+## Dark Theme Colors
+
+Dark theme colors for MetaMask UI. They have the same name as Light Theme Colors but different values. If you are using the Light Theme Colors for their intended purpose your UI will be dark theme compatible.
+
+<Canvas>
+  <Story id="colors-themecolors--dark-theme-colors" />
+</Canvas>
+
+## References
+
+- [Figma Brand Colors Library](https://www.figma.com/file/cBAUPFMnbv6tHR1J8KvBI2/Brand-Colors?node-id=0%3A1)(internal use only)
+- [Figma Light Theme Colors Library](https://www.figma.com/file/kdFzEC7xzSNw7cXteqgzDW/Light-Theme-Colors?node-id=0%3A1)(internal use only)
+- [Figma Dark Theme Colors Library](https://www.figma.com/file/rLKsoqpjyoKauYnFDcBIbO/Dark-Theme-Colors?node-id=0%3A1)(internal use only)
