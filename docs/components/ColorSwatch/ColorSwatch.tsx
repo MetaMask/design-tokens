@@ -11,7 +11,7 @@ interface ColorSwatchProps {
    */
   textBackgroundColor?: string;
   /**
-   * The border color of the swatch defaults to colors.light.border.default
+   * The border color of the swatch defaults to colors.light.border.muted
    */
   borderColor?: string;
   /**
@@ -26,7 +26,7 @@ interface ColorSwatchProps {
 
 export const ColorSwatch: FunctionComponent<ColorSwatchProps> = ({
   color,
-  borderColor = colors.light.border.default,
+  borderColor = colors.light.border.muted,
   textBackgroundColor = colors.light.background.default,
   textColor = colors.light.text.default,
   name,
