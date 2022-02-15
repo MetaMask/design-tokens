@@ -33,6 +33,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.17.0",
     "@lavamoat/allow-scripts": "^1.0.5",
@@ -77,6 +78,5 @@
     "allowScripts": {
       "@lavamoat/preinstall-always-fail": false
     }
-  },
-  "dependencies": {}
+  }
 }
