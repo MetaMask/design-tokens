@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
 import { ColorSwatch } from '..';
 
@@ -23,49 +23,56 @@ interface ColorSwatchGroupProps {
   /**
    * The color object
    */
-  swatchData: ColorToken;
+  swatchData: {
+    [key: string]: ColorToken;
+  };
 }
-
-export const ColorSwatchGroup = ({ swatchData }) => {
+export const ColorSwatchGroup: FunctionComponent<ColorSwatchGroupProps> = ({
+  swatchData,
+}) => {
   if (!swatchData) {
     return <div>No swatch data</div>;
   }
 
   const lightColorsArr = Object.keys(swatchData);
 
-  return lightColorsArr.map((color) => {
-    const colorsObj = swatchData[color];
-    const colorsArr = Object.keys(colorsObj);
-    return (
-      <div
-        key={color}
-        style={{ fontSize: '0.875rem', fontFamily: 'sans-serif' }}
-      >
-        <h2>{color}</h2>
+  const renderSwatches = () => {
+    return lightColorsArr.map((color) => {
+      const colorsObj = swatchData[color];
+      const colorsArr = Object.keys(colorsObj);
+      return (
         <div
-          style={{
-            display: 'grid',
-            gap: '16px',
-            gridTemplateColumns: 'repeat(auto-fill, 300px)',
-          }}
+          key={color}
+          style={{ fontSize: '0.875rem', fontFamily: 'sans-serif' }}
         >
-          {colorsArr.map((tone) => {
-            const toneObj = colorsObj[tone];
-            return (
-              <div>
-                <ColorSwatch
-                  color={toneObj.value}
-                  name={`${color}.${tone}`}
-                  key={tone}
-                />
-                {toneObj?.description ? (
-                  <p style={{ lineHeight: 1.3 }}>{toneObj.description}</p>
-                ) : null}
-              </div>
-            );
-          })}
+          <h2>{color}</h2>
+          <div
+            style={{
+              display: 'grid',
+              gap: '16px',
+              gridTemplateColumns: 'repeat(auto-fill, 300px)',
+            }}
+          >
+            {colorsArr.map((tone) => {
+              const toneObj = colorsObj[tone];
+              return (
+                <div>
+                  <ColorSwatch
+                    color={toneObj.value}
+                    name={`${color}.${tone}`}
+                    key={tone}
+                  />
+                  {toneObj?.description ? (
+                    <p style={{ lineHeight: 1.3 }}>{toneObj.description}</p>
+                  ) : null}
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
-    );
-  });
+      );
+    });
+  };
+
+  return <>{renderSwatches()}</>;
 };

@@ -1,7 +1,7 @@
 import { Meta } from '@storybook/addon-docs';
-import { colors } from '../src';
 
 import designTokenDiagramImage from './images/design.token.graphic.svg';
+import tokens from '../src/figma/tokens.json';
 
 <Meta title="Colors / Introduction" />
 
@@ -16,7 +16,7 @@ We follow a 3 tiered system for color design tokens.
 <div
   style={{
     textAlign: 'center',
-    backgroundColor: colors.background.alternative,
+    backgroundColor: tokens.light.colors.background.alternative.value,
     padding: 32,
   }}
 >

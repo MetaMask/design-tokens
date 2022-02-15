@@ -1,14 +1,12 @@
-import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import tokens from '../src/figma/tokens.json';
+
 import { ColorSwatchGroup } from './components';
 
 import README from './BrandColors.mdx';
 
-import tokens from '../src/figma/tokens.json';
-
 export default {
   title: 'Colors/BrandColors',
-  component: ColorSwatchGroup,
   parameters: {
     docs: {
       page: README,
@@ -23,7 +21,7 @@ const Template: ComponentStory<typeof ColorSwatchGroup> = (args) => (
 export const DefaultStory = Template.bind({});
 
 DefaultStory.args = {
-  swatchData: tokens?.global?.brandColors,
+  swatchData: tokens.global.brandColors,
 };
 
 DefaultStory.storyName = 'Default';
