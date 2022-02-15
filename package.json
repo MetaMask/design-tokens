@@ -76,7 +76,10 @@
   },
   "lavamoat": {
     "allowScripts": {
-      "@lavamoat/preinstall-always-fail": false
+      "@lavamoat/preinstall-always-fail": false,
+      "core-js": false,
+      "fsevents": false,
+      "core-js-pure": false
     }
   }
 }
