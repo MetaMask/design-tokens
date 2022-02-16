@@ -4,7 +4,7 @@ import { colors as importableColors } from '.';
 const designTokens = require('./figma/tokens.json');
 
 describe('Colors', () => {
-  it('importable colors match figma colors', () => {
+  it('check importable colors match figma colors', () => {
     expect(importableColors.dark.background.default).toStrictEqual(
       designTokens.dark.colors.background.default.value,
     );
