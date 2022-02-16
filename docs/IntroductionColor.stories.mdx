@@ -1,0 +1,54 @@
+import { Meta } from '@storybook/addon-docs';
+
+import designTokenDiagramImage from './images/design.token.graphic.svg';
+import tokens from '../src/figma/tokens.json';
+
+<Meta title="Colors / Introduction" />
+
+# Color
+
+Color is used to express style and communicate meaning.
+
+## Token Tiers
+
+We follow a 3 tiered system for color design tokens.
+
+<div
+  style={{
+    textAlign: 'center',
+    backgroundColor: tokens.light.colors.background.alternative.value,
+    padding: 32,
+  }}
+>
+  <img width="80%" src={designTokenDiagramImage} />
+</div>
+
+<br />
+<br />
+
+### **Brand colors** (first tier)
+
+These colors **SHOULD NOT** be used in your component styles directly. They are used as a reference for the [Theme Colors](/docs/colors-themecolors--light-theme-colors). Brand colors are used to keep track of all colors used in our app. See [Brand Colors](/docs/colors-brandcolors--default-story)
+
+### **Theme Colors** (second tier)
+
+These colors are color agnostic, semantically neutral and theme compatible design tokens that you can use in your code and styles. Please refer to the description of each token for it's intended purpose. See [Theme Colors](/docs/colors-themecolors--light-theme-colors)
+
+### **Component colors** (third tier)
+
+Another level of abstraction is component colors that you can use at a component specific level. We do not currently provide any component tier colors but that may change in future.
+
+## Takeaways
+
+- Do not use static HEX values in your code. Use the [Theme Colors](/docs/colors-themecolors--light-theme-colors). If one does not exist for your use case [create an issue](https://github.com/MetaMask/design-tokens/issues/new) and tag it with a `color` label.
+- Make sure the design token you are using is for it's intended purpose. Please refer to the description of each token.
+
+### Next 👉 [Theme Colors](/docs/colors-themecolors--light-theme-colors)
+
+<br />
+
+## References
+
+- [Figma Brand Colors Library](https://www.figma.com/file/cBAUPFMnbv6tHR1J8KvBI2/Brand-Colors?node-id=0%3A1)(internal use only)
+- [Figma Light Theme Colors Library](https://www.figma.com/file/kdFzEC7xzSNw7cXteqgzDW/Light-Theme-Colors?node-id=0%3A1)(internal use only)
+- [Figma Dark Theme Colors Library](https://www.figma.com/file/rLKsoqpjyoKauYnFDcBIbO/Dark-Theme-Colors?node-id=0%3A1)(internal use only)
