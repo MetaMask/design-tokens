@@ -124,7 +124,7 @@
  * Colors for dark theme
  */
 
-:root.theme-dark {
+[data-theme='dark'] {
   --color-background-default: var(--brand-colors-grey-grey900);
   --color-background-alternative: var(--brand-colors-grey-grey800);
   --color-text-default: var(--brand-colors-white-white000);
