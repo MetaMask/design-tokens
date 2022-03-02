@@ -7,8 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.3.1]
-### Uncategorized
+### Changed
 - Token update generate library code ([#39](https://github.com/MetaMask/design-tokens/pull/39))
+- Changing hsla to HEX with alpha values. Updating Hex values and documentation.
 
 ## [1.3.0]
 ### Changed
