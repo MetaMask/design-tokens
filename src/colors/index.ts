@@ -85,7 +85,7 @@ const colors = {
     },
     overlay: {
       default: '#FFFFFF40',
-      inverse: '#FCFCFC',
+      inverse: '#24272A',
       alternative: '#FFFFFF75',
     },
     primary: {

@@ -137,7 +137,7 @@
   --color-border-muted: var(--brand-colors-grey-grey700);
   --color-overlay-default: #ffffff40;
   --color-overlay-alternative: #ffffff75;
-  --color-overlay-inverse: var(--brand-colors-white-white010);
+  --color-overlay-inverse: var(--brand-colors-grey-grey800);
   --color-primary-default: var(--brand-colors-blue-blue400);
   --color-primary-alternative: var(--brand-colors-blue-blue300);
   --color-primary-muted: #1098fc15;
