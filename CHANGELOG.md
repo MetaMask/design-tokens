@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.1]
+### Changed
+- Token update generate library code ([#39](https://github.com/MetaMask/design-tokens/pull/39))
+- Changing hsla to HEX with alpha values. Updating Hex values and documentation.
+
 ## [1.3.0]
 ### Changed
 - Changing theme class to data attribute ([#30](https://github.com/MetaMask/design-tokens/pull/30))
@@ -24,7 +29,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.3.0...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.3.1...HEAD
+[1.3.1]: https://github.com/MetaMask/design-tokens/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/MetaMask/design-tokens/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/MetaMask/design-tokens/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/MetaMask/design-tokens/compare/v1.0.0...v1.1.0
