@@ -7,8 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.4.0]
-### Uncategorized
-- Add overlay alternative color ([#40](https://github.com/MetaMask/design-tokens/pull/40))
+### Added
+- Add overlay alternative color for light and dark themes ([#40](https://github.com/MetaMask/design-tokens/pull/40))
+- Updating dark theme overlay.inverse to grey800: #24272A
 
 ## [1.3.1]
 ### Changed
