@@ -7,8 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.4.1]
-### Uncategorized
-- Bump overlay alternative opacity to 80% ([#46](https://github.com/MetaMask/design-tokens/pull/46))
+### Changed
+- Bump overlay alternative from 75% opacity to 80% ([#46](https://github.com/MetaMask/design-tokens/pull/46))
 
 ## [1.4.0]
 ### Added
