@@ -20,7 +20,7 @@ const colors = {
     overlay: {
       default: '#00000060',
       inverse: '#FCFCFC',
-      alternative: '#00000075',
+      alternative: '#00000080',
     },
     primary: {
       default: '#037DD6',
@@ -86,7 +86,7 @@ const colors = {
     overlay: {
       default: '#FFFFFF40',
       inverse: '#24272A',
-      alternative: '#FFFFFF75',
+      alternative: '#FFFFFF80',
     },
     primary: {
       default: '#1098FC',
