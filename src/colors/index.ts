@@ -18,9 +18,9 @@ const colors = {
       muted: '#D6D9DC',
     },
     overlay: {
-      default: '#00000060',
+      default: '#00000099',
       inverse: '#FCFCFC',
-      alternative: '#00000080',
+      alternative: '#000000CC',
     },
     primary: {
       default: '#037DD6',
@@ -84,9 +84,9 @@ const colors = {
       muted: '#3B4046',
     },
     overlay: {
-      default: '#FFFFFF40',
+      default: '#FFFFFF66',
       inverse: '#24272A',
-      alternative: '#FFFFFF80',
+      alternative: '#FFFFFFCC',
     },
     primary: {
       default: '#1098FC',
