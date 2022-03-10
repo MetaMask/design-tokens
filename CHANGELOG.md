@@ -7,8 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.4.2]
-### Uncategorized
-- Fix overlays alpha channel ([#48](https://github.com/MetaMask/design-tokens/pull/48))
+### Changed
+- Fix overlays, muted and disabled alpha channel ([#48](https://github.com/MetaMask/design-tokens/pull/48))
 
 ## [1.4.1]
 ### Changed
