@@ -1,6 +1,6 @@
 {
   "name": "@metamask/design-tokens",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Design tokens to be used throughout MetaMask products.",
   "keywords": [
     "MetaMask",

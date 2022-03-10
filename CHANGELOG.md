@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.2]
+### Uncategorized
+- Fix overlays alpha channel ([#48](https://github.com/MetaMask/design-tokens/pull/48))
+
 ## [1.4.1]
 ### Changed
 - Bump overlay alternative from 75% opacity to 80% ([#46](https://github.com/MetaMask/design-tokens/pull/46))
@@ -38,7 +42,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.4.1...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.4.2...HEAD
+[1.4.2]: https://github.com/MetaMask/design-tokens/compare/v1.4.1...v1.4.2
 [1.4.1]: https://github.com/MetaMask/design-tokens/compare/v1.4.0...v1.4.1
 [1.4.0]: https://github.com/MetaMask/design-tokens/compare/v1.3.1...v1.4.0
 [1.3.1]: https://github.com/MetaMask/design-tokens/compare/v1.3.0...v1.3.1
