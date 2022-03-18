@@ -96,7 +96,7 @@ const colors = {
       disabled: '#1098FC80',
     },
     secondary: {
-      default: '##F8883',
+      default: '#F8883B',
       alternative: '#FAA66C',
       muted: '#F8883B26',
       inverse: '#FCFCFC',
