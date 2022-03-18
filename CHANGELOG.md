@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.4.3]
-### Uncategorized
+### Changed
 - Fixing secondary default color for CSS in JS ([#57](https://github.com/MetaMask/design-tokens/pull/57))
 
 ## [1.4.2]
