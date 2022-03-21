@@ -69,8 +69,11 @@ export interface Colors {
   dark: ThemeColors;
 }
 
+/* eslint-disable jsdoc/check-property-names, jsdoc/tag-lines */
 /**
  * MetaMask's Design System Colors
+ *
+ * NOTE - This documentation doesn't reflect the actual structure of the colors object. We are only documenting the common properties between light and dark themes.
  *
  * @property {string} background.default - Should be used as the default background color for any neutral type components
  * @property {string} background.alternative - Should be used as an alternative background for any neutral type components that require some slight contrast to background.default
@@ -125,6 +128,7 @@ export interface Colors {
  * @property {string} info.disabled - Should be used for disabled state
  * @property {string} info.inverse - Should be used only as the foreground element on top of info/default and info/alternative
  */
+/* eslint-enable jsdoc/check-property-names, jsdoc/tag-lines */
 const colors: Colors = {
   light: {
     background: {
