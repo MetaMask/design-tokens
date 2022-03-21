@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.4.4]
-### Uncategorized
+### Changed
 - Add types and documentation to DS code library ([#61](https://github.com/MetaMask/design-tokens/pull/61))
 
 ## [1.4.3]
