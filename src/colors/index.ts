@@ -198,8 +198,8 @@ const colors: Colors = {
   },
   dark: {
     background: {
-      default: '#141618',
-      alternative: '#24272A',
+      default: '#24272A',
+      alternative: '#141618',
     },
     text: {
       default: '#FFFFFF',

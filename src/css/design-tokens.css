@@ -126,8 +126,8 @@
  */
 
 [data-theme='dark'] {
-  --color-background-default: var(--brand-colors-grey-grey900);
-  --color-background-alternative: var(--brand-colors-grey-grey800);
+  --color-background-default: var(--brand-colors-grey-grey800);
+  --color-background-alternative: var(--brand-colors-grey-grey900);
   --color-text-default: var(--brand-colors-white-white000);
   --color-text-alternative: var(--brand-colors-grey-grey030);
   --color-text-muted: var(--brand-colors-grey-grey400);
