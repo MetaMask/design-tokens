@@ -198,8 +198,8 @@ const colors: Colors = {
   },
   dark: {
     background: {
-      default: '#141618',
-      alternative: '#24272A',
+      default: '#24272A',
+      alternative: '#141618',
     },
     text: {
       default: '#FFFFFF',
@@ -215,9 +215,9 @@ const colors: Colors = {
       muted: '#3B4046',
     },
     overlay: {
-      default: '#FFFFFF66',
-      inverse: '#24272A',
-      alternative: '#FFFFFFCC',
+      default: '#00000099',
+      inverse: '#FCFCFC',
+      alternative: '#000000CC',
     },
     primary: {
       default: '#1098FC',

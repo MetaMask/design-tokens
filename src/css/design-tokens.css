@@ -126,8 +126,8 @@
  */
 
 [data-theme='dark'] {
-  --color-background-default: var(--brand-colors-grey-grey900);
-  --color-background-alternative: var(--brand-colors-grey-grey800);
+  --color-background-default: var(--brand-colors-grey-grey800);
+  --color-background-alternative: var(--brand-colors-grey-grey900);
   --color-text-default: var(--brand-colors-white-white000);
   --color-text-alternative: var(--brand-colors-grey-grey030);
   --color-text-muted: var(--brand-colors-grey-grey400);
@@ -135,9 +135,9 @@
   --color-icon-muted: var(--brand-colors-grey-grey400);
   --color-border-default: var(--brand-colors-grey-grey400);
   --color-border-muted: var(--brand-colors-grey-grey700);
-  --color-overlay-default: #ffffff99;
-  --color-overlay-alternative: #ffffffcc;
-  --color-overlay-inverse: var(--brand-colors-grey-grey800);
+  --color-overlay-default: #00000099;
+  --color-overlay-alternative: #000000cc;
+  --color-overlay-inverse: var(--brand-colors-white-white010);
   --color-primary-default: var(--brand-colors-blue-blue400);
   --color-primary-alternative: var(--brand-colors-blue-blue300);
   --color-primary-muted: #1098fc26;
