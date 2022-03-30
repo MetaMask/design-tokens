@@ -7,8 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.5.0]
-### Uncategorized
+### Changed
 - Updating dark theme background and overlay colors ([#72](https://github.com/MetaMask/design-tokens/pull/72))
+- background default and background alternative values swapped
+- overlays changed to dark for both light and dark themes
 
 ## [1.4.4]
 ### Changed
