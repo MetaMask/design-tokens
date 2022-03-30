@@ -7,8 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.5.1]
-### Uncategorized
-- Fixing descriptions ([#79](https://github.com/MetaMask/design-tokens/pull/79))
+### Changed
+- Fixing descriptions for dark theme overlays ([#79](https://github.com/MetaMask/design-tokens/pull/79))
 
 ## [1.5.0]
 ### Changed
