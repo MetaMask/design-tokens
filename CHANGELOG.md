@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.1]
+### Changed
+- Fixing descriptions for dark theme overlays ([#79](https://github.com/MetaMask/design-tokens/pull/79))
+
 ## [1.5.0]
 ### Changed
 - Updating dark theme background and overlay colors ([#72](https://github.com/MetaMask/design-tokens/pull/72))
@@ -56,7 +60,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.5.0...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.5.1...HEAD
+[1.5.1]: https://github.com/MetaMask/design-tokens/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/MetaMask/design-tokens/compare/v1.4.4...v1.5.0
 [1.4.4]: https://github.com/MetaMask/design-tokens/compare/v1.4.3...v1.4.4
 [1.4.3]: https://github.com/MetaMask/design-tokens/compare/v1.4.2...v1.4.3
