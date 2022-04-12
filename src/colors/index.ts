@@ -141,7 +141,7 @@ const colors: Colors = {
       muted: '#BBC0C5',
     },
     icon: {
-      default: '#6A737D',
+      default: '#24272A',
       muted: '#BBC0C5',
     },
     border: {
@@ -203,11 +203,11 @@ const colors: Colors = {
     },
     text: {
       default: '#FFFFFF',
-      alternative: '#FAFBFC',
+      alternative: '#D6D9DC',
       muted: '#9FA6AE',
     },
     icon: {
-      default: '#F2F4F6',
+      default: '#FFFFFF',
       muted: '#9FA6AE',
     },
     border: {
