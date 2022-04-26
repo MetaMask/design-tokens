@@ -76,59 +76,59 @@ export interface Colors {
  *
  * NOTE - This documentation doesn't reflect the actual structure of the colors object. We are only documenting the common properties between light and dark themes.
  *
- * @property {string} background.default - Should be used as the default background color for any neutral type components
- * @property {string} background.alternative - Should be used as an alternative background for any neutral type components that require some slight contrast to background.default
+ * @property {string} background.default - For default neutral backgrounds
+ * @property {string} background.alternative - For a subtle contrast option for neutral backgrounds. (Example: backdrop, header background)
  *
- * @property {string} text.default - Should be used for all general text that takes main priority in the information hierarchy
- * @property {string} text.alternative - Should be used for all general text that takes less priority in the information hierarchy than text.default
- * @property {string} text.muted - Should be used for all low priority text: placeholder and inactive text. It will also not meet AAA or AA accessibility standards
+ * @property {string} text.default - For general text that takes main priority in the information hierarchy
+ * @property {string} text.alternative - For a weaker contrast option for neutral tex
+ * @property {string} text.muted - For inactive or lowest priority text. (Example: placeholder)
  *
- * @property {string} icon.default - Should be used for all icons used as CTAs that are not a primary action on background.default or background.alternative
+ * @property {string} icon.default - For default neutral icons
  * @property {string} icon.alternative - For a weaker contrast option for neutral icons
- * @property {string} icon.muted - Should be used for all low priority icon used on background.default or background.alternative. These could also include placeholder or inactive icons. It will also not meet AAA or AA accessibility standards
+ * @property {string} icon.muted - For inactive or lowest priority icons
  *
- * @property {string} border.default - Should be used for for the stroke of components that require higher contrast borders such as inputs in default state
- * @property {string} border.muted - Should be lower contrast components such as dividers
+ * @property {string} border.default - For default neutral borders with visible contrast. (Example: text inputs)
+ * @property {string} border.muted - For a weaker contrast option for neutral borders.
  *
- * @property {string} overlay.default - Should be used as the default background color for overlay screens
- * @property {string} overlay.alternative - Should be used overlay background that require stronger contrast
- * @property {string} overlay.inverse - Should be used for elements over an overlay
+ * @property {string} overlay.default - For shading layers behind modality screens
+ * @property {string} overlay.alternative - For a stronger shading layer option behind modality screens
+ * @property {string} overlay.inverse - [Deprecated] Should be used for elements over an overlay
  *
- * @property {string} primary.default - Should be used as the default primary
- * @property {string} primary.alternative - Should be used as an alternative to primary/default for things like hover or pressed states
- * @property {string} primary.muted - Should be used for inactive states
- * @property {string} primary.disabled - Should be used for disabled state
- * @property {string} primary.inverse - Should be used only as the foreground element on top of primary/default and primary/alternative
+ * @property {string} primary.default - For primary user action related elements
+ * @property {string} primary.alternative - For the \"pressed\" state of interactive primary elements
+ * @property {string} primary.muted - For lowest contrast background used in primary elements
+ * @property {string} primary.disabled - [Deprecated] Should be used for disabled state
+ * @property {string} primary.inverse - For elements used on top of primary/default. (Example: label of primary button, check in a checkbox)
  *
- * @property {string} secondary.default - Should be used for any secondary actions. It should not be used for any negative connotations such as warnings or errors as it is quite closely tied to the MetaMask Fox
- * @property {string} secondary.alternative - Should be used as an alternative to secondary.default for things such as hover states
- * @property {string} secondary.muted - It’s a very low contrasting secondary variant for things such as alert backgrounds. secondary.muted and secondary.inverse should not be used together in a foreground and background combination
- * @property {string} secondary.disabled - Should be used for all disabled secondary action components
- * @property {string} secondary.inverse - Should be used only as the foreground element on top of primary/default and primary/alternative. It is intended to be the most contrasting color to primary/default. It should meet all AA and AAA accessibility standards such as the text or icon of a primary button
+ * @property {string} secondary.default - [Deprecated] Should be used for any secondary actions. It should not be used for any negative connotations such as warnings or errors as it is quite closely tied to the MetaMask Fox
+ * @property {string} secondary.alternative - [Deprecated] Should be used as an alternative to secondary.default for things such as hover states
+ * @property {string} secondary.muted - [Deprecated] It’s a very low contrasting secondary variant for things such as alert backgrounds. secondary.muted and secondary.inverse should not be used together in a foreground and background combination
+ * @property {string} secondary.disabled - [Deprecated] Should be used for all disabled secondary action components
+ * @property {string} secondary.inverse - [Deprecated] Should be used only as the foreground element on top of primary/default and primary/alternative. It is intended to be the most contrasting color to primary/default. It should meet all AA and AAA accessibility standards such as the text or icon of a primary button
  *
- * @property {string} error.default - Should be used for all error or critical action components such as buttons, icons or messages
- * @property {string} error.alternative - Should be used as an alternative to error/default for things like hover or pressed states
- * @property {string} error.muted - Should be used as background of error messages
- * @property {string} error.disabled - Should be used for disabled state
- * @property {string} error.inverse - Should be used only as the foreground element on top of error/default and error/alternative
+ * @property {string} error.default - For high-level alert danger/critical elements. Used for text, background, icon or border
+ * @property {string} error.alternative - For the \"pressed\" state of interactive danger/critical elements
+ * @property {string} error.muted - For lowest contrast background used in high-level alert danger/critical elements. (Example: notification background)
+ * @property {string} error.disabled - [Deprecated] Should be used for disabled state
+ * @property {string} error.inverse - For elements used on top of error/default (Example: label of danger/critical button)
  *
- * @property {string} warning.default - Should be used for all warning components such as buttons or icons. It should generally NOT be used for text as it will not be readable or contrast well against background/default
- * @property {string} warning.alternative - Should be used as an alternative to warning/default for things like hover or pressed states
- * @property {string} warning.muted - Should be used for background of warning messages
- * @property {string} warning.disabled - Should be used for disabled state
- * @property {string} warning.inverse - Should be used only as the foreground element on top of warning/default and warning/alternative
+ * @property {string} warning.default - For low-mid level alert elements. Used for text, background, icon or border
+ * @property {string} warning.alternative - [Deprecated] Should be used as an alternative to warning/default for things like hover or pressed states
+ * @property {string} warning.muted - For lowest contrast background used in warning elements. (Example: notification background)
+ * @property {string} warning.disabled - [Deprecated] Should be used for disabled state
+ * @property {string} warning.inverse - For elements used on top of warning/default. Used for text, icon or border
  *
- * @property {string} success.default - Should be used for all success state component colors such as buttons, icons or messages
- * @property {string} success.alternative - Should be used as an alternative to success/default for things like hover or pressed states
- * @property {string} success.muted - Should be used for background of success messages
- * @property {string} success.disabled - Should be used for disabled state
- * @property {string} success.inverse -  Should be used only as the foreground element on top of succes/default and success/alternative
+ * @property {string} success.default - For positive & good semantic elements. Used for text, background, icon or border
+ * @property {string} success.alternative - [Deprecated] Should be used as an alternative to success/default for things like hover or pressed states
+ * @property {string} success.muted - For lowest contrast background used in success semantic. (Example: notification background)
+ * @property {string} success.disabled - [Deprecated] Should be used for disabled state
+ * @property {string} success.inverse -  For elements used on top of success/default. Used for text, icon or border
  *
- * @property {string} info.default - Should be used for all info state component colors such as buttons or links
- * @property {string} info.alternative - Should be used as an alternative to info/default for things like hover or pressed states
- * @property {string} info.muted - Should be used for background of info messages
- * @property {string} info.disabled - Should be used for disabled state
- * @property {string} info.inverse - Should be used only as the foreground element on top of info/default and info/alternative
+ * @property {string} info.default - For informational semantic elements. Used for text, background, icon or border
+ * @property {string} info.alternative - [Deprecated] Should be used as an alternative to info/default for things like hover or pressed states
+ * @property {string} info.muted - For lowest contrast background used in informational semantic. (Example: notification background)
+ * @property {string} info.disabled - [Deprecated] Should be used for disabled state
+ * @property {string} info.inverse - SFor elements used on top of info/default. Used for text, icon or border
  */
 /* eslint-enable jsdoc/check-property-names, jsdoc/tag-lines */
 const colors: Colors = {
