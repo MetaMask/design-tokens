@@ -83,6 +83,7 @@ export interface Colors {
  * @property {string} text.muted - Should be used for all low priority text: placeholder and inactive text. It will also not meet AAA or AA accessibility standards
  *
  * @property {string} icon.default - Should be used for all icons used as CTAs that are not a primary action on background.default or background.alternative
+ * @property {string} icon.alternative - For a weaker contrast option for neutral icons
  * @property {string} icon.muted - Should be used for all low priority icon used on background.default or background.alternative. These could also include placeholder or inactive icons. It will also not meet AAA or AA accessibility standards
  *
  * @property {string} border.default - Should be used for for the stroke of components that require higher contrast borders such as inputs in default state
