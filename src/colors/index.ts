@@ -10,6 +10,7 @@ export interface ThemeColors {
   };
   icon: {
     default: string;
+    alternative: string;
     muted: string;
   };
   border: {
@@ -143,6 +144,7 @@ const colors: Colors = {
     },
     icon: {
       default: '#24272A',
+      alternative: '#6A737D',
       muted: '#BBC0C5',
     },
     border: {
@@ -209,6 +211,7 @@ const colors: Colors = {
     },
     icon: {
       default: '#FFFFFF',
+      alternative: '#BBC0C5',
       muted: '#9FA6AE',
     },
     border: {
