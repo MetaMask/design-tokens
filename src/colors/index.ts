@@ -80,7 +80,7 @@ export interface Colors {
  * @property {string} background.alternative - For a subtle contrast option for neutral backgrounds. (Example: backdrop, header background)
  *
  * @property {string} text.default - For general text that takes main priority in the information hierarchy
- * @property {string} text.alternative - For a weaker contrast option for neutral tex
+ * @property {string} text.alternative - For a weaker contrast option for neutral text
  * @property {string} text.muted - For inactive or lowest priority text. (Example: placeholder)
  *
  * @property {string} icon.default - For default neutral icons
