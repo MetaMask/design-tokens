@@ -175,10 +175,10 @@ const colors: Colors = {
       disabled: '#D73A4980',
     },
     warning: {
-      default: '#FFD33D',
+      default: '#F66A0A',
       alternative: '#FFC70A',
       muted: '#FFD33D19',
-      inverse: '#141618',
+      inverse: '#FCFCFC',
       disabled: '#FFD33D80',
     },
     success: {

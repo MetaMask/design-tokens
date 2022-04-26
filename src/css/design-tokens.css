@@ -153,10 +153,10 @@
   --color-error-muted: #d73a4926;
   --color-error-inverse: var(--brand-colors-white-white010);
   --color-error-disabled: #d73a4980;
-  --color-warning-default: var(--brand-colors-yellow-yellow500);
+  --color-warning-default: var(--brand-colors-orange-orange500);
   --color-warning-alternative: var(--brand-colors-yellow-yellow400);
   --color-warning-muted: #ffd33d26;
-  --color-warning-inverse: var(--brand-colors-grey-grey900);
+  --color-warning-inverse: var(--brand-colors-white-white010);
   --color-warning-disabled: #ffd33d80;
   --color-success-default: var(--brand-colors-green-green500);
   --color-success-alternative: var(--brand-colors-green-green400);
