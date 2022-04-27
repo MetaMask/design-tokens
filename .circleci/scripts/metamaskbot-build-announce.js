@@ -41,6 +41,7 @@ async function start() {
   const exposedContent = `Builds ready [${SHORT_SHA1}]`;
   const artifactsBody = `<details><summary>${exposedContent}</summary>${hiddenContent}</details>\n\n`;
 
+  let commentBody = artifactsBody;
   try {
     const highlights = await getHighlights({ artifactBase: BUILD_LINK_BASE });
     if (highlights) {
