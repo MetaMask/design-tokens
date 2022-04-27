@@ -4,7 +4,10 @@ const path = require('path');
 const fetch = require('node-fetch');
 const { getHighlights } = require('./highlights');
 
-start().catch(console.error);
+start().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
 
 async function start() {
   const { GITHUB_COMMENT_TOKEN, CIRCLE_PULL_REQUEST } = process.env;
