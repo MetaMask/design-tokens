@@ -32,7 +32,7 @@ async function start() {
   const storybookLink = `<a href="${storybookUrl}">Storybook</a>`;
 
   // link to artifacts
-  const allArtifactsUrl = `https://circleci.com/gh/MetaMask/metamask-extension/${CIRCLE_BUILD_NUM}#artifacts/containers/0`;
+  const allArtifactsUrl = `https://circleci.com/gh/MetaMask/design-tokens/${CIRCLE_BUILD_NUM}#artifacts/containers/0`;
 
   const contentRows = [
     `storybook: ${storybookLink}`,
