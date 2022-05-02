@@ -67,6 +67,110 @@
   --brand-colors-yellow-yellow400: #ffdf70;
   --brand-colors-yellow-yellow500: #ffd33d;
   --brand-colors-yellow-yellow600: #ffc70a;
+  /* typography */
+  /* font family */
+  --font-family-euclid-circular-b: 'Euclid Circular B';
+  /* font sizes */
+  --font-size-base: 16px;
+  --font-size-0: 0;
+  --font-size-1: 0.625rem;
+  --font-size-2: 0.75rem;
+  --font-size-3: 0.875rem;
+  --font-size-4: 1rem;
+  --font-size-5: 1.125rem;
+  --font-size-6: 1.5rem;
+  --font-size-7: 2rem;
+  --font-size-8: 3rem;
+  /* line heights */
+  --line-height-0: 0;
+  --line-height-1: 1;
+  --line-height-2: 1.166666;
+  --line-height-3: 1.2;
+  --line-height-4: 1.255555;
+  --line-height-5: 1.333333;
+  --line-height-6: 1.5;
+  --line-height-7: 1.6;
+  --line-height-8: 1.666666;
+  /* font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  /* letter spacing */
+  --letter-spacing-0: 0;
+  --letter-spacing-1: 2.5%;
+  /* typography scale small screen */
+  --typography-s-display-md-font-family: var(--font-family-euclid-circular-b);
+  --typography-s-display-md-font-size: var(--font-size-7);
+  --typography-s-display-md-line-height: var(--line-height-4);
+  --typography-s-display-md-font-weight: var(--font-weight-medium);
+  --typography-s-display-md-letter-spacing: var(--letter-spacing-0);
+  --typography-s-heading-lg-font-family: var(--font-family-euclid-circular-b);
+  --typography-s-heading-lg-font-size: var(--font-size-6);
+  --typography-s-heading-lg-line-height: var(--line-height-5);
+  --typography-s-heading-lg-font-weight: var(--font-weight-bold);
+  --typography-s-heading-lg-letter-spacing: var(--letter-spacing-0);
+  --typography-s-heading-md-font-family: var(--font-family-euclid-circular-b);
+  --typography-s-heading-md-font-size: var(--font-size-5);
+  --typography-s-heading-md-line-height: var(--line-height-5);
+  --typography-s-heading-md-font-weight: var(--font-weight-bold);
+  --typography-s-heading-md-letter-spacing: var(--letter-spacing-0);
+  --typography-s-heading-sm-font-family: var(--font-family-euclid-circular-b);
+  --typography-s-heading-sm-font-size: var(--font-size-4);
+  --typography-s-heading-sm-line-height: var(--line-height-6);
+  --typography-s-heading-sm-font-weight: var(--font-weight-bold);
+  --typography-s-heading-sm-letter-spacing: var(--letter-spacing-0);
+  --typography-s-body-md-font-family: var(--font-family-euclid-circular-b);
+  --typography-s-body-md-font-size: var(--font-size-3);
+  --typography-s-body-md-line-height: var(--line-height-6);
+  --typography-s-body-md-font-weight: var(--font-weight-regular);
+  --typography-s-body-md-letter-spacing: var(--letter-spacing-0);
+  --typography-s-body-sm-font-family: var(--font-family-euclid-circular-b);
+  --typography-s-body-sm-font-size: var(--font-size-2);
+  --typography-s-body-sm-line-height: var(--line-height-8);
+  --typography-s-body-sm-font-weight: var(--font-weight-regular);
+  --typography-s-body-sm-letter-spacing: var(--letter-spacing-0);
+  --typography-s-body-xs-font-family: var(--font-family-euclid-circular-b);
+  --typography-s-body-xs-font-size: var(--font-size-1);
+  --typography-s-body-xs-line-height: var(--line-height-7);
+  --typography-s-body-xs-font-weight: var(--font-weight-regular);
+  --typography-s-body-xs-letter-spacing: var(--letter-spacing-0);
+
+  /* typography scale large screen */
+  --typography-l-display-md-font-family: var(--font-family-euclid-circular-b);
+  --typography-l-display-md-font-size: var(--font-size-8);
+  --typography-l-display-md-line-height: var(--line-height-2);
+  --typography-l-display-md-font-weight: var(--font-weight-medium);
+  --typography-l-display-md-letter-spacing: var(--letter-spacing-0);
+  --typography-l-heading-lg-font-family: var(--font-family-euclid-circular-b);
+  --typography-l-heading-lg-font-size: var(--font-size-7);
+  --typography-l-heading-lg-line-height: var(--line-height-4);
+  --typography-l-heading-lg-font-weight: var(--font-weight-bold);
+  --typography-l-heading-lg-letter-spacing: var(--letter-spacing-0);
+  --typography-l-heading-md-font-family: var(--font-family-euclid-circular-b);
+  --typography-l-heading-md-font-size: var(--font-size-6);
+  --typography-l-heading-md-line-height: var(--line-height-5);
+  --typography-l-heading-md-font-weight: var(--font-weight-bold);
+  --typography-l-heading-md-letter-spacing: var(--letter-spacing-0);
+  --typography-l-heading-sm-font-family: var(--font-family-euclid-circular-b);
+  --typography-l-heading-sm-font-size: var(--font-size-5);
+  --typography-l-heading-sm-line-height: var(--line-height-5);
+  --typography-l-heading-sm-font-weight: var(--font-weight-bold);
+  --typography-l-heading-sm-letter-spacing: var(--letter-spacing-0);
+  --typography-l-body-md-font-family: var(--font-family-euclid-circular-b);
+  --typography-l-body-md-font-size: var(--font-size-4);
+  --typography-l-body-md-line-height: var(--line-height-6);
+  --typography-l-body-md-font-weight: var(--font-weight-regular);
+  --typography-l-body-md-letter-spacing: var(--letter-spacing-0);
+  --typography-l-body-sm-font-family: var(--font-family-euclid-circular-b);
+  --typography-l-body-sm-font-size: var(--font-size-3);
+  --typography-l-body-sm-line-height: var(--line-height-6);
+  --typography-l-body-sm-font-weight: var(--font-weight-regular);
+  --typography-l-body-sm-letter-spacing: var(--letter-spacing-0);
+  --typography-l-body-xs-font-family: var(--font-family-euclid-circular-b);
+  --typography-l-body-xs-font-size: var(--font-size-2);
+  --typography-l-body-xs-line-height: var(--line-height-7);
+  --typography-l-body-xs-font-weight: var(--font-weight-regular);
+  --typography-l-body-xs-letter-spacing: var(--letter-spacing-0);
 }
 
 /*
