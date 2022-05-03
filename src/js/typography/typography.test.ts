@@ -4,7 +4,7 @@ import { typography } from './typography';
 const designTokens = require('../../figma/tokens.json');
 
 describe('Typography Small Screen', () => {
-  it('matches the typescript sDisplayMD with the figma tokens sDisplayMD', () => {
+  it('js tokens for sDisplayMD matches figma tokens sDisplayMD', () => {
     expect(typography.sDisplayMD.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
@@ -22,7 +22,7 @@ describe('Typography Small Screen', () => {
     );
   });
 
-  it('matches the typescript sHeadingLG with the figma tokens sHeadingLG', () => {
+  it('js tokens for sHeadingLG matches figma tokens sHeadingLG', () => {
     expect(typography.sHeadingLG.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
@@ -40,7 +40,7 @@ describe('Typography Small Screen', () => {
     );
   });
 
-  it('matches the typescript sHeadingMD with the figma tokens sHeadingMD', () => {
+  it('js tokens for sHeadingMD matches figma tokens sHeadingMD', () => {
     expect(typography.sHeadingMD.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
@@ -58,7 +58,7 @@ describe('Typography Small Screen', () => {
     );
   });
 
-  it('matches the typescript sHeadingSM with the figma tokens sHeadingSM', () => {
+  it('js tokens for sHeadingSM matches figma tokens sHeadingSM', () => {
     expect(typography.sHeadingSM.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
@@ -76,7 +76,7 @@ describe('Typography Small Screen', () => {
     );
   });
 
-  it('matches the typescript sBodyMD with the figma tokens sBodyMD', () => {
+  it('js tokens for sBodyMD matches figma tokens sBodyMD', () => {
     expect(typography.sBodyMD.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
@@ -94,7 +94,7 @@ describe('Typography Small Screen', () => {
     );
   });
 
-  it('matches the typescript sBodySM with the figma tokens sBodySM', () => {
+  it('js tokens for sBodySM matches figma tokens sBodySM', () => {
     expect(typography.sBodySM.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
@@ -112,7 +112,7 @@ describe('Typography Small Screen', () => {
     );
   });
 
-  it('matches the typescript sBodyXS with the figma tokens sBodyXS', () => {
+  it('js tokens for sBodyXS matches figma tokens sBodyXS', () => {
     expect(typography.sBodyXS.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
@@ -132,7 +132,7 @@ describe('Typography Small Screen', () => {
 });
 
 describe('Typography Large Screen', () => {
-  it('matches the typescript lDisplayMD with the figma tokens lDisplayMD', () => {
+  it('js tokens for lDisplayMD matches figma tokens lDisplayMD', () => {
     expect(typography.lDisplayMD.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
@@ -150,7 +150,7 @@ describe('Typography Large Screen', () => {
     );
   });
 
-  it('matches the typescript lHeadingLG with the figma tokens lHeadingLG', () => {
+  it('js tokens for lHeadingLG matches figma tokens lHeadingLG', () => {
     expect(typography.lHeadingLG.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
@@ -168,7 +168,7 @@ describe('Typography Large Screen', () => {
     );
   });
 
-  it('matches the typescript lHeadingMD with the figma tokens lHeadingMD', () => {
+  it('js tokens for lHeadingMD matches figma tokens lHeadingMD', () => {
     expect(typography.lHeadingMD.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
@@ -186,7 +186,7 @@ describe('Typography Large Screen', () => {
     );
   });
 
-  it('matches the typescript lHeadingSM with the figma tokens lHeadingSM', () => {
+  it('js tokens for lHeadingSM matches figma tokens lHeadingSM', () => {
     expect(typography.lHeadingSM.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
@@ -204,7 +204,7 @@ describe('Typography Large Screen', () => {
     );
   });
 
-  it('matches the typescript lBodyMD with the figma tokens lBodyMD', () => {
+  it('js tokens for lBodyMD matches figma tokens lBodyMD', () => {
     expect(typography.lBodyMD.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
@@ -222,7 +222,7 @@ describe('Typography Large Screen', () => {
     );
   });
 
-  it('matches the typescript lBodySM with the figma tokens lBodySM', () => {
+  it('js tokens for lBodySM matches figma tokens lBodySM', () => {
     expect(typography.lBodySM.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
@@ -240,7 +240,7 @@ describe('Typography Large Screen', () => {
     );
   });
 
-  it('matches the typescript lBodyXS with the figma tokens lBodyXS', () => {
+  it('js tokens for lBodyXS matches figma tokens lBodyXS', () => {
     expect(typography.lBodyXS.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
