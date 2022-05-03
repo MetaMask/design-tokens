@@ -1,35 +1,10 @@
-import {
-  fontFamilies,
-  fontSizes,
-  fontWeights,
-  letterSpacing,
-  lineHeights,
-} from '.';
+import { fontFamilies } from './fontFamilies';
+import { fontSizes } from './fontSizes';
+import { fontWeights } from './fontWeights';
+import { letterSpacing } from './letterSpacing';
+import { lineHeights } from './lineHeights';
 
-export interface TypeStyle {
-  fontFamily: string;
-  fontSize: number;
-  fontWeight: number;
-  lineHeight: number;
-  letterSpacing: number;
-}
-
-export interface ThemeTypography {
-  sDisplayMD: TypeStyle;
-  sHeadingLG: TypeStyle;
-  sHeadingMD: TypeStyle;
-  sHeadingSM: TypeStyle;
-  sBodyMD: TypeStyle;
-  sBodySM: TypeStyle;
-  sBodyXS: TypeStyle;
-  lDisplayMD: TypeStyle;
-  lHeadingLG: TypeStyle;
-  lHeadingMD: TypeStyle;
-  lHeadingSM: TypeStyle;
-  lBodyMD: TypeStyle;
-  lBodySM: TypeStyle;
-  lBodyXS: TypeStyle;
-}
+import { ThemeTypography } from './types';
 
 /* eslint-enable jsdoc/check-property-names, jsdoc/tag-lines */
 export const typography: ThemeTypography = {
