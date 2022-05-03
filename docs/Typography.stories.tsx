@@ -1,12 +1,11 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import {
-  typography,
-  fontSizes,
-  lineHeights,
-  fontFamilies,
-  fontWeights,
-  letterSpacing,
-} from '../src/ts/typography';
+import { typography } from '../src/js/typography';
+
+import { fontSizes } from '../src/js/typography/fontSizes';
+import { lineHeights } from '../src/js/typography/lineHeights';
+import { fontFamilies } from '../src/js/typography/fontFamilies';
+import { fontWeights } from '../src/js/typography/fontWeights';
+import { letterSpacing } from '../src/js/typography/letterSpacing';
 
 import { Text } from './components';
 
