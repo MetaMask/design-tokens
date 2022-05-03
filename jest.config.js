@@ -12,7 +12,6 @@ module.exports = {
       statements: 100,
     },
   },
-  coverageDirectory: './output/icov-report',
   moduleFileExtensions: ['js', 'json', 'jsx', 'ts', 'tsx', 'node'],
   preset: 'ts-jest',
   // "resetMocks" resets all mocks, including mocked modules, to jest.fn(),
