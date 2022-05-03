@@ -2,7 +2,7 @@ module.exports = {
   collectCoverage: true,
   // Ensures that we collect coverage from all source files, not just tested
   // ones.
-  collectCoverageFrom: ['./src/js/**/*.ts', '!./src/js/**/*index.ts'],
+  collectCoverageFrom: ['./src/**/*.ts', '!./src/**/*index.ts'],
   coverageReporters: ['text', 'html'],
   coverageThreshold: {
     global: {
@@ -12,6 +12,7 @@ module.exports = {
       statements: 100,
     },
   },
+  coverageDirectory: './output/icov-report',
   moduleFileExtensions: ['js', 'json', 'jsx', 'ts', 'tsx', 'node'],
   preset: 'ts-jest',
   // "resetMocks" resets all mocks, including mocked modules, to jest.fn(),
