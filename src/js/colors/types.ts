@@ -10,6 +10,7 @@ interface ThemeColors {
   };
   icon: {
     default: string;
+    alternative: string;
     muted: string;
   };
   border: {
