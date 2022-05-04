@@ -105,11 +105,13 @@
   --typography-s-display-md-medium-line-height: var(--line-height-4);
   --typography-s-display-md-medium-font-weight: var(--font-weight-medium);
   --typography-s-display-md-medium-letter-spacing: var(--letter-spacing-0);
-  --typography-s-heading-lg-font-family: var(--font-family-euclid-circular-b);
-  --typography-s-heading-lg-font-size: var(--font-size-6);
-  --typography-s-heading-lg-line-height: var(--line-height-5);
-  --typography-s-heading-lg-font-weight: var(--font-weight-bold);
-  --typography-s-heading-lg-letter-spacing: var(--letter-spacing-0);
+  --typography-s-heading-lg-bold-font-family: var(
+    --font-family-euclid-circular-b
+  );
+  --typography-s-heading-lg-bold-font-size: var(--font-size-6);
+  --typography-s-heading-lg-bold-line-height: var(--line-height-5);
+  --typography-s-heading-lg-bold-font-weight: var(--font-weight-bold);
+  --typography-s-heading-lg-bold-letter-spacing: var(--letter-spacing-0);
   --typography-s-heading-md-font-family: var(--font-family-euclid-circular-b);
   --typography-s-heading-md-font-size: var(--font-size-5);
   --typography-s-heading-md-line-height: var(--line-height-5);
@@ -144,11 +146,13 @@
   --typography-l-display-md-medium-line-height: var(--line-height-2);
   --typography-l-display-md-medium-font-weight: var(--font-weight-medium);
   --typography-l-display-md-medium-letter-spacing: var(--letter-spacing-0);
-  --typography-l-heading-lg-font-family: var(--font-family-euclid-circular-b);
-  --typography-l-heading-lg-font-size: var(--font-size-7);
-  --typography-l-heading-lg-line-height: var(--line-height-4);
-  --typography-l-heading-lg-font-weight: var(--font-weight-bold);
-  --typography-l-heading-lg-letter-spacing: var(--letter-spacing-0);
+  --typography-l-heading-lg-bold-font-family: var(
+    --font-family-euclid-circular-b
+  );
+  --typography-l-heading-lg-bold-font-size: var(--font-size-7);
+  --typography-l-heading-lg-bold-line-height: var(--line-height-4);
+  --typography-l-heading-lg-bold-font-weight: var(--font-weight-bold);
+  --typography-l-heading-lg-bold-letter-spacing: var(--letter-spacing-0);
   --typography-l-heading-md-font-family: var(--font-family-euclid-circular-b);
   --typography-l-heading-md-font-size: var(--font-size-6);
   --typography-l-heading-md-line-height: var(--line-height-5);

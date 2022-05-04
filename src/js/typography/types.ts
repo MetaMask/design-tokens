@@ -8,14 +8,14 @@ interface TypeStyle {
 
 export interface ThemeTypography {
   sDisplayMDMedium: TypeStyle;
-  sHeadingLG: TypeStyle;
+  sHeadingLGBold: TypeStyle;
   sHeadingMD: TypeStyle;
   sHeadingSM: TypeStyle;
   sBodyMD: TypeStyle;
   sBodySM: TypeStyle;
   sBodyXS: TypeStyle;
   lDisplayMDMedium: TypeStyle;
-  lHeadingLG: TypeStyle;
+  lHeadingLGBold: TypeStyle;
   lHeadingMD: TypeStyle;
   lHeadingSM: TypeStyle;
   lBodyMD: TypeStyle;

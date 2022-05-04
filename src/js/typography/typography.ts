@@ -15,7 +15,7 @@ export const typography: ThemeTypography = {
     lineHeight: lineHeights.lineHeight6,
     letterSpacing: letterSpacing.letterSpacing0,
   },
-  sHeadingLG: {
+  sHeadingLGBold: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.bold,
     fontSize: fontSizes.fontSize6,
@@ -64,7 +64,7 @@ export const typography: ThemeTypography = {
     lineHeight: lineHeights.lineHeight7,
     letterSpacing: letterSpacing.letterSpacing0,
   },
-  lHeadingLG: {
+  lHeadingLGBold: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.bold,
     fontSize: fontSizes.fontSize7,
