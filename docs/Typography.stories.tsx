@@ -40,6 +40,7 @@ export const FontFamily: ComponentStory<typeof Text> = (...args) => {
 };
 
 export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
+  const smallScreenFontSizeBase = 14;
   const styles = {
     displayMD: {
       fontFamily: typography.sDisplayMD.fontFamily,
@@ -88,31 +89,46 @@ export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
   return (
     <>
       <Text as="h1" style={styles.displayMD} {...args}>
-        S DisplayMD 32px/40px 2rem
+        {`S DisplayMD ${styles.displayMD.fontSize}px/${
+          styles.displayMD.lineHeight
+        } ${styles.displayMD.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
       <Text as="h2" style={styles.headingLG} {...args}>
-        S HeadingLG 24px/32px 1.5rem
+        {`S HeadingLG ${styles.headingLG.fontSize}px/${
+          styles.headingLG.lineHeight
+        } ${styles.headingLG.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
       <Text as="h3" style={styles.headingMD} {...args}>
-        S HeadingMD 18px/24px 1.125rem
+        {`S HeadingLG ${styles.headingLG.fontSize}px/${
+          styles.headingLG.lineHeight
+        } ${styles.headingLG.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
       <Text as="h4" style={styles.headingSM} {...args}>
-        S HeadingSM 16px/24px 1rem
+        {`S HeadingSM ${styles.headingSM.fontSize}px/${
+          styles.headingSM.lineHeight
+        } ${styles.headingSM.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
       <Text as="p" style={styles.bodyMD} {...args}>
-        S BodyMD 14px/22px 0.875rem
+        {`S BodyMD ${styles.bodyMD.fontSize}px/${styles.bodyMD.lineHeight} ${
+          styles.bodyMD.fontSize / smallScreenFontSizeBase
+        }rem`}
       </Text>
       <Text as="p" style={styles.bodySM} {...args}>
-        S BodySM 12px/20px 0.75rem
+        {`S BodySM ${styles.bodySM.fontSize}px/${styles.bodySM.lineHeight} ${
+          styles.bodySM.fontSize / smallScreenFontSizeBase
+        }rem`}
       </Text>
       <Text as="p" style={styles.bodyXS} {...args}>
-        S BodyXS 10px/16px 0.625rem
+        {`S BodyXS ${styles.bodyXS.fontSize}px/${styles.bodyXS.lineHeight} ${
+          styles.bodyXS.fontSize / smallScreenFontSizeBase
+        }rem`}
       </Text>
     </>
   );
 };
 
 export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
+  const largeScreenFontSizeBase = 16;
   const styles = {
     displayMD: {
       fontFamily: typography.lDisplayMD.fontFamily,
@@ -161,25 +177,39 @@ export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
   return (
     <>
       <Text as="h1" style={styles.displayMD} {...args}>
-        L DisplayMD 32px/40px 2rem
+        {`L DisplayMD ${styles.displayMD.fontSize}px/${
+          styles.displayMD.lineHeight
+        } ${styles.displayMD.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
       <Text as="h2" style={styles.headingLG} {...args}>
-        L HeadingLG 24px/32px 1.5rem
+        {`L HeadingLG ${styles.headingLG.fontSize}px/${
+          styles.headingLG.lineHeight
+        } ${styles.headingLG.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
       <Text as="h3" style={styles.headingMD} {...args}>
-        L HeadingMD 18px/24px 1.125rem
+        {`L HeadingLG ${styles.headingLG.fontSize}px/${
+          styles.headingLG.lineHeight
+        } ${styles.headingLG.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
       <Text as="h4" style={styles.headingSM} {...args}>
-        L HeadingSM 16px/24px 1rem
+        {`L HeadingSM ${styles.headingSM.fontSize}px/${
+          styles.headingSM.lineHeight
+        } ${styles.headingSM.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
       <Text as="p" style={styles.bodyMD} {...args}>
-        L BodyMD 14px/22px 0.875rem
+        {`L BodyMD ${styles.bodyMD.fontSize}px/${styles.bodyMD.lineHeight} ${
+          styles.bodyMD.fontSize / largeScreenFontSizeBase
+        }rem`}
       </Text>
       <Text as="p" style={styles.bodySM} {...args}>
-        L BodySM 12px/20px 0.75rem
+        {`L BodySM ${styles.bodySM.fontSize}px/${styles.bodySM.lineHeight} ${
+          styles.bodySM.fontSize / largeScreenFontSizeBase
+        }rem`}
       </Text>
       <Text as="p" style={styles.bodyXS} {...args}>
-        L BodyXS 10px/16px 0.625rem
+        {`L BodyXS ${styles.bodyXS.fontSize}px/${styles.bodyXS.lineHeight} ${
+          styles.bodyXS.fontSize / largeScreenFontSizeBase
+        }rem`}
       </Text>
     </>
   );
