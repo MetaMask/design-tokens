@@ -8,7 +8,7 @@ import { ThemeTypography } from './types';
 
 /* eslint-enable jsdoc/check-property-names, jsdoc/tag-lines */
 export const typography: ThemeTypography = {
-  sDisplayMDMedium: {
+  sDisplayMDBold: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.bold,
     fontSize: fontSizes.fontSize7,
@@ -29,9 +29,16 @@ export const typography: ThemeTypography = {
     lineHeight: lineHeights.lineHeight4,
     letterSpacing: letterSpacing.letterSpacing0,
   },
-  sHeadingSM: {
+  sHeadingSMBold: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.bold,
+    fontSize: fontSizes.fontSize4,
+    lineHeight: lineHeights.lineHeight4,
+    letterSpacing: letterSpacing.letterSpacing0,
+  },
+  sHeadingSM: {
+    fontFamily: fontFamilies.euclidCircularB,
+    fontWeight: fontWeights.regular,
     fontSize: fontSizes.fontSize4,
     lineHeight: lineHeights.lineHeight4,
     letterSpacing: letterSpacing.letterSpacing0,
@@ -43,9 +50,23 @@ export const typography: ThemeTypography = {
     lineHeight: lineHeights.lineHeight3,
     letterSpacing: letterSpacing.letterSpacing0,
   },
+  sBodyMDBold: {
+    fontFamily: fontFamilies.euclidCircularB,
+    fontWeight: fontWeights.bold,
+    fontSize: fontSizes.fontSize3,
+    lineHeight: lineHeights.lineHeight3,
+    letterSpacing: letterSpacing.letterSpacing0,
+  },
   sBodySM: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.regular,
+    fontSize: fontSizes.fontSize2,
+    lineHeight: lineHeights.lineHeight2,
+    letterSpacing: letterSpacing.letterSpacing0,
+  },
+  sBodySMBold: {
+    fontFamily: fontFamilies.euclidCircularB,
+    fontWeight: fontWeights.bold,
     fontSize: fontSizes.fontSize2,
     lineHeight: lineHeights.lineHeight2,
     letterSpacing: letterSpacing.letterSpacing0,
@@ -78,9 +99,16 @@ export const typography: ThemeTypography = {
     lineHeight: lineHeights.lineHeight5,
     letterSpacing: letterSpacing.letterSpacing0,
   },
-  lHeadingSM: {
+  lHeadingSMBold: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.bold,
+    fontSize: fontSizes.fontSize5,
+    lineHeight: lineHeights.lineHeight4,
+    letterSpacing: letterSpacing.letterSpacing0,
+  },
+  lHeadingSM: {
+    fontFamily: fontFamilies.euclidCircularB,
+    fontWeight: fontWeights.regular,
     fontSize: fontSizes.fontSize5,
     lineHeight: lineHeights.lineHeight4,
     letterSpacing: letterSpacing.letterSpacing0,
@@ -92,9 +120,23 @@ export const typography: ThemeTypography = {
     lineHeight: lineHeights.lineHeight4,
     letterSpacing: letterSpacing.letterSpacing0,
   },
+  lBodyMDBold: {
+    fontFamily: fontFamilies.euclidCircularB,
+    fontWeight: fontWeights.bold,
+    fontSize: fontSizes.fontSize4,
+    lineHeight: lineHeights.lineHeight4,
+    letterSpacing: letterSpacing.letterSpacing0,
+  },
   lBodySM: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.regular,
+    fontSize: fontSizes.fontSize3,
+    lineHeight: lineHeights.lineHeight3,
+    letterSpacing: letterSpacing.letterSpacing0,
+  },
+  lBodySMBold: {
+    fontFamily: fontFamilies.euclidCircularB,
+    fontWeight: fontWeights.bold,
     fontSize: fontSizes.fontSize3,
     lineHeight: lineHeights.lineHeight3,
     letterSpacing: letterSpacing.letterSpacing0,

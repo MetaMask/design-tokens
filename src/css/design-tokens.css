@@ -98,13 +98,15 @@
   --letter-spacing-0: 0;
   --letter-spacing-1: 2.5%;
   /* typography scale small screen */
-  --typography-s-display-md-medium-font-family: var(
+
+  --typography-s-display-md-bold-font-family: var(
     --font-family-euclid-circular-b
   );
-  --typography-s-display-md-medium-font-size: var(--font-size-7);
-  --typography-s-display-md-medium-line-height: var(--line-height-4);
-  --typography-s-display-md-medium-font-weight: var(--font-weight-medium);
-  --typography-s-display-md-medium-letter-spacing: var(--letter-spacing-0);
+  --typography-s-display-md-bold-font-size: var(--font-size-7);
+  --typography-s-display-md-bold-line-height: var(--line-height-4);
+  --typography-s-display-md-bold-font-weight: var(--font-weight-medium);
+  --typography-s-display-md-bold-letter-spacing: var(--letter-spacing-0);
+
   --typography-s-heading-lg-bold-font-family: var(
     --font-family-euclid-circular-b
   );
@@ -112,6 +114,7 @@
   --typography-s-heading-lg-bold-line-height: var(--line-height-5);
   --typography-s-heading-lg-bold-font-weight: var(--font-weight-bold);
   --typography-s-heading-lg-bold-letter-spacing: var(--letter-spacing-0);
+
   --typography-s-heading-md-bold-font-family: var(
     --font-family-euclid-circular-b
   );
@@ -119,21 +122,45 @@
   --typography-s-heading-md-bold-line-height: var(--line-height-5);
   --typography-s-heading-md-bold-font-weight: var(--font-weight-bold);
   --typography-s-heading-md-bold-letter-spacing: var(--letter-spacing-0);
+
+  --typography-s-heading-sm-bold-font-family: var(
+    --font-family-euclid-circular-b
+  );
+  --typography-s-heading-sm-bold-font-size: var(--font-size-4);
+  --typography-s-heading-sm-bold-line-height: var(--line-height-6);
+  --typography-s-heading-sm-bold-font-weight: var(--font-weight-bold);
+  --typography-s-heading-sm-bold-letter-spacing: var(--letter-spacing-0);
+
   --typography-s-heading-sm-font-family: var(--font-family-euclid-circular-b);
   --typography-s-heading-sm-font-size: var(--font-size-4);
   --typography-s-heading-sm-line-height: var(--line-height-6);
-  --typography-s-heading-sm-font-weight: var(--font-weight-bold);
+  --typography-s-heading-sm-font-weight: var(--font-weight-regular);
   --typography-s-heading-sm-letter-spacing: var(--letter-spacing-0);
+
+  --typography-s-body-md-bold-font-family: var(--font-family-euclid-circular-b);
+  --typography-s-body-md-bold-font-size: var(--font-size-3);
+  --typography-s-body-md-bold-line-height: var(--line-height-6);
+  --typography-s-body-md-bold-font-weight: var(--font-weight-bold);
+  --typography-s-body-md-bold-letter-spacing: var(--letter-spacing-0);
+
   --typography-s-body-md-font-family: var(--font-family-euclid-circular-b);
   --typography-s-body-md-font-size: var(--font-size-3);
   --typography-s-body-md-line-height: var(--line-height-6);
   --typography-s-body-md-font-weight: var(--font-weight-regular);
   --typography-s-body-md-letter-spacing: var(--letter-spacing-0);
+
+  --typography-s-body-sm-bold-font-family: var(--font-family-euclid-circular-b);
+  --typography-s-body-sm-bold-font-size: var(--font-size-2);
+  --typography-s-body-sm-bold-line-height: var(--line-height-8);
+  --typography-s-body-sm-bold-font-weight: var(--font-weight-bold);
+  --typography-s-body-sm-bold-letter-spacing: var(--letter-spacing-0);
+
   --typography-s-body-sm-font-family: var(--font-family-euclid-circular-b);
   --typography-s-body-sm-font-size: var(--font-size-2);
   --typography-s-body-sm-line-height: var(--line-height-8);
   --typography-s-body-sm-font-weight: var(--font-weight-regular);
   --typography-s-body-sm-letter-spacing: var(--letter-spacing-0);
+
   --typography-s-body-xs-font-family: var(--font-family-euclid-circular-b);
   --typography-s-body-xs-font-size: var(--font-size-1);
   --typography-s-body-xs-line-height: var(--line-height-7);
@@ -141,6 +168,7 @@
   --typography-s-body-xs-letter-spacing: var(--letter-spacing-0);
 
   /* typography scale large screen */
+
   --typography-l-display-md-medium-font-family: var(
     --font-family-euclid-circular-b
   );
@@ -148,6 +176,7 @@
   --typography-l-display-md-medium-line-height: var(--line-height-2);
   --typography-l-display-md-medium-font-weight: var(--font-weight-medium);
   --typography-l-display-md-medium-letter-spacing: var(--letter-spacing-0);
+
   --typography-l-heading-lg-bold-font-family: var(
     --font-family-euclid-circular-b
   );
@@ -155,6 +184,7 @@
   --typography-l-heading-lg-bold-line-height: var(--line-height-4);
   --typography-l-heading-lg-bold-font-weight: var(--font-weight-bold);
   --typography-l-heading-lg-bold-letter-spacing: var(--letter-spacing-0);
+
   --typography-l-heading-md-bold-font-family: var(
     --font-family-euclid-circular-b
   );
@@ -162,21 +192,45 @@
   --typography-l-heading-md-bold-line-height: var(--line-height-5);
   --typography-l-heading-md-bold-font-weight: var(--font-weight-bold);
   --typography-l-heading-md-bold-letter-spacing: var(--letter-spacing-0);
+
+  --typography-l-heading-sm-bold-font-family: var(
+    --font-family-euclid-circular-b
+  );
+  --typography-l-heading-sm-bold-font-size: var(--font-size-5);
+  --typography-l-heading-sm-bold-line-height: var(--line-height-5);
+  --typography-l-heading-sm-bold-font-weight: var(--font-weight-bold);
+  --typography-l-heading-sm-bold-letter-spacing: var(--letter-spacing-0);
+
   --typography-l-heading-sm-font-family: var(--font-family-euclid-circular-b);
   --typography-l-heading-sm-font-size: var(--font-size-5);
   --typography-l-heading-sm-line-height: var(--line-height-5);
-  --typography-l-heading-sm-font-weight: var(--font-weight-bold);
+  --typography-l-heading-sm-font-weight: var(--font-weight-regular);
   --typography-l-heading-sm-letter-spacing: var(--letter-spacing-0);
+
+  --typography-l-body-md-bold-font-family: var(--font-family-euclid-circular-b);
+  --typography-l-body-md-bold-font-size: var(--font-size-4);
+  --typography-l-body-md-bold-line-height: var(--line-height-6);
+  --typography-l-body-md-bold-font-weight: var(--font-weight-bold);
+  --typography-l-body-md-bold-letter-spacing: var(--letter-spacing-0);
+
   --typography-l-body-md-font-family: var(--font-family-euclid-circular-b);
   --typography-l-body-md-font-size: var(--font-size-4);
   --typography-l-body-md-line-height: var(--line-height-6);
   --typography-l-body-md-font-weight: var(--font-weight-regular);
   --typography-l-body-md-letter-spacing: var(--letter-spacing-0);
+
+  --typography-l-body-sm-bold-font-family: var(--font-family-euclid-circular-b);
+  --typography-l-body-sm-bold-font-size: var(--font-size-3);
+  --typography-l-body-sm-bold-line-height: var(--line-height-6);
+  --typography-l-body-sm-bold-font-weight: var(--font-weight-bold);
+  --typography-l-body-sm-bold-letter-spacing: var(--letter-spacing-0);
+
   --typography-l-body-sm-font-family: var(--font-family-euclid-circular-b);
   --typography-l-body-sm-font-size: var(--font-size-3);
   --typography-l-body-sm-line-height: var(--line-height-6);
   --typography-l-body-sm-font-weight: var(--font-weight-regular);
   --typography-l-body-sm-letter-spacing: var(--letter-spacing-0);
+
   --typography-l-body-xs-font-family: var(--font-family-euclid-circular-b);
   --typography-l-body-xs-font-size: var(--font-size-2);
   --typography-l-body-xs-line-height: var(--line-height-7);
