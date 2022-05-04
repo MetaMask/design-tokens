@@ -8,7 +8,7 @@ import { ThemeTypography } from './types';
 
 /* eslint-enable jsdoc/check-property-names, jsdoc/tag-lines */
 export const typography: ThemeTypography = {
-  sDisplayMD: {
+  sDisplayMDMedium: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.bold,
     fontSize: fontSizes.fontSize7,
@@ -57,7 +57,7 @@ export const typography: ThemeTypography = {
     lineHeight: lineHeights.lineHeight1,
     letterSpacing: letterSpacing.letterSpacing1,
   },
-  lDisplayMD: {
+  lDisplayMDMedium: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.medium,
     fontSize: fontSizes.fontSize8,

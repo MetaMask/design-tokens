@@ -4,20 +4,20 @@ import { typography } from './typography';
 const designTokens = require('../../figma/tokens.json');
 
 describe('Typography Small Screen', () => {
-  it('js tokens for sDisplayMD matches figma tokens sDisplayMD', () => {
-    expect(typography.sDisplayMD.fontFamily).toStrictEqual(
+  it('js tokens for sDisplayMDMedium matches figma tokens sDisplayMDMedium', () => {
+    expect(typography.sDisplayMDMedium.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.sDisplayMD.fontWeight).toStrictEqual(700);
-    expect(typography.sDisplayMD.fontSize.toString()).toStrictEqual(
+    expect(typography.sDisplayMDMedium.fontWeight).toStrictEqual(700);
+    expect(typography.sDisplayMDMedium.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[6].value,
     );
 
-    expect(typography.sDisplayMD.lineHeight.toString()).toStrictEqual(
+    expect(typography.sDisplayMDMedium.lineHeight.toString()).toStrictEqual(
       designTokens.global.lineHeights[1].value,
     );
 
-    expect(typography.sDisplayMD.letterSpacing.toString()).toStrictEqual(
+    expect(typography.sDisplayMDMedium.letterSpacing.toString()).toStrictEqual(
       designTokens.global.letterSpacing[0].value,
     );
   });
@@ -132,20 +132,20 @@ describe('Typography Small Screen', () => {
 });
 
 describe('Typography Large Screen', () => {
-  it('js tokens for lDisplayMD matches figma tokens lDisplayMD', () => {
-    expect(typography.lDisplayMD.fontFamily).toStrictEqual(
+  it('js tokens for lDisplayMDMedium matches figma tokens lDisplayMDMedium', () => {
+    expect(typography.lDisplayMDMedium.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.lDisplayMD.fontWeight).toStrictEqual(500);
-    expect(typography.lDisplayMD.fontSize.toString()).toStrictEqual(
+    expect(typography.lDisplayMDMedium.fontWeight).toStrictEqual(500);
+    expect(typography.lDisplayMDMedium.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[7].value,
     );
 
-    expect(typography.lDisplayMD.lineHeight.toString()).toStrictEqual(
+    expect(typography.lDisplayMDMedium.lineHeight.toString()).toStrictEqual(
       designTokens.global.lineHeights[0].value,
     );
 
-    expect(typography.lDisplayMD.letterSpacing.toString()).toStrictEqual(
+    expect(typography.lDisplayMDMedium.letterSpacing.toString()).toStrictEqual(
       designTokens.global.letterSpacing[0].value,
     );
   });

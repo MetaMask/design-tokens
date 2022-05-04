@@ -7,14 +7,14 @@ interface TypeStyle {
 }
 
 export interface ThemeTypography {
-  sDisplayMD: TypeStyle;
+  sDisplayMDMedium: TypeStyle;
   sHeadingLG: TypeStyle;
   sHeadingMD: TypeStyle;
   sHeadingSM: TypeStyle;
   sBodyMD: TypeStyle;
   sBodySM: TypeStyle;
   sBodyXS: TypeStyle;
-  lDisplayMD: TypeStyle;
+  lDisplayMDMedium: TypeStyle;
   lHeadingLG: TypeStyle;
   lHeadingMD: TypeStyle;
   lHeadingSM: TypeStyle;
