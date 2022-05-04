@@ -40,20 +40,20 @@ describe('Typography Small Screen', () => {
     );
   });
 
-  it('js tokens for sHeadingMD matches figma tokens sHeadingMD', () => {
-    expect(typography.sHeadingMD.fontFamily).toStrictEqual(
+  it('js tokens for sHeadingMDBold matches figma tokens sHeadingMDBold', () => {
+    expect(typography.sHeadingMDBold.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.sHeadingMD.fontWeight).toStrictEqual(700);
-    expect(typography.sHeadingMD.fontSize.toString()).toStrictEqual(
+    expect(typography.sHeadingMDBold.fontWeight).toStrictEqual(700);
+    expect(typography.sHeadingMDBold.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[4].value,
     );
 
-    expect(typography.sHeadingMD.lineHeight.toString()).toStrictEqual(
+    expect(typography.sHeadingMDBold.lineHeight.toString()).toStrictEqual(
       designTokens.global.lineHeights[3].value,
     );
 
-    expect(typography.sHeadingMD.letterSpacing.toString()).toStrictEqual(
+    expect(typography.sHeadingMDBold.letterSpacing.toString()).toStrictEqual(
       designTokens.global.letterSpacing[0].value,
     );
   });
@@ -168,20 +168,20 @@ describe('Typography Large Screen', () => {
     );
   });
 
-  it('js tokens for lHeadingMD matches figma tokens lHeadingMD', () => {
-    expect(typography.lHeadingMD.fontFamily).toStrictEqual(
+  it('js tokens for lHeadingMDBold matches figma tokens lHeadingMDBold', () => {
+    expect(typography.lHeadingMDBold.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.lHeadingMD.fontWeight).toStrictEqual(700);
-    expect(typography.lHeadingMD.fontSize.toString()).toStrictEqual(
+    expect(typography.lHeadingMDBold.fontWeight).toStrictEqual(700);
+    expect(typography.lHeadingMDBold.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[5].value,
     );
 
-    expect(typography.lHeadingMD.lineHeight.toString()).toStrictEqual(
+    expect(typography.lHeadingMDBold.lineHeight.toString()).toStrictEqual(
       designTokens.global.lineHeights[2].value,
     );
 
-    expect(typography.lHeadingMD.letterSpacing.toString()).toStrictEqual(
+    expect(typography.lHeadingMDBold.letterSpacing.toString()).toStrictEqual(
       designTokens.global.letterSpacing[0].value,
     );
   });

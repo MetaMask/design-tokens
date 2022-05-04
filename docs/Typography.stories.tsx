@@ -54,11 +54,11 @@ export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
       lineHeight: `${typography.sHeadingLGBold.lineHeight}px`,
       fontWeight: typography.sHeadingLGBold.fontWeight,
     },
-    headingMD: {
-      fontFamily: typography.sHeadingMD.fontFamily,
-      fontSize: typography.sHeadingMD.fontSize,
-      lineHeight: `${typography.sHeadingMD.lineHeight}px`,
-      fontWeight: typography.sHeadingMD.fontWeight,
+    headingMDBold: {
+      fontFamily: typography.sHeadingMDBold.fontFamily,
+      fontSize: typography.sHeadingMDBold.fontSize,
+      lineHeight: `${typography.sHeadingMDBold.lineHeight}px`,
+      fontWeight: typography.sHeadingMDBold.fontWeight,
     },
     headingSM: {
       fontFamily: typography.sHeadingSM.fontFamily,
@@ -98,10 +98,10 @@ export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
           styles.headingLGBold.lineHeight
         } ${styles.headingLGBold.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
-      <Text as="h3" style={styles.headingMD} {...args}>
-        {`S HeadingMD ${styles.headingMD.fontSize}px/${
-          styles.headingMD.lineHeight
-        } ${styles.headingMD.fontSize / smallScreenFontSizeBase}rem`}
+      <Text as="h3" style={styles.headingMDBold} {...args}>
+        {`S HeadingMDBold ${styles.headingMDBold.fontSize}px/${
+          styles.headingMDBold.lineHeight
+        } ${styles.headingMDBold.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
       <Text as="h4" style={styles.headingSM} {...args}>
         {`S HeadingSM ${styles.headingSM.fontSize}px/${
@@ -142,11 +142,11 @@ export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
       lineHeight: `${typography.lHeadingLGBold.lineHeight}px`,
       fontWeight: typography.lHeadingLGBold.fontWeight,
     },
-    headingMD: {
-      fontFamily: typography.lHeadingMD.fontFamily,
-      fontSize: typography.lHeadingMD.fontSize,
-      lineHeight: `${typography.lHeadingMD.lineHeight}px`,
-      fontWeight: typography.lHeadingMD.fontWeight,
+    headingMDBold: {
+      fontFamily: typography.lHeadingMDBold.fontFamily,
+      fontSize: typography.lHeadingMDBold.fontSize,
+      lineHeight: `${typography.lHeadingMDBold.lineHeight}px`,
+      fontWeight: typography.lHeadingMDBold.fontWeight,
     },
     headingSM: {
       fontFamily: typography.lHeadingSM.fontFamily,
@@ -186,10 +186,10 @@ export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
           styles.headingLGBold.lineHeight
         } ${styles.headingLGBold.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
-      <Text as="h3" style={styles.headingMD} {...args}>
-        {`L HeadingMD ${styles.headingMD.fontSize}px/${
-          styles.headingMD.lineHeight
-        } ${styles.headingMD.fontSize / largeScreenFontSizeBase}rem`}
+      <Text as="h3" style={styles.headingMDBold} {...args}>
+        {`L HeadingMDBold ${styles.headingMDBold.fontSize}px/${
+          styles.headingMDBold.lineHeight
+        } ${styles.headingMDBold.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
       <Text as="h4" style={styles.headingSM} {...args}>
         {`L HeadingSM ${styles.headingSM.fontSize}px/${

@@ -112,11 +112,13 @@
   --typography-s-heading-lg-bold-line-height: var(--line-height-5);
   --typography-s-heading-lg-bold-font-weight: var(--font-weight-bold);
   --typography-s-heading-lg-bold-letter-spacing: var(--letter-spacing-0);
-  --typography-s-heading-md-font-family: var(--font-family-euclid-circular-b);
-  --typography-s-heading-md-font-size: var(--font-size-5);
-  --typography-s-heading-md-line-height: var(--line-height-5);
-  --typography-s-heading-md-font-weight: var(--font-weight-bold);
-  --typography-s-heading-md-letter-spacing: var(--letter-spacing-0);
+  --typography-s-heading-md-bold-font-family: var(
+    --font-family-euclid-circular-b
+  );
+  --typography-s-heading-md-bold-font-size: var(--font-size-5);
+  --typography-s-heading-md-bold-line-height: var(--line-height-5);
+  --typography-s-heading-md-bold-font-weight: var(--font-weight-bold);
+  --typography-s-heading-md-bold-letter-spacing: var(--letter-spacing-0);
   --typography-s-heading-sm-font-family: var(--font-family-euclid-circular-b);
   --typography-s-heading-sm-font-size: var(--font-size-4);
   --typography-s-heading-sm-line-height: var(--line-height-6);
@@ -153,11 +155,13 @@
   --typography-l-heading-lg-bold-line-height: var(--line-height-4);
   --typography-l-heading-lg-bold-font-weight: var(--font-weight-bold);
   --typography-l-heading-lg-bold-letter-spacing: var(--letter-spacing-0);
-  --typography-l-heading-md-font-family: var(--font-family-euclid-circular-b);
-  --typography-l-heading-md-font-size: var(--font-size-6);
-  --typography-l-heading-md-line-height: var(--line-height-5);
-  --typography-l-heading-md-font-weight: var(--font-weight-bold);
-  --typography-l-heading-md-letter-spacing: var(--letter-spacing-0);
+  --typography-l-heading-md-bold-font-family: var(
+    --font-family-euclid-circular-b
+  );
+  --typography-l-heading-md-bold-font-size: var(--font-size-6);
+  --typography-l-heading-md-bold-line-height: var(--line-height-5);
+  --typography-l-heading-md-bold-font-weight: var(--font-weight-bold);
+  --typography-l-heading-md-bold-letter-spacing: var(--letter-spacing-0);
   --typography-l-heading-sm-font-family: var(--font-family-euclid-circular-b);
   --typography-l-heading-sm-font-size: var(--font-size-5);
   --typography-l-heading-sm-line-height: var(--line-height-5);
