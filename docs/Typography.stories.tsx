@@ -99,9 +99,9 @@ export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
         } ${styles.headingLG.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
       <Text as="h3" style={styles.headingMD} {...args}>
-        {`S HeadingLG ${styles.headingLG.fontSize}px/${
-          styles.headingLG.lineHeight
-        } ${styles.headingLG.fontSize / smallScreenFontSizeBase}rem`}
+        {`S HeadingMD ${styles.headingMD.fontSize}px/${
+          styles.headingMD.lineHeight
+        } ${styles.headingMD.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
       <Text as="h4" style={styles.headingSM} {...args}>
         {`S HeadingSM ${styles.headingSM.fontSize}px/${
@@ -187,9 +187,9 @@ export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
         } ${styles.headingLG.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
       <Text as="h3" style={styles.headingMD} {...args}>
-        {`L HeadingLG ${styles.headingLG.fontSize}px/${
-          styles.headingLG.lineHeight
-        } ${styles.headingLG.fontSize / largeScreenFontSizeBase}rem`}
+        {`L HeadingMD ${styles.headingMD.fontSize}px/${
+          styles.headingMD.lineHeight
+        } ${styles.headingMD.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
       <Text as="h4" style={styles.headingSM} {...args}>
         {`L HeadingSM ${styles.headingSM.fontSize}px/${
