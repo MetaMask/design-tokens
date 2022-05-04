@@ -40,7 +40,7 @@ export const FontFamily: ComponentStory<typeof Text> = (...args) => {
 };
 
 export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
-  const smallScreenFontSizeBase = 14;
+  const smallScreenFontSizeBase = 16;
   const styles = {
     displayMD: {
       fontFamily: typography.sDisplayMD.fontFamily,
