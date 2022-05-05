@@ -1,16 +1,28 @@
-## Installation
+# MetaMask Design Tokens
 
-# `@metamask/design-tokens`
+## `@metamask/design-tokens`
 
 A collection of design tokens based on MetaMask's design system.
 
-## Table of Contents
+Have a question, suggestion, feedback? Contributors can [create an issue](https://github.com/MetaMask/design-tokens/issues/new/choose) or internal folks can post on the [#metamask-design-system](https://consensys.slack.com/archives/C0354T27M5M) Slack channel. We’re here to help! 💁‍♀️
 
-- [Usage](#usage)
+## Documentation
+
+The primary documentation for MetaMask Design Tokens is [storybook](), which describes the API and gives examples of its usage.
+
+### Table of Contents
+
+- [Installation](#installation)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Usage
+## Installation
+
+Currently the metamask design tokens repo supports 2 formats based on its primary consumers [metamask-extension](https://github.com/MetaMask/metamask-extension) and [metamask-mobile](https://github.com/MetaMask/metamask-mobile).
+
+### CSS Variables
+
+### CSS in JS (React Native)
 
 First, install the package.
 
