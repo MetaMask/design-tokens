@@ -22,7 +22,7 @@ export default {
 
 export const FontFamily: ComponentStory<typeof Text> = (...args) => {
   const styles = {
-    DisplayMD: {
+    displayMD: {
       fontFamily: fontFamilies.euclidCircularB,
       fontSize: fontSizes.fontSize7,
       lineHeight: `${lineHeights.lineHeight6}px`,
@@ -32,7 +32,7 @@ export const FontFamily: ComponentStory<typeof Text> = (...args) => {
   };
   return (
     <>
-      <Text as="h1" style={styles.DisplayMD} {...args}>
+      <Text as="h1" style={styles.displayMD} {...args}>
         Euclid Circular B
       </Text>
     </>
@@ -42,19 +42,19 @@ export const FontFamily: ComponentStory<typeof Text> = (...args) => {
 export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
   const smallScreenFontSizeBase = 16;
   const styles = {
-    DisplayMD: {
+    displayMD: {
       fontFamily: typography.sDisplayMD.fontFamily,
       fontSize: typography.sDisplayMD.fontSize,
       lineHeight: `${typography.sDisplayMD.lineHeight}px`,
       fontWeight: typography.sDisplayMD.fontWeight,
     },
-    HeadingLG: {
+    headingLG: {
       fontFamily: typography.sHeadingLG.fontFamily,
       fontSize: typography.sHeadingLG.fontSize,
       lineHeight: `${typography.sHeadingLG.lineHeight}px`,
       fontWeight: typography.sHeadingLG.fontWeight,
     },
-    HeadingMD: {
+    headingMD: {
       fontFamily: typography.sHeadingMD.fontFamily,
       fontSize: typography.sHeadingMD.fontSize,
       lineHeight: `${typography.sHeadingMD.lineHeight}px`,
@@ -106,20 +106,20 @@ export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
   };
   return (
     <>
-      <Text as="h1" style={styles.DisplayMD} {...args}>
-        {`S DisplayMD ${styles.DisplayMD.fontSize}px/${
-          styles.DisplayMD.lineHeight
-        } ${styles.DisplayMD.fontSize / smallScreenFontSizeBase}rem`}
+      <Text as="h1" style={styles.displayMD} {...args}>
+        {`S DisplayMD ${styles.displayMD.fontSize}px/${
+          styles.displayMD.lineHeight
+        } ${styles.displayMD.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
-      <Text as="h2" style={styles.HeadingLG} {...args}>
-        {`S HeadingLG ${styles.HeadingLG.fontSize}px/${
-          styles.HeadingLG.lineHeight
-        } ${styles.HeadingLG.fontSize / smallScreenFontSizeBase}rem`}
+      <Text as="h2" style={styles.headingLG} {...args}>
+        {`S HeadingLG ${styles.headingLG.fontSize}px/${
+          styles.headingLG.lineHeight
+        } ${styles.headingLG.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
-      <Text as="h3" style={styles.HeadingMD} {...args}>
-        {`S HeadingMD ${styles.HeadingMD.fontSize}px/${
-          styles.HeadingMD.lineHeight
-        } ${styles.HeadingMD.fontSize / smallScreenFontSizeBase}rem`}
+      <Text as="h3" style={styles.headingMD} {...args}>
+        {`S HeadingMD ${styles.headingMD.fontSize}px/${
+          styles.headingMD.lineHeight
+        } ${styles.headingMD.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
       <Text as="h4" style={styles.headingSM} {...args}>
         {`S HeadingSM ${styles.headingSM.fontSize}px/${
@@ -163,19 +163,19 @@ export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
 export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
   const largeScreenFontSizeBase = 16;
   const styles = {
-    DisplayMD: {
+    displayMD: {
       fontFamily: typography.lDisplayMD.fontFamily,
       fontSize: typography.lDisplayMD.fontSize,
       lineHeight: `${typography.lDisplayMD.lineHeight}px`,
       fontWeight: typography.lDisplayMD.fontWeight,
     },
-    HeadingLG: {
+    headingLG: {
       fontFamily: typography.lHeadingLG.fontFamily,
       fontSize: typography.lHeadingLG.fontSize,
       lineHeight: `${typography.lHeadingLG.lineHeight}px`,
       fontWeight: typography.lHeadingLG.fontWeight,
     },
-    HeadingMD: {
+    headingMD: {
       fontFamily: typography.lHeadingMD.fontFamily,
       fontSize: typography.lHeadingMD.fontSize,
       lineHeight: `${typography.lHeadingMD.lineHeight}px`,
@@ -227,20 +227,20 @@ export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
   };
   return (
     <>
-      <Text as="h1" style={styles.DisplayMD} {...args}>
-        {`L DisplayMD ${styles.DisplayMD.fontSize}px/${
-          styles.DisplayMD.lineHeight
-        } ${styles.DisplayMD.fontSize / largeScreenFontSizeBase}rem`}
+      <Text as="h1" style={styles.displayMD} {...args}>
+        {`L DisplayMD ${styles.displayMD.fontSize}px/${
+          styles.displayMD.lineHeight
+        } ${styles.displayMD.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
-      <Text as="h2" style={styles.HeadingLG} {...args}>
-        {`L HeadingLG ${styles.HeadingLG.fontSize}px/${
-          styles.HeadingLG.lineHeight
-        } ${styles.HeadingLG.fontSize / largeScreenFontSizeBase}rem`}
+      <Text as="h2" style={styles.headingLG} {...args}>
+        {`L HeadingLG ${styles.headingLG.fontSize}px/${
+          styles.headingLG.lineHeight
+        } ${styles.headingLG.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
-      <Text as="h3" style={styles.HeadingMD} {...args}>
-        {`L HeadingMD ${styles.HeadingMD.fontSize}px/${
-          styles.HeadingMD.lineHeight
-        } ${styles.HeadingMD.fontSize / largeScreenFontSizeBase}rem`}
+      <Text as="h3" style={styles.headingMD} {...args}>
+        {`L HeadingMD ${styles.headingMD.fontSize}px/${
+          styles.headingMD.lineHeight
+        } ${styles.headingMD.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
       <Text as="h4" style={styles.headingSM} {...args}>
         {`L HeadingSM ${styles.headingSM.fontSize}px/${
