@@ -8,35 +8,35 @@ import { ThemeTypography } from './types';
 
 /* eslint-enable jsdoc/check-property-names, jsdoc/tag-lines */
 export const typography: ThemeTypography = {
-  sDisplayMDBold: {
+  sDisplayMD: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.bold,
     fontSize: fontSizes.fontSize7,
     lineHeight: lineHeights.lineHeight6,
     letterSpacing: letterSpacing.letterSpacing0,
   },
-  sHeadingLGBold: {
+  sHeadingLG: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.bold,
     fontSize: fontSizes.fontSize6,
     lineHeight: lineHeights.lineHeight5,
     letterSpacing: letterSpacing.letterSpacing0,
   },
-  sHeadingMDBold: {
+  sHeadingMD: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.bold,
     fontSize: fontSizes.fontSize5,
     lineHeight: lineHeights.lineHeight4,
     letterSpacing: letterSpacing.letterSpacing0,
   },
-  sHeadingSMBold: {
+  sHeadingSM: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.bold,
     fontSize: fontSizes.fontSize4,
     lineHeight: lineHeights.lineHeight4,
     letterSpacing: letterSpacing.letterSpacing0,
   },
-  sHeadingSM: {
+  sHeadingSMRegular: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.regular,
     fontSize: fontSizes.fontSize4,
@@ -78,35 +78,35 @@ export const typography: ThemeTypography = {
     lineHeight: lineHeights.lineHeight1,
     letterSpacing: letterSpacing.letterSpacing1,
   },
-  lDisplayMDMedium: {
+  lDisplayMD: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.medium,
     fontSize: fontSizes.fontSize8,
     lineHeight: lineHeights.lineHeight7,
     letterSpacing: letterSpacing.letterSpacing0,
   },
-  lHeadingLGBold: {
+  lHeadingLG: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.bold,
     fontSize: fontSizes.fontSize7,
     lineHeight: lineHeights.lineHeight6,
     letterSpacing: letterSpacing.letterSpacing0,
   },
-  lHeadingMDBold: {
+  lHeadingMD: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.bold,
     fontSize: fontSizes.fontSize6,
     lineHeight: lineHeights.lineHeight5,
     letterSpacing: letterSpacing.letterSpacing0,
   },
-  lHeadingSMBold: {
+  lHeadingSM: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.bold,
     fontSize: fontSizes.fontSize5,
     lineHeight: lineHeights.lineHeight4,
     letterSpacing: letterSpacing.letterSpacing0,
   },
-  lHeadingSM: {
+  lHeadingSMRegular: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.regular,
     fontSize: fontSizes.fontSize5,

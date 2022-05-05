@@ -4,74 +4,74 @@ import { typography } from './typography';
 const designTokens = require('../../figma/tokens.json');
 
 describe('Typography Small Screen', () => {
-  it('js tokens for sDisplayMDBold matches figma tokens sDisplayMDBold', () => {
-    expect(typography.sDisplayMDBold.fontFamily).toStrictEqual(
+  it('js tokens for sDisplayMD matches figma tokens sDisplayMD', () => {
+    expect(typography.sDisplayMD.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.sDisplayMDBold.fontWeight).toStrictEqual(700);
-    expect(typography.sDisplayMDBold.fontSize.toString()).toStrictEqual(
+    expect(typography.sDisplayMD.fontWeight).toStrictEqual(700);
+    expect(typography.sDisplayMD.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[6].value,
     );
 
-    expect(typography.sDisplayMDBold.lineHeight.toString()).toStrictEqual(
+    expect(typography.sDisplayMD.lineHeight.toString()).toStrictEqual(
       designTokens.global.lineHeights[1].value,
     );
 
-    expect(typography.sDisplayMDBold.letterSpacing.toString()).toStrictEqual(
+    expect(typography.sDisplayMD.letterSpacing.toString()).toStrictEqual(
       designTokens.global.letterSpacing[0].value,
     );
   });
 
-  it('js tokens for sHeadingLGBold matches figma tokens sHeadingLGBold', () => {
-    expect(typography.sHeadingLGBold.fontFamily).toStrictEqual(
+  it('js tokens for sHeadingLG matches figma tokens sHeadingLG', () => {
+    expect(typography.sHeadingLG.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.sHeadingLGBold.fontWeight).toStrictEqual(700);
-    expect(typography.sHeadingLGBold.fontSize.toString()).toStrictEqual(
+    expect(typography.sHeadingLG.fontWeight).toStrictEqual(700);
+    expect(typography.sHeadingLG.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[5].value,
     );
 
-    expect(typography.sHeadingLGBold.lineHeight.toString()).toStrictEqual(
+    expect(typography.sHeadingLG.lineHeight.toString()).toStrictEqual(
       designTokens.global.lineHeights[2].value,
     );
 
-    expect(typography.sHeadingLGBold.letterSpacing.toString()).toStrictEqual(
+    expect(typography.sHeadingLG.letterSpacing.toString()).toStrictEqual(
       designTokens.global.letterSpacing[0].value,
     );
   });
 
-  it('js tokens for sHeadingMDBold matches figma tokens sHeadingMDBold', () => {
-    expect(typography.sHeadingMDBold.fontFamily).toStrictEqual(
+  it('js tokens for sHeadingMD matches figma tokens sHeadingMD', () => {
+    expect(typography.sHeadingMD.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.sHeadingMDBold.fontWeight).toStrictEqual(700);
-    expect(typography.sHeadingMDBold.fontSize.toString()).toStrictEqual(
+    expect(typography.sHeadingMD.fontWeight).toStrictEqual(700);
+    expect(typography.sHeadingMD.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[4].value,
     );
 
-    expect(typography.sHeadingMDBold.lineHeight.toString()).toStrictEqual(
+    expect(typography.sHeadingMD.lineHeight.toString()).toStrictEqual(
       designTokens.global.lineHeights[3].value,
     );
 
-    expect(typography.sHeadingMDBold.letterSpacing.toString()).toStrictEqual(
+    expect(typography.sHeadingMD.letterSpacing.toString()).toStrictEqual(
       designTokens.global.letterSpacing[0].value,
     );
   });
 
-  it('js tokens for sHeadingSMBold matches figma tokens sHeadingSMBold', () => {
-    expect(typography.sHeadingSMBold.fontFamily).toStrictEqual(
+  it('js tokens for sHeadingSMRegular matches figma tokens sHeadingSMRegular', () => {
+    expect(typography.sHeadingSMRegular.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.sHeadingSMBold.fontWeight).toStrictEqual(700);
-    expect(typography.sHeadingSMBold.fontSize.toString()).toStrictEqual(
+    expect(typography.sHeadingSMRegular.fontWeight).toStrictEqual(700);
+    expect(typography.sHeadingSMRegular.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[3].value,
     );
 
-    expect(typography.sHeadingSMBold.lineHeight.toString()).toStrictEqual(
+    expect(typography.sHeadingSMRegular.lineHeight.toString()).toStrictEqual(
       designTokens.global.lineHeights[3].value,
     );
 
-    expect(typography.sHeadingSMBold.letterSpacing.toString()).toStrictEqual(
+    expect(typography.sHeadingSMRegular.letterSpacing.toString()).toStrictEqual(
       designTokens.global.letterSpacing[0].value,
     );
   });
@@ -186,74 +186,74 @@ describe('Typography Small Screen', () => {
 });
 
 describe('Typography Large Screen', () => {
-  it('js tokens for lDisplayMDMedium matches figma tokens lDisplayMDMedium', () => {
-    expect(typography.lDisplayMDMedium.fontFamily).toStrictEqual(
+  it('js tokens for lDisplayMD matches figma tokens lDisplayMD', () => {
+    expect(typography.lDisplayMD.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.lDisplayMDMedium.fontWeight).toStrictEqual(500);
-    expect(typography.lDisplayMDMedium.fontSize.toString()).toStrictEqual(
+    expect(typography.lDisplayMD.fontWeight).toStrictEqual(500);
+    expect(typography.lDisplayMD.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[7].value,
     );
 
-    expect(typography.lDisplayMDMedium.lineHeight.toString()).toStrictEqual(
+    expect(typography.lDisplayMD.lineHeight.toString()).toStrictEqual(
       designTokens.global.lineHeights[0].value,
     );
 
-    expect(typography.lDisplayMDMedium.letterSpacing.toString()).toStrictEqual(
+    expect(typography.lDisplayMD.letterSpacing.toString()).toStrictEqual(
       designTokens.global.letterSpacing[0].value,
     );
   });
 
-  it('js tokens for lHeadingLGBold matches figma tokens lHeadingLGBold', () => {
-    expect(typography.lHeadingLGBold.fontFamily).toStrictEqual(
+  it('js tokens for lHeadingLG matches figma tokens lHeadingLG', () => {
+    expect(typography.lHeadingLG.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.lHeadingLGBold.fontWeight).toStrictEqual(700);
-    expect(typography.lHeadingLGBold.fontSize.toString()).toStrictEqual(
+    expect(typography.lHeadingLG.fontWeight).toStrictEqual(700);
+    expect(typography.lHeadingLG.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[6].value,
     );
 
-    expect(typography.lHeadingLGBold.lineHeight.toString()).toStrictEqual(
+    expect(typography.lHeadingLG.lineHeight.toString()).toStrictEqual(
       designTokens.global.lineHeights[1].value,
     );
 
-    expect(typography.lHeadingLGBold.letterSpacing.toString()).toStrictEqual(
+    expect(typography.lHeadingLG.letterSpacing.toString()).toStrictEqual(
       designTokens.global.letterSpacing[0].value,
     );
   });
 
-  it('js tokens for lHeadingMDBold matches figma tokens lHeadingMDBold', () => {
-    expect(typography.lHeadingMDBold.fontFamily).toStrictEqual(
+  it('js tokens for lHeadingMD matches figma tokens lHeadingMD', () => {
+    expect(typography.lHeadingMD.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.lHeadingMDBold.fontWeight).toStrictEqual(700);
-    expect(typography.lHeadingMDBold.fontSize.toString()).toStrictEqual(
+    expect(typography.lHeadingMD.fontWeight).toStrictEqual(700);
+    expect(typography.lHeadingMD.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[5].value,
     );
 
-    expect(typography.lHeadingMDBold.lineHeight.toString()).toStrictEqual(
+    expect(typography.lHeadingMD.lineHeight.toString()).toStrictEqual(
       designTokens.global.lineHeights[2].value,
     );
 
-    expect(typography.lHeadingMDBold.letterSpacing.toString()).toStrictEqual(
+    expect(typography.lHeadingMD.letterSpacing.toString()).toStrictEqual(
       designTokens.global.letterSpacing[0].value,
     );
   });
 
-  it('js tokens for lHeadingSMBold matches figma tokens lHeadingSMBold', () => {
-    expect(typography.lHeadingSMBold.fontFamily).toStrictEqual(
+  it('js tokens for lHeadingSMRegular matches figma tokens lHeadingSMRegular', () => {
+    expect(typography.lHeadingSMRegular.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.lHeadingSMBold.fontWeight).toStrictEqual(700);
-    expect(typography.lHeadingSMBold.fontSize.toString()).toStrictEqual(
+    expect(typography.lHeadingSMRegular.fontWeight).toStrictEqual(700);
+    expect(typography.lHeadingSMRegular.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[4].value,
     );
 
-    expect(typography.lHeadingSMBold.lineHeight.toString()).toStrictEqual(
+    expect(typography.lHeadingSMRegular.lineHeight.toString()).toStrictEqual(
       designTokens.global.lineHeights[3].value,
     );
 
-    expect(typography.lHeadingSMBold.letterSpacing.toString()).toStrictEqual(
+    expect(typography.lHeadingSMRegular.letterSpacing.toString()).toStrictEqual(
       designTokens.global.letterSpacing[0].value,
     );
   });

@@ -22,7 +22,7 @@ export default {
 
 export const FontFamily: ComponentStory<typeof Text> = (...args) => {
   const styles = {
-    displayMDMedium: {
+    DisplayMD: {
       fontFamily: fontFamilies.euclidCircularB,
       fontSize: fontSizes.fontSize7,
       lineHeight: `${lineHeights.lineHeight6}px`,
@@ -32,7 +32,7 @@ export const FontFamily: ComponentStory<typeof Text> = (...args) => {
   };
   return (
     <>
-      <Text as="h1" style={styles.displayMDMedium} {...args}>
+      <Text as="h1" style={styles.DisplayMD} {...args}>
         Euclid Circular B
       </Text>
     </>
@@ -42,35 +42,35 @@ export const FontFamily: ComponentStory<typeof Text> = (...args) => {
 export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
   const smallScreenFontSizeBase = 16;
   const styles = {
-    displayMDMedium: {
-      fontFamily: typography.sDisplayMDBold.fontFamily,
-      fontSize: typography.sDisplayMDBold.fontSize,
-      lineHeight: `${typography.sDisplayMDBold.lineHeight}px`,
-      fontWeight: typography.sDisplayMDBold.fontWeight,
+    DisplayMD: {
+      fontFamily: typography.sDisplayMD.fontFamily,
+      fontSize: typography.sDisplayMD.fontSize,
+      lineHeight: `${typography.sDisplayMD.lineHeight}px`,
+      fontWeight: typography.sDisplayMD.fontWeight,
     },
-    headingLGBold: {
-      fontFamily: typography.sHeadingLGBold.fontFamily,
-      fontSize: typography.sHeadingLGBold.fontSize,
-      lineHeight: `${typography.sHeadingLGBold.lineHeight}px`,
-      fontWeight: typography.sHeadingLGBold.fontWeight,
+    HeadingLG: {
+      fontFamily: typography.sHeadingLG.fontFamily,
+      fontSize: typography.sHeadingLG.fontSize,
+      lineHeight: `${typography.sHeadingLG.lineHeight}px`,
+      fontWeight: typography.sHeadingLG.fontWeight,
     },
-    headingMDBold: {
-      fontFamily: typography.sHeadingMDBold.fontFamily,
-      fontSize: typography.sHeadingMDBold.fontSize,
-      lineHeight: `${typography.sHeadingMDBold.lineHeight}px`,
-      fontWeight: typography.sHeadingMDBold.fontWeight,
-    },
-    headingSMBold: {
-      fontFamily: typography.sHeadingSMBold.fontFamily,
-      fontSize: typography.sHeadingSMBold.fontSize,
-      lineHeight: `${typography.sHeadingSMBold.lineHeight}px`,
-      fontWeight: typography.sHeadingSMBold.fontWeight,
+    HeadingMD: {
+      fontFamily: typography.sHeadingMD.fontFamily,
+      fontSize: typography.sHeadingMD.fontSize,
+      lineHeight: `${typography.sHeadingMD.lineHeight}px`,
+      fontWeight: typography.sHeadingMD.fontWeight,
     },
     headingSM: {
       fontFamily: typography.sHeadingSM.fontFamily,
       fontSize: typography.sHeadingSM.fontSize,
       lineHeight: `${typography.sHeadingSM.lineHeight}px`,
       fontWeight: typography.sHeadingSM.fontWeight,
+    },
+    headingSMRegular: {
+      fontFamily: typography.sHeadingSMRegular.fontFamily,
+      fontSize: typography.sHeadingSMRegular.fontSize,
+      lineHeight: `${typography.sHeadingSMRegular.lineHeight}px`,
+      fontWeight: typography.sHeadingSMRegular.fontWeight,
     },
     bodyMD: {
       fontFamily: typography.sBodyMD.fontFamily,
@@ -106,30 +106,30 @@ export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
   };
   return (
     <>
-      <Text as="h1" style={styles.displayMDMedium} {...args}>
-        {`S DisplayMD Bold ${styles.displayMDMedium.fontSize}px/${
-          styles.displayMDMedium.lineHeight
-        } ${styles.displayMDMedium.fontSize / smallScreenFontSizeBase}rem`}
+      <Text as="h1" style={styles.DisplayMD} {...args}>
+        {`S DisplayMD ${styles.DisplayMD.fontSize}px/${
+          styles.DisplayMD.lineHeight
+        } ${styles.DisplayMD.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
-      <Text as="h2" style={styles.headingLGBold} {...args}>
-        {`S HeadingLG Bold ${styles.headingLGBold.fontSize}px/${
-          styles.headingLGBold.lineHeight
-        } ${styles.headingLGBold.fontSize / smallScreenFontSizeBase}rem`}
+      <Text as="h2" style={styles.HeadingLG} {...args}>
+        {`S HeadingLG ${styles.HeadingLG.fontSize}px/${
+          styles.HeadingLG.lineHeight
+        } ${styles.HeadingLG.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
-      <Text as="h3" style={styles.headingMDBold} {...args}>
-        {`S HeadingMD Bold ${styles.headingMDBold.fontSize}px/${
-          styles.headingMDBold.lineHeight
-        } ${styles.headingMDBold.fontSize / smallScreenFontSizeBase}rem`}
-      </Text>
-      <Text as="h4" style={styles.headingSMBold} {...args}>
-        {`S HeadingSM Bold ${styles.headingSMBold.fontSize}px/${
-          styles.headingSMBold.lineHeight
-        } ${styles.headingSMBold.fontSize / smallScreenFontSizeBase}rem`}
+      <Text as="h3" style={styles.HeadingMD} {...args}>
+        {`S HeadingMD ${styles.HeadingMD.fontSize}px/${
+          styles.HeadingMD.lineHeight
+        } ${styles.HeadingMD.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
       <Text as="h4" style={styles.headingSM} {...args}>
         {`S HeadingSM ${styles.headingSM.fontSize}px/${
           styles.headingSM.lineHeight
         } ${styles.headingSM.fontSize / smallScreenFontSizeBase}rem`}
+      </Text>
+      <Text as="h4" style={styles.headingSMRegular} {...args}>
+        {`S HeadingSM Regular ${styles.headingSMRegular.fontSize}px/${
+          styles.headingSMRegular.lineHeight
+        } ${styles.headingSMRegular.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
       <Text as="p" style={styles.bodyMDBold} {...args}>
         {`S BodyMD Bold ${styles.bodyMDBold.fontSize}px/${
@@ -163,35 +163,35 @@ export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
 export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
   const largeScreenFontSizeBase = 16;
   const styles = {
-    displayMDMedium: {
-      fontFamily: typography.lDisplayMDMedium.fontFamily,
-      fontSize: typography.lDisplayMDMedium.fontSize,
-      lineHeight: `${typography.lDisplayMDMedium.lineHeight}px`,
-      fontWeight: typography.lDisplayMDMedium.fontWeight,
+    DisplayMD: {
+      fontFamily: typography.lDisplayMD.fontFamily,
+      fontSize: typography.lDisplayMD.fontSize,
+      lineHeight: `${typography.lDisplayMD.lineHeight}px`,
+      fontWeight: typography.lDisplayMD.fontWeight,
     },
-    headingLGBold: {
-      fontFamily: typography.lHeadingLGBold.fontFamily,
-      fontSize: typography.lHeadingLGBold.fontSize,
-      lineHeight: `${typography.lHeadingLGBold.lineHeight}px`,
-      fontWeight: typography.lHeadingLGBold.fontWeight,
+    HeadingLG: {
+      fontFamily: typography.lHeadingLG.fontFamily,
+      fontSize: typography.lHeadingLG.fontSize,
+      lineHeight: `${typography.lHeadingLG.lineHeight}px`,
+      fontWeight: typography.lHeadingLG.fontWeight,
     },
-    headingMDBold: {
-      fontFamily: typography.lHeadingMDBold.fontFamily,
-      fontSize: typography.lHeadingMDBold.fontSize,
-      lineHeight: `${typography.lHeadingMDBold.lineHeight}px`,
-      fontWeight: typography.lHeadingMDBold.fontWeight,
-    },
-    headingSMBold: {
-      fontFamily: typography.lHeadingSMBold.fontFamily,
-      fontSize: typography.lHeadingSMBold.fontSize,
-      lineHeight: `${typography.lHeadingSMBold.lineHeight}px`,
-      fontWeight: typography.lHeadingSMBold.fontWeight,
+    HeadingMD: {
+      fontFamily: typography.lHeadingMD.fontFamily,
+      fontSize: typography.lHeadingMD.fontSize,
+      lineHeight: `${typography.lHeadingMD.lineHeight}px`,
+      fontWeight: typography.lHeadingMD.fontWeight,
     },
     headingSM: {
       fontFamily: typography.lHeadingSM.fontFamily,
       fontSize: typography.lHeadingSM.fontSize,
       lineHeight: `${typography.lHeadingSM.lineHeight}px`,
       fontWeight: typography.lHeadingSM.fontWeight,
+    },
+    headingSMRegular: {
+      fontFamily: typography.lHeadingSMRegular.fontFamily,
+      fontSize: typography.lHeadingSMRegular.fontSize,
+      lineHeight: `${typography.lHeadingSMRegular.lineHeight}px`,
+      fontWeight: typography.lHeadingSMRegular.fontWeight,
     },
     bodyMDBold: {
       fontFamily: typography.lBodyMDBold.fontFamily,
@@ -227,30 +227,30 @@ export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
   };
   return (
     <>
-      <Text as="h1" style={styles.displayMDMedium} {...args}>
-        {`L DisplayMD Medium ${styles.displayMDMedium.fontSize}px/${
-          styles.displayMDMedium.lineHeight
-        } ${styles.displayMDMedium.fontSize / largeScreenFontSizeBase}rem`}
+      <Text as="h1" style={styles.DisplayMD} {...args}>
+        {`L DisplayMD ${styles.DisplayMD.fontSize}px/${
+          styles.DisplayMD.lineHeight
+        } ${styles.DisplayMD.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
-      <Text as="h2" style={styles.headingLGBold} {...args}>
-        {`L HeadingLG Bold ${styles.headingLGBold.fontSize}px/${
-          styles.headingLGBold.lineHeight
-        } ${styles.headingLGBold.fontSize / largeScreenFontSizeBase}rem`}
+      <Text as="h2" style={styles.HeadingLG} {...args}>
+        {`L HeadingLG ${styles.HeadingLG.fontSize}px/${
+          styles.HeadingLG.lineHeight
+        } ${styles.HeadingLG.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
-      <Text as="h3" style={styles.headingMDBold} {...args}>
-        {`L HeadingMD Bold ${styles.headingMDBold.fontSize}px/${
-          styles.headingMDBold.lineHeight
-        } ${styles.headingMDBold.fontSize / largeScreenFontSizeBase}rem`}
-      </Text>
-      <Text as="h4" style={styles.headingSMBold} {...args}>
-        {`L HeadingSM Bold ${styles.headingSMBold.fontSize}px/${
-          styles.headingSMBold.lineHeight
-        } ${styles.headingSMBold.fontSize / largeScreenFontSizeBase}rem`}
+      <Text as="h3" style={styles.HeadingMD} {...args}>
+        {`L HeadingMD ${styles.HeadingMD.fontSize}px/${
+          styles.HeadingMD.lineHeight
+        } ${styles.HeadingMD.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
       <Text as="h4" style={styles.headingSM} {...args}>
         {`L HeadingSM ${styles.headingSM.fontSize}px/${
           styles.headingSM.lineHeight
         } ${styles.headingSM.fontSize / largeScreenFontSizeBase}rem`}
+      </Text>
+      <Text as="h4" style={styles.headingSMRegular} {...args}>
+        {`L HeadingSM Regular ${styles.headingSMRegular.fontSize}px/${
+          styles.headingSMRegular.lineHeight
+        } ${styles.headingSMRegular.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
       <Text as="p" style={styles.bodyMDBold} {...args}>
         {`L BodyMD Bold ${styles.bodyMDBold.fontSize}px/${
