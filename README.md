@@ -4,7 +4,7 @@
 
 A collection of design tokens based on MetaMask's design system.
 
-Have a question, suggestion, feedback? Contributors can [create an issue](https://github.com/MetaMask/design-tokens/issues/new/choose) or internal folks can post on the [#metamask-design-system](https://consensys.slack.com/archives/C0354T27M5M) Slack channel. We’re here to help! 💁‍♀️
+Have a question, suggestion, feedback? Contributors can [create an issue](https://github.com/MetaMask/design-tokens/issues/new/choose) or internal folks can post on the [#metamask-design-system](https://consensys.slack.com/archives/C0354T27M5M) Slack channel. 💁
 
 ## Documentation
 
@@ -13,6 +13,8 @@ The primary documentation for MetaMask Design Tokens is [storybook](), which des
 ### Table of Contents
 
 - [Installation](#installation)
+  - [CSS Variables](#css-variables)
+  - [CSS in JS (React Native)](#css-in-js-react-native)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -22,9 +24,7 @@ Currently the metamask design tokens repo supports 2 formats based on its primar
 
 ### CSS Variables
 
-### CSS in JS (React Native)
-
-First, install the package.
+1. Install the package.
 
 ```sh
 yarn add @metamask/design-tokens
@@ -32,19 +32,27 @@ yarn add @metamask/design-tokens
 
 Then, utilize design tokens in code:
 
+### CSS in JS (React Native)
+
+1. Install the package.
+
+```sh
+yarn add @metamask/design-tokens
+```
+
+2. Then, utilize design tokens in code:
+
 ```js
 import { colors } from '@metamask/design-tokens';
 ```
 
-### Functional Components
+### Usage
 
-WIP
-
-### Class Components
-
-WIP
+For a detailed list of design tokens visit the MetaMask design token [storybook]()
 
 ## Contributing
+
+Follow these steps to below to get the library up and running locally.
 
 ### Setup
 
@@ -53,6 +61,14 @@ WIP
 - Install [Yarn v1](https://yarnpkg.com/en/docs/install)
 - Run `yarn setup` to install dependencies and run any requried post-install scripts
   - **Warning:** Do not use the `yarn` / `yarn install` command directly. Use `yarn setup` instead. The normal install command will skip required post-install scripts, leaving your development environment in an invalid state.
+
+### Documentation
+
+We use storybook for documentation. To get storybook up and running use:
+
+```
+yarn storybook
+```
 
 ### Testing and Linting
 
@@ -97,11 +113,3 @@ The project follows the same release process as the other libraries in the MetaM
    - Be very careful to use a clean local environment to publish the release, and follow exactly the same steps used during CI.
    - Use `npm publish --dry-run` to examine the release contents to ensure the correct files are included. Compare to previous releases if necessary (e.g. using `https://unpkg.com/browse/[package name]@[package version]/`).
    - Once you are confident the release contents are correct, publish the release using `npm publish`.
-
-### Documentation
-
-We use storybook for documentation. To get storybook up and running use:
-
-```
-yarn storybook
-```
