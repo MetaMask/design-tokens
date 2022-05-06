@@ -1,14 +1,14 @@
-# MetaMask Design Tokens
+# MetaMask Design Tokens 🪙
 
 ## `@metamask/design-tokens`
 
 A collection of design tokens based on MetaMask's design system.
 
-Have a question, suggestion, feedback? Contributors can [create an issue](https://github.com/MetaMask/design-tokens/issues/new/choose) or internal folks can post on the [#metamask-design-system](https://consensys.slack.com/archives/C0354T27M5M) Slack channel. 💁
+Have a question, suggestion, feedback? Contributors can [create an issue](https://github.com/MetaMask/design-tokens/issues/new/choose) or internal folks can post on the [#metamask-design-system](https://consensys.slack.com/archives/C0354T27M5M) Slack channel. We're here to help! 💁
 
 ## Documentation
 
-The primary documentation for MetaMask Design Tokens is [storybook](), which describes the API and gives examples of its usage.
+The primary documentation for MetaMask Design Tokens is [storybook](), which describes the different token formats and gives examples of their usage.
 
 ### Table of Contents
 
@@ -16,11 +16,16 @@ The primary documentation for MetaMask Design Tokens is [storybook](), which des
   - [CSS Variables](#css-variables)
   - [CSS in JS (React Native)](#css-in-js-react-native)
 - [Contributing](#contributing)
-- [License](#license)
+  - [Setup](#setup)
+  - [Documentation](#documentation)
+  - [Figma Tokens](#figma-tokens)
+  - [Testing and Linting](#testing-and-linting)
+  - [Release & Publishing](#release-publishing)
+- [License](#license) TBC
 
 ## Installation
 
-Currently the metamask design tokens repo supports 2 formats based on its primary consumers [metamask-extension](https://github.com/MetaMask/metamask-extension) and [metamask-mobile](https://github.com/MetaMask/metamask-mobile).
+Currently the metamask design tokens repo supports 2 formats. CSS in JS for React Native applications and CSS variables for web applications. These formats are based on its primary consumers [metamask-extension](https://github.com/MetaMask/metamask-extension) and [metamask-mobile](https://github.com/MetaMask/metamask-mobile).
 
 ### CSS Variables
 
@@ -30,7 +35,11 @@ Currently the metamask design tokens repo supports 2 formats based on its primar
 yarn add @metamask/design-tokens
 ```
 
-Then, utilize design tokens in code:
+Import the design tokens stylesheet into your css or scss. Please not the file path will depend on where in your project you are importing it from.
+
+```css
+@import '../../node_modules/@metamask/design-tokens/src/css/design-tokens';
+```
 
 ### CSS in JS (React Native)
 
@@ -40,7 +49,7 @@ Then, utilize design tokens in code:
 yarn add @metamask/design-tokens
 ```
 
-2. Then, utilize design tokens in code:
+2. Use design tokens in code by importing from library:
 
 ```js
 import { colors } from '@metamask/design-tokens';
@@ -69,6 +78,10 @@ We use storybook for documentation. To get storybook up and running use:
 ```
 yarn storybook
 ```
+
+### Figma Tokens
+
+The primary data for the generation of tokens is based on the json generated from a figma plugin called [Figma Tokens](https://github.com/six7/figma-tokens). This keeps our code in sync with our figma libraries. Currently the token formats are manually generated we are hoping to automate this process in future.
 
 ### Testing and Linting
 
