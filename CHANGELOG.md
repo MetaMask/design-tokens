@@ -7,8 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.6.0]
-### Uncategorized
-- Adding inital typography tokens ([#94](https://github.com/MetaMask/design-tokens/pull/94))
+### Changed
+- Adding initial typography tokens ([#94](https://github.com/MetaMask/design-tokens/pull/94))
 - Adding Circle CI and storybook builds for PRs ([#105](https://github.com/MetaMask/design-tokens/pull/105))
 - CSS in JS description update ([#104](https://github.com/MetaMask/design-tokens/pull/104))
 - Adding icon alternative ([#102](https://github.com/MetaMask/design-tokens/pull/102))
