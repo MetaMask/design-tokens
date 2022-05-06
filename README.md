@@ -35,7 +35,9 @@ Currently the metamask design tokens repo supports 2 formats. CSS in JS for Reac
 yarn add @metamask/design-tokens
 ```
 
-Import the design tokens stylesheet into your css or scss. Please not the file path will depend on where in your project you are importing it from.
+Import the design tokens stylesheet into your css or scss.
+
+Please note the file path will depend on where in your project you are importing it from.
 
 ```css
 @import '../../node_modules/@metamask/design-tokens/src/css/design-tokens';
