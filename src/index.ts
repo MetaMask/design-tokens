@@ -1,1 +1,1 @@
-export { default as colors } from './colors';
+export { colors, typography } from './js';

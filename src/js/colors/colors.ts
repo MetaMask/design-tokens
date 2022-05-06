@@ -1,74 +1,4 @@
-export interface ThemeColors {
-  background: {
-    default: string;
-    alternative: string;
-  };
-  text: {
-    default: string;
-    alternative: string;
-    muted: string;
-  };
-  icon: {
-    default: string;
-    alternative: string;
-    muted: string;
-  };
-  border: {
-    default: string;
-    muted: string;
-  };
-  overlay: {
-    default: string;
-    inverse: string;
-    alternative: string;
-  };
-  primary: {
-    default: string;
-    alternative: string;
-    muted: string;
-    inverse: string;
-    disabled: string;
-  };
-  secondary: {
-    default: string;
-    alternative: string;
-    muted: string;
-    inverse: string;
-    disabled: string;
-  };
-  error: {
-    default: string;
-    alternative: string;
-    muted: string;
-    inverse: string;
-    disabled: string;
-  };
-  warning: {
-    default: string;
-    alternative: string;
-    muted: string;
-    inverse: string;
-    disabled: string;
-  };
-  success: {
-    default: string;
-    alternative: string;
-    muted: string;
-    inverse: string;
-    disabled: string;
-  };
-  info: {
-    default: string;
-    alternative: string;
-    muted: string;
-    inverse: string;
-    disabled: string;
-  };
-}
-export interface Colors {
-  light: ThemeColors;
-  dark: ThemeColors;
-}
+import { Colors } from './types';
 
 /* eslint-disable jsdoc/check-property-names, jsdoc/tag-lines */
 /**
@@ -131,7 +61,7 @@ export interface Colors {
  * @property {string} info.inverse - SFor elements used on top of info/default. Used for text, icon or border
  */
 /* eslint-enable jsdoc/check-property-names, jsdoc/tag-lines */
-const colors: Colors = {
+export const colors: Colors = {
   light: {
     background: {
       default: '#FFFFFF',
@@ -267,5 +197,3 @@ const colors: Colors = {
     },
   },
 };
-
-export default colors;
