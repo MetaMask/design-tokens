@@ -6,12 +6,9 @@ A collection of design tokens based on MetaMask's design system.
 
 Have a question, suggestion, feedback? Contributors can [create an issue](https://github.com/MetaMask/design-tokens/issues/new/choose) or internal folks can post on the [#metamask-design-system](https://consensys.slack.com/archives/C0354T27M5M) Slack channel. We're here to help! 💁
 
-## Documentation
-
-The primary documentation for MetaMask Design Tokens is [storybook](), which describes the different token formats and gives examples of their usage.
-
 ### Table of Contents
 
+- [Documentation](#documentation)
 - [Installation](#installation)
   - [CSS Variables](#css-variables)
   - [CSS in JS (React Native)](#css-in-js-react-native)
@@ -22,6 +19,10 @@ The primary documentation for MetaMask Design Tokens is [storybook](), which des
   - [Testing and Linting](#testing-and-linting)
   - [Release & Publishing](#release-publishing)
 - [License](#license) TBC
+
+## Documentation
+
+The primary documentation for MetaMask Design Tokens is [storybook](), which describes the different token formats and gives examples of their usage.
 
 ## Installation
 
@@ -43,6 +44,28 @@ Please note the file path will depend on where in your project you are importing
 @import '../../node_modules/@metamask/design-tokens/src/css/design-tokens';
 ```
 
+2. Use design token css variables in the code.
+
+In css/scss:
+
+```css
+.card {
+  --card-color-text: var(--color-text-default);
+  --card-color-background: var(--color-background-default);
+  --card-color-border: var(--color-border-muted);
+
+  background-color: var(--card-color-background);
+  color: var(--card-color-text);
+  border: 1px solid var(--card-color-border);
+}
+```
+
+They also work for inline styles in javascript
+
+```js
+<div style={{ color: 'var(--color-error-default)' }}>This was is an error</div>
+```
+
 ### CSS in JS (React Native)
 
 1. Install the package.
@@ -55,6 +78,14 @@ yarn add @metamask/design-tokens
 
 ```js
 import { colors } from '@metamask/design-tokens';
+
+const createStyles = (colors) =>
+  StyleSheet.create({
+    modalContainer: {
+      backgroundColor: colors.background.default,
+      borderColor: colors.border.default,
+    },
+  });
 ```
 
 ### Usage
