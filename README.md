@@ -1,38 +1,100 @@
-## Installation
+# MetaMask Design Tokens 🪙
 
-# `@metamask/design-tokens`
+## `@metamask/design-tokens`
 
 A collection of design tokens based on MetaMask's design system.
 
-## Table of Contents
+Have a question, suggestion, feedback? Contributors can [create an issue](https://github.com/MetaMask/design-tokens/issues/new/choose) or internal folks can post on the [#metamask-design-system](https://consensys.slack.com/archives/C0354T27M5M) Slack channel. We're here to help! 💁
 
-- [Usage](#usage)
+### Table of Contents
+
+- [Documentation](#documentation)
+- [Installation](#installation)
+  - [CSS Variables](#css-variables)
+  - [CSS-in-JS (React Native)](#css-in-js-react-native)
 - [Contributing](#contributing)
-- [License](#license)
+  - [Setup](#setup)
+  - [Documentation](#documentation)
+  - [Figma Tokens](#figma-tokens)
+  - [Testing and Linting](#testing-and-linting)
+  - [Release & Publishing](#release-publishing)
+- [License](#license) TBC
 
-## Usage
+## Documentation
 
-First, install the package.
+The primary documentation for MetaMask Design Tokens is [storybook](https://metamask.github.io/design-tokens), which describes the different token formats and gives examples of their usage.
+
+## Installation
+
+Currently the metamask design tokens repo supports 2 formats. CSS-in-JS for React Native applications and CSS variables for web applications. These formats are based on its primary consumers [metamask-extension](https://github.com/MetaMask/metamask-extension) and [metamask-mobile](https://github.com/MetaMask/metamask-mobile).
+
+### CSS Variables
+
+1. Install the package.
 
 ```sh
 yarn add @metamask/design-tokens
 ```
 
-Then, utilize design tokens in code:
+Import the design tokens stylesheet into your CSS or SCSS.
+
+Please note the file path will depend on where in your project you are importing it from.
+
+```css
+@import '../../node_modules/@metamask/design-tokens/src/css/design-tokens';
+```
+
+2. Use design token CSS variables in the code.
+
+In CSS/SCSS:
+
+```css
+.card {
+  --card-color-text: var(--color-text-default);
+  --card-color-background: var(--color-background-default);
+  --card-color-border: var(--color-border-muted);
+
+  background-color: var(--card-color-background);
+  color: var(--card-color-text);
+  border: 1px solid var(--card-color-border);
+}
+```
+
+They also work for inline styles in javascript
+
+```js
+<div style={{ color: 'var(--color-error-default)' }}>This was is an error</div>
+```
+
+### CSS-in-JS (React Native)
+
+1. Install the package.
+
+```sh
+yarn add @metamask/design-tokens
+```
+
+2. Use design tokens in code by importing from library:
 
 ```js
 import { colors } from '@metamask/design-tokens';
+
+const createStyles = (colors) =>
+  StyleSheet.create({
+    modalContainer: {
+      backgroundColor: colors.background.default,
+      borderColor: colors.border.default,
+    },
+  });
 ```
 
-### Functional Components
+### Usage
 
-WIP
-
-### Class Components
-
-WIP
+For a detailed list of design tokens visit the MetaMask design token [storybook](https://metamask.github.io/design-tokens)
 
 ## Contributing
+
+Follow these steps to below to get the library up and running locally.
 
 ### Setup
 
@@ -41,6 +103,18 @@ WIP
 - Install [Yarn v1](https://yarnpkg.com/en/docs/install)
 - Run `yarn setup` to install dependencies and run any requried post-install scripts
   - **Warning:** Do not use the `yarn` / `yarn install` command directly. Use `yarn setup` instead. The normal install command will skip required post-install scripts, leaving your development environment in an invalid state.
+
+### Documentation
+
+We use storybook for documentation. To get storybook up and running use:
+
+```
+yarn storybook
+```
+
+### Figma Tokens
+
+The primary data for the generation of tokens is based on the json generated from a figma plugin called [Figma Tokens](https://github.com/six7/figma-tokens). This keeps our code in sync with our figma libraries. Currently the token formats are manually generated we are hoping to automate this process in future.
 
 ### Testing and Linting
 
@@ -85,11 +159,3 @@ The project follows the same release process as the other libraries in the MetaM
    - Be very careful to use a clean local environment to publish the release, and follow exactly the same steps used during CI.
    - Use `npm publish --dry-run` to examine the release contents to ensure the correct files are included. Compare to previous releases if necessary (e.g. using `https://unpkg.com/browse/[package name]@[package version]/`).
    - Once you are confident the release contents are correct, publish the release using `npm publish`.
-
-### Documentation
-
-We use storybook for documentation. To get storybook up and running use:
-
-```
-yarn storybook
-```
