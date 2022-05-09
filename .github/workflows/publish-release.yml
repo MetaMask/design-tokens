@@ -32,11 +32,5 @@ jobs:
         with:
           build-command: build-storybook
           source-directory: storybook-static
-          # This will commit the contents of "public" in the source branch to
-          # a directory named "latest" on the gh-pages branch.
-          # If destination-directory were omitted, all existing content of the
-          # gh-pages branch would be deleted and the the contents of "public"
-          # would be committed to the root directory.
-          destination-directory: latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
