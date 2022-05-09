@@ -8,7 +8,7 @@ describe('Typography Small Screen', () => {
     expect(typography.sDisplayMD.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.sDisplayMD.fontWeight).toStrictEqual(700);
+    expect(typography.sDisplayMD.fontWeight).toStrictEqual('700');
     expect(typography.sDisplayMD.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[6].value,
     );
@@ -26,7 +26,7 @@ describe('Typography Small Screen', () => {
     expect(typography.sHeadingLG.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.sHeadingLG.fontWeight).toStrictEqual(700);
+    expect(typography.sHeadingLG.fontWeight).toStrictEqual('700');
     expect(typography.sHeadingLG.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[5].value,
     );
@@ -44,7 +44,7 @@ describe('Typography Small Screen', () => {
     expect(typography.sHeadingMD.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.sHeadingMD.fontWeight).toStrictEqual(700);
+    expect(typography.sHeadingMD.fontWeight).toStrictEqual('700');
     expect(typography.sHeadingMD.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[4].value,
     );
@@ -62,7 +62,7 @@ describe('Typography Small Screen', () => {
     expect(typography.sHeadingSMRegular.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.sHeadingSMRegular.fontWeight).toStrictEqual(400);
+    expect(typography.sHeadingSMRegular.fontWeight).toStrictEqual('400');
     expect(typography.sHeadingSMRegular.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[3].value,
     );
@@ -80,7 +80,7 @@ describe('Typography Small Screen', () => {
     expect(typography.sHeadingSM.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.sHeadingSM.fontWeight).toStrictEqual(700);
+    expect(typography.sHeadingSM.fontWeight).toStrictEqual('700');
     expect(typography.sHeadingSM.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[3].value,
     );
@@ -98,7 +98,7 @@ describe('Typography Small Screen', () => {
     expect(typography.sBodyMDBold.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.sBodyMDBold.fontWeight).toStrictEqual(700);
+    expect(typography.sBodyMDBold.fontWeight).toStrictEqual('700');
     expect(typography.sBodyMDBold.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[2].value,
     );
@@ -116,7 +116,7 @@ describe('Typography Small Screen', () => {
     expect(typography.sBodyMD.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.sBodyMD.fontWeight).toStrictEqual(400);
+    expect(typography.sBodyMD.fontWeight).toStrictEqual('400');
     expect(typography.sBodyMD.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[2].value,
     );
@@ -134,7 +134,7 @@ describe('Typography Small Screen', () => {
     expect(typography.sBodySMBold.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.sBodySMBold.fontWeight).toStrictEqual(700);
+    expect(typography.sBodySMBold.fontWeight).toStrictEqual('700');
     expect(typography.sBodySMBold.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[1].value,
     );
@@ -152,7 +152,7 @@ describe('Typography Small Screen', () => {
     expect(typography.sBodySM.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.sBodySM.fontWeight).toStrictEqual(400);
+    expect(typography.sBodySM.fontWeight).toStrictEqual('400');
     expect(typography.sBodySM.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[1].value,
     );
@@ -170,7 +170,7 @@ describe('Typography Small Screen', () => {
     expect(typography.sBodyXS.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.sBodyXS.fontWeight).toStrictEqual(400);
+    expect(typography.sBodyXS.fontWeight).toStrictEqual('400');
     expect(typography.sBodyXS.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[0].value,
     );
@@ -190,7 +190,7 @@ describe('Typography Large Screen', () => {
     expect(typography.lDisplayMD.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.lDisplayMD.fontWeight).toStrictEqual(500);
+    expect(typography.lDisplayMD.fontWeight).toStrictEqual('500');
     expect(typography.lDisplayMD.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[7].value,
     );
@@ -208,7 +208,7 @@ describe('Typography Large Screen', () => {
     expect(typography.lHeadingLG.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.lHeadingLG.fontWeight).toStrictEqual(700);
+    expect(typography.lHeadingLG.fontWeight).toStrictEqual('700');
     expect(typography.lHeadingLG.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[6].value,
     );
@@ -226,7 +226,7 @@ describe('Typography Large Screen', () => {
     expect(typography.lHeadingMD.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.lHeadingMD.fontWeight).toStrictEqual(700);
+    expect(typography.lHeadingMD.fontWeight).toStrictEqual('700');
     expect(typography.lHeadingMD.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[5].value,
     );
@@ -244,7 +244,7 @@ describe('Typography Large Screen', () => {
     expect(typography.lHeadingSMRegular.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.lHeadingSMRegular.fontWeight).toStrictEqual(400);
+    expect(typography.lHeadingSMRegular.fontWeight).toStrictEqual('400');
     expect(typography.lHeadingSMRegular.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[4].value,
     );
@@ -262,7 +262,7 @@ describe('Typography Large Screen', () => {
     expect(typography.lHeadingSM.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.lHeadingSM.fontWeight).toStrictEqual(700);
+    expect(typography.lHeadingSM.fontWeight).toStrictEqual('700');
     expect(typography.lHeadingSM.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[4].value,
     );
@@ -280,7 +280,7 @@ describe('Typography Large Screen', () => {
     expect(typography.lBodyMDBold.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.lBodyMDBold.fontWeight).toStrictEqual(700);
+    expect(typography.lBodyMDBold.fontWeight).toStrictEqual('700');
     expect(typography.lBodyMDBold.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[3].value,
     );
@@ -298,7 +298,7 @@ describe('Typography Large Screen', () => {
     expect(typography.lBodyMD.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.lBodyMD.fontWeight).toStrictEqual(400);
+    expect(typography.lBodyMD.fontWeight).toStrictEqual('400');
     expect(typography.lBodyMD.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[3].value,
     );
@@ -316,7 +316,7 @@ describe('Typography Large Screen', () => {
     expect(typography.lBodySMBold.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.lBodySMBold.fontWeight).toStrictEqual(700);
+    expect(typography.lBodySMBold.fontWeight).toStrictEqual('700');
     expect(typography.lBodySMBold.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[2].value,
     );
@@ -334,7 +334,7 @@ describe('Typography Large Screen', () => {
     expect(typography.lBodySM.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.lBodySM.fontWeight).toStrictEqual(400);
+    expect(typography.lBodySM.fontWeight).toStrictEqual('400');
     expect(typography.lBodySM.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[2].value,
     );
@@ -352,7 +352,7 @@ describe('Typography Large Screen', () => {
     expect(typography.lBodyXS.fontFamily).toStrictEqual(
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
-    expect(typography.lBodyXS.fontWeight).toStrictEqual(400);
+    expect(typography.lBodyXS.fontWeight).toStrictEqual('400');
     expect(typography.lBodyXS.fontSize.toString()).toStrictEqual(
       designTokens.global.fontSize[1].value,
     );
