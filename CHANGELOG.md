@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.6.1]
-### Uncategorized
+### Changed
 - Adding storybook pages to publish release action ([#121](https://github.com/MetaMask/design-tokens/pull/121))
 - Fixing some case mistakes in figma token json ([#123](https://github.com/MetaMask/design-tokens/pull/123))
 
