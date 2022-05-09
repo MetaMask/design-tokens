@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.6.4]
-### Uncategorized
+### Changed
 - Setting storybook folder to root for gh-pages ([#133](https://github.com/MetaMask/design-tokens/pull/133))
 
 ## [1.6.3]
