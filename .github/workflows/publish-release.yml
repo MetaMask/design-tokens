@@ -27,6 +27,7 @@ jobs:
       - uses: MetaMask/action-publish-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: yarn setup
       - uses: MetaMask/action-publish-gh-pages@v2
         with:
           build-command: build-storybook
