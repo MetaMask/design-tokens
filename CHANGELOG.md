@@ -7,8 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.6.2]
-### Uncategorized
-- Adding yarn setup ([#129](https://github.com/MetaMask/design-tokens/pull/129))
+### Changed
+- Adding yarn setup to gh pages action ([#129](https://github.com/MetaMask/design-tokens/pull/129))
 
 ## [1.6.1]
 ### Changed
