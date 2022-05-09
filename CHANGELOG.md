@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.6.3]
+### Uncategorized
+- Adding homepage ([#131](https://github.com/MetaMask/design-tokens/pull/131))
+
 ## [1.6.2]
 ### Changed
 - Adding yarn setup to gh pages action ([#129](https://github.com/MetaMask/design-tokens/pull/129))
@@ -79,7 +83,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.6.2...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.6.3...HEAD
+[1.6.3]: https://github.com/MetaMask/design-tokens/compare/v1.6.2...v1.6.3
 [1.6.2]: https://github.com/MetaMask/design-tokens/compare/v1.6.1...v1.6.2
 [1.6.1]: https://github.com/MetaMask/design-tokens/compare/v1.6.0...v1.6.1
 [1.6.0]: https://github.com/MetaMask/design-tokens/compare/v1.5.1...v1.6.0
