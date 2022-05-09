@@ -7,8 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.6.3]
-### Uncategorized
-- Adding homepage ([#131](https://github.com/MetaMask/design-tokens/pull/131))
+### Changed
+- Adding homepage to package.json for gh pages ([#131](https://github.com/MetaMask/design-tokens/pull/131))
 
 ## [1.6.2]
 ### Changed
