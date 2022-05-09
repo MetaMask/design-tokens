@@ -22,7 +22,7 @@ Have a question, suggestion, feedback? Contributors can [create an issue](https:
 
 ## Documentation
 
-The primary documentation for MetaMask Design Tokens is [storybook](), which describes the different token formats and gives examples of their usage.
+The primary documentation for MetaMask Design Tokens is [storybook](https://metamask.github.io/design-tokens), which describes the different token formats and gives examples of their usage.
 
 ## Installation
 
@@ -90,7 +90,7 @@ const createStyles = (colors) =>
 
 ### Usage
 
-For a detailed list of design tokens visit the MetaMask design token [storybook]()
+For a detailed list of design tokens visit the MetaMask design token [storybook](https://metamask.github.io/design-tokens)
 
 ## Contributing
 
