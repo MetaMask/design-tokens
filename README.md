@@ -11,7 +11,7 @@ Have a question, suggestion, feedback? Contributors can [create an issue](https:
 - [Documentation](#documentation)
 - [Installation](#installation)
   - [CSS Variables](#css-variables)
-  - [CSS in JS (React Native)](#css-in-js-react-native)
+  - [CSS-in-JS (React Native)](#css-in-js-react-native)
 - [Contributing](#contributing)
   - [Setup](#setup)
   - [Documentation](#documentation)
@@ -26,7 +26,7 @@ The primary documentation for MetaMask Design Tokens is [storybook](), which des
 
 ## Installation
 
-Currently the metamask design tokens repo supports 2 formats. CSS in JS for React Native applications and CSS variables for web applications. These formats are based on its primary consumers [metamask-extension](https://github.com/MetaMask/metamask-extension) and [metamask-mobile](https://github.com/MetaMask/metamask-mobile).
+Currently the metamask design tokens repo supports 2 formats. CSS-in-JS for React Native applications and CSS variables for web applications. These formats are based on its primary consumers [metamask-extension](https://github.com/MetaMask/metamask-extension) and [metamask-mobile](https://github.com/MetaMask/metamask-mobile).
 
 ### CSS Variables
 
@@ -36,7 +36,7 @@ Currently the metamask design tokens repo supports 2 formats. CSS in JS for Reac
 yarn add @metamask/design-tokens
 ```
 
-Import the design tokens stylesheet into your css or scss.
+Import the design tokens stylesheet into your CSS or SCSS.
 
 Please note the file path will depend on where in your project you are importing it from.
 
@@ -44,9 +44,9 @@ Please note the file path will depend on where in your project you are importing
 @import '../../node_modules/@metamask/design-tokens/src/css/design-tokens';
 ```
 
-2. Use design token css variables in the code.
+2. Use design token CSS variables in the code.
 
-In css/scss:
+In CSS/SCSS:
 
 ```css
 .card {
@@ -66,7 +66,7 @@ They also work for inline styles in javascript
 <div style={{ color: 'var(--color-error-default)' }}>This was is an error</div>
 ```
 
-### CSS in JS (React Native)
+### CSS-in-JS (React Native)
 
 1. Install the package.
 
