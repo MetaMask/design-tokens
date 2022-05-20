@@ -4,12 +4,12 @@ import { typography } from './typography';
 const designTokens = require('../../figma/tokens.json');
 
 /**
- * Trim string between 2 characters
+ * Trim string between 2 characters.
  *
- * @param {string} str - The string to be trimmed
- * @param {string} firstChar - The first character to start from '$'
- * @param {string} lastChar - The last character to stop at '.'
- * @returns {string}
+ * @param str - The string to be trimmed.
+ * @param firstChar - The first character to start from '$'.
+ * @param lastChar - The last character to stop at '.'.
+ * @returns A string from characters between firstChar and lastChar.
  */
 function trimStringBetweenCharacters(
   str: string,
@@ -20,22 +20,22 @@ function trimStringBetweenCharacters(
 }
 
 /**
- * Trim string after character. Default character is '.'
+ * Trim string after character. Default character is '.'.
  *
- * @param {string} str - The string to be trimmed
- * @param {string} char - The first character to start from '.'
- * @returns {string}
+ * @param str - The string to be trimmed.
+ * @param char - The first character to start from '.'.
+ * @returns A string from characters after the `char`.
  */
 function trimStringAfterCharacter(str: string, char = '.') {
   return str.split(char).pop();
 }
 
 /**
- * Creates a new figma token object by creating object keys from a string
+ * Creates a new figma token object by creating object keys from a string.
  *
- * @param {string} str - The object path as a string to be trimmed into object keys
- * @param {Object} obj - Global figma token object
- * @returns {Object} - New object formed from object keys created from provided string
+ * @param str - The object path as a string to be trimmed into object keys.
+ * @param obj - Global figma token object.
+ * @returns New object formed from object keys created from provided string.
  */
 function createNewFigmaTokenObject(str: string, obj: any) {
   const firstString = trimStringBetweenCharacters(str);
