@@ -1,6 +1,6 @@
 # MetaMask Design Tokens 🪙
 
-[![npm version](https://badge.fury.io/js/survey-monkey-streams.svg)](//npmjs.com/package/@metamask/design-tokens) [![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://metamask.github.io/design-tokens)
+[![npm version](https://badge.fury.io/js/survey-monkey-streams.svg)](https://npmjs.com/package/@metamask/design-tokens) [![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://metamask.github.io/design-tokens)
 
 ## `@metamask/design-tokens`
 
