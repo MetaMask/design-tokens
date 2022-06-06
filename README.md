@@ -1,5 +1,7 @@
 # MetaMask Design Tokens 🪙
 
+[![npm version](https://badge.fury.io/js/survey-monkey-streams.svg)](https://npmjs.com/package/@metamask/design-tokens) [![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://metamask.github.io/design-tokens)
+
 ## `@metamask/design-tokens`
 
 A collection of design tokens based on MetaMask's design system.
