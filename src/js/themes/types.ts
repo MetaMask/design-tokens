@@ -1,4 +1,6 @@
-interface ThemeColors {
+import { ThemeTypography } from '../typography';
+
+export interface ThemeColors {
   background: {
     default: string;
     alternative: string;
@@ -66,7 +68,7 @@ interface ThemeColors {
   };
 }
 
-export interface Colors {
-  light: ThemeColors;
-  dark: ThemeColors;
+export interface Theme {
+  colors: ThemeColors;
+  typography: ThemeTypography;
 }

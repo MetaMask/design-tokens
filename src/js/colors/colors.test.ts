@@ -3,8 +3,6 @@ import { colors as importableColors } from '.';
 
 const designTokens = require('../../figma/tokens.json');
 
-// js tokens for font family matches figma tokens
-
 describe('Light Theme Colors', () => {
   it('js tokens for background.default matches figma tokens background.default', () => {
     expect(importableColors.light.background.default).toStrictEqual(

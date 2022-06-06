@@ -79,13 +79,16 @@ yarn add @metamask/design-tokens
 2. Use design tokens in code by importing from library:
 
 ```js
-import { colors } from '@metamask/design-tokens';
+import { lightTheme, darkTheme } from '@metamask/design-tokens';
 
-const createStyles = (colors) =>
+// Create provider that swaps theme (sudo code)
+<ThemeProvider theme={theme === 'default' ? lightTheme : darkTheme} />;
+
+const createStyles = (theme) =>
   StyleSheet.create({
     modalContainer: {
-      backgroundColor: colors.background.default,
-      borderColor: colors.border.default,
+      backgroundColor: theme.colors.background.default,
+      borderColor: theme.colors.border.default,
     },
   });
 ```
