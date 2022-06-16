@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.7.0]
+### Uncategorized
+- Adding themes to token architecture ([#148](https://github.com/MetaMask/design-tokens/pull/148))
+- Fix for readme badge to show correct version ([#163](https://github.com/MetaMask/design-tokens/pull/163))
+- Updating readme with npm and storybook badges ([#150](https://github.com/MetaMask/design-tokens/pull/150))
+- Updating typography tests and some token json ([#147](https://github.com/MetaMask/design-tokens/pull/147))
+- Fixing wrong token mappings & Naming Typo for Typography ([#144](https://github.com/MetaMask/design-tokens/pull/144))
+- Bump @metamask/auto-changelog from 2.5.0 to 2.6.0 ([#142](https://github.com/MetaMask/design-tokens/pull/142))
+
 ## [1.6.5]
 ### Changed
 - Update readme ([#120](https://github.com/MetaMask/design-tokens/pull/120))
@@ -92,7 +101,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.6.5...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.7.0...HEAD
+[1.7.0]: https://github.com/MetaMask/design-tokens/compare/v1.6.5...v1.7.0
 [1.6.5]: https://github.com/MetaMask/design-tokens/compare/v1.6.4...v1.6.5
 [1.6.4]: https://github.com/MetaMask/design-tokens/compare/v1.6.3...v1.6.4
 [1.6.3]: https://github.com/MetaMask/design-tokens/compare/v1.6.2...v1.6.3
