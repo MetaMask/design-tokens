@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { colors } from '../../../src';
+import { lightTheme } from '../../../src';
 
 interface ColorSwatchProps {
   /**
@@ -7,15 +7,15 @@ interface ColorSwatchProps {
    */
   color?: string;
   /**
-   * The color of text background that contains the name of the color defaults to colors.light.background.default
+   * The color of text background that contains the name of the color defaults to lightTheme.colors.background.default
    */
   textBackgroundColor?: string;
   /**
-   * The border color of the swatch defaults to colors.light.border.muted
+   * The border color of the swatch defaults to lightTheme.colors.border.muted
    */
   borderColor?: string;
   /**
-   * The color of the text defaults to colors.light.text.default
+   * The color of the text defaults to lightTheme.colors.text.default
    */
   textColor?: string;
   /**
@@ -26,9 +26,9 @@ interface ColorSwatchProps {
 
 export const ColorSwatch: FunctionComponent<ColorSwatchProps> = ({
   color,
-  borderColor = colors.light.border.muted,
-  textBackgroundColor = colors.light.background.default,
-  textColor = colors.light.text.default,
+  borderColor = lightTheme.colors.border.muted,
+  textBackgroundColor = lightTheme.colors.background.default,
+  textColor = lightTheme.colors.text.default,
   name,
   ...props
 }) => {

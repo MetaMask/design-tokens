@@ -27,15 +27,15 @@ interface ColorSwatchGroupProps {
     [key: string]: ColorToken;
   };
   /**
-   * The color of text background that contains the name of the color defaults to colors.light.background.default
+   * The color of text background that contains the name of the color defaults to background.default
    */
   textBackgroundColor?: string;
   /**
-   * The border color of the swatch defaults to colors.light.border.muted
+   * The border color of the swatch defaults to border.muted
    */
   borderColor?: string;
   /**
-   * The color of the text defaults to colors.light.text.default
+   * The color of the text defaults to text.default
    */
   textColor?: string;
   /**
