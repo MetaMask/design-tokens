@@ -5,4 +5,3 @@ export { darkTheme } from './themes';
 // DEPRECATED in favor of importing theme objects above
 export { colors } from './colors';
 export { typography } from './typography';
-export { shadows } from './shadows';
