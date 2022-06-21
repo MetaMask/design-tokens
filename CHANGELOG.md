@@ -7,8 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.7.0]
-### Uncategorized
-- Adding themes to token architecture ([#148](https://github.com/MetaMask/design-tokens/pull/148))
+### Changed
+- Adding themes to token architecture for CSS-in-JS ([#148](https://github.com/MetaMask/design-tokens/pull/148))
 - Fix for readme badge to show correct version ([#163](https://github.com/MetaMask/design-tokens/pull/163))
 - Updating readme with npm and storybook badges ([#150](https://github.com/MetaMask/design-tokens/pull/150))
 - Updating typography tests and some token json ([#147](https://github.com/MetaMask/design-tokens/pull/147))
