@@ -15,4 +15,16 @@ describe('dark Theme', () => {
       designTokens.global.fontFamilies['euclid-circular-b'].value,
     );
   });
+
+  it('shadow tokens are exported from darkTheme by checking first shadow size object', () => {
+    expect(darkTheme.shadows.size.xs).toStrictEqual({
+      shadowColor: designTokens.dark.shadows.xs.value.color,
+      shadowOffset: {
+        width: designTokens.dark.shadows.xs.value.x,
+        height: designTokens.dark.shadows.xs.value.y,
+      },
+      shadowOpacity: 1,
+      shadowRadius: designTokens.dark.shadows.xs.value.blur,
+    });
+  });
 });

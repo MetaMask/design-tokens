@@ -1,4 +1,5 @@
 import React from 'react';
+import { fontFamilies } from '../../../src/js/typography/fontFamilies';
 
 interface Props<C extends React.ElementType> {
   /**
@@ -24,5 +25,9 @@ export const Text = <C extends React.ElementType = 'span'>({
   as,
 }: TextProps<C>) => {
   const Component = as || 'span';
-  return <Component style={style}>{children}</Component>;
+  return (
+    <Component style={{ fontFamily: fontFamilies.euclidCircularB, ...style }}>
+      {children}
+    </Component>
+  );
 };

@@ -1,5 +1,26 @@
 import { ThemeTypography } from '../typography';
 
+interface ShadowShape {
+  shadowColor: string;
+  shadowOffset: {
+    width: number;
+    height: number;
+  };
+  shadowOpacity: number;
+  shadowRadius: number;
+}
+
+interface ShadowSizes {
+  xs: ShadowShape;
+  sm: ShadowShape;
+  md: ShadowShape;
+  lg: ShadowShape;
+}
+
+export interface ThemeShadows {
+  size: ShadowSizes;
+}
+
 export interface ThemeColors {
   background: {
     /**
@@ -63,6 +84,12 @@ export interface ThemeColors {
      */
     alternative: string;
   };
+  shadow: {
+    /**
+     * {string} shadow.default - For neutral shadows
+     */
+    default: string;
+  };
   primary: {
     /**
      * {string} primary.default - For primary user action related elements
@@ -84,6 +111,10 @@ export interface ThemeColors {
      * {string} primary.disabled - [Deprecated] Should be used for
      */
     disabled: string;
+    /**
+     * {string} primary.shadow - For primary button hover
+     */
+    shadow: string;
   };
   secondary: {
     /**
@@ -128,6 +159,10 @@ export interface ThemeColors {
      * {string} error.disabled - [Deprecated] Should be used for disabled state
      */
     disabled: string;
+    /**
+     * {string} error.shadow - For error danger/critical button hover
+     */
+    shadow: string;
   };
   warning: {
     /**
@@ -200,4 +235,5 @@ export interface ThemeColors {
 export interface Theme {
   colors: ThemeColors;
   typography: ThemeTypography;
+  shadows: ThemeShadows;
 }
