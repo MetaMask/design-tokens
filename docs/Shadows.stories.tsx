@@ -1,4 +1,5 @@
 import React from 'react';
+import { lightTheme } from '../src/js';
 
 import { Text } from './components';
 
@@ -14,7 +15,7 @@ export default {
   argTypes: {
     size: {
       control: 'select',
-      options: ['xs', 'sm', 'md', 'lg'], // Object.keys(lightTheme.shadow.size)
+      options: Object.keys(lightTheme.shadows.size),
     },
     color: {
       control: 'select',
