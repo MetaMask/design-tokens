@@ -154,7 +154,7 @@ export const Color = (args) => {
   );
 };
 
-export const Usage = () => {
+export const ExampleUsage = () => {
   return (
     <div>
       <div
