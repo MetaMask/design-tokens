@@ -1,4 +1,7 @@
 import React from 'react';
+import { lightTheme } from '../src/js';
+import { useArgs } from '@storybook/api';
+
 import { Text } from './components';
 
 import README from './Shadows.mdx';
@@ -10,23 +13,48 @@ export default {
       page: README,
     },
   },
+  argTypes: {
+    size: {
+      control: 'select',
+      options: ['xs', 'sm', 'md', 'lg'], // Object.keys(lightTheme.shadow.size)
+    },
+    color: {
+      control: 'select',
+      options: ['default', 'primary', 'error'],
+    },
+  },
+  args: {
+    color: 'default',
+    size: 'xs',
+  },
 };
 
 interface ShadowSwatchProps {
   children: any;
   style?: object;
+  size?: 'xs' | 'sm' | 'md' | 'lg';
+  color?: 'default' | 'primary' | 'error';
 }
 
-const ShadowSwatch = ({ children, style }: ShadowSwatchProps) => (
+const ShadowSwatch = ({
+  children,
+  style,
+  size = 'xs',
+  color = 'default',
+}: ShadowSwatchProps) => (
   <div
     style={{
       height: 100,
       backgroundColor: 'var(--color-background-default)',
-      boxShadow: 'var(--shadow-size-xs) var(--color-shadow-default)',
+      boxShadow:
+        color === 'default'
+          ? `var(--shadow-size-${size}) var(--color-shadow-${color}`
+          : `var(--shadow-size-${size}) var(--color-${color}-shadow`,
       borderRadius: '4px',
       display: 'grid',
       alignContent: 'center',
       justifyContent: 'center',
+      textAlign: 'center',
       ...style,
     }}
   >
@@ -34,7 +62,7 @@ const ShadowSwatch = ({ children, style }: ShadowSwatchProps) => (
   </div>
 );
 
-export const Size = () => {
+export const Shadow = (args) => {
   return (
     <div
       style={{
@@ -43,34 +71,40 @@ export const Size = () => {
         gridTemplateColumns: 'repeat(auto-fill, 200px)',
       }}
     >
-      <ShadowSwatch>
+      <ShadowSwatch {...args}>
+        <Text as="p" style={{ margin: 0 }}>
+          Shadow
+        </Text>
+      </ShadowSwatch>
+    </div>
+  );
+};
+
+export const Size = (args) => {
+  return (
+    <div
+      style={{
+        display: 'grid',
+        gap: '32px',
+        gridTemplateColumns: 'repeat(auto-fill, 200px)',
+      }}
+    >
+      <ShadowSwatch color={args.color} size="xs">
         <Text as="p" style={{ margin: 0 }}>
           XS
         </Text>
       </ShadowSwatch>
-      <ShadowSwatch
-        style={{
-          boxShadow: 'var(--shadow-size-sm) var(--color-shadow-default)',
-        }}
-      >
+      <ShadowSwatch color={args.color} size="sm">
         <Text as="p" style={{ margin: 0 }}>
           SM
         </Text>
       </ShadowSwatch>
-      <ShadowSwatch
-        style={{
-          boxShadow: 'var(--shadow-size-md) var(--color-shadow-default)',
-        }}
-      >
+      <ShadowSwatch color={args.color} size="md">
         <Text as="p" style={{ margin: 0 }}>
           MD
         </Text>
       </ShadowSwatch>
-      <ShadowSwatch
-        style={{
-          boxShadow: 'var(--shadow-size-lg) var(--color-shadow-default)',
-        }}
-      >
+      <ShadowSwatch color={args.color} size="lg">
         <Text as="p" style={{ margin: 0 }}>
           LG
         </Text>
@@ -79,7 +113,7 @@ export const Size = () => {
   );
 };
 
-export const Color = () => {
+export const Color = (args) => {
   return (
     <div
       style={{
@@ -88,18 +122,15 @@ export const Color = () => {
         gridTemplateColumns: 'repeat(auto-fill, 200px)',
       }}
     >
-      <ShadowSwatch
-        style={{
-          boxShadow: 'var(--shadow-size-md) var(--color-shadow-default)',
-        }}
-      >
+      <ShadowSwatch color="default" size={args.size}>
         <Text as="p" style={{ margin: 0 }}>
-          Neutral
+          Default
         </Text>
       </ShadowSwatch>
       <ShadowSwatch
+        color="primary"
+        size={args.size}
         style={{
-          boxShadow: 'var(--shadow-size-md) var(--color-primary-shadow)',
           backgroundColor: 'var(--color-primary-default)',
           color: 'var(--color-primary-inverse)',
         }}
@@ -109,14 +140,15 @@ export const Color = () => {
         </Text>
       </ShadowSwatch>
       <ShadowSwatch
+        color="error"
+        size={args.size}
         style={{
-          boxShadow: 'var(--shadow-size-md) var(--color-error-shadow)',
           backgroundColor: 'var(--color-error-default)',
           color: 'var(--color-error-inverse)',
         }}
       >
         <Text as="p" style={{ margin: 0 }}>
-          Danger
+          Error/Danger
         </Text>
       </ShadowSwatch>
     </div>
@@ -197,7 +229,7 @@ export const Usage = () => {
           }}
         >
           <Text as="p" style={{ margin: 0 }}>
-            Button Danger Hover
+            Button Error/Danger Hover
           </Text>
         </ShadowSwatch>
       </div>
