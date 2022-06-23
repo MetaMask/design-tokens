@@ -1,6 +1,4 @@
 import React from 'react';
-import { lightTheme } from '../src/js';
-import { useArgs } from '@storybook/api';
 
 import { Text } from './components';
 
