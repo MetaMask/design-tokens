@@ -82,6 +82,24 @@ describe('Dark Theme Colors', () => {
     );
   });
 
+  it('js tokens for shadow.default matches figma tokens dark.shadows.xs.value.color', () => {
+    expect(importableColors.shadow.default).toStrictEqual(
+      designTokens.dark.shadows.xs.value.color,
+    );
+
+    expect(importableColors.shadow.default).toStrictEqual(
+      designTokens.dark.shadows.sm.value.color,
+    );
+
+    expect(importableColors.shadow.default).toStrictEqual(
+      designTokens.dark.shadows.md.value.color,
+    );
+
+    expect(importableColors.shadow.default).toStrictEqual(
+      designTokens.dark.shadows.lg.value.color,
+    );
+  });
+
   it('js tokens for primary.default matches figma tokens primary.default', () => {
     expect(importableColors.primary.default).toStrictEqual(
       designTokens.dark.colors.primary.default.value,
@@ -103,6 +121,12 @@ describe('Dark Theme Colors', () => {
   it('js tokens for primary.inverse matches figma tokens primary.inverse', () => {
     expect(importableColors.primary.inverse).toStrictEqual(
       designTokens.dark.colors.primary.inverse.value,
+    );
+  });
+
+  it('js tokens for primary.shadow matches figma tokens shadows.primary', () => {
+    expect(importableColors.primary.shadow).toStrictEqual(
+      designTokens.dark.shadows.primary.value.color,
     );
   });
 
@@ -151,6 +175,12 @@ describe('Dark Theme Colors', () => {
   it('js tokens for error.inverse matches figma tokens error.inverse', () => {
     expect(importableColors.error.inverse).toStrictEqual(
       designTokens.dark.colors.error.inverse.value,
+    );
+  });
+
+  it('js tokens for error.shadow matches figma tokens shadows.error', () => {
+    expect(importableColors.error.shadow).toStrictEqual(
+      designTokens.dark.shadows.error.value.color,
     );
   });
 

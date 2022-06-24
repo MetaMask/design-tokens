@@ -28,12 +28,16 @@ export const colors: ThemeColors = {
     inverse: '#FCFCFC',
     alternative: '#000000CC',
   },
+  shadow: {
+    default: '#00000066',
+  },
   primary: {
     default: '#1098FC',
     alternative: '#43AEFC',
     muted: '#1098FC26',
     inverse: '#FCFCFC',
     disabled: '#1098FC80',
+    shadow: '#1098FC66',
   },
   secondary: {
     default: '#F8883B',
@@ -48,6 +52,7 @@ export const colors: ThemeColors = {
     muted: '#D73A4926',
     inverse: '#FCFCFC',
     disabled: '#D73A4980',
+    shadow: '#D73A4966',
   },
   warning: {
     default: '#FFD33D',

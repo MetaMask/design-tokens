@@ -1,0 +1,83 @@
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
+import LinkTo from '@storybook/addon-links/react';
+
+<Meta title="Design Tokens/Shadows" />
+
+# Shadows
+
+Shadows convey elevation of elements on a surface
+
+<Canvas>
+  <Story id="shadows-shadows--shadow" />
+</Canvas>
+
+## Size
+
+There are 4 different sizes of shadow in MetaMask.
+
+<Canvas>
+  <Story id="shadows-shadows--size" />
+</Canvas>
+
+| Size   | JS                | CSS                     |
+| ------ | ----------------- | ----------------------- |
+| **XS** | `shadows.size.xs` | `var(--shadow-size-xs)` |
+| **SM** | `shadows.size.sm` | `var(--shadow-size-sm)` |
+| **MD** | `shadows.size.md` | `var(--shadow-size-md)` |
+| **LG** | `shadows.size.lg` | `var(--shadow-size-lg)` |
+
+## Color
+
+As well as the neutral colors for shadow 2 other colors exist that are used for the primary and error/danger button hover states
+
+<Canvas>
+  <Story id="shadows-shadows--color" />
+</Canvas>
+
+| Color       | JS                      | CSS                           |
+| ----------- | ----------------------- | ----------------------------- |
+| **neutral** | `colors.shadow.default` | `var(--color-shadow-default)` |
+| **primary** | `colors.primary.shadow` | `var(--color-primary-shadow)` |
+| **danger**  | `colors.error.shadow`   | `var(--color-error-shadow)`   |
+
+## Example usage
+
+Using both size and color tokens, different shadows can be applied to components.
+
+<Canvas>
+  <Story id="shadows-shadows--usage" />
+</Canvas>
+
+| Component                | JS                                                                              | CSS                                                              |
+| ------------------------ | ------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| **Card**                 | `cardShadow: {...shadows.size.xs }`                                             | `box-shadow: var(--shadow-size-xs) var(--color-shadow-default);` |
+| **Dropdown**             | `dropdownShadow: { ...shadows.size.sm }`                                        | `box-shadow: var(--shadow-size-sm) var(--color-shadow-default);` |
+| **Toast**                | `toastShadow: { ...shadows.size.md }`                                           | `box-shadow: var(--shadow-size-md) var(--color-shadow-default);` |
+| **Modal**                | `modalShadow: { ...shadows.size.lg }`                                           | `box-shadow: var(--shadow-size-lg) var(--color-shadow-default);` |
+| **Button Primary Hover** | `buttonPrimaryHover: { ...shadows.size.sm, shadowColor: colors.primary.shadow}` | `box-shadow: var(--shadow-size-sm) var(--color-primary-shadow);` |
+| **Button Danger Hover**  | `buttonDangerHover: { ...shadows.size.sm, shadowColor: colors.primary.shadow}`  | `box-shadow: var(--shadow-size-sm) var(--color-error-shadow);`   |
+
+**NOTE: The CSS-in-JS `shadows.size` objects for React Native contain all the correct tokens for neutral shadows. For primary and error/danger shadows change the `shadowColor` key**
+
+Example shape of the `xs` shadow size object from `shadows`
+
+```
+size: {
+    xs: {
+      shadowColor: colors.light.shadow.default,
+      shadowOffset: {
+        width: 0,
+        height: 2,
+      },
+      shadowOpacity: 1,
+      shadowRadius: 4,
+    },
+    ...
+}
+
+```
+
+## References
+
+- [Figma Light Theme Colors Library(Shadows Page)](https://www.figma.com/file/kdFzEC7xzSNw7cXteqgzDW/%5BColor%5D-Light-Theme?node-id=753%3A719)(internal use only)
+- [Figma Dark Theme Colors Library(Shadows Page)](https://www.figma.com/file/rLKsoqpjyoKauYnFDcBIbO/%5BColor%5D-Dark-Theme?node-id=522%3A1022)(internal use only)
