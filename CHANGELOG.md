@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.8.0]
-### Uncategorized
+### Changed
 - Adding shadows to design tokens ([#137](https://github.com/MetaMask/design-tokens/pull/137))
 - Bump @metamask/auto-changelog from 2.6.0 to 2.6.1 ([#178](https://github.com/MetaMask/design-tokens/pull/178))
 
