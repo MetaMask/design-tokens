@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.8.0]
+### Uncategorized
+- Adding shadows to design tokens ([#137](https://github.com/MetaMask/design-tokens/pull/137))
+- Bump @metamask/auto-changelog from 2.6.0 to 2.6.1 ([#178](https://github.com/MetaMask/design-tokens/pull/178))
+
 ## [1.7.0]
 ### Changed
 - Adding themes to token architecture for CSS-in-JS ([#148](https://github.com/MetaMask/design-tokens/pull/148))
@@ -101,7 +106,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.7.0...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.8.0...HEAD
+[1.8.0]: https://github.com/MetaMask/design-tokens/compare/v1.7.0...v1.8.0
 [1.7.0]: https://github.com/MetaMask/design-tokens/compare/v1.6.5...v1.7.0
 [1.6.5]: https://github.com/MetaMask/design-tokens/compare/v1.6.4...v1.6.5
 [1.6.4]: https://github.com/MetaMask/design-tokens/compare/v1.6.3...v1.6.4
