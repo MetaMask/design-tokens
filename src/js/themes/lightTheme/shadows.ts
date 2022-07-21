@@ -34,7 +34,7 @@ export const shadows: ThemeShadows = {
       shadowColor: colors.shadow.default,
       shadowOffset: {
         width: 0,
-        height: 8,
+        height: 2,
       },
       shadowOpacity: 1,
       shadowRadius: 40,

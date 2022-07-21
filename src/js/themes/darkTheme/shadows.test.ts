@@ -10,17 +10,17 @@ describe('Shadows', () => {
     );
 
     expect(shadows.size.xs.shadowOffset.width).toStrictEqual(
-      designTokens.dark.shadows.xs.value.x,
+      Number(designTokens.dark.shadows.xs.value.x),
     );
 
     expect(shadows.size.xs.shadowOffset.height).toStrictEqual(
-      designTokens.dark.shadows.xs.value.y,
+      Number(designTokens.dark.shadows.xs.value.y),
     );
 
     expect(shadows.size.xs.shadowOpacity).toStrictEqual(1);
 
     expect(shadows.size.xs.shadowRadius).toStrictEqual(
-      designTokens.dark.shadows.xs.value.blur,
+      Number(designTokens.dark.shadows.xs.value.blur),
     );
   });
 
@@ -30,17 +30,17 @@ describe('Shadows', () => {
     );
 
     expect(shadows.size.sm.shadowOffset.width).toStrictEqual(
-      designTokens.dark.shadows.sm.value.x,
+      Number(designTokens.dark.shadows.sm.value.x),
     );
 
     expect(shadows.size.sm.shadowOffset.height).toStrictEqual(
-      designTokens.dark.shadows.sm.value.y,
+      Number(designTokens.dark.shadows.sm.value.y),
     );
 
     expect(shadows.size.sm.shadowOpacity).toStrictEqual(1);
 
     expect(shadows.size.sm.shadowRadius).toStrictEqual(
-      designTokens.dark.shadows.sm.value.blur,
+      Number(designTokens.dark.shadows.sm.value.blur),
     );
   });
 
@@ -50,17 +50,17 @@ describe('Shadows', () => {
     );
 
     expect(shadows.size.md.shadowOffset.width).toStrictEqual(
-      designTokens.dark.shadows.md.value.x,
+      Number(designTokens.dark.shadows.md.value.x),
     );
 
     expect(shadows.size.md.shadowOffset.height).toStrictEqual(
-      designTokens.dark.shadows.md.value.y,
+      Number(designTokens.dark.shadows.md.value.y),
     );
 
     expect(shadows.size.md.shadowOpacity).toStrictEqual(1);
 
     expect(shadows.size.md.shadowRadius).toStrictEqual(
-      designTokens.dark.shadows.md.value.blur,
+      Number(designTokens.dark.shadows.md.value.blur),
     );
   });
 
@@ -70,17 +70,17 @@ describe('Shadows', () => {
     );
 
     expect(shadows.size.lg.shadowOffset.width).toStrictEqual(
-      designTokens.dark.shadows.lg.value.x,
+      Number(designTokens.dark.shadows.lg.value.x),
     );
 
     expect(shadows.size.lg.shadowOffset.height).toStrictEqual(
-      designTokens.dark.shadows.lg.value.y,
+      Number(designTokens.dark.shadows.lg.value.y),
     );
 
     expect(shadows.size.lg.shadowOpacity).toStrictEqual(1);
 
     expect(shadows.size.lg.shadowRadius).toStrictEqual(
-      designTokens.dark.shadows.lg.value.blur,
+      Number(designTokens.dark.shadows.lg.value.blur),
     );
   });
 });

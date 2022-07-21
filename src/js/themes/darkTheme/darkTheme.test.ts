@@ -20,11 +20,11 @@ describe('dark Theme', () => {
     expect(darkTheme.shadows.size.xs).toStrictEqual({
       shadowColor: designTokens.dark.shadows.xs.value.color,
       shadowOffset: {
-        width: designTokens.dark.shadows.xs.value.x,
-        height: designTokens.dark.shadows.xs.value.y,
+        width: Number(designTokens.dark.shadows.xs.value.x),
+        height: Number(designTokens.dark.shadows.xs.value.y),
       },
       shadowOpacity: 1,
-      shadowRadius: designTokens.dark.shadows.xs.value.blur,
+      shadowRadius: Number(designTokens.dark.shadows.xs.value.blur),
     });
   });
 });
