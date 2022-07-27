@@ -117,6 +117,11 @@
   --typography-s-heading-sm-line-height: var(--line-height-6);
   --typography-s-heading-sm-font-weight: var(--font-weight-regular);
   --typography-s-heading-sm-letter-spacing: var(--letter-spacing-0);
+
+  /**
+   * @deprecated [#1] since version 1.9 [#2].
+   * [#3] Will be deleted in version 2.0.
+   */
   --typography-s-heading-sm-regular-font-family: var(
     --font-family-euclid-circular-b
   );
@@ -124,6 +129,7 @@
   --typography-s-heading-sm-regular-line-height: var(--line-height-6);
   --typography-s-heading-sm-regular-font-weight: var(--font-weight-regular);
   --typography-s-heading-sm-regular-letter-spacing: var(--letter-spacing-0);
+
   --typography-s-body-lg-regular-font-family: var(
     --font-family-euclid-circular-b
   );
@@ -178,6 +184,11 @@
   --typography-l-heading-sm-line-height: var(--line-height-5);
   --typography-l-heading-sm-font-weight: var(--font-weight-bold);
   --typography-l-heading-sm-letter-spacing: var(--letter-spacing-0);
+
+  /**
+   * @deprecated [#1] since version 1.9 [#2].
+   * [#3] Will be deleted in version 2.0.
+   */
   --typography-l-heading-sm-regular-font-family: var(
     --font-family-euclid-circular-b
   );
@@ -185,6 +196,7 @@
   --typography-l-heading-sm-regular-line-height: var(--line-height-5);
   --typography-l-heading-sm-regular-font-weight: var(--font-weight-bold);
   --typography-l-heading-sm-regular-letter-spacing: var(--letter-spacing-0);
+
   --typography-l-body-lg-medium-font-family: var(
     --font-family-euclid-circular-b
   );

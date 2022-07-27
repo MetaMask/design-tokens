@@ -36,6 +36,10 @@ export const typography: ThemeTypography = {
     lineHeight: lineHeights.lineHeight4,
     letterSpacing: letterSpacing.letterSpacing0,
   },
+  /**
+   * @deprecated [#1] since version 1.9 [#2].
+   * [#3] Will be deleted in version 2.0.
+   */
   sHeadingSMRegular: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.regular,
@@ -113,6 +117,10 @@ export const typography: ThemeTypography = {
     lineHeight: lineHeights.lineHeight4,
     letterSpacing: letterSpacing.letterSpacing0,
   },
+  /**
+   * @deprecated [#1] since version 1.9 [#2].
+   * [#3] Will be deleted in version 2.0.
+   */
   lHeadingSMRegular: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.regular,

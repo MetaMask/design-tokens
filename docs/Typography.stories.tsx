@@ -135,7 +135,10 @@ export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
       <Text as="h4" style={styles.headingSMRegular} {...args}>
         {`S HeadingSM Regular ${styles.headingSMRegular.fontSize}px/${
           styles.headingSMRegular.lineHeight
-        } ${styles.headingSMRegular.fontSize / smallScreenFontSizeBase}rem`}
+        } ${
+          styles.headingSMRegular.fontSize / smallScreenFontSizeBase
+        }rem`}{' '}
+        <span style={{ color: 'var(--color-error-default)' }}>DEPRECATED</span>
       </Text>
       <Text as="h4" style={styles.bodyLGMedium} {...args}>
         {`S BodyLG Medium ${styles.bodyLGMedium.fontSize}px/${
@@ -267,7 +270,10 @@ export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
       <Text as="h4" style={styles.headingSMRegular} {...args}>
         {`L HeadingSM Regular ${styles.headingSMRegular.fontSize}px/${
           styles.headingSMRegular.lineHeight
-        } ${styles.headingSMRegular.fontSize / largeScreenFontSizeBase}rem`}
+        } ${
+          styles.headingSMRegular.fontSize / largeScreenFontSizeBase
+        }rem`}{' '}
+        <span style={{ color: 'var(--color-error-default)' }}>DEPRECATED</span>
       </Text>
       <Text as="h4" style={styles.bodyLGMedium} {...args}>
         {`L BodyLG Medium ${styles.bodyLGMedium.fontSize}px/${
