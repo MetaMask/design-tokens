@@ -12,6 +12,7 @@ export interface ThemeTypography {
   sHeadingMD: TypeStyle;
   sHeadingSMRegular: TypeStyle;
   sHeadingSM: TypeStyle;
+  sBodyLGMedium: TypeStyle;
   sBodyMD: TypeStyle;
   sBodyMDBold: TypeStyle;
   sBodySM: TypeStyle;
@@ -22,6 +23,7 @@ export interface ThemeTypography {
   lHeadingMD: TypeStyle;
   lHeadingSMRegular: TypeStyle;
   lHeadingSM: TypeStyle;
+  lBodyLGMedium: TypeStyle;
   lBodyMD: TypeStyle;
   lBodyMDBold: TypeStyle;
   lBodySM: TypeStyle;
