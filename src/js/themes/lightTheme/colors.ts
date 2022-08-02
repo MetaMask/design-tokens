@@ -22,6 +22,7 @@ export const colors: ThemeColors = {
   border: {
     default: '#BBC0C5',
     muted: '#D6D9DC',
+    strong: '#333',
   },
   overlay: {
     default: '#00000099',
