@@ -36,9 +36,20 @@ export const typography: ThemeTypography = {
     lineHeight: lineHeights.lineHeight4,
     letterSpacing: letterSpacing.letterSpacing0,
   },
+  /**
+   * @deprecated [#1] since version 1.9 [#2].
+   * [#3] Will be deleted in version 2.0.
+   */
   sHeadingSMRegular: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.regular,
+    fontSize: fontSizes.fontSize4,
+    lineHeight: lineHeights.lineHeight4,
+    letterSpacing: letterSpacing.letterSpacing0,
+  },
+  sBodyLGMedium: {
+    fontFamily: fontFamilies.euclidCircularB,
+    fontWeight: fontWeights.medium,
     fontSize: fontSizes.fontSize4,
     lineHeight: lineHeights.lineHeight4,
     letterSpacing: letterSpacing.letterSpacing0,
@@ -106,9 +117,20 @@ export const typography: ThemeTypography = {
     lineHeight: lineHeights.lineHeight4,
     letterSpacing: letterSpacing.letterSpacing0,
   },
+  /**
+   * @deprecated [#1] since version 1.9 [#2].
+   * [#3] Will be deleted in version 2.0.
+   */
   lHeadingSMRegular: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.regular,
+    fontSize: fontSizes.fontSize5,
+    lineHeight: lineHeights.lineHeight4,
+    letterSpacing: letterSpacing.letterSpacing0,
+  },
+  lBodyLGMedium: {
+    fontFamily: fontFamilies.euclidCircularB,
+    fontWeight: fontWeights.medium,
     fontSize: fontSizes.fontSize5,
     lineHeight: lineHeights.lineHeight4,
     letterSpacing: letterSpacing.letterSpacing0,

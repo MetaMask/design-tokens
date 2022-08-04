@@ -72,6 +72,12 @@ export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
       lineHeight: `${typography.sHeadingSMRegular.lineHeight}px`,
       fontWeight: typography.sHeadingSMRegular.fontWeight,
     },
+    bodyLGMedium: {
+      fontFamily: typography.sBodyLGMedium.fontFamily,
+      fontSize: typography.sBodyLGMedium.fontSize,
+      lineHeight: `${typography.sBodyLGMedium.lineHeight}px`,
+      fontWeight: typography.sBodyLGMedium.fontWeight,
+    },
     bodyMD: {
       fontFamily: typography.sBodyMD.fontFamily,
       fontSize: typography.sBodyMD.fontSize,
@@ -129,7 +135,15 @@ export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
       <Text as="h4" style={styles.headingSMRegular} {...args}>
         {`S HeadingSM Regular ${styles.headingSMRegular.fontSize}px/${
           styles.headingSMRegular.lineHeight
-        } ${styles.headingSMRegular.fontSize / smallScreenFontSizeBase}rem`}
+        } ${
+          styles.headingSMRegular.fontSize / smallScreenFontSizeBase
+        }rem`}{' '}
+        <span style={{ color: 'var(--color-error-default)' }}>DEPRECATED</span>
+      </Text>
+      <Text as="h4" style={styles.bodyLGMedium} {...args}>
+        {`S BodyLG Medium ${styles.bodyLGMedium.fontSize}px/${
+          styles.bodyLGMedium.lineHeight
+        } ${styles.bodyLGMedium.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
       <Text as="p" style={styles.bodyMDBold} {...args}>
         {`S BodyMD Bold ${styles.bodyMDBold.fontSize}px/${
@@ -193,6 +207,12 @@ export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
       lineHeight: `${typography.lHeadingSMRegular.lineHeight}px`,
       fontWeight: typography.lHeadingSMRegular.fontWeight,
     },
+    bodyLGMedium: {
+      fontFamily: typography.lBodyLGMedium.fontFamily,
+      fontSize: typography.lBodyLGMedium.fontSize,
+      lineHeight: `${typography.lBodyLGMedium.lineHeight}px`,
+      fontWeight: typography.lBodyLGMedium.fontWeight,
+    },
     bodyMDBold: {
       fontFamily: typography.lBodyMDBold.fontFamily,
       fontSize: typography.lBodyMDBold.fontSize,
@@ -250,7 +270,15 @@ export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
       <Text as="h4" style={styles.headingSMRegular} {...args}>
         {`L HeadingSM Regular ${styles.headingSMRegular.fontSize}px/${
           styles.headingSMRegular.lineHeight
-        } ${styles.headingSMRegular.fontSize / largeScreenFontSizeBase}rem`}
+        } ${
+          styles.headingSMRegular.fontSize / largeScreenFontSizeBase
+        }rem`}{' '}
+        <span style={{ color: 'var(--color-error-default)' }}>DEPRECATED</span>
+      </Text>
+      <Text as="h4" style={styles.bodyLGMedium} {...args}>
+        {`L BodyLG Medium ${styles.bodyLGMedium.fontSize}px/${
+          styles.bodyLGMedium.lineHeight
+        } ${styles.bodyLGMedium.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
       <Text as="p" style={styles.bodyMDBold} {...args}>
         {`L BodyMD Bold ${styles.bodyMDBold.fontSize}px/${
