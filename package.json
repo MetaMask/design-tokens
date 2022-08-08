@@ -22,18 +22,18 @@
     "src/css/"
   ],
   "scripts": {
-    "setup": "yarn install && yarn allow-scripts",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "prepublishOnly": "yarn build:clean && yarn lint && yarn test",
-    "lint:eslint": "eslint . --cache --ext js,ts",
-    "lint:misc": "prettier '**/*.json' '**/*.md' '!CHANGELOG.md' '**/*.yml' --ignore-path .gitignore",
-    "lint": "yarn lint:eslint && yarn lint:misc --check",
-    "lint:fix": "yarn lint:eslint --fix && yarn lint:misc --write",
-    "build:clean": "rimraf dist && yarn build",
     "build": "tsc --project .",
+    "build-storybook": "build-storybook",
+    "build:clean": "rimraf dist && yarn build",
+    "lint": "yarn lint:eslint && yarn lint:misc --check",
+    "lint:eslint": "eslint . --cache --ext js,ts",
+    "lint:fix": "yarn lint:eslint --fix && yarn lint:misc --write",
+    "lint:misc": "prettier '**/*.json' '**/*.md' '!CHANGELOG.md' '**/*.yml' --ignore-path .gitignore",
+    "prepublishOnly": "yarn build:clean && yarn lint && yarn test",
+    "setup": "yarn install && yarn allow-scripts",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {},
   "devDependencies": {
