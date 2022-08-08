@@ -18,5 +18,10 @@ module.exports = {
       extends: ['@metamask/eslint-config-jest'],
     },
   ],
-  ignorePatterns: ['!.eslintrc.js', '!.prettierrc.js', 'dist/'],
+  ignorePatterns: [
+    '!.eslintrc.js',
+    '!.prettierrc.js',
+    'dist/',
+    'storybook-static/',
+  ],
 };
