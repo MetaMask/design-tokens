@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.9.0]
-### Uncategorized
+### Changed
 - 210: update typography line height tokens to be REM based ([#211](https://github.com/MetaMask/design-tokens/pull/211))
 - Upgrading storybook to 6.5 ([#212](https://github.com/MetaMask/design-tokens/pull/212))
 - Replaced Heading-SM-Regular by Body-LG-Medium ([#194](https://github.com/MetaMask/design-tokens/pull/194))
