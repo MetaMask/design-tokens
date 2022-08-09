@@ -1,3 +1,4 @@
+import '../docs/fonts/fonts.scss';
 import '../src/css/design-tokens.css';
 
 export const parameters = {
