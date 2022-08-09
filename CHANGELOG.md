@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.9.0]
+### Uncategorized
+- 210: update typography line height tokens to be REM based ([#211](https://github.com/MetaMask/design-tokens/pull/211))
+- Upgrading storybook to 6.5 ([#212](https://github.com/MetaMask/design-tokens/pull/212))
+- Replaced Heading-SM-Regular by Body-LG-Medium ([#194](https://github.com/MetaMask/design-tokens/pull/194))
+- Updated Light Theme Shadows to match Storybook ([#195](https://github.com/MetaMask/design-tokens/pull/195))
+
 ## [1.8.0]
 ### Changed
 - Adding shadows to design tokens ([#137](https://github.com/MetaMask/design-tokens/pull/137))
@@ -106,7 +113,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.8.0...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.9.0...HEAD
+[1.9.0]: https://github.com/MetaMask/design-tokens/compare/v1.8.0...v1.9.0
 [1.8.0]: https://github.com/MetaMask/design-tokens/compare/v1.7.0...v1.8.0
 [1.7.0]: https://github.com/MetaMask/design-tokens/compare/v1.6.5...v1.7.0
 [1.6.5]: https://github.com/MetaMask/design-tokens/compare/v1.6.4...v1.6.5
