@@ -344,3 +344,223 @@ export const FontWeight: ComponentStory<typeof Text> = (...args) => {
     </>
   );
 };
+
+export const SmallScreenCSS: ComponentStory<typeof Text> = (...args) => {
+  const fontBase = 16;
+  const styles = {
+    DisplayMD: {
+      fontFamily: 'var(--typography-s-display-md-font-family)',
+      fontSize: 'var(--typography-s-display-md-font-size)',
+      lineHeight: 'var(--typography-s-display-md-line-height)',
+      fontWeight: 'var(--typography-s-display-md-font-weight)',
+    },
+    HeadingLG: {
+      fontFamily: 'var(--typography-s-heading-lg-font-family)',
+      fontSize: 'var(--typography-s-heading-lg-font-size)',
+      lineHeight: 'var(--typography-s-heading-lg-line-height)',
+      fontWeight: 'var(--typography-s-heading-lg-font-weight)',
+    },
+    HeadingMD: {
+      fontFamily: 'var(--typography-s-heading-md-font-family)',
+      fontSize: 'var(--typography-s-heading-md-font-size)',
+      lineHeight: 'var(--typography-s-heading-md-line-height)',
+      fontWeight: 'var(--typography-s-heading-md-font-weight)',
+    },
+    HeadingSM: {
+      fontFamily: 'var(--typography-s-heading-sm-font-family)',
+      fontSize: 'var(--typography-s-heading-sm-font-size)',
+      lineHeight: 'var(--typography-s-heading-sm-line-height)',
+      fontWeight: 'var(--typography-s-heading-sm-font-weight)',
+    },
+    'HeadingSM Regular': {
+      fontFamily: 'var(--typography-s-heading-sm-regular-font-family)',
+      fontSize: 'var(--typography-s-heading-sm-regular-font-size)',
+      lineHeight: 'var(--typography-s-heading-sm-regular-line-height)',
+      fontWeight: 'var(--typography-s-heading-sm-regular-font-weight)',
+    },
+    'BodyLG Medium': {
+      fontFamily: 'var(--typography-s-body-lg-medium-font-family)',
+      fontSize: 'var(--typography-s-body-lg-medium-font-size)',
+      lineHeight: 'var(--typography-s-body-lg-medium-line-height)',
+      fontWeight: 'var(--typography-s-body-lg-medium-font-weight)',
+    },
+    BodyMD: {
+      fontFamily: 'var(--typography-s-body-md-font-family)',
+      fontSize: 'var(--typography-s-body-md-font-size)',
+      lineHeight: 'var(--typography-s-body-md-line-height)',
+      fontWeight: 'var(--typography-s-body-md-font-weight)',
+    },
+    'BodyMD Bold': {
+      fontFamily: 'var(--typography-s-body-md-bold-font-family)',
+      fontSize: 'var(--typography-s-body-md-bold-font-size)',
+      lineHeight: 'var(--typography-s-body-md-bold-line-height)',
+      fontWeight: 'var(--typography-s-body-md-bold-font-weight)',
+    },
+    BodySM: {
+      fontFamily: 'var(--typography-s-body-sm-font-family)',
+      fontSize: 'var(--typography-s-body-sm-font-size)',
+      lineHeight: 'var(--typography-s-body-sm-line-height)',
+      fontWeight: 'var(--typography-s-body-sm-font-weight)',
+    },
+    'BodySM Bold': {
+      fontFamily: 'var(--typography-s-body-sm-bold-font-family)',
+      fontSize: 'var(--typography-s-body-sm-bold-font-size)',
+      lineHeight: 'var(--typography-s-body-sm-bold-line-height)',
+      fontWeight: 'var(--typography-s-body-sm-bold-font-weight)',
+    },
+    BodyXS: {
+      fontFamily: 'var(--typography-s-body-xs-font-family)',
+      fontSize: 'var(--typography-s-body-xs-font-size)',
+      lineHeight: 'var(--typography-s-body-xs-line-height)',
+      fontWeight: 'var(--typography-s-body-xs-font-weight)',
+      letterSpacing: 'var(--typography-s-body-xs-letter-spacing)',
+    },
+  };
+
+  const getCssVar = (variable) => {
+    const strippedVar = variable.slice(4, -1);
+
+    return getComputedStyle(document.documentElement)
+      .getPropertyValue(strippedVar)
+      .slice(0, -3);
+  };
+
+  return (
+    <>
+      {Object.values(styles).map((value, i) => {
+        const title = Object.getOwnPropertyNames(styles)[i];
+        let tag = 'p';
+
+        if (i <= 4) {
+          tag = `h${i + 1}`;
+        }
+
+        return (
+          <Text as={tag} style={value} {...args} key={i}>
+            {`S ${title} ${getCssVar(value.fontSize) * fontBase}px/${
+              getCssVar(value.lineHeight) * fontBase
+            }px ${getCssVar(value.fontSize)}rem/${getCssVar(
+              value.lineHeight,
+            )}rem `}
+            {title === 'HeadingSM Regular' && (
+              <span style={{ color: 'var(--color-error-default)' }}>
+                DEPRECATED
+              </span>
+            )}
+          </Text>
+        );
+      })}
+    </>
+  );
+};
+
+export const LargeScreenCSS: ComponentStory<typeof Text> = (...args) => {
+  const fontBase = 16;
+
+  const styles = {
+    DisplayMD: {
+      fontFamily: 'var(--typography-l-display-md-font-family)',
+      fontSize: 'var(--typography-l-display-md-font-size)',
+      lineHeight: 'var(--typography-l-display-md-line-height)',
+      fontWeight: 'var(--typography-l-display-md-font-weight)',
+    },
+    HeadingLG: {
+      fontFamily: 'var(--typography-l-heading-lg-font-family)',
+      fontSize: 'var(--typography-l-heading-lg-font-size)',
+      lineHeight: 'var(--typography-l-heading-lg-line-height)',
+      fontWeight: 'var(--typography-l-heading-lg-font-weight)',
+    },
+    HeadingMD: {
+      fontFamily: 'var(--typography-l-heading-md-font-family)',
+      fontSize: 'var(--typography-l-heading-md-font-size)',
+      lineHeight: 'var(--typography-l-heading-md-line-height)',
+      fontWeight: 'var(--typography-l-heading-md-font-weight)',
+    },
+    HeadingSM: {
+      fontFamily: 'var(--typography-l-heading-sm-font-family)',
+      fontSize: 'var(--typography-l-heading-sm-font-size)',
+      lineHeight: 'var(--typography-l-heading-sm-line-height)',
+      fontWeight: 'var(--typography-l-heading-sm-font-weight)',
+    },
+    'HeadingSM Regular': {
+      fontFamily: 'var(--typography-l-heading-sm-regular-font-family)',
+      fontSize: 'var(--typography-l-heading-sm-regular-font-size)',
+      lineHeight: 'var(--typography-l-heading-sm-regular-line-height)',
+      fontWeight: 'var(--typography-l-heading-sm-regular-font-weight)',
+    },
+    'BodyLG Medium': {
+      fontFamily: 'var(--typography-l-body-lg-medium-font-family)',
+      fontSize: 'var(--typography-l-body-lg-medium-font-size)',
+      lineHeight: 'var(--typography-l-body-lg-medium-line-height)',
+      fontWeight: 'var(--typography-l-body-lg-medium-font-weight)',
+    },
+    BodyMD: {
+      fontFamily: 'var(--typography-l-body-md-font-family)',
+      fontSize: 'var(--typography-l-body-md-font-size)',
+      lineHeight: 'var(--typography-l-body-md-line-height)',
+      fontWeight: 'var(--typography-l-body-md-font-weight)',
+    },
+    'BodyMD Bold': {
+      fontFamily: 'var(--typography-l-body-md-bold-font-family)',
+      fontSize: 'var(--typography-l-body-md-bold-font-size)',
+      lineHeight: 'var(--typography-l-body-md-bold-line-height)',
+      fontWeight: 'var(--typography-l-body-md-bold-font-weight)',
+    },
+    BodySM: {
+      fontFamily: 'var(--typography-l-body-sm-font-family)',
+      fontSize: 'var(--typography-l-body-sm-font-size)',
+      lineHeight: 'var(--typography-l-body-sm-line-height)',
+      fontWeight: 'var(--typography-l-body-sm-font-weight)',
+    },
+    'BodySM Bold': {
+      fontFamily: 'var(--typography-l-body-sm-bold-font-family)',
+      fontSize: 'var(--typography-l-body-sm-bold-font-size)',
+      lineHeight: 'var(--typography-l-body-sm-bold-line-height)',
+      fontWeight: 'var(--typography-l-body-sm-bold-font-weight)',
+    },
+    BodyXS: {
+      fontFamily: 'var(--typography-l-body-xs-font-family)',
+      fontSize: 'var(--typography-l-body-xs-font-size)',
+      lineHeight: 'var(--typography-l-body-xs-line-height)',
+      fontWeight: 'var(--typography-l-body-xs-font-weight)',
+      letterSpacing: 'var(--typography-l-body-xs-letter-spacing)',
+    },
+  };
+
+  const getCssVar = (variable) => {
+    const strippedVar = variable.slice(4, -1);
+
+    return getComputedStyle(document.documentElement)
+      .getPropertyValue(strippedVar)
+      .slice(0, -3)
+      .trim();
+  };
+
+  return (
+    <>
+      {Object.values(styles).map((value, i) => {
+        const title = Object.getOwnPropertyNames(styles)[i];
+        let tag = 'p';
+
+        if (i <= 4) {
+          tag = `h${i + 1}`;
+        }
+
+        return (
+          <Text as={tag} style={value} {...args} key={i}>
+            {`L ${title} ${getCssVar(value.fontSize) * fontBase}px/${
+              getCssVar(value.lineHeight) * fontBase
+            }px
+
+            ${getCssVar(value.fontSize)}rem/${getCssVar(value.lineHeight)}rem `}
+            {title === 'HeadingSM Regular' && (
+              <span style={{ color: 'var(--color-error-default)' }}>
+                DEPRECATED
+              </span>
+            )}
+          </Text>
+        );
+      })}
+    </>
+  );
+};
