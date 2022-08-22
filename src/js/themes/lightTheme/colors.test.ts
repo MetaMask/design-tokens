@@ -279,4 +279,76 @@ describe('Light Theme Colors', () => {
       designTokens.light.colors.info.inverse.value,
     );
   });
+
+  it('js tokens for testNetworks.ropstenDefault matches figma tokens testNetworks.ropstenDefault', () => {
+    expect(importableColors.testNetworks.ropstenDefault).toStrictEqual(
+      designTokens.light.colors.testNetworks.ropstenDefault.value,
+    );
+  });
+
+  it('js tokens for testNetworks.ropstenInverse matches figma tokens testNetworks.ropstenInverse', () => {
+    expect(importableColors.testNetworks.ropstenInverse).toStrictEqual(
+      designTokens.light.colors.testNetworks.ropstenInverse.value,
+    );
+  });
+
+  it('js tokens for testNetworks.kovanDefault matches figma tokens testNetworks.kovanDefault', () => {
+    expect(importableColors.testNetworks.kovanDefault).toStrictEqual(
+      designTokens.light.colors.testNetworks.kovanDefault.value,
+    );
+  });
+
+  it('js tokens for testNetworks.kovanInverse matches figma tokens testNetworks.kovanInverse', () => {
+    expect(importableColors.testNetworks.kovanInverse).toStrictEqual(
+      designTokens.light.colors.testNetworks.kovanInverse.value,
+    );
+  });
+
+  it('js tokens for testNetworks.rinkebyDefault matches figma tokens testNetworks.rinkebyDefault', () => {
+    expect(importableColors.testNetworks.rinkebyDefault).toStrictEqual(
+      designTokens.light.colors.testNetworks.rinkebyDefault.value,
+    );
+  });
+
+  it('js tokens for testNetworks.rinkebyInverse matches figma tokens testNetworks.rinkebyInverse', () => {
+    expect(importableColors.testNetworks.rinkebyInverse).toStrictEqual(
+      designTokens.light.colors.testNetworks.rinkebyInverse.value,
+    );
+  });
+
+  it('js tokens for testNetworks.goerliDefault matches figma tokens testNetworks.goerliDefault', () => {
+    expect(importableColors.testNetworks.goerliDefault).toStrictEqual(
+      designTokens.light.colors.testNetworks.goerliDefault.value,
+    );
+  });
+
+  it('js tokens for testNetworks.goerliInverse matches figma tokens testNetworks.goerliInverse', () => {
+    expect(importableColors.testNetworks.goerliInverse).toStrictEqual(
+      designTokens.light.colors.testNetworks.goerliInverse.value,
+    );
+  });
+
+  it('js tokens for testNetworks.localhostDefault matches figma tokens testNetworks.localhostDefault', () => {
+    expect(importableColors.testNetworks.localhostDefault).toStrictEqual(
+      designTokens.light.colors.testNetworks.localhostDefault.value,
+    );
+  });
+
+  it('js tokens for testNetworks.localhostInverse matches figma tokens testNetworks.localhostInverse', () => {
+    expect(importableColors.testNetworks.localhostInverse).toStrictEqual(
+      designTokens.light.colors.testNetworks.localhostInverse.value,
+    );
+  });
+
+  it('js tokens for flask.default matches figma tokens flask.default', () => {
+    expect(importableColors.flask.default).toStrictEqual(
+      designTokens.light.colors.flask.default.value,
+    );
+  });
+
+  it('js tokens for flask.inverse matches figma tokens flask.inverse', () => {
+    expect(importableColors.flask.inverse).toStrictEqual(
+      designTokens.light.colors.flask.inverse.value,
+    );
+  });
 });

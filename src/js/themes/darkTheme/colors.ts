@@ -84,7 +84,7 @@ export const colors: ThemeColors = {
     ropstenInverse: '#FCFCFC',
     kovanDefault: '#9064FF',
     kovanInverse: '#FCFCFC',
-    rinkebyDefault: '#9064FF',
+    rinkebyDefault: '#FFC70A',
     rinkebyInverse: '#24272A',
     goerliDefault: '#1098FC',
     goerliInverse: '#FCFCFC',
