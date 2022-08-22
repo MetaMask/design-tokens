@@ -238,13 +238,65 @@ export interface ThemeColors {
      */
     muted: string;
     /**
-     * {string} info.inverse - SFor elements used on top of info/default. Used for text, icon or border
+     * {string} info.inverse - For elements used on top of info/default. Used for text, icon or border
      */
     inverse: string;
     /**
      * {string} info.disabled - [Deprecated] Should be used for disabled state
      */
     disabled: string;
+  };
+  testNetworks: {
+    /**
+     * {string} testNetworks.ropstenDefault - For ropsten test network colored elements
+     */
+    ropstenDefault: string;
+    /**
+     * {string} testNetworks.ropstenInverse - For elements used on top of testNetworks/ropstenDefault
+     */
+    ropstenInverse: string;
+    /**
+     * {string} testNetworks.kovanDefault - For kovan test network colored elements
+     */
+    kovanDefault: string;
+    /**
+     * {string} testNetworks.kovanInverse - For elements used on top of testNetworks/kovanDefault
+     */
+    kovanInverse: string;
+    /**
+     * {string} testNetworks.rinkebyDefault - For rinkeby test network colored elements
+     */
+    rinkebyDefault: string;
+    /**
+     * {string} testNetworks.rinkebyInverse - For elements used on top of testNetworks/rinkebyDefault
+     */
+    rinkebyInverse: string;
+    /**
+     * {string} testNetworks.;goerliDefault - For goerli test network colored elements
+     */
+    goerliDefault: string;
+    /**
+     * {string} testNetworks.goerliInverse - For elements used on top of testNetworks/goerliDefault
+     */
+    goerliInverse: string;
+    /**
+     * {string} testNetworks.localhostDefault - For localhost test network colored elements
+     */
+    localhostDefault: string;
+    /**
+     * {string} testNetworks.localhostInverse - For elements used on top of testNetworks/localhostDefault
+     */
+    localhostInverse: string;
+  };
+  flask: {
+    /**
+     * {string} flask.default - For Flask colored elements
+     */
+    default: string;
+    /**
+     * {string} flask.inverse - For elements used on top of flask/default
+     */
+    inverse: string;
   };
 }
 

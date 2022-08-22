@@ -79,4 +79,20 @@ export const colors: ThemeColors = {
     inverse: '#FCFCFC',
     disabled: '#037DD680',
   },
+  testNetworks: {
+    ropstenDefault: '#FF4A8D',
+    ropstenInverse: '#FCFCFC',
+    kovanDefault: '#9064FF',
+    kovanInverse: '#FCFCFC',
+    rinkebyDefault: '#9064FF',
+    rinkebyInverse: '#24272A',
+    goerliDefault: '#1098FC',
+    goerliInverse: '#FCFCFC',
+    localhostDefault: '#BBC0C5',
+    localhostInverse: '#FCFCFC',
+  },
+  flask: {
+    default: '#8B45B6',
+    inverse: '#FCFCFC',
+  },
 };
