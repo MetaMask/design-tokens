@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "build": "tsc --project .",
-    "build-storybook": "storybook-to-ghpages",
+    "build-storybook": "build-storybook",
     "build:clean": "rimraf dist && yarn build",
     "lint": "yarn lint:eslint && yarn lint:misc --check",
     "lint:eslint": "eslint . --cache --ext js,ts",
@@ -32,6 +32,7 @@
     "prepublishOnly": "yarn build:clean && yarn lint && yarn test",
     "setup": "yarn install && yarn allow-scripts",
     "storybook": "start-storybook -p 6006",
+    "storybook:deploy": "storybook-to-ghpages",
     "test": "jest",
     "test:watch": "jest --watch"
   },
