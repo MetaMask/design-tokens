@@ -246,47 +246,57 @@ export interface ThemeColors {
      */
     disabled: string;
   };
-  testNetworks: {
-    /**
-     * {string} testNetworks.ropstenDefault - For ropsten test network colored elements
-     */
-    ropstenDefault: string;
-    /**
-     * {string} testNetworks.ropstenInverse - For elements used on top of testNetworks/ropstenDefault
-     */
-    ropstenInverse: string;
-    /**
-     * {string} testNetworks.kovanDefault - For kovan test network colored elements
-     */
-    kovanDefault: string;
-    /**
-     * {string} testNetworks.kovanInverse - For elements used on top of testNetworks/kovanDefault
-     */
-    kovanInverse: string;
-    /**
-     * {string} testNetworks.rinkebyDefault - For rinkeby test network colored elements
-     */
-    rinkebyDefault: string;
-    /**
-     * {string} testNetworks.rinkebyInverse - For elements used on top of testNetworks/rinkebyDefault
-     */
-    rinkebyInverse: string;
-    /**
-     * {string} testNetworks.;goerliDefault - For goerli test network colored elements
-     */
-    goerliDefault: string;
-    /**
-     * {string} testNetworks.goerliInverse - For elements used on top of testNetworks/goerliDefault
-     */
-    goerliInverse: string;
-    /**
-     * {string} testNetworks.localhostDefault - For localhost test network colored elements
-     */
-    localhostDefault: string;
-    /**
-     * {string} testNetworks.localhostInverse - For elements used on top of testNetworks/localhostDefault
-     */
-    localhostInverse: string;
+  networks: {
+    ropsten: {
+      /**
+       * {string} networks.ropsten.default - For ropsten test network colored elements
+       */
+      default: string;
+      /**
+       * {string} networks.ropsten.inverse - For elements used on top of networks/ropsten/default
+       */
+      inverse: string;
+    };
+    kovan: {
+      /**
+       * {string} networks.kovan.default - For kovan test network colored elements
+       */
+      default: string;
+      /**
+       * {string} networks.kovan.inverse - For elements used on top of networks/kovan/default
+       */
+      inverse: string;
+    };
+    rinkeby: {
+      /**
+       * {string} networks.rinkeby.default - For rinkeby test network colored elements
+       */
+      default: string;
+      /**
+       * {string} networks.rinkeby.inverse - For elements used on top of networks/rinkeby/default
+       */
+      inverse: string;
+    };
+    goerli: {
+      /**
+       * {string} networks.;goerliDefault - For goerli test network colored elements
+       */
+      default: string;
+      /**
+       * {string} networks.goerli.inverse - For elements used on top of networks/goerli/default
+       */
+      inverse: string;
+    };
+    localhost: {
+      /**
+       * {string} networks.localhost.default - For localhost test network colored elements
+       */
+      default: string;
+      /**
+       * {string} networks.localhost.inverse - For elements used on top of networks/localhost/default
+       */
+      inverse: string;
+    };
   };
   flask: {
     /**

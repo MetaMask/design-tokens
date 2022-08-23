@@ -79,17 +79,27 @@ export const colors: ThemeColors = {
     inverse: '#FCFCFC',
     disabled: '#037DD680',
   },
-  testNetworks: {
-    ropstenDefault: '#FF4A8D',
-    ropstenInverse: '#FCFCFC',
-    kovanDefault: '#9064FF',
-    kovanInverse: '#FCFCFC',
-    rinkebyDefault: '#FFC70A',
-    rinkebyInverse: '#24272A',
-    goerliDefault: '#1098FC',
-    goerliInverse: '#FCFCFC',
-    localhostDefault: '#BBC0C5',
-    localhostInverse: '#FCFCFC',
+  networks: {
+    ropsten: {
+      default: '#FF4A8D',
+      inverse: '#FCFCFC',
+    },
+    kovan: {
+      default: '#9064FF',
+      inverse: '#FCFCFC',
+    },
+    rinkeby: {
+      default: '#FFC70A',
+      inverse: '#24272A',
+    },
+    goerli: {
+      default: '#1098FC',
+      inverse: '#FCFCFC',
+    },
+    localhost: {
+      default: '#BBC0C5',
+      inverse: '#FCFCFC',
+    },
   },
   flask: {
     default: '#8B45B6',

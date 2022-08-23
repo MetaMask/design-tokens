@@ -293,16 +293,16 @@
   --color-info-muted: #037dd619;
   --color-info-inverse: var(--brand-colors-white-white010);
   --color-info-disabled: #037dd680;
-  --color-test-network-ropsten-default: var(--brand-colors-pink-pink500);
-  --color-test-network-ropsten-inverse: var(--brand-colors-white-white010);
-  --color-test-network-kovan-default: var(--brand-colors-violet-violet500);
-  --color-test-network-kovan-inverse: var(--brand-colors-white-white010);
-  --color-test-network-rinkeby-default: var(--brand-colors-yellow-yellow600);
-  --color-test-network-rinkeby-inverse: var(--brand-colors-grey-grey800);
-  --color-test-network-goerli-default: var(--brand-colors-blue-blue400);
-  --color-test-network-goerli-inverse: var(--brand-colors-white-white010);
-  --color-test-network-localhost-default: var(--brand-colors-grey-grey200);
-  --color-test-network-localhost-inverse: var(--brand-colors-white-white010);
+  --color-network-ropsten-default: var(--brand-colors-pink-pink500);
+  --color-network-ropsten-inverse: var(--brand-colors-white-white010);
+  --color-network-kovan-default: var(--brand-colors-violet-violet500);
+  --color-network-kovan-inverse: var(--brand-colors-white-white010);
+  --color-network-rinkeby-default: var(--brand-colors-yellow-yellow600);
+  --color-network-rinkeby-inverse: var(--brand-colors-grey-grey800);
+  --color-network-goerli-default: var(--brand-colors-blue-blue400);
+  --color-network-goerli-inverse: var(--brand-colors-white-white010);
+  --color-network-localhost-default: var(--brand-colors-grey-grey200);
+  --color-network-localhost-inverse: var(--brand-colors-white-white010);
   --color-flask-default: var(--brand-colors-purple-purple500);
   --color-flask-inverse: var(--brand-colors-white-white010);
 

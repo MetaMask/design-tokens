@@ -280,63 +280,63 @@ describe('Dark Theme Colors', () => {
     );
   });
 
-  it('js tokens for testNetworks.ropstenDefault matches figma tokens testNetworks.ropstenDefault', () => {
-    expect(importableColors.testNetworks.ropstenDefault).toStrictEqual(
-      designTokens.dark.colors.testNetworks.ropstenDefault.value,
+  it('js tokens for networks.ropsten.default matches figma tokens networks.ropsten.default', () => {
+    expect(importableColors.networks.ropsten.default).toStrictEqual(
+      designTokens.dark.colors.networks.ropsten.default.value,
     );
   });
 
-  it('js tokens for testNetworks.ropstenInverse matches figma tokens testNetworks.ropstenInverse', () => {
-    expect(importableColors.testNetworks.ropstenInverse).toStrictEqual(
-      designTokens.dark.colors.testNetworks.ropstenInverse.value,
+  it('js tokens for networks.ropsten.inverse matches figma tokens networks.ropsten.inverse', () => {
+    expect(importableColors.networks.ropsten.inverse).toStrictEqual(
+      designTokens.dark.colors.networks.ropsten.inverse.value,
     );
   });
 
-  it('js tokens for testNetworks.kovanDefault matches figma tokens testNetworks.kovanDefault', () => {
-    expect(importableColors.testNetworks.kovanDefault).toStrictEqual(
-      designTokens.dark.colors.testNetworks.kovanDefault.value,
+  it('js tokens for networks.kovan.default matches figma tokens networks.kovan.default', () => {
+    expect(importableColors.networks.kovan.default).toStrictEqual(
+      designTokens.dark.colors.networks.kovan.default.value,
     );
   });
 
-  it('js tokens for testNetworks.kovanInverse matches figma tokens testNetworks.kovanInverse', () => {
-    expect(importableColors.testNetworks.kovanInverse).toStrictEqual(
-      designTokens.dark.colors.testNetworks.kovanInverse.value,
+  it('js tokens for networks.kovan.inverse matches figma tokens networks.kovan.inverse', () => {
+    expect(importableColors.networks.kovan.inverse).toStrictEqual(
+      designTokens.dark.colors.networks.kovan.inverse.value,
     );
   });
 
-  it('js tokens for testNetworks.rinkebyDefault matches figma tokens testNetworks.rinkebyDefault', () => {
-    expect(importableColors.testNetworks.rinkebyDefault).toStrictEqual(
-      designTokens.dark.colors.testNetworks.rinkebyDefault.value,
+  it('js tokens for networks.rinkeby.default matches figma tokens networks.rinkeby.default', () => {
+    expect(importableColors.networks.rinkeby.default).toStrictEqual(
+      designTokens.dark.colors.networks.rinkeby.default.value,
     );
   });
 
-  it('js tokens for testNetworks.rinkebyInverse matches figma tokens testNetworks.rinkebyInverse', () => {
-    expect(importableColors.testNetworks.rinkebyInverse).toStrictEqual(
-      designTokens.dark.colors.testNetworks.rinkebyInverse.value,
+  it('js tokens for networks.rinkeby.inverse matches figma tokens networks.rinkeby.inverse', () => {
+    expect(importableColors.networks.rinkeby.inverse).toStrictEqual(
+      designTokens.dark.colors.networks.rinkeby.inverse.value,
     );
   });
 
-  it('js tokens for testNetworks.goerliDefault matches figma tokens testNetworks.goerliDefault', () => {
-    expect(importableColors.testNetworks.goerliDefault).toStrictEqual(
-      designTokens.dark.colors.testNetworks.goerliDefault.value,
+  it('js tokens for networks.goerli.default matches figma tokens networks.goerli.default', () => {
+    expect(importableColors.networks.goerli.default).toStrictEqual(
+      designTokens.dark.colors.networks.goerli.default.value,
     );
   });
 
-  it('js tokens for testNetworks.goerliInverse matches figma tokens testNetworks.goerliInverse', () => {
-    expect(importableColors.testNetworks.goerliInverse).toStrictEqual(
-      designTokens.dark.colors.testNetworks.goerliInverse.value,
+  it('js tokens for networks.goerli.inverse matches figma tokens networks.goerli.inverse', () => {
+    expect(importableColors.networks.goerli.inverse).toStrictEqual(
+      designTokens.dark.colors.networks.goerli.inverse.value,
     );
   });
 
-  it('js tokens for testNetworks.localhostDefault matches figma tokens testNetworks.localhostDefault', () => {
-    expect(importableColors.testNetworks.localhostDefault).toStrictEqual(
-      designTokens.dark.colors.testNetworks.localhostDefault.value,
+  it('js tokens for networks.localhost.default matches figma tokens networks.localhost.default', () => {
+    expect(importableColors.networks.localhost.default).toStrictEqual(
+      designTokens.dark.colors.networks.localhost.default.value,
     );
   });
 
-  it('js tokens for testNetworks.localhostInverse matches figma tokens testNetworks.localhostInverse', () => {
-    expect(importableColors.testNetworks.localhostInverse).toStrictEqual(
-      designTokens.dark.colors.testNetworks.localhostInverse.value,
+  it('js tokens for networks.localhost.inverse matches figma tokens networks.localhost.inverse', () => {
+    expect(importableColors.networks.localhost.inverse).toStrictEqual(
+      designTokens.dark.colors.networks.localhost.inverse.value,
     );
   });
 
