@@ -7,9 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.9.1]
-### Uncategorized
+### Changed
 - 196: update gh pages storybook build ([#226](https://github.com/MetaMask/design-tokens/pull/226))
 - DS-214: add fonts and font awesome to docs ([#217](https://github.com/MetaMask/design-tokens/pull/217))
+- Also attempting to fix font for Github pages build of storybook with this release
 
 ## [1.9.0]
 ### Changed
