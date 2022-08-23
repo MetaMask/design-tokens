@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "build": "tsc --project .",
-    "build-storybook": "build-storybook",
+    "build-storybook": "storybook-to-ghpages",
     "build:clean": "rimraf dist && yarn build",
     "lint": "yarn lint:eslint && yarn lint:misc --check",
     "lint:eslint": "eslint . --cache --ext js,ts",
@@ -49,6 +49,7 @@
     "@storybook/addon-links": "^6.5.10",
     "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^6.5.10",
+    "@storybook/storybook-deployer": "^2.8.12",
     "@types/jest": "^26.0.13",
     "@typescript-eslint/eslint-plugin": "^4.21.0",
     "@typescript-eslint/parser": "^4.21.0",
