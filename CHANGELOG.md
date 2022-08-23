@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.9.1]
+### Uncategorized
+- 196: update gh pages storybook build ([#226](https://github.com/MetaMask/design-tokens/pull/226))
+- DS-214: add fonts and font awesome to docs ([#217](https://github.com/MetaMask/design-tokens/pull/217))
+
 ## [1.9.0]
 ### Changed
 - 210: update typography line height tokens to be REM based ([#211](https://github.com/MetaMask/design-tokens/pull/211))
@@ -113,7 +118,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.9.0...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.9.1...HEAD
+[1.9.1]: https://github.com/MetaMask/design-tokens/compare/v1.9.0...v1.9.1
 [1.9.0]: https://github.com/MetaMask/design-tokens/compare/v1.8.0...v1.9.0
 [1.8.0]: https://github.com/MetaMask/design-tokens/compare/v1.7.0...v1.8.0
 [1.7.0]: https://github.com/MetaMask/design-tokens/compare/v1.6.5...v1.7.0
