@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "build": "tsc --project .",
-    "build-storybook": "build-storybook -s ./docs/fonts",
+    "build-storybook": "build-storybook",
     "build:clean": "rimraf dist && yarn build",
     "lint": "yarn lint:eslint && yarn lint:misc --check",
     "lint:eslint": "eslint . --cache --ext js,ts",
