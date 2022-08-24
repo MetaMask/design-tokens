@@ -40,7 +40,6 @@ jobs:
       - name: Validate changelog
         if: ${{ !startsWith(github.head_ref, 'release/') }}
         run: yarn auto-changelog validate
-      - name: GH Page
       - uses: MetaMask/action-publish-gh-pages@v2
         with:
           build-command: build-storybook
