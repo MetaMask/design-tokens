@@ -32,7 +32,6 @@
     "prepublishOnly": "yarn build:clean && yarn lint && yarn test",
     "setup": "yarn install && yarn allow-scripts",
     "storybook": "start-storybook -p 6006",
-    "storybook:deploy": "storybook-to-ghpages",
     "test": "jest",
     "test:watch": "jest --watch"
   },
@@ -50,7 +49,6 @@
     "@storybook/addon-links": "^6.5.10",
     "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^6.5.10",
-    "@storybook/storybook-deployer": "^2.8.12",
     "@types/jest": "^26.0.13",
     "@typescript-eslint/eslint-plugin": "^4.21.0",
     "@typescript-eslint/parser": "^4.21.0",

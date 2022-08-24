@@ -30,7 +30,7 @@ jobs:
       - run: yarn setup
       - uses: MetaMask/action-publish-gh-pages@v2
         with:
-          build-command: storybook:deploy
+          build-command: build-storybook
           source-directory: storybook-static
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
