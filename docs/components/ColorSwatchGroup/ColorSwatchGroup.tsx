@@ -52,23 +52,37 @@ export const ColorSwatchGroup: FunctionComponent<ColorSwatchGroupProps> = ({
   if (!swatchData) {
     return <div>No swatch data</div>;
   }
-
   const swatchColorsArr = Object.keys(swatchData);
 
   const renderSwatches = () => {
-    return swatchColorsArr.map((color, index) => {
-      const colorsObj = swatchData[color];
-      const colorsArr = Object.keys(colorsObj);
+    return swatchColorsArr.map((category) => {
+      const colorsObj = swatchData[category];
+      let colorsArr: any = [];
+      const recursiveColors = (nextLevel, label) => {
+        for (const key in nextLevel) {
+          const level = nextLevel[key];
+          if (level.value) {
+            colorsArr.push({
+              label: `${label}${key}`,
+              value: level.value,
+              description: level.description,
+            });
+            continue;
+          }
+          recursiveColors(level, `${label}${key}.`);
+        }
+      };
+      recursiveColors(colorsObj, '');
       return (
         <div
-          key={`${color}${index}`}
+          key={category}
           style={{
             fontSize: '0.875rem',
             fontFamily: 'sans-serif',
             color: textColor,
           }}
         >
-          <h2>{color}</h2>
+          <h2>{category}</h2>
           <div
             style={{
               display: 'grid',
@@ -76,17 +90,16 @@ export const ColorSwatchGroup: FunctionComponent<ColorSwatchGroupProps> = ({
               gridTemplateColumns: 'repeat(auto-fill, 300px)',
             }}
           >
-            {colorsArr.map((tone) => {
-              const toneObj = colorsObj[tone];
+            {colorsArr.map((color) => {
               return (
-                <div key={tone}>
+                <div key={color.label}>
                   <ColorSwatch
-                    color={toneObj.value}
-                    name={`${color}.${tone}`}
+                    color={color.value}
+                    name={color.label}
                     {...{ borderColor, textBackgroundColor, textColor }}
                   />
-                  {toneObj?.description ? (
-                    <p style={{ lineHeight: 1.3 }}>{toneObj.description}</p>
+                  {color?.description ? (
+                    <p style={{ lineHeight: 1.3 }}>{color?.description}</p>
                   ) : null}
                 </div>
               );

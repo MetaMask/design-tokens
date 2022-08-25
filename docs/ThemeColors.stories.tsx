@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { ColorSwatchGroup } from './components';
+import { ColorSwatchGroup, Text } from './components';
 import README from './ThemeColors.mdx';
 
 import tokens from '../src/figma/tokens.json';
@@ -16,9 +16,13 @@ export default {
   },
 } as ComponentMeta<typeof ColorSwatchGroup>;
 
-const Template: ComponentStory<typeof ColorSwatchGroup> = (args) => (
-  <ColorSwatchGroup {...args} />
-);
+const Template: ComponentStory<typeof ColorSwatchGroup> = (args) => {
+  return (
+    <>
+      <ColorSwatchGroup {...args} />
+    </>
+  );
+};
 
 export const LightThemeColors = Template.bind({});
 
