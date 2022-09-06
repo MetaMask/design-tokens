@@ -14,10 +14,9 @@ export default {
   },
 } as ComponentMeta<typeof ColorSwatchGroup>;
 
-const Template: ComponentStory<typeof ColorSwatchGroup> = (args) => {
-  console.log(tokens.global.brandColors);
-  return <ColorSwatchGroup {...args} />;
-};
+const Template: ComponentStory<typeof ColorSwatchGroup> = (args) => (
+  <ColorSwatchGroup {...args} />
+);
 
 export const DefaultStory = Template.bind({});
 
