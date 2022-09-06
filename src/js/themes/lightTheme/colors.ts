@@ -80,18 +80,6 @@ export const colors: ThemeColors = {
     disabled: '#037DD680',
   },
   networks: {
-    ropsten: {
-      default: '#FF4A8D',
-      inverse: '#FCFCFC',
-    },
-    kovan: {
-      default: '#9064FF',
-      inverse: '#FCFCFC',
-    },
-    rinkeby: {
-      default: '#FFC70A',
-      inverse: '#24272A',
-    },
     goerli: {
       default: '#1098FC',
       inverse: '#FCFCFC',

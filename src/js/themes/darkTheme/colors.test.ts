@@ -280,42 +280,6 @@ describe('Dark Theme Colors', () => {
     );
   });
 
-  it('js tokens for networks.ropsten.default matches figma tokens networks.ropsten.default', () => {
-    expect(importableColors.networks.ropsten.default).toStrictEqual(
-      designTokens.dark.colors.networks.ropsten.default.value,
-    );
-  });
-
-  it('js tokens for networks.ropsten.inverse matches figma tokens networks.ropsten.inverse', () => {
-    expect(importableColors.networks.ropsten.inverse).toStrictEqual(
-      designTokens.dark.colors.networks.ropsten.inverse.value,
-    );
-  });
-
-  it('js tokens for networks.kovan.default matches figma tokens networks.kovan.default', () => {
-    expect(importableColors.networks.kovan.default).toStrictEqual(
-      designTokens.dark.colors.networks.kovan.default.value,
-    );
-  });
-
-  it('js tokens for networks.kovan.inverse matches figma tokens networks.kovan.inverse', () => {
-    expect(importableColors.networks.kovan.inverse).toStrictEqual(
-      designTokens.dark.colors.networks.kovan.inverse.value,
-    );
-  });
-
-  it('js tokens for networks.rinkeby.default matches figma tokens networks.rinkeby.default', () => {
-    expect(importableColors.networks.rinkeby.default).toStrictEqual(
-      designTokens.dark.colors.networks.rinkeby.default.value,
-    );
-  });
-
-  it('js tokens for networks.rinkeby.inverse matches figma tokens networks.rinkeby.inverse', () => {
-    expect(importableColors.networks.rinkeby.inverse).toStrictEqual(
-      designTokens.dark.colors.networks.rinkeby.inverse.value,
-    );
-  });
-
   it('js tokens for networks.goerli.default matches figma tokens networks.goerli.default', () => {
     expect(importableColors.networks.goerli.default).toStrictEqual(
       designTokens.dark.colors.networks.goerli.default.value,

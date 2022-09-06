@@ -247,36 +247,6 @@ export interface ThemeColors {
     disabled: string;
   };
   networks: {
-    ropsten: {
-      /**
-       * {string} networks.ropsten.default - For ropsten test network colored elements
-       */
-      default: string;
-      /**
-       * {string} networks.ropsten.inverse - For elements used on top of networks/ropsten/default
-       */
-      inverse: string;
-    };
-    kovan: {
-      /**
-       * {string} networks.kovan.default - For kovan test network colored elements
-       */
-      default: string;
-      /**
-       * {string} networks.kovan.inverse - For elements used on top of networks/kovan/default
-       */
-      inverse: string;
-    };
-    rinkeby: {
-      /**
-       * {string} networks.rinkeby.default - For rinkeby test network colored elements
-       */
-      default: string;
-      /**
-       * {string} networks.rinkeby.inverse - For elements used on top of networks/rinkeby/default
-       */
-      inverse: string;
-    };
     goerli: {
       /**
        * {string} networks.;goerliDefault - For goerli test network colored elements
