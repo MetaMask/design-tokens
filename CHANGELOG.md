@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.10.0]
+### Uncategorized
+- Updating descriptions and deprecated tags ([#235](https://github.com/MetaMask/design-tokens/pull/235))
+- Adding test network and flask color tokens ([#223](https://github.com/MetaMask/design-tokens/pull/223))
+- Hover and pressed color tokens ([#233](https://github.com/MetaMask/design-tokens/pull/233))
+- 230 revert to old storybook build and update main branch storybook de… ([#231](https://github.com/MetaMask/design-tokens/pull/231))
+- Feat/196/fix gh pages font ([#228](https://github.com/MetaMask/design-tokens/pull/228))
+
 ## [1.9.1]
 ### Changed
 - 196: update gh pages storybook build ([#226](https://github.com/MetaMask/design-tokens/pull/226))
@@ -119,7 +127,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.9.1...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.10.0...HEAD
+[1.10.0]: https://github.com/MetaMask/design-tokens/compare/v1.9.1...v1.10.0
 [1.9.1]: https://github.com/MetaMask/design-tokens/compare/v1.9.0...v1.9.1
 [1.9.0]: https://github.com/MetaMask/design-tokens/compare/v1.8.0...v1.9.0
 [1.8.0]: https://github.com/MetaMask/design-tokens/compare/v1.7.0...v1.8.0
