@@ -18,6 +18,7 @@
   --brand-colors-grey-grey500: #6a737d;
   --brand-colors-grey-grey600: #535a61;
   --brand-colors-grey-grey700: #3b4046;
+  --brand-colors-grey-grey750: #2e3339;
   --brand-colors-grey-grey800: #24272a;
   --brand-colors-grey-grey900: #141618;
   --brand-colors-blue-blue000: #eaf6ff;
@@ -240,7 +241,11 @@
 
 :root {
   --color-background-default: var(--brand-colors-white-white000);
+  --color-background-default-hover: var(--brand-colors-grey-grey030);
+  --color-background-default-pressed: var(--brand-colors-grey-grey030);
   --color-background-alternative: var(--brand-colors-grey-grey040);
+  --color-background-alternative-hover: var(--brand-colors-grey-grey100);
+  --color-background-alternative-pressed: var(--brand-colors-grey-grey100);
   --color-text-default: var(--brand-colors-grey-grey800);
   --color-text-alternative: var(--brand-colors-grey-grey600);
   --color-text-muted: var(--brand-colors-grey-grey200);
@@ -301,7 +306,11 @@
 
 [data-theme='dark'] {
   --color-background-default: var(--brand-colors-grey-grey800);
+  --color-background-default-hover: var(--brand-colors-grey-grey700);
+  --color-background-default-pressed: var(--brand-colors-grey-grey700);
   --color-background-alternative: var(--brand-colors-grey-grey900);
+  --color-background-alternative-hover: var(--brand-colors-grey-grey750);
+  --color-background-alternative-pressed: var(--brand-colors-grey-grey750);
   --color-text-default: var(--brand-colors-white-white000);
   --color-text-alternative: var(--brand-colors-grey-grey100);
   --color-text-muted: var(--brand-colors-grey-grey400);

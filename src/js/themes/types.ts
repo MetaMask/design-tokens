@@ -28,9 +28,25 @@ export interface ThemeColors {
      */
     default: string;
     /**
+     * {string} background.defaultHover - For interactive elements that need a hover state that use background/default as their background color.
+     */
+    defaultHover: string;
+    /**
+     * {string} background.defaultPressed - For interactive elements that need a pressed state that use background/default as their background color.
+     */
+    defaultPressed: string;
+    /**
      * {string} background.alternative - For a subtle contrast option for neutral backgrounds. (Example: backdrop, header background)
      */
     alternative: string;
+    /**
+     * {string} background.alternativeHover - For interactive elements that need a hover state that use background/alternative as their background color.
+     */
+    alternativeHover: string;
+    /**
+     * {string} background.alternativePressed - For interactive elements that need a pressed state that use background/alternative as their background color.
+     */
+    alternativePressed: string;
   };
   text: {
     /**

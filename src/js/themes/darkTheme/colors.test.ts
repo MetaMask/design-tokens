@@ -10,9 +10,33 @@ describe('Dark Theme Colors', () => {
     );
   });
 
+  it('js tokens for background.defaultHover matches figma tokens background.defaultHover', () => {
+    expect(importableColors.background.defaultHover).toStrictEqual(
+      designTokens.dark.colors.background['default-hover'].value,
+    );
+  });
+
+  it('js tokens for background.defaultPressed matches figma tokens background.defaultPressed', () => {
+    expect(importableColors.background.defaultPressed).toStrictEqual(
+      designTokens.dark.colors.background['default-pressed'].value,
+    );
+  });
+
   it('js tokens for background.alternative matches figma tokens background.alternative', () => {
     expect(importableColors.background.alternative).toStrictEqual(
       designTokens.dark.colors.background.alternative.value,
+    );
+  });
+
+  it('js tokens for background.alternativeHover matches figma tokens background.alternativeHover', () => {
+    expect(importableColors.background.alternativeHover).toStrictEqual(
+      designTokens.dark.colors.background['alternative-hover'].value,
+    );
+  });
+
+  it('js tokens for background.alternativePressed matches figma tokens background.alternativePressed', () => {
+    expect(importableColors.background.alternativePressed).toStrictEqual(
+      designTokens.dark.colors.background['alternative-pressed'].value,
     );
   });
 
