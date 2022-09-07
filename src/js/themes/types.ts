@@ -28,11 +28,11 @@ export interface ThemeColors {
      */
     default: string;
     /**
-     * {string} background.defaultHover - For interactive elements that need a hover state that use background/default as their background color.
+     * {string} background.defaultHover - For component hover states that use background/default
      */
     defaultHover: string;
     /**
-     * {string} background.defaultPressed - For interactive elements that need a pressed state that use background/default as their background color.
+     * {string} background.defaultPressed - For component pressed states that use background/default.
      */
     defaultPressed: string;
     /**
@@ -40,11 +40,11 @@ export interface ThemeColors {
      */
     alternative: string;
     /**
-     * {string} background.alternativeHover - For interactive elements that need a hover state that use background/alternative as their background color.
+     * {string} background.alternativeHover - For component hover states that use background/alternative
      */
     alternativeHover: string;
     /**
-     * {string} background.alternativePressed - For interactive elements that need a pressed state that use background/alternative as their background color.
+     * {string} background.alternativePressed - For component pressed states that use background/alternative
      */
     alternativePressed: string;
   };
@@ -96,7 +96,7 @@ export interface ThemeColors {
      */
     inverse: string;
     /**
-     * {string} overlay.inverse - [Deprecated] Should be used for elements over an overlay
+     * {string} overlay.inverse - [DEPRECATED] Should be used for elements over an overlay
      */
     alternative: string;
   };
@@ -124,7 +124,7 @@ export interface ThemeColors {
      */
     inverse: string;
     /**
-     * {string} primary.disabled - [Deprecated] Should be used for
+     * {string} primary.disabled - [DEPRECATED] Should be used for disabled state
      */
     disabled: string;
     /**
@@ -134,23 +134,23 @@ export interface ThemeColors {
   };
   secondary: {
     /**
-     * {string} secondary.default - [Deprecated] Should be used for any secondary actions. It should not be used for any negative connotations such as warnings or errors as it is quite closely tied to the MetaMask Fox
+     * {string} secondary.default - [DEPRECATED] Should be used for any secondary actions. It should not be used for any negative connotations such as warnings or errors as it is quite closely tied to the MetaMask Fox
      */
     default: string;
     /**
-     * {string} secondary.alternative - [Deprecated] Should be used as an alternative to secondary.default for things such as hover states
+     * {string} secondary.alternative - [DEPRECATED] Should be used as an alternative to secondary.default for things such as hover states
      */
     alternative: string;
     /**
-     * {string} secondary.muted - [Deprecated] It’s a very low contrasting secondary variant for things such as alert backgrounds. secondary.muted and secondary.inverse should not be used together in a foreground and background combination
+     * {string} secondary.muted - [DEPRECATED] It’s a very low contrasting secondary variant for things such as alert backgrounds. secondary.muted and secondary.inverse should not be used together in a foreground and background combination
      */
     muted: string;
     /**
-     * {string} secondary.inverse - [Deprecated] Should be used only as the foreground element on top of primary/default and primary/alternative. It is intended to be the most contrasting color to primary/default. It should meet all AA and AAA accessibility standards such as the text or icon of a primary button
+     * {string} secondary.inverse - [DEPRECATED] Should be used only as the foreground element on top of primary/default and primary/alternative. It is intended to be the most contrasting color to primary/default. It should meet all AA and AAA accessibility standards such as the text or icon of a primary button
      */
     inverse: string;
     /**
-     * {string} secondary.disabled - [Deprecated] Should be used for all disabled secondary action components
+     * {string} secondary.disabled - [DEPRECATED] Should be used for all disabled secondary action components
      */
     disabled: string;
   };
@@ -172,7 +172,7 @@ export interface ThemeColors {
      */
     inverse: string;
     /**
-     * {string} error.disabled - [Deprecated] Should be used for disabled state
+     * {string} error.disabled - [DEPRECATED] Should be used for disabled state
      */
     disabled: string;
     /**
@@ -186,7 +186,7 @@ export interface ThemeColors {
      */
     default: string;
     /**
-     * {string} warning.alternative - [Deprecated] Should be used as an alternative to warning/default for things like hover or pressed states
+     * {string} warning.alternative - [DEPRECATED] Should be used as an alternative to warning/default for things like hover or pressed states
      */
     alternative: string;
     /**
@@ -198,7 +198,7 @@ export interface ThemeColors {
      */
     inverse: string;
     /**
-     * {string} warning.disabled - [Deprecated] Should be used for disabled state
+     * {string} warning.disabled - [DEPRECATED] Should be used for disabled state
      */
     disabled: string;
   };
@@ -208,7 +208,7 @@ export interface ThemeColors {
      */
     default: string;
     /**
-     * {string} success.alternative - [Deprecated] Should be used as an alternative to success/default for things like hover or pressed states
+     * {string} success.alternative - [DEPRECATED] Should be used as an alternative to success/default for things like hover or pressed states
      */
     alternative: string;
     /**
@@ -220,7 +220,7 @@ export interface ThemeColors {
      */
     inverse: string;
     /**
-     * {string} success.disabled - [Deprecated] Should be used for disabled state
+     * {string} success.disabled - [DEPRECATED] Should be used for disabled state
      */
     disabled: string;
   };
@@ -230,7 +230,7 @@ export interface ThemeColors {
      */
     default: string;
     /**
-     * {string} info.alternative - [Deprecated] Should be used as an alternative to info/default for things like hover or pressed states
+     * {string} info.alternative - [DEPRECATED] Should be used as an alternative to info/default for things like hover or pressed states
      */
     alternative: string;
     /**
@@ -242,7 +242,7 @@ export interface ThemeColors {
      */
     inverse: string;
     /**
-     * {string} info.disabled - [Deprecated] Should be used for disabled state
+     * {string} info.disabled - [DEPRECATED] Should be used for disabled state
      */
     disabled: string;
   };
