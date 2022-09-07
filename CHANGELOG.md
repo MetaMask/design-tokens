@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.10.0]
-### Uncategorized
+### Changed
 - Updating descriptions and deprecated tags ([#235](https://github.com/MetaMask/design-tokens/pull/235))
 - Adding test network and flask color tokens ([#223](https://github.com/MetaMask/design-tokens/pull/223))
 - Hover and pressed color tokens ([#233](https://github.com/MetaMask/design-tokens/pull/233))
