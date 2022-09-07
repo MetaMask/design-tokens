@@ -279,4 +279,40 @@ describe('Light Theme Colors', () => {
       designTokens.light.colors.info.inverse.value,
     );
   });
+
+  it('js tokens for networks.goerli.default matches figma tokens networks.goerli.default', () => {
+    expect(importableColors.networks.goerli.default).toStrictEqual(
+      designTokens.light.colors.networks.goerli.default.value,
+    );
+  });
+
+  it('js tokens for networks.goerli.inverse matches figma tokens networks.goerli.inverse', () => {
+    expect(importableColors.networks.goerli.inverse).toStrictEqual(
+      designTokens.light.colors.networks.goerli.inverse.value,
+    );
+  });
+
+  it('js tokens for networks.localhost.default matches figma tokens networks.localhost.default', () => {
+    expect(importableColors.networks.localhost.default).toStrictEqual(
+      designTokens.light.colors.networks.localhost.default.value,
+    );
+  });
+
+  it('js tokens for networks.localhost.inverse matches figma tokens networks.localhost.inverse', () => {
+    expect(importableColors.networks.localhost.inverse).toStrictEqual(
+      designTokens.light.colors.networks.localhost.inverse.value,
+    );
+  });
+
+  it('js tokens for flask.default matches figma tokens flask.default', () => {
+    expect(importableColors.flask.default).toStrictEqual(
+      designTokens.light.colors.flask.default.value,
+    );
+  });
+
+  it('js tokens for flask.inverse matches figma tokens flask.inverse', () => {
+    expect(importableColors.flask.inverse).toStrictEqual(
+      designTokens.light.colors.flask.inverse.value,
+    );
+  });
 });

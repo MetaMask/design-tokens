@@ -238,13 +238,45 @@ export interface ThemeColors {
      */
     muted: string;
     /**
-     * {string} info.inverse - SFor elements used on top of info/default. Used for text, icon or border
+     * {string} info.inverse - For elements used on top of info/default. Used for text, icon or border
      */
     inverse: string;
     /**
      * {string} info.disabled - [Deprecated] Should be used for disabled state
      */
     disabled: string;
+  };
+  networks: {
+    goerli: {
+      /**
+       * {string} networks.;goerliDefault - For goerli test network colored elements
+       */
+      default: string;
+      /**
+       * {string} networks.goerli.inverse - For elements used on top of networks/goerli/default
+       */
+      inverse: string;
+    };
+    localhost: {
+      /**
+       * {string} networks.localhost.default - For localhost test network colored elements
+       */
+      default: string;
+      /**
+       * {string} networks.localhost.inverse - For elements used on top of networks/localhost/default
+       */
+      inverse: string;
+    };
+  };
+  flask: {
+    /**
+     * {string} flask.default - For Flask colored elements
+     */
+    default: string;
+    /**
+     * {string} flask.inverse - For elements used on top of flask/default
+     */
+    inverse: string;
   };
 }
 

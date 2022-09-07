@@ -79,4 +79,18 @@ export const colors: ThemeColors = {
     inverse: '#FCFCFC',
     disabled: '#037DD680',
   },
+  networks: {
+    goerli: {
+      default: '#1098FC',
+      inverse: '#FCFCFC',
+    },
+    localhost: {
+      default: '#BBC0C5',
+      inverse: '#FCFCFC',
+    },
+  },
+  flask: {
+    default: '#8B45B6',
+    inverse: '#FCFCFC',
+  },
 };
