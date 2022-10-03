@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  publish-release:
+  build-deploy-storybook:
     permissions:
       contents: write
     runs-on: ubuntu-latest
