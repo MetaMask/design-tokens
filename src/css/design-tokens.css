@@ -62,6 +62,7 @@
   --brand-colors-red-red800: #64141c;
   --brand-colors-red-red900: #3a0c10;
   --brand-colors-purple-purple500: #8b45b6;
+  --brand-colors-violet-violet300: #CFB5F0;
   --brand-colors-yellow-yellow000: #fffdf8;
   --brand-colors-yellow-yellow100: #fefcde;
   --brand-colors-yellow-yellow200: #fff2c5;
@@ -295,6 +296,8 @@
   --color-network-goerli-inverse: var(--brand-colors-white-white010);
   --color-network-localhost-default: var(--brand-colors-grey-grey200);
   --color-network-localhost-inverse: var(--brand-colors-white-white010);
+  --color-network-sepolia-default: var(--brand-colors-violet-violet300);
+  --color-network-sepolia-inverse: var(--brand-colors-white-white010);
   --color-flask-default: var(--brand-colors-purple-purple500);
   --color-flask-inverse: var(--brand-colors-white-white010);
 

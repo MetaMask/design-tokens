@@ -267,6 +267,16 @@ export interface ThemeColors {
        */
       inverse: string;
     };
+    sepolia: {
+      /**
+       * {string} networks.;sepoliaDefault - For sepolia test network colored elements
+       */
+      default: string;
+      /**
+       * {string} networks.sepolia.inverse - For elements used on top of networks/sepolia/default
+       */
+      inverse: string;
+    };
   };
   flask: {
     /**

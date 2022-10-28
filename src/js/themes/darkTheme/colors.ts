@@ -88,6 +88,10 @@ export const colors: ThemeColors = {
       default: '#BBC0C5',
       inverse: '#FCFCFC',
     },
+    sepolia: {
+      default: '#CFB5F0',
+      inverse: '#FCFCFC', 
+    },
   },
   flask: {
     default: '#8B45B6',
