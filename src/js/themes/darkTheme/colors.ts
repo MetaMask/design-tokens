@@ -90,7 +90,7 @@ export const colors: ThemeColors = {
     },
     sepolia: {
       default: '#CFB5F0',
-      inverse: '#FCFCFC', 
+      inverse: '#FCFCFC',
     },
   },
   flask: {

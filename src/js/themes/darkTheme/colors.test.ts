@@ -327,5 +327,4 @@ describe('Dark Theme Colors', () => {
       designTokens.dark.colors.flask.inverse.value,
     );
   });
-
 });
