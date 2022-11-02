@@ -249,7 +249,7 @@ export interface ThemeColors {
   networks: {
     goerli: {
       /**
-       * {string} networks.;goerliDefault - For goerli test network colored elements
+       * {string} networks.goerli.default - For goerli test network colored elements
        */
       default: string;
       /**
@@ -269,7 +269,7 @@ export interface ThemeColors {
     };
     sepolia: {
       /**
-       * {string} networks.;sepoliaDefault - For sepolia test network colored elements
+       * {string} networks.sepolia.default - For sepolia test network colored elements
        */
       default: string;
       /**
