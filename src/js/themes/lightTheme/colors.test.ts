@@ -304,6 +304,18 @@ describe('Light Theme Colors', () => {
     );
   });
 
+  it('js tokens for networks.sepolia.default matches figma tokens networks.sepolia.default', () => {
+    expect(importableColors.networks.sepolia.default).toStrictEqual(
+      designTokens.light.colors.networks.sepolia.default.value,
+    );
+  });
+
+  it('js tokens for networks.sepolia.inverse matches figma tokens networks.sepolia.inverse', () => {
+    expect(importableColors.networks.sepolia.inverse).toStrictEqual(
+      designTokens.light.colors.networks.sepolia.inverse.value,
+    );
+  });
+
   it('js tokens for flask.default matches figma tokens flask.default', () => {
     expect(importableColors.flask.default).toStrictEqual(
       designTokens.light.colors.flask.default.value,
