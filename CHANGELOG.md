@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.11.0]
+### Changed
+- added sepolia test network colors ([#243](https://github.com/MetaMask/design-tokens/pull/243))
+- rename action ([#239](https://github.com/MetaMask/design-tokens/pull/239))
+
 ## [1.10.0]
 ### Changed
 - Updating descriptions and deprecated tags ([#235](https://github.com/MetaMask/design-tokens/pull/235))
@@ -127,7 +132,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.10.0...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.11.0...HEAD
+[1.11.0]: https://github.com/MetaMask/design-tokens/compare/v1.10.0...v1.11.0
 [1.10.0]: https://github.com/MetaMask/design-tokens/compare/v1.9.1...v1.10.0
 [1.9.1]: https://github.com/MetaMask/design-tokens/compare/v1.9.0...v1.9.1
 [1.9.0]: https://github.com/MetaMask/design-tokens/compare/v1.8.0...v1.9.0
