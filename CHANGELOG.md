@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.11.0]
-### Uncategorized
+### Changed
 - added sepolia test network colors ([#243](https://github.com/MetaMask/design-tokens/pull/243))
 - rename action ([#239](https://github.com/MetaMask/design-tokens/pull/239))
 
