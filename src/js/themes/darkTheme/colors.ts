@@ -77,7 +77,7 @@ export const colors: ThemeColors = {
     alternative: '#43AEFC',
     muted: '#1098FC26',
     inverse: '#FCFCFC',
-    disabled: '#037DD680',
+    disabled: '#0376C980',
   },
   networks: {
     goerli: {
