@@ -51,12 +51,12 @@ export const colors: ThemeColors = {
     disabled: '#F66A0A80',
   },
   error: {
-    default: '#D73A49',
+    default: '#D73847',
     alternative: '#B92534',
-    muted: '#D73A4919',
+    muted: '#D7384719',
     inverse: '#FCFCFC',
-    disabled: '#D73A4980',
-    shadow: '#D73A4966',
+    disabled: '#D7384780',
+    shadow: '#D7384766',
   },
   warning: {
     default: '#F66A0A',
