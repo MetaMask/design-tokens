@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { ColorSwatchGroup, Text } from './components';
+import { ColorSwatchGroup } from './components';
 import README from './ThemeColors.mdx';
 
 import tokens from '../src/figma/tokens.json';
