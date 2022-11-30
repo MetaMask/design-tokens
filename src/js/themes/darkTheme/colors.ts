@@ -51,12 +51,12 @@ export const colors: ThemeColors = {
     disabled: '#F8883B80',
   },
   error: {
-    default: '#D73A49',
+    default: '#D73847',
     alternative: '#E06470',
-    muted: '#D73A4926',
+    muted: '#D7384726',
     inverse: '#FCFCFC',
-    disabled: '#D73A4980',
-    shadow: '#D73A4966',
+    disabled: '#D7384780',
+    shadow: '#D7384766',
   },
   warning: {
     default: '#FFD33D',
@@ -77,7 +77,7 @@ export const colors: ThemeColors = {
     alternative: '#43AEFC',
     muted: '#1098FC26',
     inverse: '#FCFCFC',
-    disabled: '#037DD680',
+    disabled: '#0376C980',
   },
   networks: {
     goerli: {

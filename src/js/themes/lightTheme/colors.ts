@@ -36,12 +36,12 @@ export const colors: ThemeColors = {
     default: '#0000001A',
   },
   primary: {
-    default: '#037DD6',
+    default: '#0376C9',
     alternative: '#0260A4',
-    muted: '#037DD619',
+    muted: '#0376C919',
     inverse: '#FCFCFC',
-    disabled: '#037DD680',
-    shadow: '#037DD633',
+    disabled: '#0376C980',
+    shadow: '#0376C933',
   },
   secondary: {
     default: '#F66A0A',
@@ -51,12 +51,12 @@ export const colors: ThemeColors = {
     disabled: '#F66A0A80',
   },
   error: {
-    default: '#D73A49',
+    default: '#D73847',
     alternative: '#B92534',
-    muted: '#D73A4919',
+    muted: '#D7384719',
     inverse: '#FCFCFC',
-    disabled: '#D73A4980',
-    shadow: '#D73A4966',
+    disabled: '#D7384780',
+    shadow: '#D7384766',
   },
   warning: {
     default: '#F66A0A',
@@ -73,11 +73,11 @@ export const colors: ThemeColors = {
     disabled: '#28A74580',
   },
   info: {
-    default: '#037DD6',
+    default: '#0376C9',
     alternative: '#0260A4',
-    muted: '#037DD619',
+    muted: '#0376C919',
     inverse: '#FCFCFC',
-    disabled: '#037DD680',
+    disabled: '#0376C980',
   },
   networks: {
     goerli: {
