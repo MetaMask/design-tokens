@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.11.1]
-### Uncategorized
+### Changed
 - Updating primary, error and info colors to meet AA accessibility standards for light mode ([#255](https://github.com/MetaMask/design-tokens/pull/255))
 - Adding storybook a11y plugin ([#258](https://github.com/MetaMask/design-tokens/pull/258))
 
