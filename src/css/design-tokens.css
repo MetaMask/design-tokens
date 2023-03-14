@@ -298,6 +298,8 @@
   --color-network-localhost-inverse: var(--brand-colors-white-white010);
   --color-network-sepolia-default: var(--brand-colors-violet-violet300);
   --color-network-sepolia-inverse: var(--brand-colors-white-white010);
+  --color-network-linea-default: var(--brand-colors-black-black000);
+  --color-network-linea-inverse: var(--brand-colors-white-white010);
   --color-flask-default: var(--brand-colors-purple-purple500);
   --color-flask-inverse: var(--brand-colors-white-white010);
 
