@@ -458,6 +458,12 @@ export const SmallScreenCSS: ComponentStory<typeof Text> = (...args) => {
       lineHeight: 'var(--typography-s-body-md-line-height)',
       fontWeight: 'var(--typography-s-body-md-font-weight)',
     },
+    'BodyMD Medium': {
+      fontFamily: 'var(--typography-s-body-md-medium-font-family)',
+      fontSize: 'var(--typography-s-body-md-medium-font-size)',
+      lineHeight: 'var(--typography-s-body-md-medium-line-height)',
+      fontWeight: 'var(--typography-s-body-md-medium-font-weight)',
+    },
     'BodyMD Bold': {
       fontFamily: 'var(--typography-s-body-md-bold-font-family)',
       fontSize: 'var(--typography-s-body-md-bold-font-size)',
@@ -469,6 +475,12 @@ export const SmallScreenCSS: ComponentStory<typeof Text> = (...args) => {
       fontSize: 'var(--typography-s-body-sm-font-size)',
       lineHeight: 'var(--typography-s-body-sm-line-height)',
       fontWeight: 'var(--typography-s-body-sm-font-weight)',
+    },
+    'BodySM Medium': {
+      fontFamily: 'var(--typography-s-body-sm-medium-font-family)',
+      fontSize: 'var(--typography-s-body-sm-medium-font-size)',
+      lineHeight: 'var(--typography-s-body-sm-medium-line-height)',
+      fontWeight: 'var(--typography-s-body-sm-medium-font-weight)',
     },
     'BodySM Bold': {
       fontFamily: 'var(--typography-s-body-sm-bold-font-family)',
@@ -482,6 +494,13 @@ export const SmallScreenCSS: ComponentStory<typeof Text> = (...args) => {
       lineHeight: 'var(--typography-s-body-xs-line-height)',
       fontWeight: 'var(--typography-s-body-xs-font-weight)',
       letterSpacing: 'var(--typography-s-body-xs-letter-spacing)',
+    },
+    'BodyXS Medium': {
+      fontFamily: 'var(--typography-s-body-xs-medium-font-family)',
+      fontSize: 'var(--typography-s-body-xs-medium-font-size)',
+      lineHeight: 'var(--typography-s-body-xs-medium-line-height)',
+      fontWeight: 'var(--typography-s-body-xs-medium-font-weight)',
+      letterSpacing: 'var(--typography-s-body-xs-medium-letter-spacing)',
     },
   };
 
@@ -568,6 +587,12 @@ export const LargeScreenCSS: ComponentStory<typeof Text> = (...args) => {
       lineHeight: 'var(--typography-l-body-md-line-height)',
       fontWeight: 'var(--typography-l-body-md-font-weight)',
     },
+    'BodyMD Medium': {
+      fontFamily: 'var(--typography-l-body-md-medium-font-family)',
+      fontSize: 'var(--typography-l-body-md-medium-font-size)',
+      lineHeight: 'var(--typography-l-body-md-medium-line-height)',
+      fontWeight: 'var(--typography-l-body-md-medium-font-weight)',
+    },
     'BodyMD Bold': {
       fontFamily: 'var(--typography-l-body-md-bold-font-family)',
       fontSize: 'var(--typography-l-body-md-bold-font-size)',
@@ -579,6 +604,12 @@ export const LargeScreenCSS: ComponentStory<typeof Text> = (...args) => {
       fontSize: 'var(--typography-l-body-sm-font-size)',
       lineHeight: 'var(--typography-l-body-sm-line-height)',
       fontWeight: 'var(--typography-l-body-sm-font-weight)',
+    },
+    'BodySM Medium': {
+      fontFamily: 'var(--typography-l-body-sm-medium-font-family)',
+      fontSize: 'var(--typography-l-body-sm-medium-font-size)',
+      lineHeight: 'var(--typography-l-body-sm-medium-line-height)',
+      fontWeight: 'var(--typography-l-body-sm-medium-font-weight)',
     },
     'BodySM Bold': {
       fontFamily: 'var(--typography-l-body-sm-bold-font-family)',
@@ -592,6 +623,13 @@ export const LargeScreenCSS: ComponentStory<typeof Text> = (...args) => {
       lineHeight: 'var(--typography-l-body-xs-line-height)',
       fontWeight: 'var(--typography-l-body-xs-font-weight)',
       letterSpacing: 'var(--typography-l-body-xs-letter-spacing)',
+    },
+    'BodyXS Medium': {
+      fontFamily: 'var(--typography-l-body-xs-medium-font-family)',
+      fontSize: 'var(--typography-l-body-xs-medium-font-size)',
+      lineHeight: 'var(--typography-l-body-xs-medium-line-height)',
+      fontWeight: 'var(--typography-l-body-xs-medium-font-weight)',
+      letterSpacing: 'var(--typography-l-body-xs-medium-letter-spacing)',
     },
   };
 
