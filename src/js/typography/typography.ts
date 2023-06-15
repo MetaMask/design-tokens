@@ -61,6 +61,13 @@ export const typography: ThemeTypography = {
     lineHeight: lineHeights.lineHeight3,
     letterSpacing: letterSpacing.letterSpacing0,
   },
+  sBodyMDMedium: {
+    fontFamily: fontFamilies.euclidCircularB,
+    fontWeight: fontWeights.medium,
+    fontSize: fontSizes.fontSize3,
+    lineHeight: lineHeights.lineHeight3,
+    letterSpacing: letterSpacing.letterSpacing0,
+  },
   sBodyMDBold: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.bold,
@@ -75,6 +82,13 @@ export const typography: ThemeTypography = {
     lineHeight: lineHeights.lineHeight2,
     letterSpacing: letterSpacing.letterSpacing0,
   },
+  sBodySMMedium: {
+    fontFamily: fontFamilies.euclidCircularB,
+    fontWeight: fontWeights.medium,
+    fontSize: fontSizes.fontSize2,
+    lineHeight: lineHeights.lineHeight2,
+    letterSpacing: letterSpacing.letterSpacing0,
+  },
   sBodySMBold: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.bold,
@@ -85,6 +99,13 @@ export const typography: ThemeTypography = {
   sBodyXS: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.regular,
+    fontSize: fontSizes.fontSize1,
+    lineHeight: lineHeights.lineHeight1,
+    letterSpacing: letterSpacing.letterSpacing1,
+  },
+  sBodyXSMedium: {
+    fontFamily: fontFamilies.euclidCircularB,
+    fontWeight: fontWeights.medium,
     fontSize: fontSizes.fontSize1,
     lineHeight: lineHeights.lineHeight1,
     letterSpacing: letterSpacing.letterSpacing1,
@@ -142,6 +163,13 @@ export const typography: ThemeTypography = {
     lineHeight: lineHeights.lineHeight4,
     letterSpacing: letterSpacing.letterSpacing0,
   },
+  lBodyMDMedium: {
+    fontFamily: fontFamilies.euclidCircularB,
+    fontWeight: fontWeights.medium,
+    fontSize: fontSizes.fontSize4,
+    lineHeight: lineHeights.lineHeight4,
+    letterSpacing: letterSpacing.letterSpacing0,
+  },
   lBodyMDBold: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.bold,
@@ -156,6 +184,13 @@ export const typography: ThemeTypography = {
     lineHeight: lineHeights.lineHeight3,
     letterSpacing: letterSpacing.letterSpacing0,
   },
+  lBodySMMedium: {
+    fontFamily: fontFamilies.euclidCircularB,
+    fontWeight: fontWeights.medium,
+    fontSize: fontSizes.fontSize3,
+    lineHeight: lineHeights.lineHeight3,
+    letterSpacing: letterSpacing.letterSpacing0,
+  },
   lBodySMBold: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.bold,
@@ -166,6 +201,13 @@ export const typography: ThemeTypography = {
   lBodyXS: {
     fontFamily: fontFamilies.euclidCircularB,
     fontWeight: fontWeights.regular,
+    fontSize: fontSizes.fontSize2,
+    lineHeight: lineHeights.lineHeight2,
+    letterSpacing: letterSpacing.letterSpacing1,
+  },
+  lBodyXSMedium: {
+    fontFamily: fontFamilies.euclidCircularB,
+    fontWeight: fontWeights.medium,
     fontSize: fontSizes.fontSize2,
     lineHeight: lineHeights.lineHeight2,
     letterSpacing: letterSpacing.letterSpacing1,

@@ -304,6 +304,43 @@ describe('Typography', () => {
       );
     });
 
+    it('js tokens for sBodyMDMedium matches figma tokens sBodyMDMedium', () => {
+      expect(typography.sBodyMDMedium.fontFamily).toStrictEqual(
+        createNewFigmaTokenObject(
+          designTokens.global['S-Body-MD-Medium'].value.fontFamily,
+          designTokens.global,
+        ).value,
+      );
+      expect(typography.sBodyMDMedium.fontWeight).toStrictEqual('500');
+
+      expect(typography.sBodyMDMedium.fontSize).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['S-Body-MD-Medium'].value.fontSize,
+            designTokens.global,
+          ).value,
+        ),
+      );
+
+      expect(typography.sBodyMDMedium.lineHeight).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['S-Body-MD-Medium'].value.lineHeight,
+            designTokens.global,
+          ).value,
+        ),
+      );
+
+      expect(typography.sBodyMDMedium.letterSpacing).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['S-Body-MD-Medium'].value.letterSpacing,
+            designTokens.global,
+          ).value,
+        ),
+      );
+    });
+
     it('js tokens for sBodyMD matches figma tokens sBodyMD', () => {
       expect(typography.sBodyMD.fontFamily).toStrictEqual(
         createNewFigmaTokenObject(
@@ -378,6 +415,43 @@ describe('Typography', () => {
       );
     });
 
+    it('js tokens for sBodySMMedium matches figma tokens sBodySMMedium', () => {
+      expect(typography.sBodySMMedium.fontFamily).toStrictEqual(
+        createNewFigmaTokenObject(
+          designTokens.global['S-Body-SM-Medium'].value.fontFamily,
+          designTokens.global,
+        ).value,
+      );
+      expect(typography.sBodySMMedium.fontWeight).toStrictEqual('500');
+
+      expect(typography.sBodySMMedium.fontSize).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['S-Body-SM-Medium'].value.fontSize,
+            designTokens.global,
+          ).value,
+        ),
+      );
+
+      expect(typography.sBodySMMedium.lineHeight).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['S-Body-SM-Medium'].value.lineHeight,
+            designTokens.global,
+          ).value,
+        ),
+      );
+
+      expect(typography.sBodySMMedium.letterSpacing).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['S-Body-SM-Medium'].value.letterSpacing,
+            designTokens.global,
+          ).value,
+        ),
+      );
+    });
+
     it('js tokens for sBodySM matches figma tokens sBodySM', () => {
       expect(typography.sBodySM.fontFamily).toStrictEqual(
         createNewFigmaTokenObject(
@@ -409,6 +483,43 @@ describe('Typography', () => {
         Number(
           createNewFigmaTokenObject(
             designTokens.global['S-Body-SM'].value.letterSpacing,
+            designTokens.global,
+          ).value,
+        ),
+      );
+    });
+
+    it('js tokens for sBodyXSMedium matches figma tokens sBodyXSMedium', () => {
+      expect(typography.sBodyXSMedium.fontFamily).toStrictEqual(
+        createNewFigmaTokenObject(
+          designTokens.global['S-Body-XS-Medium'].value.fontFamily,
+          designTokens.global,
+        ).value,
+      );
+      expect(typography.sBodyXSMedium.fontWeight).toStrictEqual('500');
+
+      expect(typography.sBodyXSMedium.fontSize).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['S-Body-XS-Medium'].value.fontSize,
+            designTokens.global,
+          ).value,
+        ),
+      );
+
+      expect(typography.sBodyXSMedium.lineHeight).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['S-Body-XS-Medium'].value.lineHeight,
+            designTokens.global,
+          ).value,
+        ),
+      );
+
+      expect(typography.sBodyXSMedium.letterSpacing).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['S-Body-XS-Medium'].value.letterSpacing,
             designTokens.global,
           ).value,
         ),
@@ -713,6 +824,43 @@ describe('Typography', () => {
       );
     });
 
+    it('js tokens for lBodyMDMedium matches figma tokens lBodyMDMedium', () => {
+      expect(typography.lBodyMDMedium.fontFamily).toStrictEqual(
+        createNewFigmaTokenObject(
+          designTokens.global['L-Body-MD-Medium'].value.fontFamily,
+          designTokens.global,
+        ).value,
+      );
+      expect(typography.lBodyMDMedium.fontWeight).toStrictEqual('500');
+
+      expect(typography.lBodyMDMedium.fontSize).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['L-Body-MD-Medium'].value.fontSize,
+            designTokens.global,
+          ).value,
+        ),
+      );
+
+      expect(typography.lBodyMDMedium.lineHeight).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['L-Body-MD-Medium'].value.lineHeight,
+            designTokens.global,
+          ).value,
+        ),
+      );
+
+      expect(typography.lBodyMDMedium.letterSpacing).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['L-Body-MD-Medium'].value.letterSpacing,
+            designTokens.global,
+          ).value,
+        ),
+      );
+    });
+
     it('js tokens for lBodyMD matches figma tokens lBodyMD', () => {
       expect(typography.lBodyMD.fontFamily).toStrictEqual(
         createNewFigmaTokenObject(
@@ -787,6 +935,43 @@ describe('Typography', () => {
       );
     });
 
+    it('js tokens for lBodySMMedium matches figma tokens lBodySMMedium', () => {
+      expect(typography.lBodySMMedium.fontFamily).toStrictEqual(
+        createNewFigmaTokenObject(
+          designTokens.global['L-Body-SM-Medium'].value.fontFamily,
+          designTokens.global,
+        ).value,
+      );
+      expect(typography.lBodySMMedium.fontWeight).toStrictEqual('500');
+
+      expect(typography.lBodySMMedium.fontSize).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['L-Body-SM-Medium'].value.fontSize,
+            designTokens.global,
+          ).value,
+        ),
+      );
+
+      expect(typography.lBodySMMedium.lineHeight).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['L-Body-SM-Medium'].value.lineHeight,
+            designTokens.global,
+          ).value,
+        ),
+      );
+
+      expect(typography.lBodySMMedium.letterSpacing).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['L-Body-SM-Medium'].value.letterSpacing,
+            designTokens.global,
+          ).value,
+        ),
+      );
+    });
+
     it('js tokens for lBodySM matches figma tokens lBodySM', () => {
       expect(typography.lBodySM.fontFamily).toStrictEqual(
         createNewFigmaTokenObject(
@@ -818,6 +1003,43 @@ describe('Typography', () => {
         Number(
           createNewFigmaTokenObject(
             designTokens.global['L-Body-SM'].value.letterSpacing,
+            designTokens.global,
+          ).value,
+        ),
+      );
+    });
+
+    it('js tokens for lBodyXSMedium matches figma tokens lBodyXSMedium', () => {
+      expect(typography.lBodyXSMedium.fontFamily).toStrictEqual(
+        createNewFigmaTokenObject(
+          designTokens.global['L-Body-XS-Medium'].value.fontFamily,
+          designTokens.global,
+        ).value,
+      );
+      expect(typography.lBodyXSMedium.fontWeight).toStrictEqual('500');
+
+      expect(typography.lBodyXSMedium.fontSize).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['L-Body-XS-Medium'].value.fontSize,
+            designTokens.global,
+          ).value,
+        ),
+      );
+
+      expect(typography.lBodyXSMedium.lineHeight).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['L-Body-XS-Medium'].value.lineHeight,
+            designTokens.global,
+          ).value,
+        ),
+      );
+
+      expect(typography.lBodyXSMedium.letterSpacing).toStrictEqual(
+        Number(
+          createNewFigmaTokenObject(
+            designTokens.global['L-Body-XS-Medium'].value.letterSpacing,
             designTokens.global,
           ).value,
         ),

@@ -14,10 +14,13 @@ export interface ThemeTypography {
   sHeadingSM: TypeStyle;
   sBodyLGMedium: TypeStyle;
   sBodyMD: TypeStyle;
+  sBodyMDMedium: TypeStyle;
   sBodyMDBold: TypeStyle;
   sBodySM: TypeStyle;
+  sBodySMMedium: TypeStyle;
   sBodySMBold: TypeStyle;
   sBodyXS: TypeStyle;
+  sBodyXSMedium: TypeStyle;
   lDisplayMD: TypeStyle;
   lHeadingLG: TypeStyle;
   lHeadingMD: TypeStyle;
@@ -25,8 +28,11 @@ export interface ThemeTypography {
   lHeadingSM: TypeStyle;
   lBodyLGMedium: TypeStyle;
   lBodyMD: TypeStyle;
+  lBodyMDMedium: TypeStyle;
   lBodyMDBold: TypeStyle;
   lBodySM: TypeStyle;
+  lBodySMMedium: TypeStyle;
   lBodySMBold: TypeStyle;
   lBodyXS: TypeStyle;
+  lBodyXSMedium: TypeStyle;
 }
