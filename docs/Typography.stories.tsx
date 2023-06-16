@@ -84,6 +84,12 @@ export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
       lineHeight: `${typography.sBodyMD.lineHeight}px`,
       fontWeight: typography.sBodyMD.fontWeight,
     },
+    bodyMDMedium: {
+      fontFamily: typography.sBodyMDMedium.fontFamily,
+      fontSize: typography.sBodyMDMedium.fontSize,
+      lineHeight: `${typography.sBodyMDMedium.lineHeight}px`,
+      fontWeight: typography.sBodyMDMedium.fontWeight,
+    },
     bodyMDBold: {
       fontFamily: typography.sBodyMDBold.fontFamily,
       fontSize: typography.sBodyMDBold.fontSize,
@@ -95,6 +101,12 @@ export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
       fontSize: typography.sBodySM.fontSize,
       lineHeight: `${typography.sBodySM.lineHeight}px`,
       fontWeight: typography.sBodySM.fontWeight,
+    },
+    bodySMMedium: {
+      fontFamily: typography.sBodySMMedium.fontFamily,
+      fontSize: typography.sBodySMMedium.fontSize,
+      lineHeight: `${typography.sBodySMMedium.lineHeight}px`,
+      fontWeight: typography.sBodySMMedium.fontWeight,
     },
     bodySMBold: {
       fontFamily: typography.sBodySMBold.fontFamily,
@@ -108,6 +120,13 @@ export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
       lineHeight: `${typography.sBodyXS.lineHeight}px`,
       fontWeight: typography.sBodyXS.fontWeight,
       letterSpacing: typography.sBodyXS.letterSpacing,
+    },
+    bodyXSMedium: {
+      fontFamily: typography.sBodyXSMedium.fontFamily,
+      fontSize: typography.sBodyXSMedium.fontSize,
+      lineHeight: `${typography.sBodyXSMedium.lineHeight}px`,
+      fontWeight: typography.sBodyXSMedium.fontWeight,
+      letterSpacing: typography.sBodyXSMedium.letterSpacing,
     },
   };
   return (
@@ -150,6 +169,11 @@ export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
           styles.bodyMDBold.lineHeight
         } ${styles.bodyMDBold.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
+      <Text as="p" style={styles.bodyMDMedium} {...args}>
+        {`S BodyMD Medium ${styles.bodyMDMedium.fontSize}px/${
+          styles.bodyMDMedium.lineHeight
+        } ${styles.bodyMDMedium.fontSize / smallScreenFontSizeBase}rem`}
+      </Text>
       <Text as="p" style={styles.bodyMD} {...args}>
         {`S BodyMD ${styles.bodyMD.fontSize}px/${styles.bodyMD.lineHeight} ${
           styles.bodyMD.fontSize / smallScreenFontSizeBase
@@ -160,10 +184,20 @@ export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
           styles.bodySMBold.lineHeight
         } ${styles.bodySMBold.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
+      <Text as="p" style={styles.bodySMMedium} {...args}>
+        {`S BodySM Medium ${styles.bodySMMedium.fontSize}px/${
+          styles.bodySMMedium.lineHeight
+        } ${styles.bodySMMedium.fontSize / smallScreenFontSizeBase}rem`}
+      </Text>
       <Text as="p" style={styles.bodySM} {...args}>
         {`S BodySM ${styles.bodySM.fontSize}px/${styles.bodySM.lineHeight} ${
           styles.bodySM.fontSize / smallScreenFontSizeBase
         }rem`}
+      </Text>
+      <Text as="p" style={styles.bodyXSMedium} {...args}>
+        {`S BodyXS Medium ${styles.bodyXSMedium.fontSize}px/${
+          styles.bodyXSMedium.lineHeight
+        } ${styles.bodyXSMedium.fontSize / smallScreenFontSizeBase}rem`}
       </Text>
       <Text as="p" style={styles.bodyXS} {...args}>
         {`S BodyXS ${styles.bodyXS.fontSize}px/${styles.bodyXS.lineHeight} ${
@@ -219,6 +253,12 @@ export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
       lineHeight: `${typography.lBodyMDBold.lineHeight}px`,
       fontWeight: typography.lBodyMDBold.fontWeight,
     },
+    bodyMDMedium: {
+      fontFamily: typography.lBodyMDMedium.fontFamily,
+      fontSize: typography.lBodyMDMedium.fontSize,
+      lineHeight: `${typography.lBodyMDMedium.lineHeight}px`,
+      fontWeight: typography.lBodyMDMedium.fontWeight,
+    },
     bodyMD: {
       fontFamily: typography.lBodyMD.fontFamily,
       fontSize: typography.lBodyMD.fontSize,
@@ -231,11 +271,24 @@ export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
       lineHeight: `${typography.lBodySMBold.lineHeight}px`,
       fontWeight: typography.lBodySMBold.fontWeight,
     },
+    bodySMMedium: {
+      fontFamily: typography.lBodySMMedium.fontFamily,
+      fontSize: typography.lBodySMMedium.fontSize,
+      lineHeight: `${typography.lBodySMMedium.lineHeight}px`,
+      fontWeight: typography.lBodySMMedium.fontWeight,
+    },
     bodySM: {
       fontFamily: typography.lBodySM.fontFamily,
       fontSize: typography.lBodySM.fontSize,
       lineHeight: `${typography.lBodySM.lineHeight}px`,
       fontWeight: typography.lBodySM.fontWeight,
+    },
+    bodyXSMedium: {
+      fontFamily: typography.lBodyXSMedium.fontFamily,
+      fontSize: typography.lBodyXSMedium.fontSize,
+      lineHeight: `${typography.lBodyXSMedium.lineHeight}px`,
+      fontWeight: typography.lBodyXSMedium.fontWeight,
+      letterSpacing: typography.lBodyXSMedium.letterSpacing,
     },
     bodyXS: {
       fontFamily: typography.lBodyXS.fontFamily,
@@ -285,6 +338,11 @@ export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
           styles.bodyMDBold.lineHeight
         } ${styles.bodyMDBold.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
+      <Text as="p" style={styles.bodyMDMedium} {...args}>
+        {`L BodyMD Medium ${styles.bodyMDMedium.fontSize}px/${
+          styles.bodyMDMedium.lineHeight
+        } ${styles.bodyMDMedium.fontSize / largeScreenFontSizeBase}rem`}
+      </Text>
       <Text as="p" style={styles.bodyMD} {...args}>
         {`L BodyMD ${styles.bodyMD.fontSize}px/${styles.bodyMD.lineHeight} ${
           styles.bodyMD.fontSize / largeScreenFontSizeBase
@@ -295,10 +353,20 @@ export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
           styles.bodySMBold.lineHeight
         } ${styles.bodySMBold.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
+      <Text as="p" style={styles.bodySMMedium} {...args}>
+        {`L BodySM Medium ${styles.bodySMMedium.fontSize}px/${
+          styles.bodySMMedium.lineHeight
+        } ${styles.bodySMMedium.fontSize / largeScreenFontSizeBase}rem`}
+      </Text>
       <Text as="p" style={styles.bodySM} {...args}>
         {`L BodySM ${styles.bodySM.fontSize}px/${styles.bodySM.lineHeight} ${
           styles.bodySM.fontSize / largeScreenFontSizeBase
         }rem`}
+      </Text>
+      <Text as="p" style={styles.bodyXSMedium} {...args}>
+        {`L BodyXS Medium ${styles.bodyXSMedium.fontSize}px/${
+          styles.bodyXSMedium.lineHeight
+        } ${styles.bodyXSMedium.fontSize / largeScreenFontSizeBase}rem`}
       </Text>
       <Text as="p" style={styles.bodyXS} {...args}>
         {`L BodyXS ${styles.bodyXS.fontSize}px/${styles.bodyXS.lineHeight} ${
@@ -390,6 +458,12 @@ export const SmallScreenCSS: ComponentStory<typeof Text> = (...args) => {
       lineHeight: 'var(--typography-s-body-md-line-height)',
       fontWeight: 'var(--typography-s-body-md-font-weight)',
     },
+    'BodyMD Medium': {
+      fontFamily: 'var(--typography-s-body-md-medium-font-family)',
+      fontSize: 'var(--typography-s-body-md-medium-font-size)',
+      lineHeight: 'var(--typography-s-body-md-medium-line-height)',
+      fontWeight: 'var(--typography-s-body-md-medium-font-weight)',
+    },
     'BodyMD Bold': {
       fontFamily: 'var(--typography-s-body-md-bold-font-family)',
       fontSize: 'var(--typography-s-body-md-bold-font-size)',
@@ -401,6 +475,12 @@ export const SmallScreenCSS: ComponentStory<typeof Text> = (...args) => {
       fontSize: 'var(--typography-s-body-sm-font-size)',
       lineHeight: 'var(--typography-s-body-sm-line-height)',
       fontWeight: 'var(--typography-s-body-sm-font-weight)',
+    },
+    'BodySM Medium': {
+      fontFamily: 'var(--typography-s-body-sm-medium-font-family)',
+      fontSize: 'var(--typography-s-body-sm-medium-font-size)',
+      lineHeight: 'var(--typography-s-body-sm-medium-line-height)',
+      fontWeight: 'var(--typography-s-body-sm-medium-font-weight)',
     },
     'BodySM Bold': {
       fontFamily: 'var(--typography-s-body-sm-bold-font-family)',
@@ -414,6 +494,13 @@ export const SmallScreenCSS: ComponentStory<typeof Text> = (...args) => {
       lineHeight: 'var(--typography-s-body-xs-line-height)',
       fontWeight: 'var(--typography-s-body-xs-font-weight)',
       letterSpacing: 'var(--typography-s-body-xs-letter-spacing)',
+    },
+    'BodyXS Medium': {
+      fontFamily: 'var(--typography-s-body-xs-medium-font-family)',
+      fontSize: 'var(--typography-s-body-xs-medium-font-size)',
+      lineHeight: 'var(--typography-s-body-xs-medium-line-height)',
+      fontWeight: 'var(--typography-s-body-xs-medium-font-weight)',
+      letterSpacing: 'var(--typography-s-body-xs-medium-letter-spacing)',
     },
   };
 
@@ -500,6 +587,12 @@ export const LargeScreenCSS: ComponentStory<typeof Text> = (...args) => {
       lineHeight: 'var(--typography-l-body-md-line-height)',
       fontWeight: 'var(--typography-l-body-md-font-weight)',
     },
+    'BodyMD Medium': {
+      fontFamily: 'var(--typography-l-body-md-medium-font-family)',
+      fontSize: 'var(--typography-l-body-md-medium-font-size)',
+      lineHeight: 'var(--typography-l-body-md-medium-line-height)',
+      fontWeight: 'var(--typography-l-body-md-medium-font-weight)',
+    },
     'BodyMD Bold': {
       fontFamily: 'var(--typography-l-body-md-bold-font-family)',
       fontSize: 'var(--typography-l-body-md-bold-font-size)',
@@ -511,6 +604,12 @@ export const LargeScreenCSS: ComponentStory<typeof Text> = (...args) => {
       fontSize: 'var(--typography-l-body-sm-font-size)',
       lineHeight: 'var(--typography-l-body-sm-line-height)',
       fontWeight: 'var(--typography-l-body-sm-font-weight)',
+    },
+    'BodySM Medium': {
+      fontFamily: 'var(--typography-l-body-sm-medium-font-family)',
+      fontSize: 'var(--typography-l-body-sm-medium-font-size)',
+      lineHeight: 'var(--typography-l-body-sm-medium-line-height)',
+      fontWeight: 'var(--typography-l-body-sm-medium-font-weight)',
     },
     'BodySM Bold': {
       fontFamily: 'var(--typography-l-body-sm-bold-font-family)',
@@ -524,6 +623,13 @@ export const LargeScreenCSS: ComponentStory<typeof Text> = (...args) => {
       lineHeight: 'var(--typography-l-body-xs-line-height)',
       fontWeight: 'var(--typography-l-body-xs-font-weight)',
       letterSpacing: 'var(--typography-l-body-xs-letter-spacing)',
+    },
+    'BodyXS Medium': {
+      fontFamily: 'var(--typography-l-body-xs-medium-font-family)',
+      fontSize: 'var(--typography-l-body-xs-medium-font-size)',
+      lineHeight: 'var(--typography-l-body-xs-medium-line-height)',
+      fontWeight: 'var(--typography-l-body-xs-medium-font-weight)',
+      letterSpacing: 'var(--typography-l-body-xs-medium-letter-spacing)',
     },
   };
 
