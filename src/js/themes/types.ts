@@ -47,6 +47,14 @@ export interface ThemeColors {
      * {string} background.alternativePressed - For component pressed states that use background/alternative
      */
     alternativePressed: string;
+    /**
+     * {string} background.hover - For component hover states that don't have a background color
+     */
+    hover: string;
+    /**
+     * {string} background.pressed - For component pressed states that don't have a background color
+     */
+    pressed: string;
   };
   text: {
     /**

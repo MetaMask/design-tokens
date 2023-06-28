@@ -273,11 +273,13 @@
 
 :root {
   --color-background-default: var(--brand-colors-white-white000);
-  --color-background-default-hover: var(--brand-colors-grey-grey030);
-  --color-background-default-pressed: var(--brand-colors-grey-grey030);
+  --color-background-default-hover: #fafafa;
+  --color-background-default-pressed: #ebebeb;
   --color-background-alternative: var(--brand-colors-grey-grey040);
-  --color-background-alternative-hover: var(--brand-colors-grey-grey100);
-  --color-background-alternative-pressed: var(--brand-colors-grey-grey100);
+  --color-background-alternative-hover: #edeff1;
+  --color-background-alternative-pressed: #dfe0e2;
+  --color-background-hover: #00000005;
+  --color-background-pressed: #00000014;
   --color-text-default: var(--brand-colors-grey-grey800);
   --color-text-alternative: var(--brand-colors-grey-grey600);
   --color-text-muted: var(--brand-colors-grey-grey200);
@@ -346,11 +348,13 @@
 
 [data-theme='dark'] {
   --color-background-default: var(--brand-colors-grey-grey800);
-  --color-background-default-hover: var(--brand-colors-grey-grey700);
-  --color-background-default-pressed: var(--brand-colors-grey-grey700);
+  --color-background-default-hover: #282b2e;
+  --color-background-default-pressed: #36383b;
   --color-background-alternative: var(--brand-colors-grey-grey900);
-  --color-background-alternative-hover: var(--brand-colors-grey-grey750);
-  --color-background-alternative-pressed: var(--brand-colors-grey-grey750);
+  --color-background-alternative-hover: #191b1d;
+  --color-background-alternative-pressed: #27292a;
+  --color-background-hover: #ffffff05;
+  --color-background-pressed: #ffffff14;
   --color-text-default: var(--brand-colors-white-white000);
   --color-text-alternative: var(--brand-colors-grey-grey100);
   --color-text-muted: var(--brand-colors-grey-grey400);
