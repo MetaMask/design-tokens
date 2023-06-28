@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.12.0]
+### Changed
+- Hover & Pressed color updates ([#487](https://github.com/MetaMask/design-tokens/pull/487))
+- Add body medium font weight ([#486](https://github.com/MetaMask/design-tokens/pull/486))
+
 ## [1.11.1]
 ### Changed
 - Updating primary, error and info colors to meet AA accessibility standards for light mode ([#255](https://github.com/MetaMask/design-tokens/pull/255))
@@ -137,7 +142,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.11.1...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.12.0...HEAD
+[1.12.0]: https://github.com/MetaMask/design-tokens/compare/v1.11.1...v1.12.0
 [1.11.1]: https://github.com/MetaMask/design-tokens/compare/v1.11.0...v1.11.1
 [1.11.0]: https://github.com/MetaMask/design-tokens/compare/v1.10.0...v1.11.0
 [1.10.0]: https://github.com/MetaMask/design-tokens/compare/v1.9.1...v1.10.0
