@@ -7,11 +7,13 @@ import { ThemeColors } from '../types';
 export const colors: ThemeColors = {
   background: {
     default: '#FFFFFF',
-    defaultHover: '#FAFBFC',
-    defaultPressed: '#FAFBFC',
+    defaultHover: '#FAFAFA',
+    defaultPressed: '#EBEBEB',
     alternative: '#F2F4F6',
-    alternativeHover: '#D6D9DC',
-    alternativePressed: '#D6D9DC',
+    alternativeHover: '#EDEFF1',
+    alternativePressed: '#DFE0E2',
+    hover: '#00000005',
+    pressed: '#00000014',
   },
   text: {
     default: '#24272A',

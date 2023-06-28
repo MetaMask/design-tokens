@@ -40,6 +40,18 @@ describe('Dark Theme Colors', () => {
     );
   });
 
+  it('js tokens for background.hover matches figma tokens background.hover', () => {
+    expect(importableColors.background.hover).toStrictEqual(
+      designTokens.dark.colors.background.hover.value,
+    );
+  });
+
+  it('js tokens for background.pressed matches figma tokens background.pressed', () => {
+    expect(importableColors.background.pressed).toStrictEqual(
+      designTokens.dark.colors.background.pressed.value,
+    );
+  });
+
   it('js tokens for text.default matches figma tokens text.default', () => {
     expect(importableColors.text.default).toStrictEqual(
       designTokens.dark.colors.text.default.value,

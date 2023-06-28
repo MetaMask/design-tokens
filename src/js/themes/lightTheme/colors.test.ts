@@ -40,6 +40,18 @@ describe('Light Theme Colors', () => {
     );
   });
 
+  it('js tokens for background.hover matches figma tokens background.hover', () => {
+    expect(importableColors.background.hover).toStrictEqual(
+      designTokens.light.colors.background.hover.value,
+    );
+  });
+
+  it('js tokens for background.pressed matches figma tokens background.pressed', () => {
+    expect(importableColors.background.pressed).toStrictEqual(
+      designTokens.light.colors.background.pressed.value,
+    );
+  });
+
   it('js tokens for text.default matches figma tokens text.default', () => {
     expect(importableColors.text.default).toStrictEqual(
       designTokens.light.colors.text.default.value,
