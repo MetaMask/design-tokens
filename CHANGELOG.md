@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.12.0]
-### Uncategorized
+### Changed
 - Hover & Pressed color updates ([#487](https://github.com/MetaMask/design-tokens/pull/487))
 - Add body medium font weight ([#486](https://github.com/MetaMask/design-tokens/pull/486))
 
