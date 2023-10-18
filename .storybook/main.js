@@ -6,5 +6,8 @@ module.exports = {
     '@storybook/preset-scss',
     '@storybook/addon-a11y',
   ],
-  framework: '@storybook/react',
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {}
+  },
 };
