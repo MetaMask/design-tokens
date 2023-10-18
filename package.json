@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "build": "tsc --project .",
-    "build-storybook": "build-storybook",
+    "build-storybook": "storybook build",
     "build:clean": "rimraf dist && yarn build",
     "lint": "yarn lint:eslint && yarn lint:misc --check",
     "lint:eslint": "eslint . --cache --ext js,ts",
@@ -31,7 +31,7 @@
     "lint:misc": "prettier '**/*.json' '**/*.md' '!CHANGELOG.md' '**/*.yml' --ignore-path .gitignore",
     "prepublishOnly": "yarn build:clean && yarn lint && yarn test",
     "setup": "yarn install && yarn allow-scripts",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "storybook dev -p 6006",
     "test": "jest",
     "test:watch": "jest --watch"
   },
