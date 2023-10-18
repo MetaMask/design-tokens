@@ -95,7 +95,9 @@
       "@lavamoat/preinstall-always-fail": false,
       "core-js": false,
       "fsevents": false,
-      "core-js-pure": false
+      "core-js-pure": false,
+      "esbuild": false,
+      "@swc/core": false
     }
   }
 }
