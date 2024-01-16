@@ -3,7 +3,7 @@ import { brandColors } from './brandColors';
 
 const designTokens = require('../../figma/tokens.json');
 
-describe('Brand Color', () => {
+describe('Brand Colors', () => {
   describe('White', () => {
     it('js tokens for white000 matches figma tokens white000', () => {
       expect(brandColors.white.white000).toStrictEqual(
