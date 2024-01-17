@@ -5,6 +5,13 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/preset-scss',
     '@storybook/addon-a11y',
+    '@storybook/addon-mdx-gfm',
   ],
-  framework: '@storybook/react',
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {},
+  },
+  docs: {
+    autodocs: true,
+  },
 };
