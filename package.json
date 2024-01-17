@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "build": "tsc --project .",
-    "build-storybook": "build-storybook",
+    "build-storybook": "storybook build",
     "build:clean": "rimraf dist && yarn build",
     "lint": "yarn lint:eslint && yarn lint:misc --check",
     "lint:eslint": "eslint . --cache --ext js,ts",
@@ -31,25 +31,30 @@
     "lint:misc": "prettier '**/*.json' '**/*.md' '!CHANGELOG.md' '**/*.yml' --ignore-path .gitignore",
     "prepublishOnly": "yarn build:clean && yarn lint && yarn test",
     "setup": "yarn install && yarn allow-scripts",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "storybook dev -p 6006",
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15",
+    "@babel/preset-typescript": "^7.23.2",
     "@lavamoat/allow-scripts": "^1.0.5",
     "@metamask/auto-changelog": "^3.1.0",
     "@metamask/eslint-config": "^9.0.0",
     "@metamask/eslint-config-jest": "^9.0.0",
     "@metamask/eslint-config-nodejs": "^9.0.0",
     "@metamask/eslint-config-typescript": "^9.0.1",
-    "@storybook/addon-a11y": "^6.5.13",
-    "@storybook/addon-actions": "^6.5.13",
-    "@storybook/addon-essentials": "^6.5.13",
-    "@storybook/addon-links": "^6.5.13",
+    "@storybook/addon-a11y": "^7.5.0",
+    "@storybook/addon-actions": "^7.5.0",
+    "@storybook/addon-essentials": "^7.5.0",
+    "@storybook/addon-links": "^7.5.0",
+    "@storybook/addon-mdx-gfm": "^7.5.0",
     "@storybook/preset-scss": "^1.0.3",
-    "@storybook/react": "^6.5.13",
+    "@storybook/react": "^7.5.0",
+    "@storybook/react-webpack5": "^7.5.0",
     "@types/jest": "^26.0.13",
     "@typescript-eslint/eslint-plugin": "^4.21.0",
     "@typescript-eslint/parser": "^4.21.0",
@@ -63,7 +68,7 @@
     "eslint-plugin-jsdoc": "^36.1.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-storybook": "^0.6.7",
+    "eslint-plugin-storybook": "^0.6.15",
     "jest": "^26.4.2",
     "node-fetch": "^2.6.0",
     "prettier": "^2.2.1",
@@ -73,9 +78,11 @@
     "rimraf": "^3.0.2",
     "sass": "^1.54.3",
     "sass-loader": "10.1.1",
+    "storybook": "^7.5.0",
     "style-loader": "2.0.0",
     "ts-jest": "^26.3.0",
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "webpack": "5"
   },
   "engines": {
     "node": "^16.20.0"
@@ -89,7 +96,9 @@
       "@lavamoat/preinstall-always-fail": false,
       "core-js": false,
       "fsevents": false,
-      "core-js-pure": false
+      "core-js-pure": false,
+      "esbuild": false,
+      "@swc/core": false
     }
   }
 }
