@@ -69,7 +69,7 @@ export const colors: ThemeColors = {
     defaultHover: '#C2540A',
     defaultPressed: '#A24507',
     alternative: '#FFC70A',
-    muted: '#FFD33D19',
+    muted: '#BF520819',
     inverse: '#FFFFFF',
     disabled: '#FFD33D80',
   },

@@ -51,7 +51,7 @@ export const colors: ThemeColors = {
     default: '#F8883B',
     alternative: '#FAA66C',
     muted: '#F8883B26',
-    inverse: '#141618',
+    inverse: '#FCFCFC',
     disabled: '#F8883B80',
   },
   error: {
