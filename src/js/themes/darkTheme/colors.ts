@@ -31,7 +31,7 @@ export const colors: ThemeColors = {
   },
   overlay: {
     default: '#00000099',
-    inverse: '#FFFFFF',
+    inverse: '#FCFCFC',
     alternative: '#000000CC',
   },
   shadow: {
@@ -92,19 +92,19 @@ export const colors: ThemeColors = {
   networks: {
     goerli: {
       default: '#1098FC',
-      inverse: '#FFFFFF',
+      inverse: '#FCFCFC',
     },
     localhost: {
       default: '#BBC0C5',
-      inverse: '#FFFFFF',
+      inverse: '#FCFCFC',
     },
     sepolia: {
       default: '#CFB5F0',
-      inverse: '#FFFFFF',
+      inverse: '#FCFCFC',
     },
   },
   flask: {
     default: '#8B45B6',
-    inverse: '#FFFFFF',
+    inverse: '#FCFCFC',
   },
 };

@@ -144,13 +144,13 @@ describe('Dark Theme Colors', () => {
 
   it('js tokens for primary.default-hover matches figma tokens primary.default-hover in dark mode', () => {
     expect(importableColors.primary.defaultHover).toStrictEqual(
-      designTokens.dark.colors.primary.defaultHover.value,
+      designTokens.dark.colors.primary['default-hover'].value,
     );
   });
 
   it('js tokens for primary.default-pressed matches figma tokens primary.default-pressed in dark mode', () => {
     expect(importableColors.primary.defaultPressed).toStrictEqual(
-      designTokens.dark.colors.primary.defaultPressed.value,
+      designTokens.dark.colors.primary['default-pressed'].value,
     );
   });
 
@@ -210,13 +210,13 @@ describe('Dark Theme Colors', () => {
 
   it('js tokens for error.default-hover matches figma tokens error.default-hover in dark mode', () => {
     expect(importableColors.error.defaultHover).toStrictEqual(
-      designTokens.dark.colors.error.defaultHover.value,
+      designTokens.dark.colors.error['default-hover'].value,
     );
   });
 
   it('js tokens for error.default-pressed matches figma tokens error.default-pressed in dark mode', () => {
     expect(importableColors.error.defaultPressed).toStrictEqual(
-      designTokens.dark.colors.error.defaultPressed.value,
+      designTokens.dark.colors.error['default-pressed'].value,
     );
   });
 
@@ -252,13 +252,13 @@ describe('Dark Theme Colors', () => {
 
   it('js tokens for warning.default-hover matches figma tokens warning.default-hover in dark mode', () => {
     expect(importableColors.warning.defaultHover).toStrictEqual(
-      designTokens.dark.colors.warning.defaultHover.value,
+      designTokens.dark.colors.warning['default-hover'].value,
     );
   });
 
   it('js tokens for warning.default-pressed matches figma tokens warning.default-pressed in dark mode', () => {
     expect(importableColors.warning.defaultPressed).toStrictEqual(
-      designTokens.dark.colors.warning.defaultPressed.value,
+      designTokens.dark.colors.warning['default-pressed'].value,
     );
   });
 
@@ -288,13 +288,13 @@ describe('Dark Theme Colors', () => {
 
   it('js tokens for success.default-hover matches figma tokens success.default-hover in dark mode', () => {
     expect(importableColors.success.defaultHover).toStrictEqual(
-      designTokens.dark.colors.success.defaultHover.value,
+      designTokens.dark.colors.success['default-hover'].value,
     );
   });
 
   it('js tokens for success.default-pressed matches figma tokens success.default-pressed in dark mode', () => {
     expect(importableColors.success.defaultPressed).toStrictEqual(
-      designTokens.dark.colors.success.defaultPressed.value,
+      designTokens.dark.colors.success['default-pressed'].value,
     );
   });
 

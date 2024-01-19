@@ -144,13 +144,13 @@ describe('Light Theme Colors', () => {
 
   it('js tokens for primary.default-hover matches figma tokens primary.default-hover', () => {
     expect(importableColors.primary.defaultHover).toStrictEqual(
-      designTokens.light.colors.primary.defaultHover.value,
+      designTokens.light.colors.primary['default-hover'].value,
     );
   });
 
   it('js tokens for primary.default-pressed matches figma tokens primary.default-pressed', () => {
     expect(importableColors.primary.defaultPressed).toStrictEqual(
-      designTokens.light.colors.primary.defaultPressed.value,
+      designTokens.light.colors.primary['default-pressed'].value,
     );
   });
 
@@ -210,13 +210,13 @@ describe('Light Theme Colors', () => {
 
   it('js tokens for error.default-hover matches figma tokens error.default-hover', () => {
     expect(importableColors.error.defaultHover).toStrictEqual(
-      designTokens.light.colors.error.defaultHover.value,
+      designTokens.light.colors.error['default-hover'].value,
     );
   });
 
   it('js tokens for error.default-pressed matches figma tokens error.default-pressed', () => {
     expect(importableColors.error.defaultPressed).toStrictEqual(
-      designTokens.light.colors.error.defaultPressed.value,
+      designTokens.light.colors.error['default-pressed'].value,
     );
   });
 
@@ -252,13 +252,13 @@ describe('Light Theme Colors', () => {
 
   it('js tokens for warning.default-hover matches figma tokens warning.default-hover', () => {
     expect(importableColors.warning.defaultHover).toStrictEqual(
-      designTokens.light.colors.warning.defaultHover.value,
+      designTokens.light.colors.warning['default-hover'].value,
     );
   });
 
   it('js tokens for warning.default-pressed matches figma tokens warning.default-pressed', () => {
     expect(importableColors.warning.defaultPressed).toStrictEqual(
-      designTokens.light.colors.warning.defaultPressed.value,
+      designTokens.light.colors.warning['default-pressed'].value,
     );
   });
 
@@ -288,13 +288,13 @@ describe('Light Theme Colors', () => {
 
   it('js tokens for success.default-hover matches figma tokens success.default-hover', () => {
     expect(importableColors.success.defaultHover).toStrictEqual(
-      designTokens.light.colors.success.defaultHover.value,
+      designTokens.light.colors.success['default-hover'].value,
     );
   });
 
   it('js tokens for success.default-pressed matches figma tokens success.default-pressed', () => {
     expect(importableColors.success.defaultPressed).toStrictEqual(
-      designTokens.light.colors.success.defaultPressed.value,
+      designTokens.light.colors.success['default-pressed'].value,
     );
   });
 

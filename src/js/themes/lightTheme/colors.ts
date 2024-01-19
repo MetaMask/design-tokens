@@ -31,7 +31,7 @@ export const colors: ThemeColors = {
   },
   overlay: {
     default: '#00000099',
-    inverse: '#FFFFFF',
+    inverse: '#FCFCFC',
     alternative: '#000000CC',
   },
   shadow: {
@@ -51,7 +51,7 @@ export const colors: ThemeColors = {
     default: '#F66A0A',
     alternative: '#BF5208',
     muted: '#F66A0A19',
-    inverse: '#FFFFFF',
+    inverse: '#FCFCFC',
     disabled: '#F66A0A80',
   },
   error: {
@@ -78,7 +78,7 @@ export const colors: ThemeColors = {
     defaultHover: '#208838',
     defaultPressed: '#1B7431',
     alternative: '#1C8234',
-    muted: '#28A74519',
+    muted: '#1C823419',
     inverse: '#FFFFFF',
     disabled: '#28A74580',
   },
@@ -92,19 +92,19 @@ export const colors: ThemeColors = {
   networks: {
     goerli: {
       default: '#1098FC',
-      inverse: '#FFFFFF',
+      inverse: '#FCFCFC',
     },
     localhost: {
       default: '#BBC0C5',
-      inverse: '#FFFFFF',
+      inverse: '#FCFCFC',
     },
     sepolia: {
       default: '#CFB5F0',
-      inverse: '#FFFFFF',
+      inverse: '#FCFCFC',
     },
   },
   flask: {
     default: '#8B45B6',
-    inverse: '#FFFFFF',
+    inverse: '#FCFCFC',
   },
 };
