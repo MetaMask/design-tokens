@@ -65,7 +65,7 @@ export const colors: ThemeColors = {
     shadow: '#D7384766',
   },
   warning: {
-    default: '#F66A0A',
+    default: '#BF5208',
     defaultHover: '#C2540A',
     defaultPressed: '#A24507',
     alternative: '#FFC70A',
@@ -74,7 +74,7 @@ export const colors: ThemeColors = {
     disabled: '#FFD33D80',
   },
   success: {
-    default: '#28A745',
+    default: '#1C8234',
     defaultHover: '#208838',
     defaultPressed: '#1B7431',
     alternative: '#1E7E34',
