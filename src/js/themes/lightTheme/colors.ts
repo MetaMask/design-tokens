@@ -49,7 +49,7 @@ export const colors: ThemeColors = {
   },
   secondary: {
     default: '#F66A0A',
-    alternative: '#C65507',
+    alternative: '#BF5208',
     muted: '#F66A0A19',
     inverse: '#FCFCFC',
     disabled: '#F66A0A80',
