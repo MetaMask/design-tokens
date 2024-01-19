@@ -55,14 +55,14 @@ export const colors: ThemeColors = {
     disabled: '#F8883B80',
   },
   error: {
-    default: '#D73847',
+    default: '#FF5263',
     defaultHover: '#FF4D58',
     defaultPressed: '#F9868E',
-    alternative: '#FF5263',
-    muted: '#D7384726',
+    alternative: '#E06470',
+    muted: '#FF526326',
     inverse: '#141618',
     disabled: '#D7384780',
-    shadow: '#D7384766',
+    shadow: '#FF526366',
   },
   warning: {
     default: '#FFD33D',
