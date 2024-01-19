@@ -31,7 +31,7 @@ export const colors: ThemeColors = {
   },
   overlay: {
     default: '#00000099',
-    inverse: '#FCFCFC',
+    inverse: '#FFFFFF',
     alternative: '#000000CC',
   },
   shadow: {
@@ -43,7 +43,7 @@ export const colors: ThemeColors = {
     defaultPressed: '#54B6FC',
     alternative: '#43AEFC',
     muted: '#1098FC26',
-    inverse: '#FCFCFC',
+    inverse: '#141618',
     disabled: '#1098FC80',
     shadow: '#1098FC66',
   },
@@ -51,7 +51,7 @@ export const colors: ThemeColors = {
     default: '#F8883B',
     alternative: '#FAA66C',
     muted: '#F8883B26',
-    inverse: '#FCFCFC',
+    inverse: '#141618',
     disabled: '#F8883B80',
   },
   error: {
@@ -60,7 +60,7 @@ export const colors: ThemeColors = {
     defaultPressed: '#F9868E',
     alternative: '#E06470',
     muted: '#D7384726',
-    inverse: '#FCFCFC',
+    inverse: '#141618',
     disabled: '#D7384780',
     shadow: '#D7384766',
   },
@@ -79,32 +79,32 @@ export const colors: ThemeColors = {
     defaultPressed: '#6AEC88',
     alternative: '#5DD879',
     muted: '#28A74526',
-    inverse: '#FCFCFC',
+    inverse: '#141618',
     disabled: '#28A74580',
   },
   info: {
     default: '#1098FC',
     alternative: '#43AEFC',
     muted: '#1098FC26',
-    inverse: '#FCFCFC',
+    inverse: '#141618',
     disabled: '#0376C980',
   },
   networks: {
     goerli: {
       default: '#1098FC',
-      inverse: '#FCFCFC',
+      inverse: '#FFFFFF',
     },
     localhost: {
       default: '#BBC0C5',
-      inverse: '#FCFCFC',
+      inverse: '#FFFFFF',
     },
     sepolia: {
       default: '#CFB5F0',
-      inverse: '#FCFCFC',
+      inverse: '#FFFFFF',
     },
   },
   flask: {
     default: '#8B45B6',
-    inverse: '#FCFCFC',
+    inverse: '#FFFFFF',
   },
 };

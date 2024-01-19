@@ -31,7 +31,7 @@ export const colors: ThemeColors = {
   },
   overlay: {
     default: '#00000099',
-    inverse: '#FCFCFC',
+    inverse: '#FFFFFF',
     alternative: '#000000CC',
   },
   shadow: {
@@ -43,7 +43,7 @@ export const colors: ThemeColors = {
     defaultPressed: '#036DB9',
     alternative: '#0260A4',
     muted: '#0376C919',
-    inverse: '#FCFCFC',
+    inverse: '#FFFFFF',
     disabled: '#0376C980',
     shadow: '#0376C933',
   },
@@ -51,7 +51,7 @@ export const colors: ThemeColors = {
     default: '#F66A0A',
     alternative: '#BF5208',
     muted: '#F66A0A19',
-    inverse: '#FCFCFC',
+    inverse: '#FFFFFF',
     disabled: '#F66A0A80',
   },
   error: {
@@ -60,7 +60,7 @@ export const colors: ThemeColors = {
     defaultPressed: '#C63441',
     alternative: '#B92534',
     muted: '#D7384719',
-    inverse: '#FCFCFC',
+    inverse: '#FFFFFF',
     disabled: '#D7384780',
     shadow: '#D7384766',
   },
@@ -70,7 +70,7 @@ export const colors: ThemeColors = {
     defaultPressed: '#A24507',
     alternative: '#FFC70A',
     muted: '#FFD33D19',
-    inverse: '#FCFCFC',
+    inverse: '#FFFFFF',
     disabled: '#FFD33D80',
   },
   success: {
@@ -79,32 +79,32 @@ export const colors: ThemeColors = {
     defaultPressed: '#1B7431',
     alternative: '#1C8234',
     muted: '#28A74519',
-    inverse: '#FCFCFC',
+    inverse: '#FFFFFF',
     disabled: '#28A74580',
   },
   info: {
     default: '#0376C9',
     alternative: '#0260A4',
     muted: '#0376C919',
-    inverse: '#FCFCFC',
+    inverse: '#FFFFFF',
     disabled: '#0376C980',
   },
   networks: {
     goerli: {
       default: '#1098FC',
-      inverse: '#FCFCFC',
+      inverse: '#FFFFFF',
     },
     localhost: {
       default: '#BBC0C5',
-      inverse: '#FCFCFC',
+      inverse: '#FFFFFF',
     },
     sepolia: {
       default: '#CFB5F0',
-      inverse: '#FCFCFC',
+      inverse: '#FFFFFF',
     },
   },
   flask: {
     default: '#8B45B6',
-    inverse: '#FCFCFC',
+    inverse: '#FFFFFF',
   },
 };
