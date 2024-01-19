@@ -39,6 +39,8 @@ export const colors: ThemeColors = {
   },
   primary: {
     default: '#0376C9',
+    defaultHover: '#0379CE',
+    defaultPressed: '#036DB9',
     alternative: '#0260A4',
     muted: '#0376C919',
     inverse: '#FCFCFC',
@@ -54,6 +56,8 @@ export const colors: ThemeColors = {
   },
   error: {
     default: '#D73847',
+    defaultHover: '#CD4250',
+    defaultPressed: '#C63441',
     alternative: '#B92534',
     muted: '#D7384719',
     inverse: '#FCFCFC',
@@ -62,6 +66,8 @@ export const colors: ThemeColors = {
   },
   warning: {
     default: '#F66A0A',
+    defaultHover: '#C2540A',
+    defaultPressed: '#A24507',
     alternative: '#FFC70A',
     muted: '#FFD33D19',
     inverse: '#FCFCFC',
@@ -69,6 +75,8 @@ export const colors: ThemeColors = {
   },
   success: {
     default: '#28A745',
+    defaultHover: '#208838',
+    defaultPressed: '#1B7431',
     alternative: '#1E7E34',
     muted: '#28A74519',
     inverse: '#FCFCFC',
