@@ -142,6 +142,18 @@ describe('Light Theme Colors', () => {
     );
   });
 
+  it('js tokens for primary.default-hover matches figma tokens primary.default-hover', () => {
+    expect(importableColors.primary.defaultHover).toStrictEqual(
+      designTokens.light.colors.primary.defaultHover.value,
+    );
+  });
+
+  it('js tokens for primary.default-pressed matches figma tokens primary.default-pressed', () => {
+    expect(importableColors.primary.defaultPressed).toStrictEqual(
+      designTokens.light.colors.primary.defaultPressed.value,
+    );
+  });
+
   it('js tokens for primary.alternative matches figma tokens primary.alternative', () => {
     expect(importableColors.primary.alternative).toStrictEqual(
       designTokens.light.colors.primary.alternative.value,
@@ -196,6 +208,18 @@ describe('Light Theme Colors', () => {
     );
   });
 
+  it('js tokens for error.default-hover matches figma tokens error.default-hover', () => {
+    expect(importableColors.error.defaultHover).toStrictEqual(
+      designTokens.light.colors.error.defaultHover.value,
+    );
+  });
+
+  it('js tokens for error.default-pressed matches figma tokens error.default-pressed', () => {
+    expect(importableColors.error.defaultPressed).toStrictEqual(
+      designTokens.light.colors.error.defaultPressed.value,
+    );
+  });
+
   it('js tokens for error.alternative matches figma tokens error.alternative', () => {
     expect(importableColors.error.alternative).toStrictEqual(
       designTokens.light.colors.error.alternative.value,
@@ -226,6 +250,18 @@ describe('Light Theme Colors', () => {
     );
   });
 
+  it('js tokens for warning.default-hover matches figma tokens warning.default-hover', () => {
+    expect(importableColors.warning.defaultHover).toStrictEqual(
+      designTokens.light.colors.warning.defaultHover.value,
+    );
+  });
+
+  it('js tokens for warning.default-pressed matches figma tokens warning.default-pressed', () => {
+    expect(importableColors.warning.defaultPressed).toStrictEqual(
+      designTokens.light.colors.warning.defaultPressed.value,
+    );
+  });
+
   it('js tokens for warning.alternative matches figma tokens warning.alternative', () => {
     expect(importableColors.warning.alternative).toStrictEqual(
       designTokens.light.colors.warning.alternative.value,
@@ -247,6 +283,18 @@ describe('Light Theme Colors', () => {
   it('js tokens for success.default matches figma tokens success.default', () => {
     expect(importableColors.success.default).toStrictEqual(
       designTokens.light.colors.success.default.value,
+    );
+  });
+
+  it('js tokens for success.default-hover matches figma tokens success.default-hover', () => {
+    expect(importableColors.success.defaultHover).toStrictEqual(
+      designTokens.light.colors.success.defaultHover.value,
+    );
+  });
+
+  it('js tokens for success.default-pressed matches figma tokens success.default-pressed', () => {
+    expect(importableColors.success.defaultPressed).toStrictEqual(
+      designTokens.light.colors.success.defaultPressed.value,
     );
   });
 
