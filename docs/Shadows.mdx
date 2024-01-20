@@ -1,23 +1,19 @@
 import { Meta, Canvas, Story } from '@storybook/addon-docs';
-import LinkTo from '@storybook/addon-links/react';
+import * as ShadowStories from './Shadows.stories';
 
 <Meta title="Design Tokens/Shadows" />
 
 # Shadows
 
-Shadows convey elevation of elements on a surface
+Shadows in design are used to create depth and hierarchy. They can be used to differentiate between different elements, and to highlight interactive elements.
 
-<Canvas>
-  <Story id="shadows-shadows--shadow" />
-</Canvas>
+<Canvas of={ShadowStories.DefaultStory} />
 
 ## Size
 
-There are 4 different sizes of shadow in MetaMask.
+Shadows come in four different sizes: XS, SM, MD, and LG. The size of the shadow can be used to indicate the relative importance or prominence of an element.
 
-<Canvas>
-  <Story id="shadows-shadows--size" />
-</Canvas>
+<Canvas of={ShadowStories.Size} />
 
 | Size   | JS                | CSS                     |
 | ------ | ----------------- | ----------------------- |
@@ -28,11 +24,9 @@ There are 4 different sizes of shadow in MetaMask.
 
 ## Color
 
-As well as the neutral colors for shadow 2 other colors exist that are used for the primary and error/danger button hover states
+Shadows can have three different colors: default (neutral), primary, and error/danger. The color of the shadow can be used to indicate the state or functionality of an element.
 
-<Canvas>
-  <Story id="shadows-shadows--color" />
-</Canvas>
+<Canvas of={ShadowStories.Color} />
 
 | Color       | JS                      | CSS                           |
 | ----------- | ----------------------- | ----------------------------- |
@@ -40,13 +34,11 @@ As well as the neutral colors for shadow 2 other colors exist that are used for 
 | **primary** | `colors.primary.shadow` | `var(--color-primary-shadow)` |
 | **danger**  | `colors.error.shadow`   | `var(--color-error-shadow)`   |
 
-## Example usage
+## Usage
 
-Using both size and color tokens, different shadows can be applied to components.
+Shadows can be applied to various components to create depth and hierarchy. Here are some examples of how shadows can be used in different components:
 
-<Canvas>
-  <Story id="shadows-shadows--example-usage" />
-</Canvas>
+<Canvas of={ShadowStories.ExampleUsage} />
 
 | Component                | JS                                                                              | CSS                                                              |
 | ------------------------ | ------------------------------------------------------------------------------- | ---------------------------------------------------------------- |

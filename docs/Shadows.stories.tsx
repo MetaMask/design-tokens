@@ -1,32 +1,7 @@
 import React from 'react';
 import { lightTheme } from '../src/js';
-
 import { Text } from './components';
-
 import README from './Shadows.mdx';
-
-export default {
-  title: 'Shadows/Shadows',
-  parameters: {
-    docs: {
-      page: README,
-    },
-  },
-  argTypes: {
-    size: {
-      control: 'select',
-      options: Object.keys(lightTheme.shadows.size),
-    },
-    color: {
-      control: 'select',
-      options: ['default', 'primary', 'error'],
-    },
-  },
-  args: {
-    color: 'default',
-    size: 'xs',
-  },
-};
 
 interface ShadowSwatchProps {
   children: any;
@@ -61,8 +36,29 @@ const ShadowSwatch = ({
   </div>
 );
 
-export const Shadow = (args) => {
-  return (
+export default {
+  title: 'Shadows/Shadows',
+  component: ShadowSwatch,
+  parameters: {
+    docs: {
+      page: README,
+    },
+  },
+  argTypes: {
+    size: {
+      control: 'select',
+      options: Object.keys(lightTheme.shadows.size),
+    },
+    color: {
+      control: 'select',
+      options: ['default', 'primary', 'error'],
+    },
+  },
+};
+
+export const DefaultStory = {
+  name: 'Default',
+  render: (args) => (
     <div
       style={{
         display: 'grid',
@@ -76,11 +72,15 @@ export const Shadow = (args) => {
         </Text>
       </ShadowSwatch>
     </div>
-  );
+  ),
+  args: {
+    color: 'default',
+    size: 'xs',
+  },
 };
 
-export const Size = (args) => {
-  return (
+export const Size = {
+  render: (args) => (
     <div
       style={{
         display: 'grid',
@@ -109,11 +109,15 @@ export const Size = (args) => {
         </Text>
       </ShadowSwatch>
     </div>
-  );
+  ),
+  args: {
+    color: 'default',
+    size: 'xs',
+  },
 };
 
-export const Color = (args) => {
-  return (
+export const Color = {
+  render: (args) => (
     <div
       style={{
         display: 'grid',
@@ -151,11 +155,15 @@ export const Color = (args) => {
         </Text>
       </ShadowSwatch>
     </div>
-  );
+  ),
+  args: {
+    color: 'default',
+    size: 'xs',
+  },
 };
 
-export const ExampleUsage = () => {
-  return (
+export const ExampleUsage = {
+  render: () => (
     <div>
       <div
         style={{
@@ -233,5 +241,5 @@ export const ExampleUsage = () => {
         </ShadowSwatch>
       </div>
     </div>
-  );
+  ),
 };

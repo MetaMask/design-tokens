@@ -1,17 +1,19 @@
-import { Meta, Canvas, Story } from '@storybook/addon-docs';
-import LinkTo from '@storybook/addon-links/react';
+import { Canvas, Meta } from '@storybook/blocks';
+import * as BrandColorStories from './BrandColors.stories';
 
-<Meta title="Design Tokens/Brand Colors" />
+<Meta of={BrandColorStories} />
 
-# Brand Colors (first tier)
+# Brand Colors (First Tier)
 
-Brand specific colors used in the first tier of design token abstraction. They **should not** be used in the code directly but referenced by [**Theme Colors**](/docs/colors-themecolors--light-theme-colors) used in second tier tokens. Most brand color progressions were generated using [0to255](https://0to255.com/037dd6)
+The first tier of our design token abstraction consists of brand-specific colors. These colors uses literal color names (like red, green, etc.) and a numeric scale (where 000 is light and 900 is dark) by default.They form the foundation of our design system and are essential to maintaining visual consistency across our products.
 
-<Canvas>
-  <Story id="colors-brandcolors--default-story" />
-</Canvas>
+While these colors are fundamental to our design system, they **should not** be used directly in most cases. The exception is when a color needs to remain the same regardless of the theme (light or dark mode). Instead, these brand colors should be referenced via [**theme colors**](/docs/colors-themecolors--light-theme-colors), which form the second tier of our design tokens.
+
+The majority of our brand color progressions were generated using the [0to255](https://0to255.com/037dd6) tool, which helps ensure smooth and consistent color transitions.
+
+<Canvas of={BrandColorStories.DefaultStory} />
 
 ## References
 
-- [Tool used to generate colors](http://www.0to255.com/037DD6)
-- [Figma Brand Colors Library](https://www.figma.com/file/cBAUPFMnbv6tHR1J8KvBI2/Brand-Colors?node-id=0%3A1)(internal use only)
+- [0to255](http://www.0to255.com/037DD6): The tool we used to generate our color progressions.
+- [Figma Brand Colors Library](https://www.figma.com/file/cBAUPFMnbv6tHR1J8KvBI2/Brand-Colors?node-id=0%3A1): Our internal Figma library for brand colors. Please note that this is for internal use only.

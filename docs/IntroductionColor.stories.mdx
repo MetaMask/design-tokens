@@ -7,11 +7,7 @@ import { lightTheme } from '../src/index.ts';
 
 # Color
 
-Color is used to express style and communicate meaning.
-
-## Token Tiers
-
-We follow a 3 tiered system for color design tokens.
+Color is a powerful tool in design. It can express style, convey meaning, and establish visual hierarchy. In our design system, we manage colors through a three-tiered system of design tokens.
 
 <div
   style={{
@@ -26,26 +22,109 @@ We follow a 3 tiered system for color design tokens.
 <br />
 <br />
 
-### **Brand colors** (first tier)
+## Token tiers
 
-These colors **SHOULD NOT** be used in your component styles directly. They are used as a reference for the [Theme Colors](/docs/colors-themecolors--light-theme-colors). Brand colors are used to keep track of all colors used in our app. See [Brand Colors](/docs/colors-brandcolors--default-story)
+### **Brand colors (first tier)**
 
-### **Theme Colors** (second tier)
+Brand colors form the foundation of our color system. However, in most cases they **SHOULD NOT** be used directly in component styles. Instead, they serve as a reference for the [Theme Colors](/docs/colors-themecolors--light-theme-colors). You can view our brand colors in the [Brand Colors](/docs/colors-brandcolors--default-story) section.
 
-These colors are color agnostic, semantically neutral and theme compatible design tokens that you can use in your code and styles. Please refer to the description of each token for it's intended purpose. See [Theme Colors](/docs/colors-themecolors--light-theme-colors)
+### **Theme colors (second tier)**
 
-### **Component colors** (third tier)
+Theme colors are semantically neutral, theme-compatible design tokens that you can use directly in your code and styles. Each token has a specific purpose, which is described in its documentation. You can view our theme colors in the [Theme Colors](/docs/colors-themecolors--light-theme-colors) section.
 
-Another level of abstraction is component colors that you can use at a component specific level. We do not currently provide any component tier colors but that may change in future.
+### **Component colors (third tier)**
 
-## Takeaways
+Component colors provide another level of abstraction for component-specific colors. We currently do not provide any component tier colors, but this may change in the future.
 
-- Do not use static HEX values in your code. Use the [Theme Colors](/docs/colors-themecolors--light-theme-colors). If one does not exist for your use case [create an issue](https://github.com/MetaMask/design-tokens/issues/new) and tag it with a `color` label.
-- Make sure the design token you are using is for it's intended purpose. Please refer to the description of each token.
+## Best practices
 
-### Next 👉 [Theme Colors](/docs/colors-themecolors--light-theme-colors)
+### **Prioritize theme colors**
 
-<br />
+Theme colors should be your go-to choice for 99% of use cases. Using theme tokens ensures that the UI works across all themes and modes. We have built-in accessibility and functionality into the theme colors to ensure this. By using theme colors, you're leveraging these benefits and ensuring a consistent and accessible color scheme across your project.
+
+#### ✅ **DO**: Use theme colors in your components
+
+```
+background-color: theme.colors.background.default;
+background-color: var(--color-background-default);
+```
+
+#### ❌ **DON'T**: Use static color values or brand colors in your components
+
+```
+background-color: #ffffff; // Static color value
+background-color: brandColors.white.white000; // Brand color
+background-color: var(--brand-colors-white-white000); // Brand color
+```
+
+### **Use brand colors for theme-independent colors**
+
+In the rare case where a color should remain the same regardless of the theme (for instance, if white should always be white, regardless of whether light or dark mode is active), use the corresponding brand color. However, always check first to ensure that there isn't an existing theme token that suits your needs.
+
+#### ✅ **DO**: Use brand colors when the color should remain the same across all themes
+
+```
+fill: brandColors.white.white000;
+fill: var(--brand-colors-white-white000);
+```
+
+#### ❌ **DON'T**: Use brand colors without checking for an existing theme token first
+
+```
+background-color: brandColors.blue.blue500; // Brand color instead of theme.color.primary.default
+background-color: var(--brand-colors-blue-blue500); // Brand color instead of var(--color-primary-default)
+```
+
+### **Avoid static color values**
+
+As a general rule, avoid applying static color values at the component level. This helps maintain consistency and makes it easier to update colors in the future.
+
+#### ✅ **DO**: Use theme colors in your components
+
+```
+background-color: theme.colors.background.default;
+background-color: var(--color-background-default);
+```
+
+#### ❌ **DON'T**: Use static color values in your components
+
+```jsx
+background-color: #ffffff; // Static color value
+```
+
+### **Centralize non-token colors**
+
+If you need to use colors that are not included in the design tokens, store these colors in a global file in your project. This makes it easier to keep track of these colors and update them as needed. Always consider this as a last resort, and strive to use design tokens wherever possible.
+
+#### ✅ **DO**: Store non-token colors in a global file
+
+```
+// colors.js
+export const customColors = {
+  myCustomColor: '#abc123',
+};
+
+// colors.css
+--custom-colors-my-custom-color: #abc123;
+
+// component.js
+import { customColors } from './colors.js';
+
+background-color: customColors.myCustomColor;
+background-color: var(--custom-colors-my-custom-color);
+```
+
+#### ❌ **DON'T**: Use non-token colors directly in your components
+
+```jsx
+background-color: #abc123; // Custom color not in design tokens or global file
+```
+
+Remember, the goal of these practices is to maintain consistency across your project, make your code easier to maintain, and ensure that your project's colors align with the overall design system and MetaMask brand 🦊
+
+## Next steps
+
+Learn more about our [brand colors](/docs/colors-brandcolors--docs) or [theme colors](/docs/colors-themecolors--light-theme-colors) section
 
 ## References
 
