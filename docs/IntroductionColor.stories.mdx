@@ -26,11 +26,11 @@ Color is a powerful tool in design. It can express style, convey meaning, and es
 
 ### **Brand colors (first tier)**
 
-Brand colors form the foundation of our color system. However, in most cases they **SHOULD NOT** be used directly in component styles. Instead, they serve as a reference for the [Theme Colors](/docs/colors-themecolors--light-theme-colors). You can view our brand colors in the [Brand Colors](/docs/colors-brandcolors--default-story) section.
+Brand colors form the foundation of our color system. However, in most cases they **should not** be used directly in component styles. Instead, they serve as a reference for the [theme colors](/docs/colors-themecolors--light-theme-colors). You can view our brand colors in the [brand colors](/docs/colors-brandcolors--default-story) section.
 
 ### **Theme colors (second tier)**
 
-Theme colors are semantically neutral, theme-compatible design tokens that you can use directly in your code and styles. Each token has a specific purpose, which is described in its documentation. You can view our theme colors in the [Theme Colors](/docs/colors-themecolors--light-theme-colors) section.
+Theme colors are semantically neutral, theme-compatible design tokens that you can use directly in your code and styles. Each token has been tested for accessibility contrast and has a specific purpose, which is described in its documentation. You can view our theme colors in the [theme colors](/docs/colors-themecolors--light-theme-colors) section.
 
 ### **Component colors (third tier)**
 
@@ -88,7 +88,7 @@ background-color: var(--color-background-default);
 
 #### ❌ **DON'T**: Use static color values in your components
 
-```jsx
+```
 background-color: #ffffff; // Static color value
 ```
 
@@ -116,7 +116,7 @@ background-color: var(--custom-colors-my-custom-color);
 
 #### ❌ **DON'T**: Use non-token colors directly in your components
 
-```jsx
+```
 background-color: #abc123; // Custom color not in design tokens or global file
 ```
 
