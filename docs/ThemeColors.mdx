@@ -1,29 +1,26 @@
-import { Meta, Canvas, Story } from '@storybook/addon-docs';
+import { Meta, Canvas } from '@storybook/addon-docs/blocks';
+import * as ThemeColorStories from './ThemeColors.stories';
 
-<Meta title="Design Tokens/Theme Colors" />
+<Meta title="Design Tokens/Theme Colors" of={ThemeColorStories.default} />
 
-# Theme Colors (second tier)
+# Theme Colors (Second Tier)
 
-Theme colors take the first tier [**Brand Colors**](/docs/colors-brandcolors--default-story) and start applying them to high-level applications within the UI. They are considered second tier tokens and can be used in the code directly. Theme colors should be used liberally throughout the codebase and create theme compatibility in your components.
+Theme colors are derived from the first-tier [**brand colors**](/docs/colors-brandcolors--docs). They are applied to high-level applications within the UI and are considered second-tier tokens. These colors can be used directly in the code and should be used liberally throughout the codebase to ensure theme compatibility and accessibility in your components.
 
 - [Light Theme Colors](#light-theme-colors)
 - [Dark Theme Colors](#dark-theme-colors)
 
 ## Light Theme Colors
 
-Light theme colors to be used in the styles for MetaMask UI.
+The light theme colors are designed to be used in the styles for MetaMask UI when the light theme is active
 
-<Canvas>
-  <Story id="colors-themecolors--light-theme-colors" />
-</Canvas>
+<Canvas of={ThemeColorStories.LightThemeColors} />
 
 ## Dark Theme Colors
 
-Dark theme colors for MetaMask UI. They have the same name as Light Theme Colors but different values. If you are using the Light Theme Colors for their intended purpose your UI will be dark theme compatible.
+The dark theme colors are designed for MetaMask UI when the dark theme is active. They have the same names as the light theme colors but different values. If you are using the light theme colors for their intended purpose, your UI will automatically be compatible with the dark theme.
 
-<Canvas>
-  <Story id="colors-themecolors--dark-theme-colors" />
-</Canvas>
+<Canvas of={ThemeColorStories.DarkThemeColors} />
 
 ## References
 
