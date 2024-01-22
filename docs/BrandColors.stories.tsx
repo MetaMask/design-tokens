@@ -5,7 +5,7 @@ import { ColorSwatchGroup } from './components';
 import README from './BrandColors.mdx';
 
 const meta: Meta<typeof ColorSwatchGroup> = {
-  title: 'Colors/BrandColors',
+  title: 'Colors/Brand Colors',
   component: ColorSwatchGroup,
   parameters: {
     docs: {

@@ -4,7 +4,7 @@ import { ColorSwatchGroup } from './components';
 import README from './ThemeColors.mdx';
 
 export default {
-  title: 'Colors/ThemeColors',
+  title: 'Colors/Theme Colors',
   component: ColorSwatchGroup,
   parameters: {
     docs: {
