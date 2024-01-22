@@ -391,7 +391,7 @@
   --color-error-default: #ff5263;
   --color-error-default-hover: #ff4d58;
   --color-error-default-pressed: #f9868e;
-  --color-error-alternative: var(--brand-colors-red-red400);
+  --color-error-alternative: var(--brand-colors-red-red300);
   --color-error-muted: #ff526326;
   --color-error-inverse: var(--brand-colors-grey-grey900);
   --color-error-disabled: #d7384780;
