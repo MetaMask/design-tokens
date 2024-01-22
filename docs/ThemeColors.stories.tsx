@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 
 import { ColorSwatchGroup } from './components';
 import README from './ThemeColors.mdx';
@@ -14,9 +14,9 @@ export default {
       page: README,
     },
   },
-} as ComponentMeta<typeof ColorSwatchGroup>;
+} as Meta<typeof ColorSwatchGroup>;
 
-const Template: ComponentStory<typeof ColorSwatchGroup> = (args) => {
+const Template: StoryFn<typeof ColorSwatchGroup> = (args) => {
   return (
     <>
       <ColorSwatchGroup {...args} />
