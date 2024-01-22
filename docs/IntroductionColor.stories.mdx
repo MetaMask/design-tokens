@@ -7,7 +7,7 @@ import { lightTheme } from '../src/index.ts';
 
 # Color
 
-Color is a powerful tool in design. It can express style, convey meaning, and establish visual hierarchy. In our design system, we manage colors through a three-tiered system of design tokens.
+Color is used to express style and communicate meaning. We follow a 3 tiered system for color design tokens.
 
 <div
   style={{
@@ -22,11 +22,13 @@ Color is a powerful tool in design. It can express style, convey meaning, and es
 <br />
 <br />
 
-## Token tiers
+## **Brand colors (first tier)**
 
-### **Brand colors (first tier)**
+Brand colors are the foundation of our color system. They are primarily used as a reference for the [theme colors](/docs/colors-themecolors--docs) and should not be used directly in most component styles.
 
-Brand colors form the foundation of our color system. However, in most cases they **should not** be used directly in component styles. Instead, they serve as a reference for the [theme colors](/docs/colors-themecolors--docs). You can view our brand colors in the [brand colors](/docs/colors-brandcolors--docs) section.
+However, in rare cases where a color needs to remain constant across themes (e.g., white always being white, regardless of light or dark mode), the corresponding brand color can be used. Always ensure there isn't an existing theme token that could be used instead.
+
+For more details, refer to the [brand colors](/docs/colors-brandcolors--docs) section.
 
 ### **Theme colors (second tier)**
 
@@ -55,24 +57,6 @@ background-color: var(--color-background-default);
 background-color: #ffffff; // Static color value
 background-color: brandColors.white.white000; // Brand color
 background-color: var(--brand-colors-white-white000); // Brand color
-```
-
-### **Use brand colors for theme-independent colors**
-
-In the rare case where a color should remain the same regardless of the theme (for instance, if white should always be white, regardless of whether light or dark mode is active), use the corresponding brand color. However, always check first to ensure that there isn't an existing theme token that suits your needs.
-
-#### ✅ **DO**: Use brand colors when the color should remain the same across all themes
-
-```
-fill: brandColors.white.white000;
-fill: var(--brand-colors-white-white000);
-```
-
-#### ❌ **DON'T**: Use brand colors without checking for an existing theme token first
-
-```
-background-color: brandColors.blue.blue500; // Brand color instead of theme.color.primary.default
-background-color: var(--brand-colors-blue-blue500); // Brand color instead of var(--color-primary-default)
 ```
 
 ### **Avoid static color values**
