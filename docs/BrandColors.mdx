@@ -7,11 +7,19 @@ import * as BrandColorStories from './BrandColors.stories';
 
 Brand colors form the foundation of our color system. They use literal color names (like red, green, etc.) and a numeric scale (where 000 is light and 900 is dark) by default. These colors are essential to maintaining visual consistency across our products and are primarily used as a reference for the [theme colors](/docs/colors-themecolors--docs).
 
-While these colors are fundamental to our design system, they **should not** be used directly in most cases. Instead, they should be referenced via [**theme colors**](/docs/colors-themecolors--docs), which form the second tier of our design tokens.
+While these colors are fundamental to our design system, they **should not** be used directly in most cases. Instead, they should be referenced via [theme colors](/docs/colors-themecolors--docs), which form the second tier of our design tokens.
 
 However, in rare cases where a color needs to remain constant across themes (e.g., white always being white, regardless of light or dark mode), the corresponding brand color can be used. Always ensure there isn't an existing theme token that could be used instead.
 
 _The majority of our brand color progressions were generated using the [0to255](https://0to255.com/037dd6) tool, which helps ensure smooth and consistent color transitions._
+
+- [**Brand colors**](#light-theme-colors)
+- [**Best practices**](#best-practices)
+- [**References**](#references)
+
+## Brand colors
+
+<Canvas of={BrandColorStories.DefaultStory} />
 
 ## Best Practices
 
@@ -29,7 +37,32 @@ background-color: brandColors.blue.blue500; // Brand color instead of theme.colo
 background-color: var(--brand-colors-blue-blue500); // Brand color instead of var(--color-primary-default)
 ```
 
-<Canvas of={BrandColorStories.DefaultStory} />
+### ✅ **DO**: Store non-token colors in a global file
+
+If you need to use colors that are not included in the design tokens, store these colors in a global file in your project. This makes it easier to keep track of these colors and update them as needed. Always consider this as a last resort, and strive to use design tokens wherever possible.
+
+```jsx
+// colors.js
+export const customColors = {
+  myCustomColor: '#abc123',
+};
+
+// colors.css
+--custom-colors-my-custom-color: #abc123;
+
+// component.js
+import { customColors } from './colors.js';
+
+background-color: customColors.myCustomColor;
+background-color: var(--custom-colors-my-custom-color);
+```
+
+### ❌ **DON'T**: Use non-token colors directly in your components
+
+```jsx
+// Avoid
+background-color: #abc123; // Custom color not in design tokens or global file
+```
 
 ## References
 

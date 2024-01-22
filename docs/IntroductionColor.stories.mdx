@@ -19,92 +19,31 @@ Color is used to express style and communicate meaning. We follow a 3 tiered sys
   <img width="80%" src={designTokenDiagramImage} />
 </div>
 
-<br />
+- [**Brand colors**](#brand-colors-first-tier)
+- [**Theme colors**](#theme-colors-second-tier)
+- [**Component colors**](#component-colors-third-tier)
+- [**Next steps**](#next-steps)
+- [**References**](#references)
+
 <br />
 
-## **Brand colors (first tier)**
+## Brand colors (first tier)
 
-Brand colors are the foundation of our color system. They are primarily used as a reference for the [theme colors](/docs/colors-themecolors--docs) and should not be used directly in most component styles.
+Brand colors are the foundation of our color system. They are primarily used as a reference for the [theme colors](/docs/colors-themecolors--docs) and **should not** be used directly in most component styles.
 
 However, in rare cases where a color needs to remain constant across themes (e.g., white always being white, regardless of light or dark mode), the corresponding brand color can be used. Always ensure there isn't an existing theme token that could be used instead.
 
 For more details, refer to the [brand colors](/docs/colors-brandcolors--docs) section.
 
-### **Theme colors (second tier)**
+## Theme colors (second tier)
 
-Theme colors are semantically neutral, theme-compatible design tokens that you can use directly in your code and styles. Each token has been tested for accessibility contrast and has a specific purpose, which is described in its documentation. You can view our theme colors in the [theme colors](/docs/colors-themecolors--docs) section.
+Theme colors are design tokens that are named based on their function rather than their actual color values. This makes them adaptable to different themes and ensures consistency and accessibility across your project. For most use cases, these function-based theme color tokens should be your first choice.
 
-### **Component colors (third tier)**
+For more details, refer to the [theme colors](/docs/colors-themecolors--docs) section.
+
+## Component colors (third tier)
 
 Component colors provide another level of abstraction for component-specific colors. We currently do not provide any component tier colors, but this may change in the future.
-
-## Best practices
-
-### **Prioritize theme colors**
-
-Theme colors should be your go-to choice for 99% of use cases. Using theme tokens ensures that the UI works across all themes and modes. We have built-in accessibility and functionality into the theme colors to ensure this. By using theme colors, you're leveraging these benefits and ensuring a consistent and accessible color scheme across your project.
-
-#### ✅ **DO**: Use theme colors in your components
-
-```
-background-color: theme.colors.background.default;
-background-color: var(--color-background-default);
-```
-
-#### ❌ **DON'T**: Use static color values or brand colors in your components
-
-```
-background-color: #ffffff; // Static color value
-background-color: brandColors.white.white000; // Brand color
-background-color: var(--brand-colors-white-white000); // Brand color
-```
-
-### **Avoid static color values**
-
-As a general rule, avoid applying static color values at the component level. This helps maintain consistency and makes it easier to update colors in the future.
-
-#### ✅ **DO**: Use theme colors in your components
-
-```
-background-color: theme.colors.background.default;
-background-color: var(--color-background-default);
-```
-
-#### ❌ **DON'T**: Use static color values in your components
-
-```
-background-color: #ffffff; // Static color value
-```
-
-### **Centralize non-token colors**
-
-If you need to use colors that are not included in the design tokens, store these colors in a global file in your project. This makes it easier to keep track of these colors and update them as needed. Always consider this as a last resort, and strive to use design tokens wherever possible.
-
-#### ✅ **DO**: Store non-token colors in a global file
-
-```
-// colors.js
-export const customColors = {
-  myCustomColor: '#abc123',
-};
-
-// colors.css
---custom-colors-my-custom-color: #abc123;
-
-// component.js
-import { customColors } from './colors.js';
-
-background-color: customColors.myCustomColor;
-background-color: var(--custom-colors-my-custom-color);
-```
-
-#### ❌ **DON'T**: Use non-token colors directly in your components
-
-```
-background-color: #abc123; // Custom color not in design tokens or global file
-```
-
-Remember, the goal of these practices is to maintain consistency across your project, make your code easier to maintain, and ensure that your project's colors align with the overall design system and MetaMask brand 🦊
 
 ## Next steps
 
