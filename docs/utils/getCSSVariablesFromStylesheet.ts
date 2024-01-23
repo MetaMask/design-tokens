@@ -7,12 +7,13 @@ export interface Color {
 }
 
 /**
- * Retrieves CSS color variables from the stylesheet.
+ * Retrieves CSS variables from the stylesheet.
  *
- * @returns An object containing the retrieved theme color CSS variables.
+ * @param varPrefix - The prefix of the CSS variables to retrieve.
+ * @returns An object containing the retrieved CSS variables.
  */
-function getThemeColorsFromStylesheet(): Color {
-  const themeColors: Color = {};
+function getCSSVariablesFromStylesheet(varPrefix: string): Color {
+  const cssVariables: Color = {};
 
   Array.from(document.styleSheets)
     .flatMap((styleSheet) => {
@@ -30,19 +31,19 @@ function getThemeColorsFromStylesheet(): Color {
       (cssRule: CSSRule) =>
         Array.from((cssRule as CSSStyleRule).style) as string[],
     )
-    .filter((varName) => varName.startsWith('--color-'))
+    .filter((varName) => varName.startsWith(varPrefix))
     .forEach((varName) => {
       const name = varName.split('-').slice(2).join('-');
       const color = getComputedStyle(document.documentElement)
         .getPropertyValue(varName)
         .trim();
-      themeColors[name] = {
+      cssVariables[name] = {
         color,
         name: `var(${varName})`,
       };
     });
 
-  return themeColors;
+  return cssVariables;
 }
 
-export default getThemeColorsFromStylesheet;
+export default getCSSVariablesFromStylesheet;

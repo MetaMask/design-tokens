@@ -3,7 +3,7 @@ import React from 'react';
 import tokens from '../src/figma/tokens.json';
 import { lightTheme, darkTheme } from '../src';
 
-import getThemeColorsFromStylesheet from './utils/getThemeColorsFromStylesheet';
+import getCSSVariablesFromStylesheet from './utils/getCSSVariablesFromStylesheet';
 import { ColorSwatchGroup, ColorSwatch } from './components';
 import README from './ThemeColors.mdx';
 
@@ -57,8 +57,7 @@ export const FigmaDarkTheme = {
 
 export const CSSLightTheme = {
   render: () => {
-    const lightThemeColors = getThemeColorsFromStylesheet();
-
+    const lightThemeColors = getCSSVariablesFromStylesheet('--color-');
     return (
       <div
         style={{
@@ -79,7 +78,7 @@ export const CSSLightTheme = {
 
 export const CSSDarkTheme = {
   render: () => {
-    const darkThemeColors = getThemeColorsFromStylesheet();
+    const darkThemeColors = getCSSVariablesFromStylesheet('--color-');
     return (
       <div
         style={{
@@ -116,12 +115,10 @@ export const CSSDarkTheme = {
     values: [{ name: 'dark', value: 'var(--color-background-default)' }],
   },
   decorators: [
-    // eslint-disable-next-line no-unused-vars
     (StoryFn) => {
       // Check if document object is available
       if (typeof document !== 'undefined') {
         // Add the data-theme attribute to the root element
-        // eslint-disable-next-line no-undef
         document.documentElement.setAttribute('data-theme', 'dark');
       }
       // Render the story
