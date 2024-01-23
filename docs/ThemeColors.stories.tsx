@@ -1,10 +1,10 @@
 import React from 'react';
-
 import tokens from '../src/figma/tokens.json';
 import { lightTheme, darkTheme } from '../src';
-
 import getCSSVariablesFromStylesheet from './utils/getCSSVariablesFromStylesheet';
+
 import { ColorSwatchGroup, ColorSwatch } from './components';
+
 import README from './ThemeColors.mdx';
 
 export default {

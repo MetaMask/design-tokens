@@ -1,4 +1,4 @@
-// Define a type for the theme colors
+// Define a type for the color object
 export interface Color {
   [key: string]: {
     color: string;

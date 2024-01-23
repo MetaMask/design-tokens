@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-
 import tokens from '../src/figma/tokens.json';
 import getCSSVariablesFromStylesheet from './utils/getCSSVariablesFromStylesheet';
 
