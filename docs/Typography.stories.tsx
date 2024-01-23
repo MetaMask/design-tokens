@@ -1,4 +1,5 @@
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import React from 'react';
+import { StoryFn, Meta } from '@storybook/react';
 import { typography } from '../src/js/typography';
 
 import { fontSizes } from '../src/js/typography/fontSizes';
@@ -18,9 +19,9 @@ export default {
       page: README,
     },
   },
-} as ComponentMeta<typeof Text>;
+} as Meta<typeof Text>;
 
-export const FontFamily: ComponentStory<typeof Text> = (...args) => {
+export const FontFamily: StoryFn<typeof Text> = (...args) => {
   const styles = {
     displayMD: {
       fontFamily: fontFamilies.euclidCircularB,
@@ -39,7 +40,7 @@ export const FontFamily: ComponentStory<typeof Text> = (...args) => {
   );
 };
 
-export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
+export const SmallScreen: StoryFn<typeof Text> = (...args) => {
   const smallScreenFontSizeBase = 16;
   const styles = {
     displayMD: {
@@ -208,7 +209,7 @@ export const SmallScreen: ComponentStory<typeof Text> = (...args) => {
   );
 };
 
-export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
+export const LargeScreen: StoryFn<typeof Text> = (...args) => {
   const largeScreenFontSizeBase = 16;
   const styles = {
     displayMD: {
@@ -377,7 +378,7 @@ export const LargeScreen: ComponentStory<typeof Text> = (...args) => {
   );
 };
 
-export const FontWeight: ComponentStory<typeof Text> = (...args) => {
+export const FontWeight: StoryFn<typeof Text> = (...args) => {
   const styles = {
     regular: {
       fontFamily: fontFamilies.euclidCircularB,
@@ -413,7 +414,7 @@ export const FontWeight: ComponentStory<typeof Text> = (...args) => {
   );
 };
 
-export const SmallScreenCSS: ComponentStory<typeof Text> = (...args) => {
+export const SmallScreenCSS: StoryFn<typeof Text> = (...args) => {
   const fontBase = 16;
   const styles = {
     DisplayMD: {
@@ -541,7 +542,7 @@ export const SmallScreenCSS: ComponentStory<typeof Text> = (...args) => {
   );
 };
 
-export const LargeScreenCSS: ComponentStory<typeof Text> = (...args) => {
+export const LargeScreenCSS: StoryFn<typeof Text> = (...args) => {
   const fontBase = 16;
 
   const styles = {

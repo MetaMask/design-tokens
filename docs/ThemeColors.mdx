@@ -1,31 +1,76 @@
-import { Meta, Canvas, Story } from '@storybook/addon-docs';
-
-import tokens from '../src/figma/tokens.json';
-
-<Meta title="Design Tokens/Theme Colors" />
+import { Canvas } from '@storybook/addon-docs/blocks';
+import * as ThemeColorStories from './ThemeColors.stories';
 
 # Theme Colors (second tier)
 
-Theme colors take the first tier [**Brand Colors**](/docs/colors-brandcolors--default-story) and start applying them to high-level applications within the UI. They are considered second tier tokens and can be used in the code directly. Theme colors should be used liberally throughout the codebase and create theme compatibility in your components.
+Theme colors are design tokens that are named based on their function rather than their actual color values. This makes them adaptable to different themes and ensures consistency and accessibility across your project.
 
-- [Light Theme Colors](#light-theme-colors)
-- [Dark Theme Colors](#dark-theme-colors)
+For most use cases, these function-based color tokens should be your first choice. They are derived from the first-tier [**brand colors**](/docs/colors-brand-colors--docs) and are applied to high-level applications within the UI.
 
-## Light Theme Colors
+- [**Light theme colors**](#light-theme-colors)
+- [**Dark theme colors**](#dark-theme-colors)
+- [**Best practices**](#best-practices)
+- [**References**](#references)
 
-Light theme colors to be used in the styles for MetaMask UI.
+## Light theme colors
 
-<Canvas>
-  <Story id="colors-themecolors--light-theme-colors" />
-</Canvas>
+The light theme colors are designed to be used in the styles for MetaMask UI when the light theme is active
 
-## Dark Theme Colors
+<Canvas of={ThemeColorStories.LightThemeColors} />
 
-Dark theme colors for MetaMask UI. They have the same name as Light Theme Colors but different values. If you are using the Light Theme Colors for their intended purpose your UI will be dark theme compatible.
+## Dark theme colors
 
-<Canvas>
-  <Story id="colors-themecolors--dark-theme-colors" />
-</Canvas>
+The dark theme colors are designed for MetaMask UI when the dark theme is active. They have the same names as the light theme colors but different values. If you are using the light theme colors for their intended purpose, your UI will automatically be compatible with the dark theme.
+
+<Canvas of={ThemeColorStories.DarkThemeColors} />
+
+## Best practices
+
+### ✅ **DO**: Use theme colors in your components
+
+```jsx
+// Good
+background-color: theme.colors.background.default;
+background-color: var(--color-background-default);
+```
+
+### ❌ **DON'T**: Use static color values or brand colors in your components
+
+See when to use [brand colors](/docs/colors-brand-colors--docs#best-practices)
+
+```jsx
+// Avoid
+background-color: #ffffff; // Static color value
+background-color: brandColors.white.white000; // Brand color
+background-color: var(--brand-colors-white-white000); // Brand color
+```
+
+### ✅ **DO**: Store non-token colors in a global file
+
+If you need to use colors that are not included in the design tokens, store these colors in a global file in your project. This makes it easier to keep track of these colors and update them as needed. Always consider this as a last resort, and strive to use design tokens wherever possible.
+
+```jsx
+// colors.js
+export const customColors = {
+  myCustomColor: '#abc123',
+};
+
+// colors.css
+--custom-colors-my-custom-color: #abc123;
+
+// component.js
+import { customColors } from './colors.js';
+
+background-color: customColors.myCustomColor;
+background-color: var(--custom-colors-my-custom-color);
+```
+
+### ❌ **DON'T**: Use non-token colors directly in your components
+
+```jsx
+// Avoid
+background-color: #abc123; // Custom color not in design tokens or global file
+```
 
 ## References
 

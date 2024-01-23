@@ -43,6 +43,7 @@ interface ColorSwatchGroupProps {
    */
   name?: string;
 }
+
 export const ColorSwatchGroup: FunctionComponent<ColorSwatchGroupProps> = ({
   swatchData,
   borderColor,

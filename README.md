@@ -103,10 +103,10 @@ Follow these steps to below to get the library up and running locally.
 
 ### Setup
 
-- Install [Node.js](https://nodejs.org) version 12
+- Install [Node.js](https://nodejs.org) version 16
   - If you are using [nvm](https://github.com/creationix/nvm#installation) (recommended) running `nvm use` will automatically choose the right node version for you.
 - Install [Yarn v1](https://yarnpkg.com/en/docs/install)
-- Run `yarn setup` to install dependencies and run any requried post-install scripts
+- Run `yarn setup` to install dependencies and run any required post-install scripts
   - **Warning:** Do not use the `yarn` / `yarn install` command directly. Use `yarn setup` instead. The normal install command will skip required post-install scripts, leaving your development environment in an invalid state.
 
 ### Documentation
@@ -117,9 +117,9 @@ We use storybook for documentation. To get storybook up and running use:
 yarn storybook
 ```
 
-### Figma Tokens
+### Tokens Studio for Figma (formerly known as Figma Tokens)
 
-The primary data for the generation of tokens is based on the json generated from a figma plugin called [Figma Tokens](https://github.com/six7/figma-tokens). This keeps our code in sync with our figma libraries. Currently the token formats are manually generated we are hoping to automate this process in future.
+The primary data for the generation of tokens is based on the json generated from a figma plugin called [Tokens Studio for Figma (formerly known as Figma Tokens)](https://github.com/six7/figma-tokens). This keeps our code in sync with our figma libraries. Currently the token formats are manually generated we are hoping to automate this process in future.
 
 ### Testing and Linting
 
