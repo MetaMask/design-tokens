@@ -56,8 +56,8 @@ export const CSS: Story = {
           .getPropertyValue(varName)
           .trim();
         brandColors[name] = {
-          color: `var(${varName})`,
-          name: color,
+          color: color,
+          name: `var(${varName})`,
         };
       });
 
