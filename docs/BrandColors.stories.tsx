@@ -28,12 +28,9 @@ export const Figma: Story = {
 
 export const CSS: Story = {
   render: () => {
-    // Using useState hook to manage brandColors state
     const [brandColors, setBrandColors] = useState<Color>({});
 
     useEffect(() => {
-      // Using useEffect hook to run the code after the component mounts
-
       // Getting all CSS variables that start with '--brand-colors' from all stylesheets
       const cssVars = Array.from(document.styleSheets)
         .flatMap((styleSheet) => {
@@ -65,7 +62,7 @@ export const CSS: Story = {
       setBrandColors(brandColors);
     }, []);
 
-    // Rendering the component
+    // Rendering the color swatches
     return (
       <div
         style={{

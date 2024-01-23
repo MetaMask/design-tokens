@@ -80,7 +80,6 @@ export const CSSLightTheme = {
 export const CSSDarkTheme = {
   render: () => {
     const darkThemeColors = getThemeColorsFromStylesheet();
-    console.log('darkThemeColors', darkThemeColors);
     return (
       <div
         style={{

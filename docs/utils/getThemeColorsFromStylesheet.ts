@@ -7,9 +7,9 @@ export interface Color {
 }
 
 /**
- * Retrieves theme colors from the stylesheet.
+ * Retrieves CSS color variables from the stylesheet.
  *
- * @returns An object containing the retrieved theme colors.
+ * @returns An object containing the retrieved theme color CSS variables.
  */
 function getThemeColorsFromStylesheet(): Color {
   const themeColors: Color = {};
