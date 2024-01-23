@@ -1,9 +1,12 @@
 import { BrandColor } from './brandColor.types';
 
 export const brandColor: BrandColor = {
+  // White
   white000: '#ffffff',
   white010: '#fcfcfc',
+  // Black
   black000: '#000000',
+  // Grey
   grey030: '#fafbfc',
   grey040: '#f2f4f6',
   grey100: '#d6d9dc',
@@ -16,6 +19,7 @@ export const brandColor: BrandColor = {
   grey750: '#2e3339',
   grey800: '#24272a',
   grey900: '#141618',
+  // Blue
   blue000: '#eaf6ff',
   blue100: '#a7d9fe',
   blue200: '#75c4fd',
@@ -26,6 +30,7 @@ export const brandColor: BrandColor = {
   blue700: '#024272',
   blue800: '#01253f',
   blue900: '#00080d',
+  // Orange
   orange000: '#fef5ef',
   orange100: '#fde2cf',
   orange200: '#fbc49d',
@@ -36,6 +41,7 @@ export const brandColor: BrandColor = {
   orange700: '#954005',
   orange800: '#632b04',
   orange900: '#321602',
+  // Green
   green000: '#f3fcf5',
   green100: '#d6ffdf',
   green200: '#afecbd',
@@ -46,6 +52,7 @@ export const brandColor: BrandColor = {
   green700: '#145523',
   green800: '#0a2c12',
   green900: '#041007',
+  // Red
   red000: '#fcf2f3',
   red100: '#f7d5d8',
   red200: '#f1b9be',
@@ -56,8 +63,11 @@ export const brandColor: BrandColor = {
   red700: '#8e1d28',
   red800: '#64141c',
   red900: '#3a0c10',
+  // Purple
   purple500: '#8b45b6',
+  // Violet
   violet300: '#cfb5f0',
+  // Yellow
   yellow000: '#fffdf8',
   yellow100: '#fefcde',
   yellow200: '#fff2c5',
