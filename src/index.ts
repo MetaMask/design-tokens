@@ -1,1 +1,8 @@
-export { colors, typography, lightTheme, darkTheme, Theme } from './js';
+export {
+  colors,
+  typography,
+  lightTheme,
+  darkTheme,
+  Theme,
+  brandColor,
+} from './js';
