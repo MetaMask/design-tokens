@@ -6,6 +6,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.13.0]
+### Uncategorized
+- Adding CSS and JS token display in storybook ([#594](https://github.com/MetaMask/design-tokens/pull/594))
+- Refactoring the brand color object  ([#585](https://github.com/MetaMask/design-tokens/pull/585))
+- Added sets of hover& pressed tokens. Also updated warning/success/inverses  ([#586](https://github.com/MetaMask/design-tokens/pull/586))
+- Updating documentation ([#593](https://github.com/MetaMask/design-tokens/pull/593))
+- Upgrading storybook from 7.5 to 7.6 ([#592](https://github.com/MetaMask/design-tokens/pull/592))
+- Revert "Adding brand colors to CSSinJS exports" ([#589](https://github.com/MetaMask/design-tokens/pull/589))
+- Enhancements to CircleCI Script and Storybook Build ([#583](https://github.com/MetaMask/design-tokens/pull/583))
+- Adding brand colors to CSSinJS exports ([#582](https://github.com/MetaMask/design-tokens/pull/582))
+- devDeps: storybook v7 ([#538](https://github.com/MetaMask/design-tokens/pull/538))
+- ci: fix build-test workflow ([#539](https://github.com/MetaMask/design-tokens/pull/539))
+- Bump @metamask/auto-changelog from 3.4.3 to 3.4.4 ([#571](https://github.com/MetaMask/design-tokens/pull/571))
+- bump webpack@4, webpack@5 ([#536](https://github.com/MetaMask/design-tokens/pull/536))
+- ci: remove broken require-additional-reviewer workflow ([#537](https://github.com/MetaMask/design-tokens/pull/537))
+- Bump @metamask/auto-changelog from 3.4.2 to 3.4.3 ([#544](https://github.com/MetaMask/design-tokens/pull/544))
+- Bump @metamask/auto-changelog from 3.4.1 to 3.4.2 ([#542](https://github.com/MetaMask/design-tokens/pull/542))
+- Bump @metamask/auto-changelog from 3.3.0 to 3.4.1 ([#541](https://github.com/MetaMask/design-tokens/pull/541))
+- Bump decode-uri-component from 0.2.0 to 0.2.2 ([#535](https://github.com/MetaMask/design-tokens/pull/535))
+- Bump loader-utils from 1.4.0 to 1.4.2 ([#533](https://github.com/MetaMask/design-tokens/pull/533))
+- Bump json5 from 1.0.1 to 1.0.2 ([#534](https://github.com/MetaMask/design-tokens/pull/534))
+- Bump @babel/traverse from 7.18.11 to 7.23.2 ([#532](https://github.com/MetaMask/design-tokens/pull/532))
+- Bump @metamask/auto-changelog from 3.2.0 to 3.3.0 ([#516](https://github.com/MetaMask/design-tokens/pull/516))
+- Bump @metamask/auto-changelog from 3.1.0 to 3.2.0 ([#497](https://github.com/MetaMask/design-tokens/pull/497))
+- Bump @metamask/auto-changelog from 2.6.1 to 3.1.0 ([#248](https://github.com/MetaMask/design-tokens/pull/248))
+
 ## [1.12.0]
 ### Changed
 - Hover & Pressed color updates ([#487](https://github.com/MetaMask/design-tokens/pull/487))
@@ -142,7 +168,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.12.0...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.13.0...HEAD
+[1.13.0]: https://github.com/MetaMask/design-tokens/compare/v1.12.0...v1.13.0
 [1.12.0]: https://github.com/MetaMask/design-tokens/compare/v1.11.1...v1.12.0
 [1.11.1]: https://github.com/MetaMask/design-tokens/compare/v1.11.0...v1.11.1
 [1.11.0]: https://github.com/MetaMask/design-tokens/compare/v1.10.0...v1.11.0
