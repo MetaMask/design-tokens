@@ -5,7 +5,7 @@ interface Props<C extends React.ElementType> {
   /**
    * The children or content of the Text component
    */
-  children?: React.ReactChild;
+  children?: React.ReactNode;
   /**
    * Polymorphic prop to change the html root element of the component
    */
@@ -14,6 +14,10 @@ interface Props<C extends React.ElementType> {
    * The style prop of the Text component
    */
   style?: object;
+  /**
+   * The color prop of the Text component
+   */
+  color?: string;
 }
 
 type TextProps<C extends React.ElementType> = Props<C> &
@@ -23,10 +27,17 @@ export const Text = <C extends React.ElementType = 'span'>({
   style,
   children,
   as,
+  color,
 }: TextProps<C>) => {
   const Component = as || 'span';
   return (
-    <Component style={{ fontFamily: fontFamilies.euclidCircularB, ...style }}>
+    <Component
+      style={{
+        fontFamily: fontFamilies.euclidCircularB,
+        color: 'var(--color-text-default)',
+        ...style,
+      }}
+    >
       {children}
     </Component>
   );

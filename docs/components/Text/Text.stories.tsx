@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Text } from '.';
 
 export default {
-  title: 'Doc components/Text',
+  title: 'Documentation Components/Text',
   argTypes: {
     children: {
       control: 'text',

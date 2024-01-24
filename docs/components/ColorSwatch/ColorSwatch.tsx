@@ -49,6 +49,7 @@ export const ColorSwatch: FunctionComponent<ColorSwatchProps> = ({
           backgroundColor: textBackgroundColor,
           padding: 8,
           borderRadius: '0 0 8px 8px',
+          color: textColor,
         }}
       >
         <strong style={{ display: 'block', marginBottom: '8px' }}>
