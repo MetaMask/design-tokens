@@ -120,6 +120,14 @@ export interface ThemeColors {
      */
     default: string;
     /**
+     * {string} defaultHover - For the "hover" state of interactive elements
+     */
+    defaultHover: string;
+    /**
+     * {string} defaultPressed - For the "pressed" state of interactive elements
+     */
+    defaultPressed: string;
+    /**
      * {string} primary.alternative - For the \"pressed\" state of interactive primary elements
      */
     alternative: string;
@@ -168,6 +176,14 @@ export interface ThemeColors {
      */
     default: string;
     /**
+     * {string} defaultHover - For the "hover" state of interactive elements
+     */
+    defaultHover: string;
+    /**
+     * {string} defaultPressed - For the "pressed" state of interactive elements
+     */
+    defaultPressed: string;
+    /**
      * {string} error.alternative - For the \"pressed\" state of interactive danger/critical elements
      */
     alternative: string;
@@ -194,6 +210,14 @@ export interface ThemeColors {
      */
     default: string;
     /**
+     * {string} defaultHover - For the "hover" state of interactive elements
+     */
+    defaultHover: string;
+    /**
+     * {string} defaultPressed - For the "pressed" state of interactive elements
+     */
+    defaultPressed: string;
+    /**
      * {string} warning.alternative - [DEPRECATED] Should be used as an alternative to warning/default for things like hover or pressed states
      */
     alternative: string;
@@ -215,6 +239,14 @@ export interface ThemeColors {
      * {string} success.default - For positive & good semantic elements. Used for text, background, icon or border
      */
     default: string;
+    /**
+     * {string} defaultHover - For the "hover" state of interactive elements
+     */
+    defaultHover: string;
+    /**
+     * {string} defaultPressed - For the "pressed" state of interactive elements
+     */
+    defaultPressed: string;
     /**
      * {string} success.alternative - [DEPRECATED] Should be used as an alternative to success/default for things like hover or pressed states
      */

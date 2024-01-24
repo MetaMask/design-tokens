@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import tokens from '../src/figma/tokens.json';
+import { brandColor } from '../src/js';
 import getCSSVariablesFromStylesheet from './utils/getCSSVariablesFromStylesheet';
-
 import { ColorSwatchGroup, ColorSwatch } from './components';
-
 import README from './BrandColors.mdx';
 
 const meta: Meta<typeof ColorSwatchGroup> = {
@@ -46,5 +45,18 @@ export const CSS: Story = {
 };
 
 export const JS: Story = {
-  render: () => <h1>Coming soon</h1>,
+  render: () => (
+    <div
+      style={{
+        display: 'grid',
+        gap: '16px',
+        gridTemplateColumns: 'repeat(auto-fill, 300px)',
+      }}
+    >
+      {/* Mapping through each brand color and rendering a ColorSwatch component for it */}
+      {Object.entries(brandColor).map(([name, color]) => (
+        <ColorSwatch key={name} color={color} name={`brandColor.${name}`} />
+      ))}
+    </div>
+  ),
 };
