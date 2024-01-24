@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.13.0]
-### Uncategorized
+### Changed
 - Adding CSS and JS token display in storybook ([#594](https://github.com/MetaMask/design-tokens/pull/594))
 - Refactoring the brand color object  ([#585](https://github.com/MetaMask/design-tokens/pull/585))
 - Added sets of hover& pressed tokens. Also updated warning/success/inverses  ([#586](https://github.com/MetaMask/design-tokens/pull/586))
