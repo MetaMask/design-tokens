@@ -17,7 +17,7 @@ describe('Shadows', () => {
       Number(Number(designTokens.light.shadows.xs.value.y)),
     );
 
-    expect(shadows.size.xs.shadowOpacity).toStrictEqual(1);
+    expect(shadows.size.xs.shadowOpacity).toBe(1);
 
     expect(shadows.size.xs.shadowRadius).toStrictEqual(
       Number(Number(designTokens.light.shadows.xs.value.blur)),
@@ -37,7 +37,7 @@ describe('Shadows', () => {
       Number(designTokens.light.shadows.sm.value.y),
     );
 
-    expect(shadows.size.sm.shadowOpacity).toStrictEqual(1);
+    expect(shadows.size.sm.shadowOpacity).toBe(1);
 
     expect(shadows.size.sm.shadowRadius).toStrictEqual(
       Number(designTokens.light.shadows.sm.value.blur),
@@ -57,7 +57,7 @@ describe('Shadows', () => {
       Number(designTokens.light.shadows.md.value.y),
     );
 
-    expect(shadows.size.md.shadowOpacity).toStrictEqual(1);
+    expect(shadows.size.md.shadowOpacity).toBe(1);
 
     expect(shadows.size.md.shadowRadius).toStrictEqual(
       Number(designTokens.light.shadows.md.value.blur),
@@ -77,7 +77,7 @@ describe('Shadows', () => {
       Number(designTokens.light.shadows.lg.value.y),
     );
 
-    expect(shadows.size.lg.shadowOpacity).toStrictEqual(1);
+    expect(shadows.size.lg.shadowOpacity).toBe(1);
 
     expect(shadows.size.lg.shadowRadius).toStrictEqual(
       Number(designTokens.light.shadows.lg.value.blur),
