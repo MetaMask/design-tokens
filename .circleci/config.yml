@@ -9,12 +9,12 @@ workflows:
   storybook:
     jobs:
       - prep-deps
-      - prep-build:storybook:
+      - prep-build-storybook:
           requires:
             - prep-deps
       - job-announce-storybook:
           requires:
-            - prep-build:storybook
+            - prep-build-storybook
 
 jobs:
   prep-deps:
@@ -40,7 +40,7 @@ jobs:
           paths:
             - node_modules
 
-  prep-build:storybook:
+  prep-build-storybook:
     executor: node-browsers
     steps:
       - checkout
