@@ -84,7 +84,7 @@
     "webpack": "5"
   },
   "engines": {
-    "node": "^16.20.0"
+    "node": "^18.18 || >=20"
   },
   "publishConfig": {
     "access": "public",
@@ -99,5 +99,6 @@
       "esbuild": false,
       "@swc/core": false
     }
-  }
+  },
+  "packageManager": "yarn@3.2.1"
 }
