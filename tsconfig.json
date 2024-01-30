@@ -13,6 +13,6 @@
     "target": "ES2017",
     "skipLibCheck": true
   },
-  "exclude": ["./src/**/*.test.ts"],
-  "include": ["./src/**/*.ts"]
+  "exclude": ["src/**/*.test.ts"],
+  "include": ["src/**/*.ts"]
 }

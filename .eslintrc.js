@@ -23,5 +23,6 @@ module.exports = {
     '!.prettierrc.js',
     'dist/',
     'storybook-static/',
+    'docs/', // TODO: Remove this line once we have merged updating node version and fix linting issues
   ],
 };
