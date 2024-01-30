@@ -22,9 +22,10 @@
     "src/css/"
   ],
   "scripts": {
-    "build": "tsc --project .",
+    "build": "tsup --clean && yarn build:types",
     "build-storybook": "storybook build",
     "build:clean": "rimraf dist && yarn build",
+    "build:types": "tsc --project tsconfig.build.json",
     "lint": "yarn lint:eslint && yarn lint:misc --check",
     "lint:eslint": "eslint . --cache --ext js,ts",
     "lint:fix": "yarn lint:eslint --fix && yarn lint:misc --write",
@@ -54,7 +55,7 @@
     "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^7.6.10",
     "@storybook/react-webpack5": "^7.6.10",
-    "@types/jest": "^26.0.13",
+    "@types/jest": "^28.1.6",
     "@typescript-eslint/eslint-plugin": "^4.21.0",
     "@typescript-eslint/parser": "^4.21.0",
     "babel-loader": "^8.2.3",
@@ -79,8 +80,9 @@
     "sass-loader": "10.1.1",
     "storybook": "^7.6.10",
     "style-loader": "2.0.0",
-    "ts-jest": "^26.3.0",
-    "typescript": "^4.2.4",
+    "ts-jest": "^28.0.7",
+    "ts-node": "^10.7.0",
+    "typescript": "~4.8.4",
     "webpack": "5"
   },
   "packageManager": "yarn@3.2.1",
@@ -101,7 +103,13 @@
       "@swc/core": false,
       "@storybook/addon-essentials>@storybook/core-common>esbuild": false,
       "@storybook/react-webpack5>@storybook/builder-webpack5>@swc/core": false,
-      "@storybook/react-webpack5>@storybook/preset-react-webpack>@pmmmwh/react-refresh-webpack-plugin>core-js-pure": false
+      "@storybook/react-webpack5>@storybook/preset-react-webpack>@pmmmwh/react-refresh-webpack-plugin>core-js-pure": false,
+      "ts-node>@swc/core": false,
+      "tsup>@swc/core": false,
+      "tsup>esbuild": false
     }
+  },
+  "dependencies": {
+    "tsup": "^8.0.1"
   }
 }
