@@ -25,7 +25,7 @@ jobs:
       - run: yarn
       - uses: MetaMask/action-publish-gh-pages@v2
         with:
-          build-command: build-storybook
+          build-command: build:storybook
           source-directory: storybook-static
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
