@@ -33,7 +33,6 @@
     "lint:eslint": "eslint . --cache --ext js,ts",
     "lint:fix": "yarn lint:eslint --fix && yarn lint:constraints --fix && yarn lint:misc --write && yarn lint:dependencies && yarn lint:changelog",
     "lint:misc": "prettier '**/*.json' '**/*.md' '**/*.yml' '!.yarnrc.yml' --ignore-path .gitignore --no-error-on-unmatched-pattern",
-    "setup": "yarn install && yarn allow-scripts",
     "storybook": "storybook dev -p 6006",
     "test": "jest",
     "test:watch": "jest --watch"
