@@ -34,7 +34,7 @@ jobs:
       - run:
           name: Postinstall
           command: |
-            yarn setup
+            yarn
       - persist_to_workspace:
           root: .
           paths:
