@@ -1,6 +1,8 @@
-import { ThemeTypography } from '../typography';
+import type { ThemeTypography } from '../typography/types';
 
-interface ShadowShape {
+export type { ThemeTypography } from '../typography/types';
+
+type ShadowShape = {
   shadowColor: string;
   shadowOffset: {
     width: number;
@@ -8,20 +10,20 @@ interface ShadowShape {
   };
   shadowOpacity: number;
   shadowRadius: number;
-}
+};
 
-interface ShadowSizes {
+type ShadowSizes = {
   xs: ShadowShape;
   sm: ShadowShape;
   md: ShadowShape;
   lg: ShadowShape;
-}
+};
 
-export interface ThemeShadows {
+export type ThemeShadows = {
   size: ShadowSizes;
-}
+};
 
-export interface ThemeColors {
+export type ThemeColors = {
   background: {
     /**
      * {string} background.default - For default neutral backgrounds
@@ -328,10 +330,10 @@ export interface ThemeColors {
      */
     inverse: string;
   };
-}
+};
 
-export interface Theme {
+export type Theme = {
   colors: ThemeColors;
   typography: ThemeTypography;
   shadows: ThemeShadows;
-}
+};

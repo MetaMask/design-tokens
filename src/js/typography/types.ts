@@ -1,12 +1,12 @@
-interface TypeStyle {
+type TypeStyle = {
   fontFamily: string;
   fontSize: number;
   fontWeight: string;
   lineHeight: number;
   letterSpacing: number;
-}
+};
 
-export interface ThemeTypography {
+export type ThemeTypography = {
   sDisplayMD: TypeStyle;
   sHeadingLG: TypeStyle;
   sHeadingMD: TypeStyle;
@@ -35,4 +35,4 @@ export interface ThemeTypography {
   lBodySMBold: TypeStyle;
   lBodyXS: TypeStyle;
   lBodyXSMedium: TypeStyle;
-}
+};

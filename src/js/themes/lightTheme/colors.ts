@@ -1,4 +1,4 @@
-import { ThemeColors } from '../types';
+import type { ThemeColors } from '../types';
 
 /**
  * Light theme colors
