@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "resolveJsonModule": true,
-    "jsx": "react",
     "esModuleInterop": true,
     "exactOptionalPropertyTypes": true,
     "forceConsistentCasingInFileNames": true,
