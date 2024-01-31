@@ -89,7 +89,6 @@ export const ColorSwatchGroup: FunctionComponent<ColorSwatchGroupProps> = ({
               display: 'grid',
               gap: '16px',
               gridTemplateColumns: 'repeat(auto-fill, 300px)',
-              color: '#fff000',
             }}
           >
             {colorsArr.map((color) => {
