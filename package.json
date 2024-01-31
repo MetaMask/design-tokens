@@ -76,7 +76,6 @@
     "css-loader": "5.2.7",
     "depcheck": "^1.4.3",
     "dependency-tree": "^8.1.2",
-<<<<<<< HEAD
     "eslint": "^8.44.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "~2.26.0",
@@ -84,13 +83,6 @@
     "eslint-plugin-jsdoc": "^39.9.1",
     "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-no-hex-color": "file:plugins/",
-=======
-    "eslint": "^7.23.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.3.4",
-    "eslint-plugin-jsdoc": "^36.1.0",
->>>>>>> ae40907 (reset)
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",

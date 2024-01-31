@@ -2,6 +2,14 @@ module.exports = {
   root: true,
 
   extends: ['@metamask/eslint-config', 'plugin:storybook/recommended'],
+  plugins: [
+    // ... other plugins
+    'no-hex-color', // Plugin name as defined in package.json
+  ],
+  rules: {
+    // ... other rules
+    'no-hex-color/no-hex-color': 'warn', // Enable your custom rule
+  },
   overrides: [
     {
       files: ['*.ts'],
