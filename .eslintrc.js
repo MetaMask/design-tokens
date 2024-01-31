@@ -30,6 +30,6 @@ module.exports = {
     'dist/',
     '.yarn/',
     'storybook-static',
-    'docs/', // TODO: Remove this line once node version upgrade PR is merged https://github.com/MetaMask/design-tokens/pull/600
+    'docs/utils/getCSSVariablesFromStylesheet.ts', // TODO: Fix the types in this file
   ],
 };
