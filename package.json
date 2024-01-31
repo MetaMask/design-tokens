@@ -99,15 +99,9 @@
   },
   "lavamoat": {
     "allowScripts": {
-      "@lavamoat/preinstall-always-fail": false,
-      "core-js": false,
-      "fsevents": false,
-      "core-js-pure": false,
-      "esbuild": false,
-      "@swc/core": false,
-      "tsup>esbuild": true,
       "@storybook/react-webpack5>@storybook/preset-react-webpack>@pmmmwh/react-refresh-webpack-plugin>core-js-pure": false,
-      "tsup>@swc/core": false
+      "tsup>@swc/core": false,
+      "tsup>esbuild": false
     }
   }
 }
