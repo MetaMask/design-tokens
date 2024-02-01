@@ -40,7 +40,15 @@ function trimStringAfterCharacter(str: string, char = '.') {
 function createNewFigmaTokenObject(str: string, obj: any) {
   const firstString = trimStringBetweenCharacters(str);
   const secondString = trimStringAfterCharacter(str);
-  return obj[`${firstString}`][`${secondString}`];
+  if (
+    firstString &&
+    secondString &&
+    obj[firstString] &&
+    obj[firstString][secondString]
+  ) {
+    return obj[firstString][secondString];
+  }
+  return null;
 }
 
 describe('Typography', () => {

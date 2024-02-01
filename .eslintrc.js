@@ -32,5 +32,6 @@ module.exports = {
     'dist/',
     'storybook-static/',
     '.yarn/',
+    'docs/utils/getCSSVariablesFromStylesheet.ts',
   ],
 };
