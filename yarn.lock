@@ -2335,7 +2335,7 @@ __metadata:
     "@storybook/addon-essentials": ^7.6.10
     "@storybook/addon-links": ^7.6.10
     "@storybook/preset-scss": ^1.0.3
-    "@storybook/react": ^7.6.10
+    "@storybook/react": ^7.6.12
     "@storybook/react-webpack5": ^7.6.10
     "@types/jest": ^28.1.6
     "@types/node": ^16
@@ -3608,16 +3608,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core-client@npm:7.6.10":
-  version: 7.6.10
-  resolution: "@storybook/core-client@npm:7.6.10"
-  dependencies:
-    "@storybook/client-logger": 7.6.10
-    "@storybook/preview-api": 7.6.10
-  checksum: 2a792710a0d3b268814b33ea60439a50a47bc1bedf1a1c3e316ceaabb0eec642f271e5cee5a1243e97a73d6c14704f1a46cb54397794ab63c431f23a38420dae
-  languageName: node
-  linkType: hard
-
 "@storybook/core-client@npm:7.6.12":
   version: 7.6.12
   resolution: "@storybook/core-client@npm:7.6.12"
@@ -4072,7 +4062,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:7.6.12":
+"@storybook/react@npm:7.6.12, @storybook/react@npm:^7.6.12":
   version: 7.6.12
   resolution: "@storybook/react@npm:7.6.12"
   dependencies:
@@ -4105,42 +4095,6 @@ __metadata:
     typescript:
       optional: true
   checksum: 0ce429949fa9f713d801d33c3d0011f8a2dbd73b60d19131bc05a6af6514ce0a404fcdda78c1ad97702006c72d50f31ebe3a787e90338f1df027b57ceb65ce30
-  languageName: node
-  linkType: hard
-
-"@storybook/react@npm:^7.6.10":
-  version: 7.6.10
-  resolution: "@storybook/react@npm:7.6.10"
-  dependencies:
-    "@storybook/client-logger": 7.6.10
-    "@storybook/core-client": 7.6.10
-    "@storybook/docs-tools": 7.6.10
-    "@storybook/global": ^5.0.0
-    "@storybook/preview-api": 7.6.10
-    "@storybook/react-dom-shim": 7.6.10
-    "@storybook/types": 7.6.10
-    "@types/escodegen": ^0.0.6
-    "@types/estree": ^0.0.51
-    "@types/node": ^18.0.0
-    acorn: ^7.4.1
-    acorn-jsx: ^5.3.1
-    acorn-walk: ^7.2.0
-    escodegen: ^2.1.0
-    html-tags: ^3.1.0
-    lodash: ^4.17.21
-    prop-types: ^15.7.2
-    react-element-to-jsx-string: ^15.0.0
-    ts-dedent: ^2.0.0
-    type-fest: ~2.19
-    util-deprecate: ^1.0.2
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-    typescript: "*"
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: cd5aebe7d6c2d2f75c80adb4ad76d8827b1078895e890b9088cb0069c912edf5900876ac215da2fe75412fc76d2ba5b65642074c54e3cb25fe99dc20c91dbe4b
   languageName: node
   linkType: hard
 

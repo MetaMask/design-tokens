@@ -61,7 +61,7 @@
     "@storybook/addon-essentials": "^7.6.10",
     "@storybook/addon-links": "^7.6.10",
     "@storybook/preset-scss": "^1.0.3",
-    "@storybook/react": "^7.6.10",
+    "@storybook/react": "^7.6.12",
     "@storybook/react-webpack5": "^7.6.10",
     "@types/jest": "^28.1.6",
     "@types/node": "^16",
