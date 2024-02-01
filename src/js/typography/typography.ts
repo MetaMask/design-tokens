@@ -3,8 +3,7 @@ import { fontSizes } from './fontSizes';
 import { fontWeights } from './fontWeights';
 import { letterSpacing } from './letterSpacing';
 import { lineHeights } from './lineHeights';
-
-import { ThemeTypography } from './types';
+import type { ThemeTypography } from './types';
 
 /* eslint-enable jsdoc/check-property-names, jsdoc/tag-lines */
 export const typography: ThemeTypography = {

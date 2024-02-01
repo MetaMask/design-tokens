@@ -1,4 +1,4 @@
-export { Theme } from './themes';
+export type { Theme } from './themes';
 export { lightTheme } from './themes';
 export { darkTheme } from './themes';
 export { brandColor } from './brandColor';

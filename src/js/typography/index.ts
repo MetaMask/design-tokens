@@ -1,2 +1,2 @@
 export { typography } from './typography';
-export { ThemeTypography } from './types';
+export type { ThemeTypography } from './types';

@@ -1,0 +1,21 @@
+{
+  "ignores": [
+    "@lavamoat/allow-scripts",
+    "@lavamoat/preinstall-always-fail",
+    "@metamask/auto-changelog",
+    "@types/*",
+    "prettier-plugin-packagejson",
+    "ts-node",
+    "@storybook/addon-actions",
+    "@storybook/react-webpack5",
+    "babel-loader",
+    "dependency-tree",
+    "eslint-plugin-node",
+    "sass",
+    "webpack",
+    "@yarnpkg/core",
+    "@yarnpkg/cli",
+    "clipanion",
+    "@yarnpkg/fslib"
+  ]
+}

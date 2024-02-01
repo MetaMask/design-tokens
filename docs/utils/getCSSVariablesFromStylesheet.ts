@@ -1,10 +1,10 @@
 // Define a type for the color object
-export interface Color {
+export type Color = {
   [key: string]: {
     color: string;
     name: string;
   };
-}
+};
 
 /**
  * Retrieves CSS variables from the stylesheet.
@@ -27,10 +27,7 @@ function getCSSVariablesFromStylesheet(varPrefix: string): Color {
     .filter(
       (cssRule: CSSRule) => (cssRule as CSSStyleRule).selectorText === ':root',
     )
-    .flatMap(
-      (cssRule: CSSRule) =>
-        Array.from((cssRule as CSSStyleRule).style) as string[],
-    )
+    .flatMap((cssRule: CSSRule) => Array.from((cssRule as CSSStyleRule).style))
     .filter((varName) => varName.startsWith(varPrefix))
     .forEach((varName) => {
       const name = varName.split('-').slice(2).join('-');
