@@ -1,7 +1,7 @@
-import { Theme } from '../types';
 import { typography } from '../../typography';
-import { shadows } from './shadows';
+import type { Theme } from '../types';
 import { colors } from './colors';
+import { shadows } from './shadows';
 
 export const lightTheme: Theme = {
   colors,

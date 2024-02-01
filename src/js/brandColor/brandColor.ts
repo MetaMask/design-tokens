@@ -1,4 +1,4 @@
-import { BrandColor } from './brandColor.types';
+import type { BrandColor } from './brandColor.types';
 
 export const brandColor: BrandColor = {
   // White
