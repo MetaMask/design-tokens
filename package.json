@@ -1,12 +1,12 @@
 {
   "name": "@metamask/design-tokens",
   "version": "1.13.0",
-  "description": "Design tokens to be used throughout MetaMask products.",
+  "description": "Design tokens to be used throughout MetaMask products",
   "keywords": [
     "MetaMask",
     "Ethereum"
   ],
-  "homepage": "https://metamask.github.io/design-tokens/",
+  "homepage": "https://github.com/MetaMask/design-tokens#readme",
   "bugs": {
     "url": "https://github.com/MetaMask/design-tokens/issues"
   },
@@ -15,12 +15,19 @@
     "url": "https://github.com/MetaMask/design-tokens.git"
   },
   "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/types/index.d.ts",
   "files": [
-    "dist",
-    "src/css/"
+    "dist"
   ],
   "scripts": {
     "build": "tsup --clean && yarn build:types",
