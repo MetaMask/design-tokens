@@ -2308,24 +2308,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/auto-changelog@npm:^3.4.3":
-  version: 3.4.4
-  resolution: "@metamask/auto-changelog@npm:3.4.4"
-  dependencies:
-    diff: ^5.0.0
-    execa: ^5.1.1
-    prettier: ^2.8.8
-    semver: ^7.3.5
-    yargs: ^17.0.1
-  bin:
-    auto-changelog: dist/cli.js
-  checksum: 4876ab3ec98f6d0c00a0679f9e44e1ee79d335ae97e18336a638ac19484cac30d2f3750e6875121ee07b0da128f8609490bed0e195c8153c2b74866f34e405ed
-  languageName: node
-  linkType: hard
-
-"@metamask/design-tokens@workspace:.":
+"@metamask-previews/design-tokens@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@metamask/design-tokens@workspace:."
+  resolution: "@metamask-previews/design-tokens@workspace:."
   dependencies:
     "@babel/core": ^7.17.0
     "@babel/preset-env": ^7.23.2
@@ -2383,6 +2368,21 @@ __metadata:
     webpack: 5
   languageName: unknown
   linkType: soft
+
+"@metamask/auto-changelog@npm:^3.4.3":
+  version: 3.4.4
+  resolution: "@metamask/auto-changelog@npm:3.4.4"
+  dependencies:
+    diff: ^5.0.0
+    execa: ^5.1.1
+    prettier: ^2.8.8
+    semver: ^7.3.5
+    yargs: ^17.0.1
+  bin:
+    auto-changelog: dist/cli.js
+  checksum: 4876ab3ec98f6d0c00a0679f9e44e1ee79d335ae97e18336a638ac19484cac30d2f3750e6875121ee07b0da128f8609490bed0e195c8153c2b74866f34e405ed
+  languageName: node
+  linkType: hard
 
 "@metamask/eslint-config-jest@npm:^12.1.0":
   version: 12.1.0
