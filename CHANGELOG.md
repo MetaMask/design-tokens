@@ -7,6 +7,67 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.14.0]
+
+### Uncategorized
+
+- Template sync ([#1](https://github.com/georgewrmarshall/design-tokens/pull/1))
+- Update package.json to test publish workflows
+- removing instance of unused typedoc from depcheckrc
+- reverting test coverage so it ignores index files and colors.ts
+- adding doc to tsconfig.json
+- updating build-deploy-storybook and yarn.lock file
+- adding incorrectly labelled missing dependencies and unused dependcies to depcheckrc
+- running lint:fix adding fixes to changelog and package.json
+- more lint fixes and ignores
+- auto lint fixes by running lint:fix
+- rmeoving publish-docs workflow and references
+- initial use of npx @metamask/template-sync but removing and adding some missing configurations
+- 1.13.0 ([#596](https://github.com/georgewrmarshall/design-tokens/pull/596))
+- 1.12.0 ([#489](https://github.com/georgewrmarshall/design-tokens/pull/489))
+- 1.11.1 ([#262](https://github.com/georgewrmarshall/design-tokens/pull/262))
+- 1.11.0 ([#247](https://github.com/georgewrmarshall/design-tokens/pull/247))
+- 1.10.0 ([#236](https://github.com/georgewrmarshall/design-tokens/pull/236))
+- 1.9.1 ([#227](https://github.com/georgewrmarshall/design-tokens/pull/227))
+- 1.9.0 ([#218](https://github.com/georgewrmarshall/design-tokens/pull/218))
+- 1.8.0 ([#188](https://github.com/georgewrmarshall/design-tokens/pull/188))
+- 1.7.0 ([#175](https://github.com/georgewrmarshall/design-tokens/pull/175))
+- 1.6.5 ([#136](https://github.com/georgewrmarshall/design-tokens/pull/136))
+- 1.6.4 ([#134](https://github.com/georgewrmarshall/design-tokens/pull/134))
+- 1.6.3 ([#132](https://github.com/georgewrmarshall/design-tokens/pull/132))
+- 1.6.2 ([#130](https://github.com/georgewrmarshall/design-tokens/pull/130))
+- 1.6.1 ([#128](https://github.com/georgewrmarshall/design-tokens/pull/128))
+- 1.6.0 ([#122](https://github.com/georgewrmarshall/design-tokens/pull/122))
+- 1.5.1 ([#80](https://github.com/georgewrmarshall/design-tokens/pull/80))
+- 1.5.0 ([#78](https://github.com/georgewrmarshall/design-tokens/pull/78))
+- 1.4.4 ([#62](https://github.com/georgewrmarshall/design-tokens/pull/62))
+- 1.4.3 ([#58](https://github.com/georgewrmarshall/design-tokens/pull/58))
+- 1.4.2 ([#49](https://github.com/georgewrmarshall/design-tokens/pull/49))
+- 1.4.1 ([#47](https://github.com/georgewrmarshall/design-tokens/pull/47))
+- 1.4.0 ([#45](https://github.com/georgewrmarshall/design-tokens/pull/45))
+- 1.3.1 ([#43](https://github.com/georgewrmarshall/design-tokens/pull/43))
+- 1.3.0 ([#31](https://github.com/georgewrmarshall/design-tokens/pull/31))
+- 1.2.0 ([#23](https://github.com/georgewrmarshall/design-tokens/pull/23))
+- 1.1.0 ([#21](https://github.com/georgewrmarshall/design-tokens/pull/21))
+- 1.0.0 ([#13](https://github.com/georgewrmarshall/design-tokens/pull/13))
+- Revert package version to `0.0.0`
+- Update package name
+- Fix changelog
+- Fix test
+- Fix test
+- Fix tests
+- Fix tests
+- Finalize with colors
+- Merge branch 'main' of https://github.com/MetaMask/metamask-design-tokens into feature/4-setup-ds-repository
+- Reverting changelog
+- Adding brand, light and dark theme token json from Figma Tokens
+- Update readme. Add design token modules.
+- v1.1.0
+- v1.0.0
+- v1.4.0
+- Update package.json
+- Initial commit
+
 ## [1.13.0]
 
 ### Changed
@@ -223,31 +284,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.13.0...HEAD
-[1.13.0]: https://github.com/MetaMask/design-tokens/compare/v1.12.0...v1.13.0
-[1.12.0]: https://github.com/MetaMask/design-tokens/compare/v1.11.1...v1.12.0
-[1.11.1]: https://github.com/MetaMask/design-tokens/compare/v1.11.0...v1.11.1
-[1.11.0]: https://github.com/MetaMask/design-tokens/compare/v1.10.0...v1.11.0
-[1.10.0]: https://github.com/MetaMask/design-tokens/compare/v1.9.1...v1.10.0
-[1.9.1]: https://github.com/MetaMask/design-tokens/compare/v1.9.0...v1.9.1
-[1.9.0]: https://github.com/MetaMask/design-tokens/compare/v1.8.0...v1.9.0
-[1.8.0]: https://github.com/MetaMask/design-tokens/compare/v1.7.0...v1.8.0
-[1.7.0]: https://github.com/MetaMask/design-tokens/compare/v1.6.5...v1.7.0
-[1.6.5]: https://github.com/MetaMask/design-tokens/compare/v1.6.4...v1.6.5
-[1.6.4]: https://github.com/MetaMask/design-tokens/compare/v1.6.3...v1.6.4
-[1.6.3]: https://github.com/MetaMask/design-tokens/compare/v1.6.2...v1.6.3
-[1.6.2]: https://github.com/MetaMask/design-tokens/compare/v1.6.1...v1.6.2
-[1.6.1]: https://github.com/MetaMask/design-tokens/compare/v1.6.0...v1.6.1
-[1.6.0]: https://github.com/MetaMask/design-tokens/compare/v1.5.1...v1.6.0
-[1.5.1]: https://github.com/MetaMask/design-tokens/compare/v1.5.0...v1.5.1
-[1.5.0]: https://github.com/MetaMask/design-tokens/compare/v1.4.4...v1.5.0
-[1.4.4]: https://github.com/MetaMask/design-tokens/compare/v1.4.3...v1.4.4
-[1.4.3]: https://github.com/MetaMask/design-tokens/compare/v1.4.2...v1.4.3
-[1.4.2]: https://github.com/MetaMask/design-tokens/compare/v1.4.1...v1.4.2
-[1.4.1]: https://github.com/MetaMask/design-tokens/compare/v1.4.0...v1.4.1
-[1.4.0]: https://github.com/MetaMask/design-tokens/compare/v1.3.1...v1.4.0
-[1.3.1]: https://github.com/MetaMask/design-tokens/compare/v1.3.0...v1.3.1
-[1.3.0]: https://github.com/MetaMask/design-tokens/compare/v1.2.0...v1.3.0
-[1.2.0]: https://github.com/MetaMask/design-tokens/compare/v1.1.0...v1.2.0
-[1.1.0]: https://github.com/MetaMask/design-tokens/compare/v1.0.0...v1.1.0
-[1.0.0]: https://github.com/MetaMask/design-tokens/releases/tag/v1.0.0
+[Unreleased]: https://github.com/georgewrmarshall/design-tokens/compare/v1.14.0...HEAD
+[1.14.0]: https://github.com/georgewrmarshall/design-tokens/compare/v1.13.0...v1.14.0
+[1.13.0]: https://github.com/georgewrmarshall/design-tokens/compare/v1.12.0...v1.13.0
+[1.12.0]: https://github.com/georgewrmarshall/design-tokens/compare/v1.11.1...v1.12.0
+[1.11.1]: https://github.com/georgewrmarshall/design-tokens/compare/v1.11.0...v1.11.1
+[1.11.0]: https://github.com/georgewrmarshall/design-tokens/compare/v1.10.0...v1.11.0
+[1.10.0]: https://github.com/georgewrmarshall/design-tokens/compare/v1.9.1...v1.10.0
+[1.9.1]: https://github.com/georgewrmarshall/design-tokens/compare/v1.9.0...v1.9.1
+[1.9.0]: https://github.com/georgewrmarshall/design-tokens/compare/v1.8.0...v1.9.0
+[1.8.0]: https://github.com/georgewrmarshall/design-tokens/compare/v1.7.0...v1.8.0
+[1.7.0]: https://github.com/georgewrmarshall/design-tokens/compare/v1.6.5...v1.7.0
+[1.6.5]: https://github.com/georgewrmarshall/design-tokens/compare/v1.6.4...v1.6.5
+[1.6.4]: https://github.com/georgewrmarshall/design-tokens/compare/v1.6.3...v1.6.4
+[1.6.3]: https://github.com/georgewrmarshall/design-tokens/compare/v1.6.2...v1.6.3
+[1.6.2]: https://github.com/georgewrmarshall/design-tokens/compare/v1.6.1...v1.6.2
+[1.6.1]: https://github.com/georgewrmarshall/design-tokens/compare/v1.6.0...v1.6.1
+[1.6.0]: https://github.com/georgewrmarshall/design-tokens/compare/v1.5.1...v1.6.0
+[1.5.1]: https://github.com/georgewrmarshall/design-tokens/compare/v1.5.0...v1.5.1
+[1.5.0]: https://github.com/georgewrmarshall/design-tokens/compare/v1.4.4...v1.5.0
+[1.4.4]: https://github.com/georgewrmarshall/design-tokens/compare/v1.4.3...v1.4.4
+[1.4.3]: https://github.com/georgewrmarshall/design-tokens/compare/v1.4.2...v1.4.3
+[1.4.2]: https://github.com/georgewrmarshall/design-tokens/compare/v1.4.1...v1.4.2
+[1.4.1]: https://github.com/georgewrmarshall/design-tokens/compare/v1.4.0...v1.4.1
+[1.4.0]: https://github.com/georgewrmarshall/design-tokens/compare/v1.3.1...v1.4.0
+[1.3.1]: https://github.com/georgewrmarshall/design-tokens/compare/v1.3.0...v1.3.1
+[1.3.0]: https://github.com/georgewrmarshall/design-tokens/compare/v1.2.0...v1.3.0
+[1.2.0]: https://github.com/georgewrmarshall/design-tokens/compare/v1.1.0...v1.2.0
+[1.1.0]: https://github.com/georgewrmarshall/design-tokens/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/georgewrmarshall/design-tokens/releases/tag/v1.0.0
