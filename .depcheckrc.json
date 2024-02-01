@@ -6,6 +6,17 @@
     "@types/*",
     "prettier-plugin-packagejson",
     "ts-node",
-    "typedoc"
+    "typedoc",
+    "@storybook/addon-actions",
+    "@storybook/react-webpack5",
+    "babel-loader",
+    "dependency-tree",
+    "eslint-plugin-node",
+    "sass",
+    "webpack",
+    "@yarnpkg/core",
+    "@yarnpkg/cli",
+    "clipanion",
+    "@yarnpkg/fslib"
   ]
 }
