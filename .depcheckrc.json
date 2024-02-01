@@ -6,7 +6,6 @@
     "@types/*",
     "prettier-plugin-packagejson",
     "ts-node",
-    "typedoc",
     "@storybook/addon-actions",
     "@storybook/react-webpack5",
     "babel-loader",
