@@ -1,5 +1,5 @@
 {
-  "name": "@metamask/design-tokens",
+  "name": "@metamask-previews/design-tokens",
   "version": "1.13.0",
   "description": "Design tokens to be used throughout MetaMask products.",
   "keywords": [
