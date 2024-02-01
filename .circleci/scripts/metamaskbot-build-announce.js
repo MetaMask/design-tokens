@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-const fetch = require('node-fetch');
 
 start().catch((error) => {
   console.error(error);
@@ -7,6 +6,8 @@ start().catch((error) => {
 });
 
 async function start() {
+  const fetch = (await import('node-fetch')).default;
+
   const {
     GITHUB_COMMENT_TOKEN,
     CIRCLE_PULL_REQUEST,
