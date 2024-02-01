@@ -1,9 +1,10 @@
 name: Build and Deploy Storybook
 
 on:
-  push:
-    branches:
-      - main
+  workflow_call:
+    secrets:
+      PUBLISH_STORYBOOK_TOKEN:
+        required: true
 
 jobs:
   build-deploy-storybook:
@@ -26,8 +27,8 @@ jobs:
       - name: Deploy to `storybook-static` directory of `gh-pages` branch
         uses: peaceiris/actions-gh-pages@de7ea6f8efb354206b205ef54722213d99067935
         with:
-          # This `PUBLISH_DOCS_TOKEN` needs to be manually set per-repository.
-          # Look in the repository settings under "Environments", and set this token in the `github-pages` environment.
-          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          # This PUBLISH_STORYBOOK_TOKEN needs to be manually set per-repository.
+          # Look in the repository settings under "Environments", and set this token in the github-pages environment.
+          personal_token: ${{ secrets.PUBLISH_STORYBOOK_TOKEN }}
           publish_dir: ./storybook-static
           destination_dir: storybook-static
