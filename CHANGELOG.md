@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0]
+
+### Changed
+
+- Dependencies upgrade and module template sync ([#601](https://github.com/MetaMask/design-tokens/pull/601))
+
 ## [1.13.0]
 
 ### Changed
@@ -223,7 +229,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v1.13.0...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/MetaMask/design-tokens/compare/v1.13.0...v2.0.0
 [1.13.0]: https://github.com/MetaMask/design-tokens/compare/v1.12.0...v1.13.0
 [1.12.0]: https://github.com/MetaMask/design-tokens/compare/v1.11.1...v1.12.0
 [1.11.1]: https://github.com/MetaMask/design-tokens/compare/v1.11.0...v1.11.1
