@@ -40,7 +40,15 @@ function trimStringAfterCharacter(str: string, char = '.') {
 function createNewFigmaTokenObject(str: string, obj: any) {
   const firstString = trimStringBetweenCharacters(str);
   const secondString = trimStringAfterCharacter(str);
-  return obj[`${firstString}`][`${secondString}`];
+  if (
+    firstString &&
+    secondString &&
+    obj[firstString] &&
+    obj[firstString][secondString]
+  ) {
+    return obj[firstString][secondString];
+  }
+  return null;
 }
 
 describe('Typography', () => {
@@ -52,7 +60,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.sDisplayMD.fontWeight).toStrictEqual('700');
+      expect(typography.sDisplayMD.fontWeight).toBe('700');
 
       expect(typography.sDisplayMD.fontSize).toStrictEqual(
         Number(
@@ -89,7 +97,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.sHeadingLG.fontWeight).toStrictEqual('700');
+      expect(typography.sHeadingLG.fontWeight).toBe('700');
 
       expect(typography.sHeadingLG.fontSize).toStrictEqual(
         Number(
@@ -126,7 +134,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.sHeadingMD.fontWeight).toStrictEqual('700');
+      expect(typography.sHeadingMD.fontWeight).toBe('700');
 
       expect(typography.sHeadingMD.fontSize).toStrictEqual(
         Number(
@@ -163,7 +171,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.sHeadingSMRegular.fontWeight).toStrictEqual('400');
+      expect(typography.sHeadingSMRegular.fontWeight).toBe('400');
 
       expect(typography.sHeadingSMRegular.fontSize).toStrictEqual(
         Number(
@@ -200,7 +208,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.sHeadingSM.fontWeight).toStrictEqual('700');
+      expect(typography.sHeadingSM.fontWeight).toBe('700');
 
       expect(typography.sHeadingSM.fontSize).toStrictEqual(
         Number(
@@ -237,7 +245,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.sBodyLGMedium.fontWeight).toStrictEqual('500');
+      expect(typography.sBodyLGMedium.fontWeight).toBe('500');
 
       expect(typography.sBodyLGMedium.fontSize).toStrictEqual(
         Number(
@@ -274,7 +282,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.sBodyMDBold.fontWeight).toStrictEqual('700');
+      expect(typography.sBodyMDBold.fontWeight).toBe('700');
 
       expect(typography.sBodyMDBold.fontSize).toStrictEqual(
         Number(
@@ -311,7 +319,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.sBodyMDMedium.fontWeight).toStrictEqual('500');
+      expect(typography.sBodyMDMedium.fontWeight).toBe('500');
 
       expect(typography.sBodyMDMedium.fontSize).toStrictEqual(
         Number(
@@ -348,7 +356,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.sBodyMD.fontWeight).toStrictEqual('400');
+      expect(typography.sBodyMD.fontWeight).toBe('400');
 
       expect(typography.sBodyMD.fontSize).toStrictEqual(
         Number(
@@ -385,7 +393,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.sBodySMBold.fontWeight).toStrictEqual('700');
+      expect(typography.sBodySMBold.fontWeight).toBe('700');
 
       expect(typography.sBodySMBold.fontSize).toStrictEqual(
         Number(
@@ -422,7 +430,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.sBodySMMedium.fontWeight).toStrictEqual('500');
+      expect(typography.sBodySMMedium.fontWeight).toBe('500');
 
       expect(typography.sBodySMMedium.fontSize).toStrictEqual(
         Number(
@@ -459,7 +467,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.sBodySM.fontWeight).toStrictEqual('400');
+      expect(typography.sBodySM.fontWeight).toBe('400');
 
       expect(typography.sBodySM.fontSize).toStrictEqual(
         Number(
@@ -496,7 +504,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.sBodyXSMedium.fontWeight).toStrictEqual('500');
+      expect(typography.sBodyXSMedium.fontWeight).toBe('500');
 
       expect(typography.sBodyXSMedium.fontSize).toStrictEqual(
         Number(
@@ -533,7 +541,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.sBodyXS.fontWeight).toStrictEqual('400');
+      expect(typography.sBodyXS.fontWeight).toBe('400');
 
       expect(typography.sBodyXS.fontSize).toStrictEqual(
         Number(
@@ -572,7 +580,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.lDisplayMD.fontWeight).toStrictEqual('500');
+      expect(typography.lDisplayMD.fontWeight).toBe('500');
 
       expect(typography.lDisplayMD.fontSize).toStrictEqual(
         Number(
@@ -609,7 +617,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.lHeadingLG.fontWeight).toStrictEqual('700');
+      expect(typography.lHeadingLG.fontWeight).toBe('700');
 
       expect(typography.lHeadingLG.fontSize).toStrictEqual(
         Number(
@@ -646,7 +654,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.lHeadingMD.fontWeight).toStrictEqual('700');
+      expect(typography.lHeadingMD.fontWeight).toBe('700');
 
       expect(typography.lHeadingMD.fontSize).toStrictEqual(
         Number(
@@ -683,7 +691,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.lHeadingSMRegular.fontWeight).toStrictEqual('400');
+      expect(typography.lHeadingSMRegular.fontWeight).toBe('400');
 
       expect(typography.lHeadingSMRegular.fontSize).toStrictEqual(
         Number(
@@ -720,7 +728,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.lHeadingSM.fontWeight).toStrictEqual('700');
+      expect(typography.lHeadingSM.fontWeight).toBe('700');
 
       expect(typography.lHeadingSM.fontSize).toStrictEqual(
         Number(
@@ -757,7 +765,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.lBodyLGMedium.fontWeight).toStrictEqual('500');
+      expect(typography.lBodyLGMedium.fontWeight).toBe('500');
 
       expect(typography.lBodyLGMedium.fontSize).toStrictEqual(
         Number(
@@ -794,7 +802,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.lBodyMDBold.fontWeight).toStrictEqual('700');
+      expect(typography.lBodyMDBold.fontWeight).toBe('700');
 
       expect(typography.lBodyMDBold.fontSize).toStrictEqual(
         Number(
@@ -831,7 +839,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.lBodyMDMedium.fontWeight).toStrictEqual('500');
+      expect(typography.lBodyMDMedium.fontWeight).toBe('500');
 
       expect(typography.lBodyMDMedium.fontSize).toStrictEqual(
         Number(
@@ -868,7 +876,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.lBodyMD.fontWeight).toStrictEqual('400');
+      expect(typography.lBodyMD.fontWeight).toBe('400');
 
       expect(typography.lBodyMD.fontSize).toStrictEqual(
         Number(
@@ -905,7 +913,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.lBodySMBold.fontWeight).toStrictEqual('700');
+      expect(typography.lBodySMBold.fontWeight).toBe('700');
 
       expect(typography.lBodySMBold.fontSize).toStrictEqual(
         Number(
@@ -942,7 +950,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.lBodySMMedium.fontWeight).toStrictEqual('500');
+      expect(typography.lBodySMMedium.fontWeight).toBe('500');
 
       expect(typography.lBodySMMedium.fontSize).toStrictEqual(
         Number(
@@ -979,7 +987,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.lBodySM.fontWeight).toStrictEqual('400');
+      expect(typography.lBodySM.fontWeight).toBe('400');
 
       expect(typography.lBodySM.fontSize).toStrictEqual(
         Number(
@@ -1016,7 +1024,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.lBodyXSMedium.fontWeight).toStrictEqual('500');
+      expect(typography.lBodyXSMedium.fontWeight).toBe('500');
 
       expect(typography.lBodyXSMedium.fontSize).toStrictEqual(
         Number(
@@ -1053,7 +1061,7 @@ describe('Typography', () => {
           designTokens.global,
         ).value,
       );
-      expect(typography.lBodyXS.fontWeight).toStrictEqual('400');
+      expect(typography.lBodyXS.fontWeight).toBe('400');
 
       expect(typography.lBodyXS.fontSize).toStrictEqual(
         Number(

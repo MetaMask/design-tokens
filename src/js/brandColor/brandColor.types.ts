@@ -1,4 +1,4 @@
-export interface BrandColor {
+export type BrandColor = {
   /** white/white000: #ffffff */
   white000: string;
   /** white/white010: #fcfcfc */
@@ -127,4 +127,4 @@ export interface BrandColor {
   yellow500: string;
   /** yellow/yellow600: #ffc70a */
   yellow600: string;
-}
+};

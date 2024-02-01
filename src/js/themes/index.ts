@@ -1,3 +1,3 @@
 export { lightTheme } from './lightTheme';
 export { darkTheme } from './darkTheme';
-export { Theme } from './types';
+export type { Theme } from './types';
