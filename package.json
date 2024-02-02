@@ -82,7 +82,7 @@
     "eslint-plugin-jest": "^27.2.2",
     "eslint-plugin-jsdoc": "^39.9.1",
     "eslint-plugin-n": "^15.7.0",
-    "eslint-plugin-no-hex-color": "file:plugins/",
+    "eslint-plugin-no-hex-color": "file:eslint-plugin-no-hex-color",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",

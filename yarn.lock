@@ -2360,6 +2360,7 @@ __metadata:
     eslint-plugin-jest: ^27.2.2
     eslint-plugin-jsdoc: ^39.9.1
     eslint-plugin-n: ^15.7.0
+    eslint-plugin-no-hex-color: "file:eslint-plugin-no-hex-color"
     eslint-plugin-node: ^11.1.0
     eslint-plugin-prettier: ^4.2.1
     eslint-plugin-promise: ^6.1.1
@@ -7641,6 +7642,13 @@ __metadata:
   peerDependencies:
     eslint: ">=7.0.0"
   checksum: cfbcc67e62adf27712afdeadf13223cb9717f95d4af8442056d9d4c97a8b88af76b7969f75deaac26fa98481023d6b7c9e43a28909e7f0468f40b3024b7bcfae
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-no-hex-color@file:eslint-plugin-no-hex-color::locator=%40metamask%2Fdesign-tokens%40workspace%3A.":
+  version: 0.1.1
+  resolution: "eslint-plugin-no-hex-color@file:eslint-plugin-no-hex-color#eslint-plugin-no-hex-color::hash=dc44f8&locator=%40metamask%2Fdesign-tokens%40workspace%3A."
+  checksum: 6f68d06ddebb08746603311fb62d84e3228ae0356ce84278a0e7258be55614a99586abfcdd0065a068fa8f8d06db97edc7e9bff9eb07fb0a3b9e33cf3afa112f
   languageName: node
   linkType: hard
 

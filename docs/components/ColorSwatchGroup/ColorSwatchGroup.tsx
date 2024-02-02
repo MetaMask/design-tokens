@@ -54,7 +54,6 @@ export const ColorSwatchGroup: FunctionComponent<ColorSwatchGroupProps> = ({
     return <div>No swatch data</div>;
   }
   const swatchColorsArr = Object.keys(swatchData);
-  const color = '#123456';
 
   const renderSwatches = () => {
     return swatchColorsArr.map((category) => {
@@ -90,7 +89,6 @@ export const ColorSwatchGroup: FunctionComponent<ColorSwatchGroupProps> = ({
               display: 'grid',
               gap: '16px',
               gridTemplateColumns: 'repeat(auto-fill, 300px)',
-              color: '#ffffff',
             }}
           >
             {colorsArr.map((color) => {
