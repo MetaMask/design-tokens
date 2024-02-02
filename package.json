@@ -27,7 +27,8 @@
   "module": "./dist/index.mjs",
   "types": "./dist/types/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src/css/"
   ],
   "scripts": {
     "build": "tsup --clean && yarn build:types",
