@@ -9,9 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.0.1]
 
-### Uncategorized
+### Changed
 
-- chore: updating package.json and contraints.prop config to allow for css ([#609](https://github.com/MetaMask/design-tokens/pull/609))
+- chore: updating package.json and contraints.prop config to allow for css export ([#609](https://github.com/MetaMask/design-tokens/pull/609))
 
 ## [2.0.0]
 
