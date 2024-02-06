@@ -21,7 +21,8 @@
       "require": "./dist/index.js",
       "types": "./dist/types/index.d.ts"
     },
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./src/css/design-tokens.css": "./src/css/design-tokens.css"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
