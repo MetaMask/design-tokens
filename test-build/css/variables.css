@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 07 Feb 2024 00:07:37 GMT
+ * Generated on Wed, 07 Feb 2024 23:38:30 GMT
  */
 :root {
   --global-brand-colors-white-white000: #FFFFFF;
@@ -119,6 +119,9 @@
   --global-s-body-sm-medium: [object Object];
   --global-s-body-xs: [object Object];
   --global-s-body-xs-medium: [object Object];
+}
+
+:root {
   --light-colors-background-default: #FFFFFF;
   --light-colors-background-default-hover: #FAFAFA;
   --light-colors-background-default-pressed: #EBEBEB;
@@ -190,6 +193,9 @@
   --light-shadows-lg: [object Object];
   --light-shadows-primary: [object Object];
   --light-shadows-error: [object Object];
+}
+
+[data-theme='dark'] {
   --dark-colors-background-default: #24272A;
   --dark-colors-background-default-hover: #282B2E;
   --dark-colors-background-default-pressed: #36383B;
