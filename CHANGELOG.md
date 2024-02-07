@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.0.2]
 
-### Uncategorized
+### Changed
 
 - bug: fix css exports ([#614](https://github.com/MetaMask/design-tokens/pull/614))
 
