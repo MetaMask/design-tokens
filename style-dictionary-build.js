@@ -16,14 +16,17 @@ StyleDictionary.registerFormat({
     const darkThemeTokens = [];
 
     dictionary.allProperties.forEach(token => {
-      // Convert token names to CSS variable names
-      const tokenName = token.name.replace(/([A-Z])/g, (match) => `-${match.toLowerCase()}`);
+      // Convert token names to CSS variable names and adjust naming convention
+      let tokenName = token.name.replace(/([A-Z])/g, (match) => `-${match.toLowerCase()}`);
+      // Remove "light" and "dark" from the token name and ensure "color" is used
+      tokenName = tokenName.replace('light-colors', 'color').replace('dark-colors', 'color');
+
       const cssVariable = `  --${tokenName}: ${token.value};`;
 
       if (token.name.includes('light')) {
-        lightThemeTokens.push(cssVariable);
+        lightThemeTokens.push(cssVariable.replace('--light-', '--'));
       } else if (token.name.includes('dark')) {
-        darkThemeTokens.push(cssVariable);
+        darkThemeTokens.push(cssVariable.replace('--dark-', '--'));
       } else {
         baseTokens.push(cssVariable);
       }
