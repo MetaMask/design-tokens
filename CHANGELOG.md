@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.2]
+
+### Uncategorized
+
+- bug: fix css exports ([#614](https://github.com/MetaMask/design-tokens/pull/614))
+
 ## [2.0.1]
 
 ### Changed
@@ -235,7 +241,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v2.0.1...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v2.0.2...HEAD
+[2.0.2]: https://github.com/MetaMask/design-tokens/compare/v2.0.1...v2.0.2
 [2.0.1]: https://github.com/MetaMask/design-tokens/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/MetaMask/design-tokens/compare/v1.13.0...v2.0.0
 [1.13.0]: https://github.com/MetaMask/design-tokens/compare/v1.12.0...v1.13.0
