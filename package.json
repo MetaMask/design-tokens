@@ -22,14 +22,14 @@
       "types": "./dist/types/index.d.ts"
     },
     "./package.json": "./package.json",
-    "./src/css/design-tokens.css": "./src/css/design-tokens.css"
+    "./design-tokens.css": "./src/css/design-tokens.css"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/types/index.d.ts",
   "files": [
     "dist",
-    "src/css/"
+    "src/css/design-tokens.css"
   ],
   "scripts": {
     "build": "tsup --clean && yarn build:types",
