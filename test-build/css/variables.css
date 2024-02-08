@@ -1,8 +1,10 @@
 /**
  * Do not edit directly
- * Generated on Thu, 08 Feb 2024 00:06:08 GMT
+ * Generated on Thu, 08 Feb 2024 00:26:28 GMT
  */
 :root {
+  --font-family-roboto: 'Roboto', sans-serif;
+  --font-family-sans: 'Euclid Circular B', 'Roboto', sans-serif;
   --brand-colors-white-white000: #FFFFFF;
   --brand-colors-white-white010: #FCFCFC;
   --brand-colors-black-black000: #000000;
@@ -67,7 +69,7 @@
   --brand-colors-yellow-yellow400: #FFDF70;
   --brand-colors-yellow-yellow500: #FFD33D;
   --brand-colors-yellow-yellow600: #FFC70A;
-  --font-families-euclid-circular-b: Euclid Circular B;
+  --font-family-euclid-circular-b: Euclid Circular B;
   --line-heights-0: 56;
   --line-heights-1: 40;
   --line-heights-2: 32;

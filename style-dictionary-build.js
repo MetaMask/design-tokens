@@ -9,7 +9,6 @@ const StyleDictionary = sdTransforms.default
 
 // Helper function to generate brand color variable name
 const getBrandColorVariableReference = (value, allTokens, currentTokenName) => {
-  // Avoid replacing brand color tokens with variable references to themselves
   if (currentTokenName.includes('brand-colors')) {
     return value; // Keep the original hex value for brand color tokens
   }
@@ -24,6 +23,12 @@ const getBrandColorVariableReference = (value, allTokens, currentTokenName) => {
   return value;
 };
 
+// Additional custom tokens not generated from the source files
+const additionalBrandTokens = {
+  "--font-family-roboto": "'Roboto', sans-serif",
+  "--font-family-sans": "'Euclid Circular B', 'Roboto', sans-serif"
+};
+
 // Define a custom format
 StyleDictionary.registerFormat({
   name: 'custom/cssVariables',
@@ -33,13 +38,22 @@ StyleDictionary.registerFormat({
     const darkThemeTokens = [];
     const allTokens = dictionary.allProperties;
 
+    // Manually adding additional brand tokens
+    Object.entries(additionalBrandTokens).forEach(([name, value]) => {
+      baseTokens.push(`  ${name}: ${value};`);
+    });
+
     dictionary.allProperties.forEach(token => {
       let tokenName = token.name.replace(/([A-Z])/g, (match) => `-${match.toLowerCase()}`);
-      tokenName = tokenName.replace('light-colors', 'color').replace('dark-colors', 'color').replace('global-', '');
+      tokenName = tokenName.replace('light-colors', 'color').replace('dark-colors', 'color').replace('global-', '').replace('font-families', 'font-family');
 
-      // Replace direct color values with brand color variable references, except for brand color tokens themselves
+      // Adjust font family tokens specifically
+      if (tokenName.startsWith('--font-family')) {
+        token.value = `'${token.value}', sans-serif`;
+      }
+
+      // Replace direct color values with brand color variable references for other tokens
       let tokenValue = getBrandColorVariableReference(token.value, allTokens, token.name);
-
       const cssVariable = `  --${tokenName}: ${tokenValue};`;
 
       if (token.name.includes('light')) {
