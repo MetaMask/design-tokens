@@ -7,6 +7,23 @@ const StyleDictionary = sdTransforms.default
   ? sdTransforms.default(StyleDictionaryModule)
   : StyleDictionaryModule;
 
+// Helper function to generate brand color variable name
+const getBrandColorVariableReference = (value, allTokens, currentTokenName) => {
+  // Avoid replacing brand color tokens with variable references to themselves
+  if (currentTokenName.includes('brand-colors')) {
+    return value; // Keep the original hex value for brand color tokens
+  }
+
+  const brandToken = allTokens.find(token =>
+    token.value === value && token.name.includes('brand-colors')
+  );
+  if (brandToken) {
+    const brandTokenName = brandToken.name.replace(/([A-Z])/g, (match) => `-${match.toLowerCase()}`).replace('global-', '');
+    return `var(--${brandTokenName})`;
+  }
+  return value;
+};
+
 // Define a custom format
 StyleDictionary.registerFormat({
   name: 'custom/cssVariables',
@@ -14,14 +31,16 @@ StyleDictionary.registerFormat({
     const baseTokens = [];
     const lightThemeTokens = [];
     const darkThemeTokens = [];
+    const allTokens = dictionary.allProperties;
 
     dictionary.allProperties.forEach(token => {
-      // Convert token names to CSS variable names and adjust naming convention
       let tokenName = token.name.replace(/([A-Z])/g, (match) => `-${match.toLowerCase()}`);
-      // Remove "light" and "dark" from the token name and ensure "color" is used
-      tokenName = tokenName.replace('light-colors', 'color').replace('dark-colors', 'color');
+      tokenName = tokenName.replace('light-colors', 'color').replace('dark-colors', 'color').replace('global-', '');
 
-      const cssVariable = `  --${tokenName}: ${token.value};`;
+      // Replace direct color values with brand color variable references, except for brand color tokens themselves
+      let tokenValue = getBrandColorVariableReference(token.value, allTokens, token.name);
+
+      const cssVariable = `  --${tokenName}: ${tokenValue};`;
 
       if (token.name.includes('light')) {
         lightThemeTokens.push(cssVariable.replace('--light-', '--'));
