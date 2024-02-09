@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.0.3]
 
-### Uncategorized
+### Changed
 
 - chore: updating package.json css path ([#622](https://github.com/MetaMask/design-tokens/pull/622))
 
