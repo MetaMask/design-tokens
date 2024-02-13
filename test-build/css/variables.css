@@ -1,10 +1,11 @@
 /**
  * Do not edit directly
- * Generated on Thu, 08 Feb 2024 00:42:38 GMT
+ * Generated on Thu, 08 Feb 2024 23:40:24 GMT
  */
 :root {
   --font-family-roboto: 'Roboto', sans-serif;
   --font-family-sans: 'Euclid Circular B', 'Roboto', sans-serif;
+  --font-family-serif: test;
   --brand-colors-white-white000: #FFFFFF;
   --brand-colors-white-white010: #FCFCFC;
   --brand-colors-black-black000: #000000;

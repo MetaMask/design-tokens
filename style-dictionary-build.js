@@ -26,7 +26,7 @@ const getBrandColorVariableReference = (value, allTokens, currentTokenName) => {
 // Additional custom tokens not generated from the source files
 const additionalBrandTokens = {
   "--font-family-roboto": "'Roboto', sans-serif",
-  "--font-family-sans": "'Euclid Circular B', 'Roboto', sans-serif"
+  "--font-family-sans": "'Euclid Circular B', 'Roboto', sans-serif",
 };
 
 // Define a custom format
