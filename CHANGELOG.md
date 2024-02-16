@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.1.0]
+
+### Uncategorized
+
+- feat: adding data theme light attribute to stylesheet to provide dynamic theming ([#627](https://github.com/MetaMask/design-tokens/pull/627))
+
 ## [2.0.3]
 
 ### Changed
@@ -247,7 +253,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v2.0.3...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/MetaMask/design-tokens/compare/v2.0.3...v2.1.0
 [2.0.3]: https://github.com/MetaMask/design-tokens/compare/v2.0.2...v2.0.3
 [2.0.2]: https://github.com/MetaMask/design-tokens/compare/v2.0.1...v2.0.2
 [2.0.1]: https://github.com/MetaMask/design-tokens/compare/v2.0.0...v2.0.1
