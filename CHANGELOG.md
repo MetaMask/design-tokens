@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.1.0]
 
-### Uncategorized
+### Changed
 
 - feat: adding data theme light attribute to stylesheet to provide dynamic theming ([#627](https://github.com/MetaMask/design-tokens/pull/627))
 
