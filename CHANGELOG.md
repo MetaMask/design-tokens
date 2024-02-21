@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.1.1]
+
+### Uncategorized
+
+- fix: move data attribute to light theme variables ([#631](https://github.com/MetaMask/design-tokens/pull/631))
+- Bump ip from 2.0.0 to 2.0.1 ([#630](https://github.com/MetaMask/design-tokens/pull/630))
+
 ## [2.1.0]
 
 ### Changed
@@ -253,7 +260,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v2.1.0...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v2.1.1...HEAD
+[2.1.1]: https://github.com/MetaMask/design-tokens/compare/v2.1.0...v2.1.1
 [2.1.0]: https://github.com/MetaMask/design-tokens/compare/v2.0.3...v2.1.0
 [2.0.3]: https://github.com/MetaMask/design-tokens/compare/v2.0.2...v2.0.3
 [2.0.2]: https://github.com/MetaMask/design-tokens/compare/v2.0.1...v2.0.2
