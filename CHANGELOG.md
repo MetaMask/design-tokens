@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.1.1]
 
-### Uncategorized
+### Changed
 
 - fix: move data attribute to light theme variables ([#631](https://github.com/MetaMask/design-tokens/pull/631))
 - Bump ip from 2.0.0 to 2.0.1 ([#630](https://github.com/MetaMask/design-tokens/pull/630))
