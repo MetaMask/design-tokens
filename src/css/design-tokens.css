@@ -5,8 +5,7 @@
  * theme compatible styles
  */
 
-:root,
-[data-theme='light'] {
+:root {
   --brand-colors-white-white000: #ffffff;
   --brand-colors-white-white010: #fcfcfc;
   --brand-colors-black-black000: #000000;
@@ -272,7 +271,8 @@
  * This will insure theme compatibility
  */
 
-:root {
+:root,
+[data-theme='light'] {
   --color-background-default: var(--brand-colors-white-white000);
   --color-background-default-hover: #fafafa;
   --color-background-default-pressed: #ebebeb;
