@@ -1,0 +1,314 @@
+{
+  "background": {
+    "default": {
+      "value": "{grey.800}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "alternative (secondary)": {
+      "value": "{grey.900}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "*default-hover": {
+      "value": "#2d3034",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "*default-pressed": {
+      "value": "#363b3f",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "*alternative-hover": {
+      "value": "#1e2124",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "*alternative-pressed": {
+      "value": "#272b2f",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "*hover": {
+      "value": "#ffffff0a",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "*pressed": {
+      "value": "#ffffff14",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    }
+  },
+  "text": {
+    "default": {
+      "value": "{grey.000}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "alternative (calm)": {
+      "value": "{grey.200}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "muted": {
+      "value": "{grey.400}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    }
+  },
+  "icon": {
+    "default": {
+      "value": "{text.default}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "alternative (calm)": {
+      "value": "{text.alternative (calm)}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "muted": {
+      "value": "{text.muted}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    }
+  },
+  "border": {
+    "default": {
+      "value": "{grey.400}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "muted": {
+      "value": "#848c9629",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    }
+  },
+  "overlay": {
+    "default": {
+      "value": "#00000099",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "alternative (strong)": {
+      "value": "#000000cc",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    }
+  },
+  "primary": {
+    "default": {
+      "value": "{blue.400}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "alternative (strong)": {
+      "value": "{blue.200}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "muted": {
+      "value": "{blue.400-15%}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "inverse": {
+      "value": "{grey.900}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "*default-hover": {
+      "value": "#26a2fc",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "*default-pressed": {
+      "value": "#3baafd",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    }
+  },
+  "error": {
+    "default": {
+      "value": "{red.400}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "alternative (strong)": {
+      "value": "{red.200}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "muted": {
+      "value": "{red.400-15%}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "inverse": {
+      "value": "{grey.900}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "*default-hover": {
+      "value": "#e47782",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "*default-pressed": {
+      "value": "#e78891",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    }
+  },
+  "warning": {
+    "default": {
+      "value": "{yellow.100}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "muted": {
+      "value": "{yellow.100-15%}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "inverse": {
+      "value": "{grey.900}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "*default-hover": {
+      "value": "#ffe485",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "*default-pressed": {
+      "value": "#ffe899",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    }
+  },
+  "success": {
+    "default": {
+      "value": "{green.400}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "muted": {
+      "value": "{green.400-15%}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "inverse": {
+      "value": "{grey.900}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "*default-hover": {
+      "value": "#2cb94c",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "*default-pressed": {
+      "value": "#30ca53",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    }
+  },
+  "info": {
+    "default": {
+      "value": "{blue.400}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "muted": {
+      "value": "{blue.400-15%}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "inverse": {
+      "value": "{grey.900}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    }
+  },
+  "flask": {
+    "default": {
+      "value": "{purpe.400}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "inverse": {
+      "value": "{grey.900}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    }
+  },
+  "shadow": {
+    "default": {
+      "value": "#00000066",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "primary": {
+      "value": "#1098fc66",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    },
+    "error": {
+      "value": "#d73a4966",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": ""
+    }
+  }
+}
