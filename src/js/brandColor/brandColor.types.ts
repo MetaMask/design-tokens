@@ -1,130 +1,182 @@
 export type BrandColor = {
-  /** white/white000: #ffffff */
-  white000: string;
-  /** white/white010: #fcfcfc */
-  white010: string;
-  /** black/black000: #000000 */
-  black000: string;
-  /** grey/grey030: #fafbfc */
-  grey030: string;
-  /** grey/grey040: #f2f4f6 */
-  grey040: string;
-  /** grey/grey100: #d6d9dc */
+  /** grey/grey100: #dadce5 */
   grey100: string;
-  /** grey/grey200: #bbc0c5 */
+  /** grey/grey200: #b7bbc8 */
   grey200: string;
-  /** grey/grey300: #9fa6ae */
+  /** grey/grey300: #9ca1af */
   grey300: string;
-  /** grey/grey400: #848c96 */
+  /** grey/grey400: #858b9a */
   grey400: string;
-  /** grey/grey500: #6a737d */
+  /** grey/grey500: #686e7d */
   grey500: string;
-  /** grey/grey600: #535a61 */
+  /** grey/grey600: #4b505c */
   grey600: string;
-  /** grey/grey700: #3b4046 */
+  /** grey/grey700: #31333a */
   grey700: string;
-  /** grey/grey750: #2e3339 */
-  grey750: string;
-  /** grey/grey800: #24272a */
+  /** grey/grey800: #222325 */
   grey800: string;
-  /** grey/grey900: #141618 */
+  /** grey/grey900: #121314 */
   grey900: string;
-  /** blue/blue000: #eaf6ff */
-  blue000: string;
-  /** blue/blue100: #a7d9fe */
+  /** grey/grey1000: #000000 */
+  grey1000: string;
+  /** grey/grey050: #f3f5f9 */
+  grey050: string;
+  /** grey/grey000: #ffffff */
+  grey000: string;
+  /** grey/grey025: #f7f9fc */
+  grey025: string;
+  /** blue/blue100: #d6dbff */
   blue100: string;
-  /** blue/blue200: #75c4fd */
+  /** blue/blue200: #adb6fe */
   blue200: string;
-  /** blue/blue300: #43aefc */
+  /** blue/blue300: #8b99ff */
   blue300: string;
-  /** blue/blue400: #1098fc */
+  /** blue/blue400: #6f7eff */
   blue400: string;
-  /** blue/blue500: #0376c9 */
+  /** blue/blue500: #4459ff */
   blue500: string;
-  /** blue/blue600: #0260a4 */
+  /** blue/blue600: #2c3dc5 */
   blue600: string;
-  /** blue/blue700: #024272 */
+  /** blue/blue700: #1c277f */
   blue700: string;
-  /** blue/blue800: #01253f */
+  /** blue/blue800: #131b59 */
   blue800: string;
-  /** blue/blue900: #00080d */
+  /** blue/blue900: #0b0f32 */
   blue900: string;
-  /** orange/orange000: #fef5ef */
-  orange000: string;
-  /** orange/orange100: #fde2cf */
-  orange100: string;
-  /** orange/orange200: #fbc49d */
-  orange200: string;
-  /** orange/orange300: #faa66c */
-  orange300: string;
-  /** orange/orange400: #f8883b */
-  orange400: string;
-  /** orange/orange500: #f66a0a */
-  orange500: string;
-  /** orange/orange600: #c65507 */
-  orange600: string;
-  /** orange/orange700: #954005 */
-  orange700: string;
-  /** orange/orange800: #632b04 */
-  orange800: string;
-  /** orange/orange900: #321602 */
-  orange900: string;
-  /** green/green000: #f3fcf5 */
-  green000: string;
-  /** green/green100: #d6ffdf */
+  /** blue/blue050: #f4f5ff */
+  blue050: string;
+  /** blue/blue025: #f8f9ff */
+  blue025: string;
+  /** green/green100: #c1e6c9 */
   green100: string;
-  /** green/green200: #afecbd */
+  /** green/green200: #80cb91 */
   green200: string;
-  /** green/green300: #86e29b */
+  /** green/green300: #4cb564 */
   green300: string;
-  /** green/green400: #5dd879 */
+  /** green/green400: #279f41 */
   green400: string;
-  /** green/green500: #28a745 */
+  /** green/green500: #1c7e33 */
   green500: string;
-  /** green/green600: #1e7e34 */
+  /** green/green600: #145d25 */
   green600: string;
-  /** green/green700: #145523 */
+  /** green/green700: #0d3b18 */
   green700: string;
-  /** green/green800: #0a2c12 */
+  /** green/green800: #092912 */
   green800: string;
-  /** green/green900: #041007 */
+  /** green/green900: #051709 */
   green900: string;
-  /** red/red000: #fcf2f3 */
-  red000: string;
-  /** red/red100: #f7d5d8 */
+  /** green/green050: #ebf7ee */
+  green050: string;
+  /** green/green025: #f1faf4 */
+  green025: string;
+  /** red/red100: #ffd2d5 */
   red100: string;
-  /** red/red200: #f1b9be */
+  /** red/red200: #ffa1aa */
   red200: string;
-  /** red/red300: #e88f97 */
+  /** red/red300: #ff7584 */
   red300: string;
-  /** red/red400: #e06470 */
+  /** red/red400: #f74d5e */
   red400: string;
-  /** red/red500: #d73847 */
+  /** red/red500: #ca3542 */
   red500: string;
-  /** red/red600: #b92534 */
+  /** red/red600: #952731 */
   red600: string;
-  /** red/red700: #8e1d28 */
+  /** red/red700: #611a20 */
   red700: string;
-  /** red/red800: #64141c */
+  /** red/red800: #431216 */
   red800: string;
-  /** red/red900: #3a0c10 */
+  /** red/red900: #3b0f13 */
   red900: string;
-  /** purple/purple500: #8b45b6 */
-  purple500: string;
-  /** violet/violet300: #cfb5f0 */
-  violet300: string;
-  /** yellow/yellow000: #fffdf8 */
-  yellow000: string;
-  /** yellow/yellow100: #fefcde */
+  /** red/red050: #fff2f3 */
+  red050: string;
+  /** red/red025: #fff6f7 */
+  red025: string;
+  /** yellow/yellow100: #ffd957 */
   yellow100: string;
-  /** yellow/yellow200: #fff2c5 */
+  /** yellow/yellow200: #f0b034 */
   yellow200: string;
-  /** yellow/yellow300: #ffeaa3 */
+  /** yellow/yellow300: #e18f01 */
   yellow300: string;
-  /** yellow/yellow400: #ffdf70 */
+  /** yellow/yellow400: #c37b02 */
   yellow400: string;
-  /** yellow/yellow500: #ffd33d */
+  /** yellow/yellow500: #9a6300 */
   yellow500: string;
-  /** yellow/yellow600: #ffc70a */
+  /** yellow/yellow600: #714802 */
   yellow600: string;
+  /** yellow/yellow700: #482d01 */
+  yellow700: string;
+  /** yellow/yellow800: #321f00 */
+  yellow800: string;
+  /** yellow/yellow900: #1c1100 */
+  yellow900: string;
+  /** yellow/yellow050: #fff5d5 */
+  yellow050: string;
+  /** yellow/yellow025: #fff9e6 */
+  yellow025: string;
+  /** orange/orange100: #ffd4c1 */
+  orange100: string;
+  /** orange/orange200: #ffa47c */
+  orange200: string;
+  /** orange/orange300: #ff7940 */
+  orange300: string;
+  /** orange/orange400: #f35714 */
+  orange400: string;
+  /** orange/orange500: #c3420d */
+  orange500: string;
+  /** orange/orange600: #932d06 */
+  orange600: string;
+  /** orange/orange700: #631800 */
+  orange700: string;
+  /** orange/orange800: #451100 */
+  orange800: string;
+  /** orange/orange900: #280a00 */
+  orange900: string;
+  /** orange/orange050: #fff0ea */
+  orange050: string;
+  /** orange/orange025: #fff8f5 */
+  orange025: string;
+  /** purple/purple100: #efd2ff */
+  purple100: string;
+  /** purple/purple200: #dfa4ff */
+  purple200: string;
+  /** purple/purple300: #d27dff */
+  purple300: string;
+  /** purple/purple400: #b864f5 */
+  purple400: string;
+  /** purple/purple500: #8f44e4 */
+  purple500: string;
+  /** purple/purple600: #6c2ab2 */
+  purple600: string;
+  /** purple/purple700: #6c2ab2 */
+  purple700: string;
+  /** purple/purple800: #380658 */
+  purple800: string;
+  /** purple/purple900: #280a00 */
+  purple900: string;
+  /** purple/purple050: #fbf2ff */
+  purple050: string;
+  /** purple/purple025: #fcf6ff */
+  purple025: string;
+  /** lime/lime100: #b8ef4a */
+  lime100: string;
+  /** lime/lime200: #95ca45 */
+  lime200: string;
+  /** lime/lime300: #7ab040 */
+  lime300: string;
+  /** lime/lime400: #64993d */
+  lime400: string;
+  /** lime/lime500: #457a39 */
+  lime500: string;
+  /** lime/lime600: #275b35 */
+  lime600: string;
+  /** lime/lime700: #093a31 */
+  lime700: string;
+  /** lime/lime800: #012826 */
+  lime800: string;
+  /** lime/lime900: #011515 */
+  lime900: string;
+  /** lime/lime025: #effed9 */
+  lime025: string;
+  /** lime/lime050: #e3febd */
+  lime050: string;
 };

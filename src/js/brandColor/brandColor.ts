@@ -1,78 +1,146 @@
 import type { BrandColor } from './brandColor.types';
 
+/*
+Changes:
+- White no longer exist
+white000 (now is grey000)
+white010
+
+- Black no longer exist
+black000 (now is grey1000)
+
+- Grey updates
+grey000 added (white)
+grey030 -> grey025
+grey040 -> grey050
+grey750 no longer exist
+grey1000 added (black)
+
+- Blue updates
+blue000 no longer exist
+
+- Orange updates
+orange000 no longer exist
+
+- Green updates
+green000 no longer exist
+
+- Red updates
+red000 no longer exist
+
+- Yellow updates
+yellow000 no longer exist
+
+- Violet no longer exist
+violet300
+
+- Lime added
+*/
+
 export const brandColor: BrandColor = {
-  // White
-  white000: '#ffffff',
-  white010: '#fcfcfc',
-  // Black
-  black000: '#000000',
   // Grey
-  grey030: '#fafbfc',
-  grey040: '#f2f4f6',
-  grey100: '#d6d9dc',
-  grey200: '#bbc0c5',
-  grey300: '#9fa6ae',
-  grey400: '#848c96',
-  grey500: '#6a737d',
-  grey600: '#535a61',
-  grey700: '#3b4046',
-  grey750: '#2e3339',
-  grey800: '#24272a',
-  grey900: '#141618',
+  grey000: '#ffffff',
+  grey025: '#f7f9fc',
+  grey050: '#f3f5f9',
+  grey100: '#dadce5',
+  grey200: '#b7bbc8',
+  grey300: '#9ca1af',
+  grey400: '#858b9a',
+  grey500: '#686e7d',
+  grey600: '#4b505c',
+  grey700: '#31333a',
+  grey800: '#222325',
+  grey900: '#121314',
+  grey1000: '#000000',
+
   // Blue
-  blue000: '#eaf6ff',
-  blue100: '#a7d9fe',
-  blue200: '#75c4fd',
-  blue300: '#43aefc',
-  blue400: '#1098fc',
-  blue500: '#0376c9',
-  blue600: '#0260a4',
-  blue700: '#024272',
-  blue800: '#01253f',
-  blue900: '#00080d',
-  // Orange
-  orange000: '#fef5ef',
-  orange100: '#fde2cf',
-  orange200: '#fbc49d',
-  orange300: '#faa66c',
-  orange400: '#f8883b',
-  orange500: '#f66a0a',
-  orange600: '#bf5208',
-  orange700: '#954005',
-  orange800: '#632b04',
-  orange900: '#321602',
+  blue025: '#f8f9ff',
+  blue050: '#f4f5ff',
+  blue100: '#d6dbff',
+  blue200: '#adb6fe',
+  blue300: '#8b99ff',
+  blue400: '#6f7eff',
+  blue500: '#4459ff',
+  blue600: '#2c3dc5',
+  blue700: '#1c277f',
+  blue800: '#131b59',
+  blue900: '#0b0f32',
+
   // Green
-  green000: '#f3fcf5',
-  green100: '#d6ffdf',
-  green200: '#afecbd',
-  green300: '#86e29b',
-  green400: '#5dd879',
-  green500: '#28a745',
-  green600: '#1c8234',
-  green700: '#145523',
-  green800: '#0a2c12',
-  green900: '#041007',
+  green025: '#f1faf4',
+  green050: '#ebf7ee',
+  green100: '#c1e6c9',
+  green200: '#80cb91',
+  green300: '#4cb564',
+  green400: '#279f41',
+  green500: '#1c7e33',
+  green600: '#145d25',
+  green700: '#0d3b18',
+  green800: '#092912',
+  green900: '#051709',
+
   // Red
-  red000: '#fcf2f3',
-  red100: '#f7d5d8',
-  red200: '#f1b9be',
-  red300: '#e88f97',
-  red400: '#e06470',
-  red500: '#d73847',
-  red600: '#b92534',
-  red700: '#8e1d28',
-  red800: '#64141c',
-  red900: '#3a0c10',
-  // Purple
-  purple500: '#8b45b6',
-  // Violet
-  violet300: '#cfb5f0',
+  red025: '#fff6f7',
+  red050: '#fff2f3',
+  red100: '#ffd2d5',
+  red200: '#ffa1aa',
+  red300: '#ff7584',
+  red400: '#f74d5e',
+  red500: '#ca3542',
+  red600: '#952731',
+  red700: '#611a20',
+  red800: '#431216',
+  red900: '#3b0f13',
+
   // Yellow
-  yellow000: '#fffdf8',
-  yellow100: '#fefcde',
-  yellow200: '#fff2c5',
-  yellow300: '#ffeaa3',
-  yellow400: '#ffdf70',
-  yellow500: '#ffd33d',
-  yellow600: '#ffc70a',
+  yellow025: '#fff9e6',
+  yellow050: '#fff5d5',
+  yellow100: '#ffd957',
+  yellow200: '#f0b034',
+  yellow300: '#e18f01',
+  yellow400: '#c37b02',
+  yellow500: '#9a6300',
+  yellow600: '#714802',
+  yellow700: '#482d01',
+  yellow800: '#321f00',
+  yellow900: '#1c1100',
+
+  // Orange
+  orange025: '#fff8f5',
+  orange050: '#fff0ea',
+  orange100: '#ffd4c1',
+  orange200: '#ffa47c',
+  orange300: '#ff7940',
+  orange400: '#f35714',
+  orange500: '#c3420d',
+  orange600: '#932d06',
+  orange700: '#631800',
+  orange800: '#451100',
+  orange900: '#280a00',
+
+  // Purple
+  purple025: '#fcf6ff',
+  purple050: '#fbf2ff',
+  purple100: '#efd2ff',
+  purple200: '#dfa4ff',
+  purple300: '#d27dff',
+  purple400: '#b864f5',
+  purple500: '#8f44e4',
+  purple600: '#6c2ab2',
+  purple700: '#6c2ab2',
+  purple800: '#380658',
+  purple900: '#280a00',
+
+  // Lime
+  lime025: '#effed9',
+  lime050: '#e3febd',
+  lime100: '#b8ef4a',
+  lime200: '#95ca45',
+  lime300: '#7ab040',
+  lime400: '#64993d',
+  lime500: '#457a39',
+  lime600: '#275b35',
+  lime700: '#093a31',
+  lime800: '#012826',
+  lime900: '#011515',
 };
