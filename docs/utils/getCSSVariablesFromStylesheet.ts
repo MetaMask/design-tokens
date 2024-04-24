@@ -12,7 +12,7 @@ export type Color = {
  * @param varPrefix - The prefix of the CSS variables to retrieve.
  * @returns An object containing the retrieved CSS variables.
  */
-function getCSSVariablesFromStylesheet(varPrefix: string): Color {
+export const getCSSVariablesFromStylesheet = (varPrefix: string): Color => {
   const cssVariables: Color = {};
 
   Array.from(document.styleSheets)
@@ -41,6 +41,4 @@ function getCSSVariablesFromStylesheet(varPrefix: string): Color {
     });
 
   return cssVariables;
-}
-
-export default getCSSVariablesFromStylesheet;
+};

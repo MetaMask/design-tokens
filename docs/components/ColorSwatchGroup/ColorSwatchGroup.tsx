@@ -1,31 +1,12 @@
 import React, { FunctionComponent } from 'react';
-
+import { Theme } from '../../utils/useJsonColor';
 import { ColorSwatch } from '..';
-
-interface ColorToken {
-  /**
-   * The value of the color can be hex or a reference to another color using
-   * the Figma Token reference syntax {colors.blue.blue500} or using maths
-   * notation rgba($colors.blue.blue500, .5)
-   */
-  value: string;
-  /**
-   * The description of the color and what is should be used for
-   */
-  description?: string;
-  /**
-   * The type of token
-   */
-  type: 'color';
-}
 
 interface ColorSwatchGroupProps {
   /**
    * The color object
    */
-  swatchData: {
-    [key: string]: ColorToken;
-  };
+  swatchData: Theme;
   /**
    * The color of text background that contains the name of the color defaults to background.default
    */

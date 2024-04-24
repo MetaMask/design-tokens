@@ -37,7 +37,7 @@ export const ColorSwatch: FunctionComponent<ColorSwatchProps> = ({
       style={{
         height: 120,
         backgroundColor: color,
-        border: `1px solid ${borderColor}`,
+        border: `2px solid ${borderColor}`,
         display: 'flex',
         flexDirection: 'column-reverse',
         borderRadius: '8px',
@@ -48,7 +48,7 @@ export const ColorSwatch: FunctionComponent<ColorSwatchProps> = ({
         style={{
           backgroundColor: textBackgroundColor,
           padding: 8,
-          borderRadius: '0 0 8px 8px',
+          borderRadius: '0 0 6px 6px',
           color: textColor,
         }}
       >
