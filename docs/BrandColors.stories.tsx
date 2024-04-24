@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-import tokens from '../src/figma/tokens.json';
+import tokens from '../src/figma/brandColorBrandEvolution.json';
 import { brandColor } from '../src/js';
 import getCSSVariablesFromStylesheet from './utils/getCSSVariablesFromStylesheet';
 import { ColorSwatchGroup, ColorSwatch } from './components';
@@ -21,7 +21,7 @@ export default meta;
 type Story = StoryObj<typeof ColorSwatchGroup>;
 
 export const Figma: Story = {
-  render: () => <ColorSwatchGroup swatchData={tokens.global.brandColors} />,
+  render: () => <ColorSwatchGroup swatchData={tokens} />,
 };
 
 export const CSS: Story = {

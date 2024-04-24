@@ -3,7 +3,8 @@ import tokens from '../src/figma/tokens.json';
 import { lightTheme, darkTheme } from '../src';
 import getCSSVariablesFromStylesheet from './utils/getCSSVariablesFromStylesheet';
 
-import { ColorSwatchGroup, ColorSwatch } from './components';
+import { ColorSwatch } from './components';
+import { ColorSwatchGroup } from './components/ColorSwatchGroup/deprecated';
 
 import README from './ThemeColors.mdx';
 
