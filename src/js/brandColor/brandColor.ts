@@ -1,42 +1,5 @@
 import type { BrandColor } from './brandColor.types';
 
-/*
-Changes:
-- White no longer exist
-white000 (now is grey000)
-white010
-
-- Black no longer exist
-black000 (now is grey1000)
-
-- Grey updates
-grey000 added (white)
-grey030 -> grey025
-grey040 -> grey050
-grey750 no longer exist
-grey1000 added (black)
-
-- Blue updates
-blue000 no longer exist
-
-- Orange updates
-orange000 no longer exist
-
-- Green updates
-green000 no longer exist
-
-- Red updates
-red000 no longer exist
-
-- Yellow updates
-yellow000 no longer exist
-
-- Violet no longer exist
-violet300
-
-- Lime added
-*/
-
 export const brandColor: BrandColor = {
   // Grey
   grey000: '#ffffff',

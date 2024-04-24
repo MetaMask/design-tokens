@@ -2,9 +2,9 @@ const fs = require('fs').promises;
 
 /**
  * Generate TypeScript types and JavaScript object mapping for brand colors based on a JSON file.
- * @param inputFilePath - The path to the JSON file containing color definitions.
- * @param typesOutputFilePath - The path where the TypeScript types file should be written.
- * @param colorsOutputFilePath - The path where the JavaScript colors object file should be written.
+ * @param {string} inputFilePath - The path to the JSON file containing color definitions.
+ * @param {string} typesOutputFilePath - The path where the TypeScript types file should be written.
+ * @param {string} colorsOutputFilePath - The path where the JavaScript colors object file should be written.
  */
 async function generateBrandColorFiles(
   inputFilePath,
@@ -55,9 +55,9 @@ async function generateBrandColorFiles(
   }
 }
 
-const inputFilePath = './src/figma/brandColorBrandEvolution.json';
-const typesOutputFilePath = './src/js/brandColor/brandColor.types.ts';
-const colorsOutputFilePath = './src/js/brandColor/brandColor.ts';
+const inputFilePath = '../src/figma/brandColorBrandEvolution.json';
+const typesOutputFilePath = '../src/js/brandColor/brandColor.types.ts';
+const colorsOutputFilePath = '../src/js/brandColor/brandColor.ts';
 generateBrandColorFiles(
   inputFilePath,
   typesOutputFilePath,
