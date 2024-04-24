@@ -55,7 +55,7 @@ async function generateBrandColorFiles(
   }
 }
 
-const inputFilePath = '../src/figma/brandColorBrandEvolution.json';
+const inputFilePath = '../src/figma/brandColor.json';
 const typesOutputFilePath = '../src/js/brandColor/brandColor.types.ts';
 const colorsOutputFilePath = '../src/js/brandColor/brandColor.ts';
 generateBrandColorFiles(
