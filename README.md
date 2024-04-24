@@ -1,5 +1,6 @@
 # MetaMask Design Tokens 🪙
 
+HELLO WORLD
 [![npm version](https://badge.fury.io/js/@metamask%2Fdesign-tokens.svg)](https://npmjs.com/package/@metamask/design-tokens) [![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://metamask.github.io/design-tokens)
 
 ## `@metamask/design-tokens`
