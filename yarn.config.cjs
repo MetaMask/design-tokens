@@ -275,7 +275,7 @@ module.exports = defineConfig({
 
     // The list of files included in the package must only include files
     // generated during the build process.
-    workspace.set('files', ['dist']);
+    workspace.set('files', ['dist', 'src/css/design-tokens.css']); // TODO remove src/css/design-tokens.css and add to build script
 
     // The package is public, and should be published to the npm registry.
     workspace.unset('private');
