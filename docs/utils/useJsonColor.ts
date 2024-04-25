@@ -5,10 +5,10 @@ import figmaDarkTheme from '../../src/figma/darkTheme.json';
 import figmaLightTheme from '../../src/figma/lightTheme.json';
 
 export type ColorDetails = {
-  value: string;
-  type: string;
-  parent: string;
-  description: string;
+  value: string; // Hex value or alias to another color
+  type: string; // Type usually color
+  parent: string; // Parent category or group of the color
+  description: string; // Description or notes about the color
 };
 
 export type ColorPalette = {
@@ -23,10 +23,24 @@ type CompiledColors = {
   [themeName: string]: Theme;
 };
 
+/**
+ * Custom hook for compiling color themes from Figma JSON definitions.
+ * Merges brand, light, and dark theme color settings into a single object.
+ *
+ * @returns Object containing compiled color themes.
+ */
 export const useJsonColor = (): CompiledColors => {
   const [colors, setColors] = useState<CompiledColors>({});
 
   useEffect(() => {
+    /**
+     * Parses a referenced color value and resolves it based on the current theme.
+     * If the value is a reference (enclosed in curly braces), it navigates through the theme object.
+     *
+     * @param value - The color value or reference to resolve.
+     * @param theme - The theme object to resolve references against.
+     * @returns The resolved color value.
+     */
     const parseColorValue = (value: string, theme: Theme): string => {
       if (value.startsWith('{') && value.endsWith('}')) {
         const path = value.slice(1, -1).split('.');
@@ -34,14 +48,21 @@ export const useJsonColor = (): CompiledColors => {
         for (const segment of path) {
           current = current[segment];
           if (!current) {
-            return value; // If unresolved alias, return as is.
+            return value; // Return original value if resolution fails.
           }
         }
-        return current.value; // Resolved alias value.
+        return current.value; // Return the resolved color value.
       }
-      return value;
+      return value; // Return the direct value if not a reference.
     };
 
+    /**
+     * Compiles color themes from provided JSON theme definitions.
+     * Each color value is checked and potentially resolved using parseColorValue.
+     *
+     * @param themes - Object containing various theme definitions.
+     * @returns Object containing compiled and resolved themes.
+     */
     const compileColors = (themes: {
       [key: string]: Theme;
     }): CompiledColors => {
@@ -58,7 +79,7 @@ export const useJsonColor = (): CompiledColors => {
               value: resolvedValue,
               description:
                 description +
-                (value !== resolvedValue ? ` Alias: ${value}` : ''),
+                (value === resolvedValue ? '' : ` Alias: ${value}`),
             };
           });
         });
@@ -66,6 +87,7 @@ export const useJsonColor = (): CompiledColors => {
       return compiledColors;
     };
 
+    // Compile all color themes into a single object and update the state
     const allColors = compileColors({
       brandColor: { ...figmaBrandColors },
       lightTheme: figmaLightTheme,
