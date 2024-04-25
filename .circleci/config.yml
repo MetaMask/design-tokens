@@ -3,7 +3,7 @@ version: 2.1
 executors:
   node-browsers:
     docker:
-      - image: cimg/node:16.20-browsers
+      - image: cimg/node:18.20-browsers
 
 workflows:
   storybook:

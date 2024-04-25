@@ -17,9 +17,9 @@
   "license": "MIT",
   "exports": {
     ".": {
+      "types": "./dist/types/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/types/index.d.ts"
+      "require": "./dist/index.js"
     },
     "./package.json": "./package.json",
     "./design-tokens.css": "./src/css/design-tokens.css"
@@ -40,7 +40,7 @@
     "lint:changelog": "auto-changelog validate --prettier",
     "lint:constraints": "yarn constraints",
     "lint:dependencies": "depcheck && yarn dedupe",
-    "lint:eslint": "eslint . --cache --ext js,ts",
+    "lint:eslint": "eslint . --cache --ext js,cjs,ts",
     "lint:fix": "yarn lint:eslint --fix && yarn lint:constraints --fix && yarn lint:misc --write && yarn lint:dependencies && yarn lint:changelog",
     "lint:misc": "prettier '**/*.json' '**/*.md' '**/*.yml' '!.yarnrc.yml' --ignore-path .gitignore --no-error-on-unmatched-pattern",
     "prepack": "./scripts/prepack.sh",
@@ -49,6 +49,9 @@
     "storybook": "storybook dev -p 6006",
     "test": "jest && jest-it-up",
     "test:watch": "jest --watch"
+  },
+  "resolutions": {
+    "@storybook/node-logger": "7.6.16"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
@@ -74,6 +77,7 @@
     "@types/node": "^16",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",
+    "@yarnpkg/types": "^4.0.0-rc.52",
     "babel-loader": "^8.2.3",
     "css-loader": "5.2.7",
     "depcheck": "^1.4.3",
@@ -106,7 +110,7 @@
     "typescript": "~4.8.4",
     "webpack": "5"
   },
-  "packageManager": "yarn@3.2.1",
+  "packageManager": "yarn@4.1.1",
   "engines": {
     "node": "^18.18 || >=20"
   },
