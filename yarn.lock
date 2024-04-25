@@ -2267,7 +2267,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lavamoat/allow-scripts@npm:^3.0.0":
+"@lavamoat/allow-scripts@npm:^3.0.4":
   version: 3.0.4
   resolution: "@lavamoat/allow-scripts@npm:3.0.4"
   dependencies:
@@ -2324,7 +2324,7 @@ __metadata:
     "@babel/preset-env": "npm:^7.23.2"
     "@babel/preset-react": "npm:^7.22.15"
     "@babel/preset-typescript": "npm:^7.23.2"
-    "@lavamoat/allow-scripts": "npm:^3.0.0"
+    "@lavamoat/allow-scripts": "npm:^3.0.4"
     "@lavamoat/preinstall-always-fail": "npm:^2.0.0"
     "@metamask/auto-changelog": "npm:^3.4.3"
     "@metamask/eslint-config": "npm:^12.2.0"
