@@ -45,7 +45,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.sha }}
-      - uses: actions/cache@v4
+      - uses: actions/cache@v3
         id: restore-build
         with:
           path: |
