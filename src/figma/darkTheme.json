@@ -71,19 +71,19 @@
   },
   "icon": {
     "default": {
-      "value": "{text.default}",
+      "value": "{grey.000}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": ""
     },
     "alternative (calm)": {
-      "value": "{text.alternative (calm)}",
+      "value": "{grey.200}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": ""
     },
     "muted": {
-      "value": "{text.muted}",
+      "value": "{grey.400}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": ""
@@ -279,7 +279,7 @@
   },
   "flask": {
     "default": {
-      "value": "{purpe.400}",
+      "value": "{purple.400}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": ""
