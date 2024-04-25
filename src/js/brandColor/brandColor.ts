@@ -1,78 +1,184 @@
 import type { BrandColor } from './brandColor.types';
 
 export const brandColor: BrandColor = {
-  // White
-  white000: '#ffffff',
-  white010: '#fcfcfc',
-  // Black
-  black000: '#000000',
   // Grey
-  grey030: '#fafbfc',
-  grey040: '#f2f4f6',
   grey100: '#d6d9dc',
+  // Grey
   grey200: '#bbc0c5',
+  // Grey
   grey300: '#9fa6ae',
+  // Grey
   grey400: '#848c96',
+  // Grey
   grey500: '#6a737d',
+  // Grey
   grey600: '#535a61',
+  // Grey
   grey700: '#3b4046',
-  grey750: '#2e3339',
+  // Grey
   grey800: '#24272a',
+  // Grey
   grey900: '#141618',
+  // Grey
+  grey1000: '#000000',
+  // Grey
+  grey050: '#f2f4f6',
+  // Grey
+  grey000: '#ffffff',
+  // Grey
+  grey025: '#fafbfc',
   // Blue
-  blue000: '#eaf6ff',
   blue100: '#a7d9fe',
+  // Blue
   blue200: '#75c4fd',
+  // Blue
   blue300: '#43aefc',
+  // Blue
   blue400: '#1098fc',
+  // Blue
   blue500: '#0376c9',
+  // Blue
   blue600: '#0260a4',
+  // Blue
   blue700: '#024272',
+  // Blue
   blue800: '#01253f',
-  blue900: '#00080d',
-  // Orange
-  orange000: '#fef5ef',
-  orange100: '#fde2cf',
-  orange200: '#fbc49d',
-  orange300: '#faa66c',
-  orange400: '#f8883b',
-  orange500: '#f66a0a',
-  orange600: '#bf5208',
-  orange700: '#954005',
-  orange800: '#632b04',
-  orange900: '#321602',
+  // Blue
+  blue900: '{blue.blue900}',
+  // Blue
+  blue050: '#eaf6ff',
+  // Blue
+  blue025: '#eaf6ff',
   // Green
-  green000: '#f3fcf5',
-  green100: '#d6ffdf',
-  green200: '#afecbd',
-  green300: '#86e29b',
-  green400: '#5dd879',
-  green500: '#28a745',
-  green600: '#1c8234',
+  green100: '#afecbd',
+  // Green
+  green200: '#5dd879',
+  // Green
+  green300: '#28a745',
+  // Green
+  green400: '#28a745',
+  // Green
+  green500: '#1c8234',
+  // Green
+  green600: '#145523',
+  // Green
   green700: '#145523',
+  // Green
   green800: '#0a2c12',
+  // Green
   green900: '#041007',
+  // Green
+  green050: '#d6ffdf',
+  // Green
+  green025: '#f3fcf5',
   // Red
-  red000: '#fcf2f3',
   red100: '#f7d5d8',
+  // Red
   red200: '#f1b9be',
+  // Red
   red300: '#e88f97',
+  // Red
   red400: '#e06470',
+  // Red
   red500: '#d73847',
-  red600: '#b92534',
-  red700: '#8e1d28',
-  red800: '#64141c',
+  // Red
+  red600: '#8e1d28',
+  // Red
+  red700: '#64141c',
+  // Red
+  red800: '#3a0c10',
+  // Red
   red900: '#3a0c10',
-  // Purple
-  purple500: '#8b45b6',
-  // Violet
-  violet300: '#cfb5f0',
+  // Red
+  red050: '#fcf2f3',
+  // Red
+  red025: '#fcf2f3',
   // Yellow
-  yellow000: '#fffdf8',
-  yellow100: '#fefcde',
-  yellow200: '#fff2c5',
-  yellow300: '#ffeaa3',
-  yellow400: '#ffdf70',
-  yellow500: '#ffd33d',
-  yellow600: '#ffc70a',
+  yellow100: '#ffdf70',
+  // Yellow
+  yellow200: '#ffc70a',
+  // Yellow
+  yellow300: '#f8883b',
+  // Yellow
+  yellow400: '#f66a0a',
+  // Yellow
+  yellow500: '#bf5208',
+  // Yellow
+  yellow600: '#954005',
+  // Yellow
+  yellow700: '#632b04',
+  // Yellow
+  yellow800: '#321602',
+  // Yellow
+  yellow900: '#321602',
+  // Yellow
+  yellow050: '#fff2c5',
+  // Yellow
+  yellow025: '#fefcde',
+  // Orange
+  orange100: '#fbc49d',
+  // Orange
+  orange200: '#faa66c',
+  // Orange
+  orange300: '#f8883b',
+  // Orange
+  orange400: '#f66a0a',
+  // Orange
+  orange500: '#bf5208',
+  // Orange
+  orange600: '#954005',
+  // Orange
+  orange700: '#632b04',
+  // Orange
+  orange800: '#321602',
+  // Orange
+  orange900: '#321602',
+  // Orange
+  orange050: '#fde2cf',
+  // Orange
+  orange025: '#fef5ef',
+  // Purple
+  purple100: '#efd2ff',
+  // Purple
+  purple200: '{violet.violet300}',
+  // Purple
+  purple300: '#d27dff',
+  // Purple
+  purple400: '#b864f5',
+  // Purple
+  purple500: '{purple.purple500}',
+  // Purple
+  purple600: '#6c2ab2',
+  // Purple
+  purple700: '#4c1178',
+  // Purple
+  purple800: '#32054d',
+  // Purple
+  purple900: '#280a00',
+  // Purple
+  purple050: '#fbf2ff',
+  // Purple
+  purple025: '#fcf6ff',
+  // Lime
+  lime100: '#b8ef4a',
+  // Lime
+  lime200: '#95ca45',
+  // Lime
+  lime300: '#7ab040',
+  // Lime
+  lime400: '#64993d',
+  // Lime
+  lime500: '#457a39',
+  // Lime
+  lime600: '#275b35',
+  // Lime
+  lime700: '#093a31',
+  // Lime
+  lime800: '#022321',
+  // Lime
+  lime900: '#011515',
+  // Lime
+  lime025: '#effed9',
+  // Lime
+  lime050: '#e3febd',
 };
