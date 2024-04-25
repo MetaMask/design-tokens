@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { lightTheme as lightThemeJS, darkTheme as darkThemeJS } from '../src';
 import brandColor from '../src/figma/brandColors.json';
 import { ColorSwatch, ColorSwatchGroup } from './components';

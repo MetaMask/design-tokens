@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-var-requires, @typescript-eslint/no-require-imports */
-import { brandColor } from './brandColor';
+import { brandColorBrandEvolution } from './brandColorBrandEvolution';
 
 const designTokens = require('../../figma/brandColorBrandEvolution.json');
 
 describe('Brand Color', () => {
-  Object.entries(brandColor).forEach(([key, value]) => {
+  Object.entries(brandColorBrandEvolution).forEach(([key, value]) => {
     const colorFamily = key.replace(/\d+.*$/u, ''); // Extracts 'grey' from 'grey000'
     const shadeMatch = key.match(/\d+/gu); // Extracts ['000'] from 'grey000'
     if (!shadeMatch?.[0]) {
