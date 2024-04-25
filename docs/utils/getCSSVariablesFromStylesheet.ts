@@ -1,3 +1,4 @@
+// Define a type for the color object
 export type Color = {
   [key: string]: {
     color: string;
