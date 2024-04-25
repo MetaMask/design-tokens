@@ -3820,10 +3820,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/node-logger@npm:7.6.10":
-  version: 7.6.10
-  resolution: "@storybook/node-logger@npm:7.6.10"
-  checksum: 10/22006be3971cd17bfe7a742470750a7ccada1d0d4e368dd7ad963940bc3dfcdfac730630c0b7913af540e96402566b261f43bfaa2c24143d096375e433aedaff
+"@storybook/node-logger@npm:7.6.16":
+  version: 7.6.16
+  resolution: "@storybook/node-logger@npm:7.6.16"
+  checksum: 10/4ce76473fd00e5842c8603ee16ddf1e7ec8c521e310f09cfb9a7bc0f24ce0b90761d5f92a1884715cdfb4fba6f964604d1d08ffc7674c0b962321af9ffe21ffa
   languageName: node
   linkType: hard
 
