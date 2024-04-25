@@ -1,13 +1,13 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-import tokens from '../src/figma/brandColor.json';
+import tokens from '../src/figma/brandColorBrandEvolution.json';
 import { brandColor } from '../src/js';
 import getCSSVariablesFromStylesheet from './utils/getCSSVariablesFromStylesheet';
 import { ColorSwatchGroup, ColorSwatch } from './components';
-import README from './BrandColors.mdx';
+import README from './BrandColorsBrandEvolution.mdx';
 
 const meta: Meta<typeof ColorSwatchGroup> = {
-  title: 'Colors/Brand Colors',
+  title: 'Colors/Brand Colors Brand Evolution',
   component: ColorSwatchGroup,
   parameters: {
     docs: {
