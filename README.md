@@ -13,7 +13,7 @@ Have a question, suggestion, feedback? Contributors can [create an issue](https:
 - [Documentation](#documentation)
 - [Installation](#installation)
   - [CSS Variables](#css-variables)
-  - [CSS-in-JS (React Native)](#css-in-js-react-native)
+  - [CSS-in-JS](#css-in-js-react-native)
 - [Contributing](#contributing)
   - [Setup](#setup)
   - [Documentation](#documentation)
@@ -28,19 +28,19 @@ The primary documentation for MetaMask Design Tokens is [storybook](https://meta
 
 ## Installation
 
-Currently the metamask design tokens repo supports 2 formats. CSS-in-JS for React Native applications and CSS variables for web applications. These formats are based on its primary consumers [metamask-extension](https://github.com/MetaMask/metamask-extension) and [metamask-mobile](https://github.com/MetaMask/metamask-mobile).
+`yarn add @metamask/design-tokens`
+
+or
+
+`npm install @metamask/design-tokens`
+
+Currently the metamask design tokens repo supports 2 formats, CSS-in-JS and CSS variables. These formats are based on its primary consumers [metamask-mobile](https://github.com/MetaMask/metamask-mobile), [metamask-extension](https://github.com/MetaMask/metamask-extension) and [metamask-portfolio](https://github.com/consensys-vertical-apps/metamask-portfolio) .
 
 ### CSS Variables
 
-1. Install the package.
+1. Import the design tokens stylesheet into your CSS or SCSS.
 
-```sh
-yarn add @metamask/design-tokens
-```
-
-Import the design tokens stylesheet into your CSS or SCSS.
-
-Please note the file path will depend on where in your project you are importing it from.
+> _Please note the file path will depend on where in your project you are importing it from._
 
 ```css
 @import '../../node_modules/@metamask/design-tokens/src/css/design-tokens';
@@ -48,9 +48,8 @@ Please note the file path will depend on where in your project you are importing
 
 2. Use design token CSS variables in the code.
 
-In CSS/SCSS:
-
 ```css
+/* In CSS/SCSS */
 .card {
   --card-color-text: var(--color-text-default);
   --card-color-background: var(--color-background-default);
@@ -62,21 +61,14 @@ In CSS/SCSS:
 }
 ```
 
-They also work for inline styles in javascript
-
 ```js
+// They also work for inline styles in javascript
 <div style={{ color: 'var(--color-error-default)' }}>This was is an error</div>
 ```
 
-### CSS-in-JS (React Native)
+### CSS-in-JS
 
-1. Install the package.
-
-```sh
-yarn add @metamask/design-tokens
-```
-
-2. Use design tokens in code by importing from library:
+1. Use design tokens in code by importing from library:
 
 ```js
 import { lightTheme, darkTheme } from '@metamask/design-tokens';
