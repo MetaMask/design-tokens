@@ -1,10 +1,8 @@
-// Import React and necessary Storybook types
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Text } from './components';
 import README from './Shadows.mdx';
 
-// Type definitions for your component props
 interface ShadowSwatchProps {
   children: React.ReactNode;
   style?: React.CSSProperties;
@@ -38,7 +36,6 @@ const ShadowSwatch: React.FC<ShadowSwatchProps> = ({
   </div>
 );
 
-// Meta configuration for the story
 const meta: Meta<typeof ShadowSwatch> = {
   title: 'Shadows/Shadows',
   component: ShadowSwatch,
@@ -61,14 +58,13 @@ const meta: Meta<typeof ShadowSwatch> = {
 
 export default meta;
 
-// Story definitions using the StoryObj type
 export const DefaultStory: StoryObj<typeof ShadowSwatch> = {
   name: 'Default',
   args: {
     color: 'default',
     size: 'xs',
   },
-  render: ({ args }) => (
+  render: (args) => (
     <div
       style={{
         display: 'grid',
