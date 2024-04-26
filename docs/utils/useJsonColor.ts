@@ -78,8 +78,7 @@ export const useJsonColor = (): CompiledColors => {
               ...details,
               value: resolvedValue,
               description:
-                description +
-                (value === resolvedValue ? '' : ` Alias: ${value}`),
+                description + (value === resolvedValue ? '' : ` ${value}`),
             };
           });
         });

@@ -56,7 +56,7 @@
       "parent": "Theme Colors/Light mode",
       "description": "For default neutral text."
     },
-    "alternative (soft)": {
+    "alternative": {
       "value": "{grey.500}",
       "type": "color",
       "parent": "Theme Colors/Light mode",
@@ -71,19 +71,19 @@
   },
   "icon": {
     "default": {
-      "value": "{text.default}",
+      "value": "{grey.900}",
       "type": "color",
       "parent": "Theme Colors/Light mode",
       "description": "For default neutral icons"
     },
-    "alternative (soft)": {
-      "value": "{text.alternative (soft)}",
+    "alternative": {
+      "value": "{grey.500}",
       "type": "color",
       "parent": "Theme Colors/Light mode",
       "description": "For softer neutral icons"
     },
     "muted": {
-      "value": "{text.muted}",
+      "value": "{grey.300}",
       "type": "color",
       "parent": "Theme Colors/Light mode",
       "description": "For the weakest contrast neutral icons (not accessible)"
@@ -279,7 +279,7 @@
   },
   "flask": {
     "default": {
-      "value": "{purpe.500}",
+      "value": "{purple.500}",
       "type": "color",
       "parent": "Theme Colors/Light mode",
       "description": "For Flask primary accent color."
