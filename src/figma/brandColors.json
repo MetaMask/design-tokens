@@ -129,7 +129,7 @@
       "description": ""
     },
     "900": {
-      "value": "{blue.blue900}",
+      "value": "#00080d",
       "type": "color",
       "parent": "Brand Colors/v1 - current",
       "description": ""
