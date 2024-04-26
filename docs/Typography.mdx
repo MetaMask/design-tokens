@@ -1,6 +1,7 @@
-import { Meta, Canvas, Story } from '@storybook/addon-docs';
+import { Meta, Canvas, Story } from '@storybook/blocks';
+import * as TypographyStories from './Typography.stories';
 
-<Meta title="Typography / Introduction" />
+<Meta of={TypographyStories} />
 
 # Typography
 
@@ -10,9 +11,7 @@ Good typography improves readability, legibility and prioritization of informati
 
 The main font family used in MetaMask products is **Euclid Circular B**
 
-<Canvas>
-  <Story id="typography-typography--font-family" />
-</Canvas>
+<Canvas of={TypographyStories.FontFamily} />
 
 | Font Family           | JS                   | CSS                                    |
 | --------------------- | -------------------- | -------------------------------------- |
@@ -28,9 +27,7 @@ For screens sizes `767px >` or smaller, use the small screen typography scale
 
 **Key:** S: small screen L: large screen | name | font-weight(regular if omitted) | font-size/line-height | rems
 
-<Canvas>
-  <Story id="typography-typography--small-screen" />
-</Canvas>
+<Canvas of={TypographyStories.SmallScreen} />
 
 | Variation                            | JS                                                                                                                                                                                                                                             | CSS                                                                                                                                                                                                                                                                                                  |
 | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -57,9 +54,7 @@ For screens sizes `768px <` or larger, use the large screen typography scale
 
 **Key:** S: small screen L: large screen | name | font-weight (regular if omitted)| font-size/line-height | rems
 
-<Canvas>
-  <Story id="typography-typography--large-screen" />
-</Canvas>
+<Canvas of={TypographyStories.LargeScreen} />
 
 | Variation                            | JS                                                                                                                                                                                                                                             | CSS                                                                                                                                                                                                                                                                                                  |
 | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -86,9 +81,7 @@ For screens sizes `768px <` or larger, use the large screen typography scale
 
 There are three available font weights: regular`400`, medium`700` and bold`900`
 
-<Canvas>
-  <Story id="typography-typography--font-weight" />
-</Canvas>
+<Canvas of={TypographyStories.FontWeight} />
 
 | Font Weight                                   | JS                   | CSS                          |
 | --------------------------------------------- | -------------------- | ---------------------------- |

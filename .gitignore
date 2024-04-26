@@ -78,3 +78,5 @@ node_modules/
 
 # Storybook build folder
 storybook-static
+
+*storybook.log
