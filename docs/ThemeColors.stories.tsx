@@ -1,11 +1,10 @@
 import React from 'react';
-import tokens from '../src/figma/tokens.json';
-import { lightTheme, darkTheme } from '../src';
-import getCSSVariablesFromStylesheet from './utils/getCSSVariablesFromStylesheet';
 
-import { ColorSwatchGroup, ColorSwatch } from './components';
-
+import { lightTheme as lightThemeJS, darkTheme as darkThemeJS } from '../src';
+import brandColor from '../src/figma/brandColors.json';
+import { ColorSwatch, ColorSwatchGroup } from './components';
 import README from './ThemeColors.mdx';
+import { getCSSVariablesFromStylesheet, useJsonColor } from './utils';
 
 export default {
   title: 'Colors/Theme Colors',
@@ -18,39 +17,43 @@ export default {
 };
 
 export const FigmaLightTheme = {
-  render: () => <ColorSwatchGroup {...FigmaLightTheme.args} />,
-  args: {
-    swatchData: tokens.light.colors,
-    borderColor: tokens.light.colors.border.muted.value,
-    textBackgroundColor: tokens.light.colors.background.default.value,
-    textColor: tokens.light.colors.text.default.value,
+  render: () => {
+    const { lightTheme } = useJsonColor();
+    if (!lightTheme) {
+      return null; // or some fallback component
+    }
+    console.log('lightTheme', lightTheme);
+    return <ColorSwatchGroup swatchData={lightTheme} />;
   },
 };
 
 export const FigmaDarkTheme = {
-  render: () => (
-    <div
-      style={{
-        backgroundColor: tokens.dark.colors.background.default.value,
-        margin: '-1rem',
-        padding: '1rem',
-      }}
-    >
-      <ColorSwatchGroup {...FigmaDarkTheme.args} />
-    </div>
-  ),
-  args: {
-    swatchData: tokens.dark.colors,
-    borderColor: tokens.dark.colors.border.muted.value,
-    textBackgroundColor: tokens.dark.colors.background.default.value,
-    textColor: tokens.dark.colors.text.default.value,
+  render: () => {
+    const { darkTheme } = useJsonColor();
+    console.log('darkTheme', darkTheme);
+    if (!darkTheme) {
+      return null; // or some fallback component
+    }
+    return (
+      <div
+        style={{
+          margin: '-1rem',
+          padding: '1rem',
+        }}
+      >
+        <ColorSwatchGroup
+          swatchData={darkTheme}
+          borderColor={darkTheme.border.muted.value}
+          textBackgroundColor={darkTheme.background.default.value}
+          textColor={darkTheme.text.default.value}
+        />
+      </div>
+    );
   },
   parameters: {
     backgrounds: {
       default: 'dark',
-      values: [
-        { name: 'dark', value: tokens.dark.colors.background.default.value },
-      ],
+      values: [{ name: 'dark', value: brandColor.grey[800].value }],
     },
   },
 };
@@ -136,7 +139,7 @@ export const JSLightTheme = {
         gridTemplateColumns: 'repeat(auto-fill, 300px)',
       }}
     >
-      {Object.entries(lightTheme.colors).flatMap(([category, colorObj]) =>
+      {Object.entries(lightThemeJS.colors).flatMap(([category, colorObj]) =>
         Object.entries(colorObj).map(([name, color]) => (
           <ColorSwatch
             key={`${category}-${name}`}
@@ -153,7 +156,7 @@ export const JSDarkTheme = {
   render: () => (
     <div
       style={{
-        backgroundColor: darkTheme.colors.background.default,
+        backgroundColor: darkThemeJS.colors.background.default,
         margin: '-1rem',
         padding: '1rem',
       }}
@@ -165,15 +168,15 @@ export const JSDarkTheme = {
           gridTemplateColumns: 'repeat(auto-fill, 300px)',
         }}
       >
-        {Object.entries(darkTheme.colors).flatMap(([category, colorObj]) =>
+        {Object.entries(darkThemeJS.colors).flatMap(([category, colorObj]) =>
           Object.entries(colorObj).map(([name, color]) => (
             <ColorSwatch
               key={`${category}-${name}`}
               color={color}
               name={`color.${category}.${name}`}
-              borderColor={darkTheme.colors.border.muted}
-              textBackgroundColor={darkTheme.colors.background.default}
-              textColor={darkTheme.colors.text.default}
+              borderColor={darkThemeJS.colors.border.muted}
+              textBackgroundColor={darkThemeJS.colors.background.default}
+              textColor={darkThemeJS.colors.text.default}
             />
           )),
         )}
@@ -183,7 +186,7 @@ export const JSDarkTheme = {
   parameters: {
     backgrounds: {
       default: 'dark',
-      values: [{ name: 'dark', value: darkTheme.colors.background.default }],
+      values: [{ name: 'dark', value: darkThemeJS.colors.background.default }],
     },
   },
 };

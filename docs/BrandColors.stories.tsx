@@ -1,8 +1,7 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-import tokens from '../src/figma/tokens.json';
-import { brandColor } from '../src/js';
-import getCSSVariablesFromStylesheet from './utils/getCSSVariablesFromStylesheet';
+import { brandColor as brandColorJS } from '../src/js';
+import { getCSSVariablesFromStylesheet, useJsonColor } from './utils';
 import { ColorSwatchGroup, ColorSwatch } from './components';
 import README from './BrandColors.mdx';
 
@@ -21,7 +20,10 @@ export default meta;
 type Story = StoryObj<typeof ColorSwatchGroup>;
 
 export const Figma: Story = {
-  render: () => <ColorSwatchGroup swatchData={tokens.global.brandColors} />,
+  render: () => {
+    const { brandColor } = useJsonColor();
+    return <ColorSwatchGroup swatchData={brandColor} />;
+  },
 };
 
 export const CSS: Story = {
@@ -54,7 +56,7 @@ export const JS: Story = {
       }}
     >
       {/* Mapping through each brand color and rendering a ColorSwatch component for it */}
-      {Object.entries(brandColor).map(([name, color]) => (
+      {Object.entries(brandColorJS).map(([name, color]) => (
         <ColorSwatch key={name} color={color} name={`brandColor.${name}`} />
       ))}
     </div>
