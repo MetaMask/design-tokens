@@ -4,49 +4,49 @@
       "value": "{grey.800}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For default neutral backgrounds"
     },
-    "alternative (secondary)": {
+    "alternative": {
       "value": "{grey.900}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For secondary neutral backgrounds."
     },
     "*default-hover": {
       "value": "#2d3034",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For \"hover\" states that use background-default."
     },
     "*default-pressed": {
       "value": "#363b3f",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For \"pressed\" states that use background-alternative."
     },
     "*alternative-hover": {
       "value": "#1e2124",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For \"hover\" states that use background-alternative."
     },
     "*alternative-pressed": {
       "value": "#272b2f",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For \"pressed\" states that use background-alternative."
     },
     "*hover": {
       "value": "#ffffff0a",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For \"hover\" state that use no background fill."
     },
     "*pressed": {
       "value": "#ffffff14",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For \"pressed\" state that use no background fill."
     }
   },
   "text": {
@@ -54,39 +54,39 @@
       "value": "{grey.000}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For default neutral text."
     },
-    "alternative (calm)": {
+    "alternative (soft)": {
       "value": "{grey.200}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For softer contrast neutral text"
     },
     "muted": {
       "value": "{grey.400}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the softest contrast neutral text (not accessible)"
     }
   },
   "icon": {
     "default": {
-      "value": "{grey.000}",
+      "value": "{text.default}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For default neutral icons"
     },
-    "alternative (calm)": {
-      "value": "{grey.200}",
+    "alternative (soft)": {
+      "value": "{text.alternative (soft)}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For softer neutral icons"
     },
     "muted": {
-      "value": "{grey.400}",
+      "value": "{text.muted}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the weakest contrast neutral icons (not accessible)"
     }
   },
   "border": {
@@ -94,13 +94,13 @@
       "value": "{grey.400}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For soft contrast neutral border"
     },
     "muted": {
       "value": "#848c9629",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the weakest  contrast neutral border"
     }
   },
   "overlay": {
@@ -108,13 +108,13 @@
       "value": "#00000099",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the default shade of screen"
     },
     "alternative (strong)": {
       "value": "#000000cc",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For a stronger shade of screen"
     }
   },
   "primary": {
@@ -122,37 +122,37 @@
       "value": "{blue.400}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For interactive, active, and selected semantics. Used for text, background, icon or border"
     },
     "alternative (strong)": {
       "value": "{blue.200}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the stronger contrast primary semantic elements."
     },
     "muted": {
       "value": "{blue.400-15%}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the weakest contrast primary semantic backgrounds."
     },
     "inverse": {
       "value": "{grey.900}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For elements used on top of primary/default. Used for text, icon or border"
     },
     "*default-hover": {
       "value": "#26a2fc",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the \"hover\" state of primary-default elements"
     },
     "*default-pressed": {
       "value": "#3baafd",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the \"pressed\" state of primary-default elements"
     }
   },
   "error": {
@@ -160,37 +160,37 @@
       "value": "{red.400}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the critical alert semantic elements. Used for text, background, icon or border"
     },
     "alternative (strong)": {
       "value": "{red.200}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the stronger contrast error semantic elements."
     },
     "muted": {
       "value": "{red.400-15%}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the weakest contrast critical alert semantic backgrounds."
     },
     "inverse": {
       "value": "{grey.900}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For elements used on top of error/default. Used for text, icon or border"
     },
     "*default-hover": {
       "value": "#e47782",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the \"hover\" state of error-default elements."
     },
     "*default-pressed": {
       "value": "#e78891",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the \"pressed\" state of error-default elements."
     }
   },
   "warning": {
@@ -198,31 +198,31 @@
       "value": "{yellow.100}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the caution alert semantic elements. Used for text, background, icon or border"
     },
     "muted": {
       "value": "{yellow.100-15%}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the weakest contrast caution alert semantic backgrounds."
     },
     "inverse": {
       "value": "{grey.900}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For elements used on top of warning/default. Used for text, icon or border"
     },
     "*default-hover": {
       "value": "#ffe485",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the \"hover\" state of warning-default elements"
     },
     "*default-pressed": {
       "value": "#ffe899",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the \"pressed\" state of warning-default elements"
     }
   },
   "success": {
@@ -230,31 +230,31 @@
       "value": "{green.400}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the positive semantic elements. Used for text, background, icon or border"
     },
     "muted": {
       "value": "{green.400-15%}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the weakest contrast positive semantic backgrounds."
     },
     "inverse": {
-      "value": "{grey.900}",
+      "value": "#141618",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For elements used on top of success/default. Used for text, icon or border"
     },
     "*default-hover": {
       "value": "#2cb94c",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the \"hover\" state of success-default elements"
     },
     "*default-pressed": {
       "value": "#30ca53",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the \"pressed\" state of success-default elements"
     }
   },
   "info": {
@@ -262,33 +262,33 @@
       "value": "{blue.400}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For informational read-only elements. Used for text, background, icon or border"
     },
     "muted": {
       "value": "{blue.400-15%}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For the weakest contrast informational semantic backgrounds."
     },
     "inverse": {
       "value": "{grey.900}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For elements used on top of info/default. Used for text, icon or border"
     }
   },
   "flask": {
     "default": {
-      "value": "{purple.400}",
+      "value": "{purpe.400}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For Flask primary accent color."
     },
     "inverse": {
       "value": "{grey.900}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For elements used on top of flask/default. Used for text, icon or border"
     }
   },
   "shadow": {
@@ -296,19 +296,19 @@
       "value": "#00000066",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For neutral drop shadow color."
     },
     "primary": {
       "value": "#1098fc66",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For primary drop shadow color."
     },
     "error": {
       "value": "#d73a4966",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
-      "description": ""
+      "description": "For critical/danger drop shadow color."
     }
   }
 }
