@@ -1,15 +1,16 @@
+import type { Preview } from '@storybook/react';
+
 import '../docs/fonts/fonts.scss';
 import '../src/css/design-tokens.css';
 
-export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
+const preview: Preview = {
+  parameters: {
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/i,
+      },
     },
-  },
-  options: {
     storySort: {
       order: [
         'Getting Started',
@@ -22,3 +23,5 @@ export const parameters = {
     },
   },
 };
+
+export default preview;

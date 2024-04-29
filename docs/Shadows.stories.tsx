@@ -1,29 +1,29 @@
 import React from 'react';
-import { lightTheme } from '../src/js';
+import type { Meta, StoryObj } from '@storybook/react';
 import { Text } from './components';
 import README from './Shadows.mdx';
 
 interface ShadowSwatchProps {
-  children: any;
-  style?: object;
+  children: React.ReactNode;
+  style?: React.CSSProperties;
   size?: 'xs' | 'sm' | 'md' | 'lg';
   color?: 'default' | 'primary' | 'error';
 }
 
-const ShadowSwatch = ({
+const ShadowSwatch: React.FC<ShadowSwatchProps> = ({
   children,
   style,
   size = 'xs',
   color = 'default',
-}: ShadowSwatchProps) => (
+}) => (
   <div
     style={{
       height: 100,
       backgroundColor: 'var(--color-background-default)',
       boxShadow:
         color === 'default'
-          ? `var(--shadow-size-${size}) var(--color-shadow-${color}`
-          : `var(--shadow-size-${size}) var(--color-${color}-shadow`,
+          ? `var(--shadow-size-${size}) var(--color-shadow-default)`
+          : `var(--shadow-size-${size}) var(--color-${color}-shadow)`,
       borderRadius: '4px',
       display: 'grid',
       alignContent: 'center',
@@ -36,7 +36,7 @@ const ShadowSwatch = ({
   </div>
 );
 
-export default {
+const meta: Meta<typeof ShadowSwatch> = {
   title: 'Shadows/Shadows',
   component: ShadowSwatch,
   parameters: {
@@ -46,18 +46,24 @@ export default {
   },
   argTypes: {
     size: {
-      control: 'select',
-      options: Object.keys(lightTheme.shadows.size),
+      control: { type: 'select' },
+      options: ['xs', 'sm', 'md', 'lg'],
     },
     color: {
-      control: 'select',
+      control: { type: 'select' },
       options: ['default', 'primary', 'error'],
     },
   },
 };
 
-export const DefaultStory = {
+export default meta;
+
+export const DefaultStory: StoryObj<typeof ShadowSwatch> = {
   name: 'Default',
+  args: {
+    color: 'default',
+    size: 'xs',
+  },
   render: (args) => (
     <div
       style={{
@@ -73,13 +79,9 @@ export const DefaultStory = {
       </ShadowSwatch>
     </div>
   ),
-  args: {
-    color: 'default',
-    size: 'xs',
-  },
 };
 
-export const Size = {
+export const Size: StoryObj<typeof ShadowSwatch> = {
   render: (args) => (
     <div
       style={{
@@ -116,7 +118,7 @@ export const Size = {
   },
 };
 
-export const Color = {
+export const Color: StoryObj<typeof ShadowSwatch> = {
   render: (args) => (
     <div
       style={{
