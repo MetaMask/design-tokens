@@ -43,7 +43,7 @@ Currently the metamask design tokens repo supports 2 formats, CSS-in-JS and CSS 
 > _Please note the file path will depend on where in your project you are importing it from._
 
 ```css
-@import '../../node_modules/@metamask/design-tokens/src/css/design-tokens';
+@import '@metamask/design-tokens/styles';
 ```
 
 2. Use design token CSS variables in the code.
