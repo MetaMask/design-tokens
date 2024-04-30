@@ -44,7 +44,7 @@ export const brandColor: BrandColor = {
   // Blue
   blue800: '#01253f',
   // Blue
-  blue900: '{blue.blue900}',
+  blue900: '#00080d',
   // Blue
   blue050: '#eaf6ff',
   // Blue
@@ -140,13 +140,13 @@ export const brandColor: BrandColor = {
   // Purple
   purple100: '#efd2ff',
   // Purple
-  purple200: '{violet.violet300}',
+  purple200: '#cfb5f0',
   // Purple
   purple300: '#d27dff',
   // Purple
   purple400: '#b864f5',
   // Purple
-  purple500: '{purple.purple500}',
+  purple500: '#8b45b6',
   // Purple
   purple600: '#6c2ab2',
   // Purple
