@@ -1,0 +1,69 @@
+/*
+ * Light Theme Colors
+ * Use these css variables in your code.
+ * This will insure theme compatibility
+ */
+
+:root,
+[data-theme='light'] {
+  /* Background */
+  --color-background-default: var(--brand-colors-grey-grey000);
+  --color-background-default-hover: #f5f5f5;
+  --color-background-default-pressed: #ebebeb;
+  --color-background-alternative: var(--brand-colors-grey-grey050);
+  --color-background-alternative-hover: #e7ebee;
+  --color-background-alternative-pressed: #dbe0e6;
+  --color-background-hover: #0000000a;
+  --color-background-pressed: #00000014;
+  /* Text */
+  --color-text-default: var(--brand-colors-grey-grey900);
+  --color-text-alternative: var(--brand-colors-grey-grey500);
+  --color-text-muted: var(--brand-colors-grey-grey300);
+  /* Icon */
+  --color-icon-default: var(--color-text-default);
+  --color-icon-alternative: var(--text-alternative);
+  --color-icon-muted: var(--color-text-mute);
+  /* Border */
+  --color-border-default: var(--brand-colors-grey-grey200);
+  --color-border-muted: #bbc0c566;
+  /* Overlay */
+  --color-overlay-default: #00000099;
+  --color-overlay-alternative: #000000cc;
+  /* Primary */
+  --color-primary-default: var(--brand-colors-blue-blue500);
+  --color-primary-default-hover: #036ab5;
+  --color-primary-default-pressed: #025ea1;
+  --color-primary-alternative: var(--brand-colors-blue-blue600);
+  --color-primary-muted: #0376c91a;
+  --color-primary-inverse: var(--brand-colors-grey-grey000);
+  /* Error */
+  --color-error-default: var(--brand-colors-red-red500);
+  --color-error-default-hover: #d02a3a;
+  --color-error-default-pressed: #bf2635;
+  --color-error-alternative: var(--brand-colors-red-red600);
+  --color-error-muted: #d738471a;
+  --color-error-inverse: var(--brand-colors-grey-grey000);
+  /* Warning */
+  --color-warning-default: var(--brand-colors-yellow-yellow500);
+  --color-warning-default-hover: #ac4a07;
+  --color-warning-default-pressed: #984106;
+  --color-warning-muted: #bf52081a;
+  --color-warning-inverse: var(--brand-colors-grey-grey000);
+  /* Success */
+  --color-success-default: var(--brand-colors-green-green500);
+  --color-success-default-hover: #18712d;
+  --color-success-default-pressed: #156127;
+  --color-success-muted: #1c82341a;
+  --color-success-inverse: var(--brand-colors-grey-grey000);
+  /* Info */
+  --color-info-default: var(--brand-colors-blue-blue500);
+  --color-info-muted: #0376c91a;
+  --color-info-inverse: var(--brand-colors-grey-grey000);
+  /* Flask */
+  --color-flask-default: var(--brand-colors-purple-purple500);
+  --color-flask-inverse: var(--brand-colors-grey-grey000);
+  /* Shadow */
+  --color-shadow-default: #0000001a;
+  --color-shadow-primary: #0376c933;
+  --color-shadow-error: #d7384766;
+}

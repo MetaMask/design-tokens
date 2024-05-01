@@ -1,0 +1,67 @@
+/**
+ * Dark Theme Colors
+ * Colors for dark theme
+ */
+
+[data-theme='dark'] {
+  /* Background */
+  --color-background-default: var(--brand-colors-grey-grey800);
+  --color-background-default-hover: #2d3034;
+  --color-background-default-pressed: #363b3f;
+  --color-background-alternative: var(--brand-colors-grey-grey900);
+  --color-background-alternative-hover: #1e2124;
+  --color-background-alternative-pressed: #272b2f;
+  --color-background-hover: #ffffff0a;
+  --color-background-pressed: #ffffff14;
+  /* Text */
+  --color-text-default: var(--brand-colors-grey-grey000);
+  --color-text-alternative: var(--brand-colors-grey-grey200);
+  --color-text-muted: var(--brand-colors-grey-grey400);
+  /* Icon */
+  --color-icon-default: var(--color-text-default);
+  --color-icon-alternative: var(--color-text-alternative);
+  --color-icon-muted: var(--color-text-muted);
+  /* Border */
+  --color-border-default: var(--brand-colors-grey-grey400);
+  --color-border-muted: #848c9629;
+  /* Overlay */
+  --color-overlay-default: #00000099;
+  --color-overlay-alternative: #000000cc;
+  /* Primary */
+  --color-primary-default: var(--brand-colors-blue-blue400);
+  --color-primary-default-hover: #26a2fc;
+  --color-primary-default-pressed: #3baafd;
+  --color-primary-alternative: var(--brand-colors-blue-blue200);
+  --color-primary-muted: #1098fc26;
+  --color-primary-inverse: var(--brand-colors-grey-grey900);
+  /* Error */
+  --color-error-default: var(--brand-colors-red-red400);
+  --color-error-default-hover: #e47782;
+  --color-error-default-pressed: #e78891;
+  --color-error-alternative: var(--brand-colors-red-red200);
+  --color-error-muted: #e0647026;
+  --color-error-inverse: var(--brand-colors-grey-grey900);
+  /* Warning */
+  --color-warning-default: var(--brand-colors-yellow-yellow100);
+  --color-warning-default-hover: #ffe485;
+  --color-warning-default-pressed: #ffe899;
+  --color-warning-muted: #ffdf7026;
+  --color-warning-inverse: var(--brand-colors-grey-grey900);
+  /* Success */
+  --color-success-default: var(--brand-colors-green-green400);
+  --color-success-default-hover: #2cb94c;
+  --color-success-default-pressed: #30ca53;
+  --color-success-muted: #28a74526;
+  --color-success-inverse: var(--brand-colors-grey-grey900);
+  /* Info */
+  --color-info-default: var(--brand-colors-blue-blue400);
+  --color-info-muted: #1098fc26;
+  --color-info-inverse: var(--brand-colors-grey-grey900);
+  /* Flask */
+  --color-flask-default: var(--brand-colors-purple-purple400);
+  --color-flask-inverse: var(--brand-colors-grey-grey900);
+  /* Shadow */
+  --color-shadow-default: #00000066;
+  --color-shadow-primary: #1098fc66;
+  --color-shadow-error: #e0647066;
+}
