@@ -1,5 +1,5 @@
 import { brandColor } from '../../brandColor';
-import type { ThemeColors } from '../ThemeColors.types';
+import type { ThemeColors } from '../types';
 
 export const colors: ThemeColors = {
   background: {
