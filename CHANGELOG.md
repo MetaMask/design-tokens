@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.1.2]
+
+### Uncategorized
+
+- chore: upgrading storybook to version 8 ([#674](https://github.com/MetaMask/design-tokens/pull/674))
+- chore: adding initial json generated from figma variables ([#673](https://github.com/MetaMask/design-tokens/pull/673))
+- chore: upgrade lavamoat ([#670](https://github.com/MetaMask/design-tokens/pull/670))
+- fix: css theme variables doc display ([#672](https://github.com/MetaMask/design-tokens/pull/672))
+- fix: build and aligns with module template ([#667](https://github.com/MetaMask/design-tokens/pull/667))
+- chore: adding initial json generated from figma ([#665](https://github.com/MetaMask/design-tokens/pull/665))
+- Bump webpack-dev-middleware from 6.1.1 to 6.1.2 ([#636](https://github.com/MetaMask/design-tokens/pull/636))
+- Bump express from 4.18.2 to 4.19.2 ([#638](https://github.com/MetaMask/design-tokens/pull/638))
+- Bump tar from 6.2.0 to 6.2.1 ([#652](https://github.com/MetaMask/design-tokens/pull/652))
+- Enabling MetaMask security code scanner ([#635](https://github.com/MetaMask/design-tokens/pull/635))
+- chore: aligning release docs with latest ([#634](https://github.com/MetaMask/design-tokens/pull/634))
+
 ## [2.1.1]
 
 ### Changed
@@ -260,7 +276,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v2.1.1...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v2.1.2...HEAD
+[2.1.2]: https://github.com/MetaMask/design-tokens/compare/v2.1.1...v2.1.2
 [2.1.1]: https://github.com/MetaMask/design-tokens/compare/v2.1.0...v2.1.1
 [2.1.0]: https://github.com/MetaMask/design-tokens/compare/v2.0.3...v2.1.0
 [2.0.3]: https://github.com/MetaMask/design-tokens/compare/v2.0.2...v2.0.3
