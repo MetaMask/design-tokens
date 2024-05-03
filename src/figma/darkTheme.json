@@ -12,37 +12,37 @@
       "parent": "Theme Colors/Dark mode",
       "description": "For secondary neutral backgrounds."
     },
-    "*default-hover": {
+    "default-hover": {
       "value": "#2d3034",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For \"hover\" states that use background-default."
     },
-    "*default-pressed": {
+    "default-pressed": {
       "value": "#363b3f",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For \"pressed\" states that use background-alternative."
     },
-    "*alternative-hover": {
+    "alternative-hover": {
       "value": "#1e2124",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For \"hover\" states that use background-alternative."
     },
-    "*alternative-pressed": {
+    "alternative-pressed": {
       "value": "#272b2f",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For \"pressed\" states that use background-alternative."
     },
-    "*hover": {
+    "hover": {
       "value": "#ffffff0a",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For \"hover\" state that use no background fill."
     },
-    "*pressed": {
+    "pressed": {
       "value": "#ffffff14",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
@@ -110,7 +110,7 @@
       "parent": "Theme Colors/Dark mode",
       "description": "For the default shade of screen"
     },
-    "alternative (strong)": {
+    "alternative": {
       "value": "#000000cc",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
@@ -124,7 +124,7 @@
       "parent": "Theme Colors/Dark mode",
       "description": "For interactive, active, and selected semantics. Used for text, background, icon or border"
     },
-    "alternative (strong)": {
+    "alternative": {
       "value": "{blue.200}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
@@ -142,13 +142,13 @@
       "parent": "Theme Colors/Dark mode",
       "description": "For elements used on top of primary/default. Used for text, icon or border"
     },
-    "*default-hover": {
+    "default-hover": {
       "value": "#26a2fc",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For the \"hover\" state of primary-default elements"
     },
-    "*default-pressed": {
+    "default-pressed": {
       "value": "#3baafd",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
@@ -162,7 +162,7 @@
       "parent": "Theme Colors/Dark mode",
       "description": "For the critical alert semantic elements. Used for text, background, icon or border"
     },
-    "alternative (strong)": {
+    "alternative": {
       "value": "{red.200}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
@@ -180,13 +180,13 @@
       "parent": "Theme Colors/Dark mode",
       "description": "For elements used on top of error/default. Used for text, icon or border"
     },
-    "*default-hover": {
+    "default-hover": {
       "value": "#e47782",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For the \"hover\" state of error-default elements."
     },
-    "*default-pressed": {
+    "default-pressed": {
       "value": "#e78891",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
@@ -212,13 +212,13 @@
       "parent": "Theme Colors/Dark mode",
       "description": "For elements used on top of warning/default. Used for text, icon or border"
     },
-    "*default-hover": {
+    "default-hover": {
       "value": "#ffe485",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For the \"hover\" state of warning-default elements"
     },
-    "*default-pressed": {
+    "default-pressed": {
       "value": "#ffe899",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
@@ -244,13 +244,13 @@
       "parent": "Theme Colors/Dark mode",
       "description": "For elements used on top of success/default. Used for text, icon or border"
     },
-    "*default-hover": {
+    "default-hover": {
       "value": "#2cb94c",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For the \"hover\" state of success-default elements"
     },
-    "*default-pressed": {
+    "default-pressed": {
       "value": "#30ca53",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
