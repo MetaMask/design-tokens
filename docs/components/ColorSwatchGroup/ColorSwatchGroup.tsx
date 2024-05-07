@@ -13,13 +13,27 @@ interface ColorSwatchGroupProps {
   textBackgroundColor?: string;
   borderColor?: string;
   textColor?: string;
+  /** Hex code value of the theme (light or dark mode) this is used to help determine the text color of each swatch when opacity is involved
+   * Default is light theme #ffffff
+   */
+  theme?: string;
 }
 
+function toCamelCase(str) {
+  // Check if the string contains a dash followed by a number, if so, skip modification
+  if (/\-\d+%$/.test(str)) {
+    return str;
+  }
+  return str.replace(/-([a-z])/gi, function (g) {
+    return g[1].toUpperCase();
+  });
+}
 export const ColorSwatchGroup: React.FC<ColorSwatchGroupProps> = ({
   swatchData,
   borderColor,
   textBackgroundColor = 'transparent',
   textColor = '#212529',
+  theme = '#ffffff',
 }) => {
   if (!swatchData) {
     return <div>No swatch data</div>;
@@ -34,24 +48,48 @@ export const ColorSwatchGroup: React.FC<ColorSwatchGroupProps> = ({
   };
 
   // Function to determine the contrast of the text color based on the background color
-  function getContrastYIQ(hexcolor) {
+  function getContrastYIQ(hexcolor, backgroundColor) {
     hexcolor = hexcolor.replace('#', '');
-    var r = parseInt(hexcolor.substr(0, 2), 16);
-    var g = parseInt(hexcolor.substr(2, 2), 16);
-    var b = parseInt(hexcolor.substr(4, 2), 16);
+    let r,
+      g,
+      b,
+      a = 1;
+    if (hexcolor.length === 8) {
+      // If alpha is present
+      r = parseInt(hexcolor.substr(0, 2), 16);
+      g = parseInt(hexcolor.substr(2, 2), 16);
+      b = parseInt(hexcolor.substr(4, 2), 16);
+      a = parseInt(hexcolor.substr(6, 2), 16) / 255;
+    } else {
+      r = parseInt(hexcolor.substr(0, 2), 16);
+      g = parseInt(hexcolor.substr(2, 2), 16);
+      b = parseInt(hexcolor.substr(4, 2), 16);
+    }
+
+    const bgR = parseInt(backgroundColor.substr(1, 2), 16);
+    const bgG = parseInt(backgroundColor.substr(3, 2), 16);
+    const bgB = parseInt(backgroundColor.substr(5, 2), 16);
+
+    r = Math.round(r * a + (1 - a) * bgR);
+    g = Math.round(g * a + (1 - a) * bgG);
+    b = Math.round(b * a + (1 - a) * bgB);
+
     var yiq = (r * 299 + g * 587 + b * 114) / 1000;
     return yiq >= 128 ? 'black' : 'white';
   }
 
   const renderSwatches = () => {
     return Object.entries(swatchData).map(([category, colors]) => {
-      // Filter out color keys that contain a dash, indicating a percentage-based color
-      const filteredColorKeys = Object.keys(colors).filter(
-        (key) => !key.includes('-'),
-      );
+      const colorKeys = Object.keys(colors)
+        .filter((key) => !/\-\d+%$/.test(key))
+        .map((key) => ({
+          originalKey: key,
+          camelCaseKey: toCamelCase(key),
+        }));
 
-      // Sort the remaining color keys numerically
-      const sortedColorKeys = filteredColorKeys.sort(sortShadesNumerically);
+      const sortedColorKeys = colorKeys.sort((a, b) =>
+        sortShadesNumerically(a.camelCaseKey, b.camelCaseKey),
+      );
 
       return (
         <div
@@ -59,7 +97,7 @@ export const ColorSwatchGroup: React.FC<ColorSwatchGroupProps> = ({
           style={{
             fontSize: '0.875rem',
             fontFamily: 'sans-serif',
-            color: textColor,
+            color: getContrastYIQ(theme, theme),
           }}
         >
           <h2>{category}</h2>
@@ -70,14 +108,14 @@ export const ColorSwatchGroup: React.FC<ColorSwatchGroupProps> = ({
               gridTemplateColumns: 'repeat(auto-fill, 300px)',
             }}
           >
-            {sortedColorKeys.map((label) => {
-              const { value, description } = colors[label];
+            {sortedColorKeys.map(({ originalKey, camelCaseKey }) => {
+              const { value, description } = colors[originalKey];
               return (
-                <div key={label}>
+                <div key={camelCaseKey}>
                   <ColorSwatch
                     color={value}
-                    name={label}
-                    textColor={getContrastYIQ(value)}
+                    name={`${category}.${camelCaseKey}`}
+                    textColor={getContrastYIQ(value, theme)}
                     {...{ borderColor, textBackgroundColor }}
                   />
                   {description && (

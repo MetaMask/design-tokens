@@ -21,7 +21,6 @@ export const FigmaLightTheme = {
     if (!lightTheme) {
       return null; // or some fallback component
     }
-    console.log('lightTheme', lightTheme);
     return <ColorSwatchGroup swatchData={lightTheme} />;
   },
 };
@@ -29,7 +28,6 @@ export const FigmaLightTheme = {
 export const FigmaDarkTheme = {
   render: () => {
     const { darkTheme } = useJsonColor();
-    console.log('darkTheme', darkTheme);
     if (!darkTheme) {
       return null; // or some fallback component
     }
@@ -40,12 +38,7 @@ export const FigmaDarkTheme = {
           padding: '1rem',
         }}
       >
-        <ColorSwatchGroup
-          swatchData={darkTheme}
-          borderColor={darkTheme.border.muted.value}
-          textBackgroundColor={darkTheme.background.default.value}
-          textColor={darkTheme.text.default.value}
-        />
+        <ColorSwatchGroup swatchData={darkTheme} theme="#24272a" />
       </div>
     );
   },
@@ -130,62 +123,33 @@ export const CSSDarkTheme = {
 };
 
 export const JSLightTheme = {
-  render: () => (
-    <div
-      style={{
-        display: 'grid',
-        gap: '16px',
-        gridTemplateColumns: 'repeat(auto-fill, 300px)',
-      }}
-    >
-      {Object.entries(lightThemeJS.colors).flatMap(([category, colorObj]) =>
-        Object.entries(colorObj).map(([name, color]) => (
-          <ColorSwatch
-            key={`${category}-${name}`}
-            color={color}
-            name={`color.${category}.${name}`}
-          />
-        )),
-      )}
-    </div>
-  ),
+  render: () => {
+    const { lightTheme } = useJsonColor();
+    if (!lightTheme) {
+      return null; // or some fallback component
+    }
+    return <ColorSwatchGroup swatchData={lightTheme} />;
+  },
 };
-
 export const JSDarkTheme = {
-  render: () => (
-    <div
-      style={{
-        backgroundColor: darkThemeJS.colors.background.default,
-        margin: '-1rem',
-        padding: '1rem',
-      }}
-    >
+  render: () => {
+    const { darkTheme } = useJsonColor();
+    if (!darkTheme) {
+      return null; // or some fallback component
+    }
+    return (
       <div
         style={{
-          display: 'grid',
-          gap: '16px',
-          gridTemplateColumns: 'repeat(auto-fill, 300px)',
+          backgroundColor: darkTheme.background.default.value,
+          margin: '-1rem',
+          padding: '1rem',
         }}
       >
-        {Object.entries(darkThemeJS.colors).flatMap(([category, colorObj]) =>
-          Object.entries(colorObj).map(([name, color]) => (
-            <ColorSwatch
-              key={`${category}-${name}`}
-              color={color}
-              name={`color.${category}.${name}`}
-              borderColor={darkThemeJS.colors.border.muted}
-              textBackgroundColor={darkThemeJS.colors.background.default}
-              textColor={darkThemeJS.colors.text.default}
-            />
-          )),
-        )}
+        <ColorSwatchGroup
+          theme={darkTheme.background.default.value}
+          swatchData={darkTheme}
+        />
       </div>
-    </div>
-  ),
-  parameters: {
-    backgrounds: {
-      default: 'dark',
-      values: [{ name: 'dark', value: darkThemeJS.colors.background.default }],
-    },
+    );
   },
 };
