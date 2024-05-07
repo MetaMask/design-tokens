@@ -47,18 +47,8 @@ export const CSS: Story = {
 };
 
 export const JS: Story = {
-  render: () => (
-    <div
-      style={{
-        display: 'grid',
-        gap: '16px',
-        gridTemplateColumns: 'repeat(auto-fill, 300px)',
-      }}
-    >
-      {/* Mapping through each brand color and rendering a ColorSwatch component for it */}
-      {Object.entries(brandColorJS).map(([name, color]) => (
-        <ColorSwatch key={name} color={color} name={`brandColor.${name}`} />
-      ))}
-    </div>
-  ),
+  render: () => {
+    const { brandColor } = useJsonColor();
+    return <ColorSwatchGroup swatchData={brandColor} />;
+  },
 };

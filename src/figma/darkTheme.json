@@ -239,7 +239,7 @@
       "description": "For the weakest contrast positive semantic backgrounds."
     },
     "inverse": {
-      "value": "#141618",
+      "value": "{grey.900}",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For elements used on top of success/default. Used for text, icon or border"

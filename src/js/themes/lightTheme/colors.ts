@@ -1,4 +1,4 @@
-import { brandColor } from '../../brandColor';
+import { brandColorBrandEvolution as brandColor } from '../../brandColorBrandEvolution';
 import type { ThemeColors } from '../types';
 
 export const colors: ThemeColors = {
