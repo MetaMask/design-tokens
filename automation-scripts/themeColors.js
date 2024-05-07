@@ -53,7 +53,7 @@ async function generateThemeFiles(inputFilePath, colorsOutputFilePath) {
     // Write the JavaScript colors file
     await fs.writeFile(colorsOutputFilePath, jsOutput);
     console.log(
-      `JavaScript colors file has been created successfully at ${colorsOutputFilePath}.`,
+      `JavaScript colors file has been created successfully at ${colorsOutputFilePath}. There are some manual steps to complete in the output files.`,
     );
   } catch (error) {
     console.error('Failed to read or write files:', error);
