@@ -32,7 +32,6 @@ export const ColorSwatchGroup: React.FC<ColorSwatchGroupProps> = ({
   swatchData,
   borderColor,
   textBackgroundColor = 'transparent',
-  textColor = '#212529',
   theme = '#ffffff',
 }) => {
   if (!swatchData) {
