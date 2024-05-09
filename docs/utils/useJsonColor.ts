@@ -24,6 +24,9 @@ type CompiledColors = {
   [themeName: string]: Theme;
 };
 
+const isHexColor = (value: string) =>
+  /^#[0-9A-F]{6}$/iu.test(value) || /^#[0-9A-F]{8}$/iu.test(value);
+
 /**
  * Custom hook for compiling color themes from Figma JSON definitions.
  * Merges brand, light, and dark theme color settings into a single object.
@@ -65,7 +68,26 @@ export const useJsonColor = (useEvolutionColors = false): CompiledColors => {
           compiledColors[themeName][colorName] = {};
           Object.entries(colorValues).forEach(([shade, details]) => {
             const { value, description } = details;
-            const resolvedValue = parseColorValue(value, brandColors);
+            let resolvedValue = parseColorValue(value, brandColors);
+            console.log('resolvedValue', isHexColor(resolvedValue));
+            if (!isHexColor(resolvedValue)) {
+              const cleanResolvedValue = resolvedValue.slice(1, -1).split('.'); // Split the reference into parts
+              const category = cleanResolvedValue[0]; // Get the category (e.g., 'text')
+              const key = cleanResolvedValue[1]; // Get the key (e.g., 'default')
+
+              if (theme[category] && theme[category][key]) {
+                resolvedValue = parseColorValue(
+                  theme[category][key].value,
+                  brandColors,
+                );
+                console.log(
+                  parseColorValue(theme[category][key].value, brandColors),
+                );
+              } else {
+                console.error('Invalid reference:', resolvedValue);
+              }
+            }
+            // This is where we can catch the issue. The value should be a hex value, but if it's not then it's likely referencing to an object that is within the json
             compiledColors[themeName][colorName][shade] = {
               ...details,
               value: resolvedValue,

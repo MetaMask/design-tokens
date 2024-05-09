@@ -47,7 +47,7 @@ export const ColorSwatchGroup: React.FC<ColorSwatchGroupProps> = ({
   };
 
   // Function to determine the contrast of the text color based on the background color
-  function getContrastYIQ(hexcolor, backgroundColor) {
+  function getContrastYIQ(hexcolor: string, backgroundColor: string) {
     hexcolor = hexcolor.replace('#', '');
     let r,
       g,
