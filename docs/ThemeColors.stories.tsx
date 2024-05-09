@@ -140,13 +140,13 @@ export const JSDarkTheme = {
     return (
       <div
         style={{
-          backgroundColor: darkTheme.background.default.value,
+          backgroundColor: darkTheme?.background?.default?.value,
           margin: '-1rem',
           padding: '1rem',
         }}
       >
         <ColorSwatchGroup
-          theme={darkTheme.background.default.value}
+          theme={darkTheme?.background?.default?.value as string}
           swatchData={darkTheme}
         />
       </div>

@@ -80,9 +80,6 @@ export const useJsonColor = (useEvolutionColors = false): CompiledColors => {
                   theme[category][key].value,
                   brandColors,
                 );
-                console.log(
-                  parseColorValue(theme[category][key].value, brandColors),
-                );
               } else {
                 console.error('Invalid reference:', resolvedValue);
               }
