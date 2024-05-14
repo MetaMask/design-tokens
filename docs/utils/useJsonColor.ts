@@ -69,7 +69,6 @@ export const useJsonColor = (useEvolutionColors = false): CompiledColors => {
           Object.entries(colorValues).forEach(([shade, details]) => {
             const { value, description } = details;
             let resolvedValue = parseColorValue(value, brandColors);
-            console.log('resolvedValue', isHexColor(resolvedValue));
             if (!isHexColor(resolvedValue)) {
               const cleanResolvedValue = resolvedValue.slice(1, -1).split('.'); // Split the reference into parts
               const category = cleanResolvedValue[0]; // Get the category (e.g., 'text')
