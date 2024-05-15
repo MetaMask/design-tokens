@@ -5,7 +5,7 @@ const designTokens = require('../../../figma/tokens.json');
 
 describe('Shadows', () => {
   it('js tokens shadows.size.xs matches figma tokens shadows.xs', () => {
-    expect(shadows.size.xs.shadowColor).toStrictEqual(
+    expect(shadows.size.xs.shadowColor.toUpperCase()).toStrictEqual(
       designTokens.light.shadows.xs.value.color,
     );
 
@@ -25,7 +25,7 @@ describe('Shadows', () => {
   });
 
   it('js tokens shadows.size.sm matches figma tokens shadows.sm', () => {
-    expect(shadows.size.sm.shadowColor).toStrictEqual(
+    expect(shadows.size.sm.shadowColor.toUpperCase()).toStrictEqual(
       designTokens.light.shadows.sm.value.color,
     );
 
@@ -45,7 +45,7 @@ describe('Shadows', () => {
   });
 
   it('js tokens shadows.size.md matches figma tokens shadows.md', () => {
-    expect(shadows.size.md.shadowColor).toStrictEqual(
+    expect(shadows.size.md.shadowColor.toUpperCase()).toStrictEqual(
       designTokens.light.shadows.md.value.color,
     );
 
@@ -65,7 +65,7 @@ describe('Shadows', () => {
   });
 
   it('js tokens shadows.size.lg matches figma tokens shadows.lg', () => {
-    expect(shadows.size.lg.shadowColor).toStrictEqual(
+    expect(shadows.size.lg.shadowColor.toUpperCase()).toStrictEqual(
       designTokens.light.shadows.lg.value.color,
     );
 
