@@ -74,7 +74,7 @@ export const useJsonColor = (useEvolutionColors = false): CompiledColors => {
               const category = cleanResolvedValue[0]; // Get the category (e.g., 'text')
               const key = cleanResolvedValue[1]; // Get the key (e.g., 'default')
 
-              if (theme[category] && theme[category][key]) {
+              if (theme[category]?.[key]) {
                 resolvedValue = parseColorValue(
                   theme[category][key].value,
                   brandColors,
