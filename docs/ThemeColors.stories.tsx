@@ -1,5 +1,4 @@
 import React from 'react';
-import { lightTheme as lightThemeJS, darkTheme as darkThemeJS } from '../src';
 import brandColor from '../src/figma/brandColors.json';
 import { ColorSwatch, ColorSwatchGroup } from './components';
 import README from './ThemeColors.mdx';
@@ -133,7 +132,7 @@ export const JSLightTheme = {
 };
 export const JSDarkTheme = {
   render: () => {
-    const { darkTheme } = useJsonColor();
+    const { darkTheme } = useJsonColor(true);
     if (!darkTheme) {
       return null; // or some fallback component
     }
