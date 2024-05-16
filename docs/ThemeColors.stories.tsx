@@ -1,5 +1,4 @@
 import React from 'react';
-import { lightTheme as lightThemeJS, darkTheme as darkThemeJS } from '../src';
 import brandColor from '../src/figma/brandColors.json';
 import { ColorSwatch, ColorSwatchGroup } from './components';
 import README from './ThemeColors.mdx';
@@ -134,6 +133,38 @@ export const JSLightTheme = {
 export const JSDarkTheme = {
   render: () => {
     const { darkTheme } = useJsonColor();
+    if (!darkTheme) {
+      return null; // or some fallback component
+    }
+    return (
+      <div
+        style={{
+          backgroundColor: darkTheme?.background?.default?.value,
+          margin: '-1rem',
+          padding: '1rem',
+        }}
+      >
+        <ColorSwatchGroup
+          theme={darkTheme?.background?.default?.value as string}
+          swatchData={darkTheme}
+        />
+      </div>
+    );
+  },
+};
+
+export const JSLightThemeBrandEvolution = {
+  render: () => {
+    const { lightTheme } = useJsonColor(true);
+    if (!lightTheme) {
+      return null; // or some fallback component
+    }
+    return <ColorSwatchGroup swatchData={lightTheme} />;
+  },
+};
+export const JSDarkThemeBrandEvolution = {
+  render: () => {
+    const { darkTheme } = useJsonColor(true);
     if (!darkTheme) {
       return null; // or some fallback component
     }

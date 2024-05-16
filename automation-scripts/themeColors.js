@@ -66,6 +66,18 @@ async function generateThemeFiles(inputFilePath, colorsOutputFilePath) {
 // generateThemeFiles(inputFilePathLight, colorsOutputFilePathLight);
 
 // Dark Theme
-const inputFilePathDark = '../src/figma/darkTheme.json';
-const colorsOutputFilePathDark = '../src/js/themes/darkTheme/colors.ts';
+// const inputFilePathDark = '../src/figma/darkTheme.json';
+// const colorsOutputFilePathDark = '../src/js/themes/darkTheme/colors.ts';
+// generateThemeFiles(inputFilePathDark, colorsOutputFilePathDark);
+
+// Light Theme Brand Evolution
+const inputFilePathLight = '../src/figma/lightThemeBrandEvolution.json';
+const colorsOutputFilePathLight =
+  '../src/js/themesBrandEvolution/lightTheme/colors.ts';
+generateThemeFiles(inputFilePathLight, colorsOutputFilePathLight);
+
+// Dark Theme Brand Evolution
+const inputFilePathDark = '../src/figma/darkThemeBrandEvolution.json';
+const colorsOutputFilePathDark =
+  '../src/js/themesBrandEvolution/darkTheme/colors.ts';
 generateThemeFiles(inputFilePathDark, colorsOutputFilePathDark);
