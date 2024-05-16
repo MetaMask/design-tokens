@@ -14,6 +14,7 @@ Have a question, suggestion, feedback? Contributors can [create an issue](https:
 - [Installation](#installation)
   - [CSS Variables](#css-variables)
   - [CSS-in-JS](#css-in-js-react-native)
+- [Tooling](#tooling)
 - [Contributing](#contributing)
   - [Setup](#setup)
   - [Documentation](#documentation)
@@ -73,7 +74,7 @@ Currently the metamask design tokens repo supports 2 formats, CSS-in-JS and CSS 
 ```js
 import { lightTheme, darkTheme } from '@metamask/design-tokens';
 
-// Create provider that swaps theme (sudo code)
+// Create provider that swaps theme (pseudo code)
 <ThemeProvider theme={theme === 'default' ? lightTheme : darkTheme} />;
 
 const createStyles = (theme) =>
@@ -88,6 +89,39 @@ const createStyles = (theme) =>
 ### Usage
 
 For a detailed list of design tokens visit the MetaMask design token [storybook](https://metamask.github.io/design-tokens)
+
+## Tooling
+
+To prevent color tech debt and ensure themability, accessibility, and consistency of the MetaMask brand, we recommend using [eslint-plugin-design-tokens](https://github.com/MetaMask/eslint-plugin-design-tokens). This ESLint plugin helps enforce the usage of design tokens in your codebase.
+
+### Installation
+
+Install the plugin using npm or yarn:
+
+```sh
+npm install eslint-plugin-design-tokens --save-dev
+```
+
+or
+
+```sh
+yarn add eslint-plugin-design-tokens --dev
+```
+
+### Configuration
+
+Add `eslint-plugin-design-tokens` to your ESLint configuration:
+
+```json
+{
+  "plugins": ["@metamask/design-tokens"],
+  "rules": {
+    "@metamask/design-tokens/color-no-hex": "warn"
+  }
+}
+```
+
+This configuration will enforce the usage of design tokens instead of static hex color values, helping to maintain a consistent design system.
 
 ## Contributing
 
@@ -156,3 +190,11 @@ The project follows the same release process as the other libraries in the MetaM
    - Wait for the `publish-release` GitHub Action workflow to finish. This should trigger a second job (`publish-npm`), which will wait for a run approval by the [`npm publishers`](https://github.com/orgs/MetaMask/teams/npm-publishers) team.
    - Approve the `publish-npm` job (or ask somebody on the npm publishers team to approve it for you).
    - Once the `publish-npm` job has finished, check npm to verify that it has been published.
+
+```
+
+```
+
+```
+
+```
