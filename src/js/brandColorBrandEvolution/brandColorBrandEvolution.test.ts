@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires, @typescript-eslint/no-require-imports */
 import { brandColorBrandEvolution } from './brandColorBrandEvolution';
 
-const designTokens = require('../../figma/brandColorBrandEvolution.json');
+const designTokens = require('../../figma/brandColorsBrandEvolution.json');
 
 describe('Brand Color', () => {
   Object.entries(brandColorBrandEvolution).forEach(([key, value]) => {
