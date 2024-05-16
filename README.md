@@ -123,7 +123,7 @@ Add `eslint-plugin-design-tokens` to your ESLint configuration:
 }
 ```
 
-This configuration will enforce the usage of design tokens instead of static hex color values, helping to maintain a consistent design system. See more linting rules [@metamask/eslint-plugin-design-tokens](https://github.com/MetaMask/eslint-plugin-design-tokens)
+This configuration will enforce the usage of design tokens instead of static hex color values, helping to maintain a consistent design system. See more [supported rules](https://github.com/MetaMask/eslint-plugin-design-tokens?tab=readme-ov-file#supported-rules)
 
 ## Contributing
 
