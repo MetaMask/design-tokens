@@ -92,20 +92,22 @@ For a detailed list of design tokens visit the MetaMask design token [storybook]
 
 ## Tooling
 
-To prevent color tech debt and ensure themability, accessibility, and consistency of the MetaMask brand, we recommend using [eslint-plugin-design-tokens](https://github.com/MetaMask/eslint-plugin-design-tokens). This ESLint plugin helps enforce the usage of design tokens in your codebase.
+To prevent color tech debt and ensure themability, accessibility, and consistency of the MetaMask brand, we recommend using [@metamask/eslint-plugin-design-tokens](https://github.com/MetaMask/eslint-plugin-design-tokens). This ESLint plugin helps enforce the usage of design tokens in your codebase.
 
-### Installation
+You'll first need to install [ESLint](https://eslint.org):
 
-Install the plugin using npm or yarn:
-
-```sh
-npm install eslint-plugin-design-tokens --save-dev
+```shell
+$ npm install --save-dev eslint
+# or
+$ yarn add --dev eslint
 ```
 
-or
+Next, install `@metamask/eslint-plugin-design-tokens`:
 
-```sh
-yarn add eslint-plugin-design-tokens --dev
+```shell
+$ npm install --save-dev @metamask/eslint-plugin-design-tokens
+# or
+$ yarn add --dev @metamask/eslint-plugin-design-tokens
 ```
 
 ### Configuration
@@ -121,7 +123,7 @@ Add `eslint-plugin-design-tokens` to your ESLint configuration:
 }
 ```
 
-This configuration will enforce the usage of design tokens instead of static hex color values, helping to maintain a consistent design system.
+This configuration will enforce the usage of design tokens instead of static hex color values, helping to maintain a consistent design system. See more linting rules [@metamask/eslint-plugin-design-tokens](https://github.com/MetaMask/eslint-plugin-design-tokens)
 
 ## Contributing
 
