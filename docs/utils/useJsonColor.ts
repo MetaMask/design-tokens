@@ -99,7 +99,7 @@ export const useJsonColor = (useEvolutionColors = false): CompiledColors => {
                 ...details,
                 value: resolvedValue,
                 description:
-                  description +
+                  (description ?? '') +
                   (value === resolvedValue ? '' : ` (was ${value})`),
               };
             });
