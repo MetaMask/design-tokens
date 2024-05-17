@@ -14,6 +14,7 @@ Have a question, suggestion, feedback? Contributors can [create an issue](https:
 - [Installation](#installation)
   - [CSS Variables](#css-variables)
   - [CSS-in-JS](#css-in-js-react-native)
+- [Tooling](#tooling)
 - [Contributing](#contributing)
   - [Setup](#setup)
   - [Documentation](#documentation)
@@ -73,7 +74,7 @@ Currently the metamask design tokens repo supports 2 formats, CSS-in-JS and CSS 
 ```js
 import { lightTheme, darkTheme } from '@metamask/design-tokens';
 
-// Create provider that swaps theme (sudo code)
+// Create provider that swaps theme (pseudo code)
 <ThemeProvider theme={theme === 'default' ? lightTheme : darkTheme} />;
 
 const createStyles = (theme) =>
@@ -88,6 +89,41 @@ const createStyles = (theme) =>
 ### Usage
 
 For a detailed list of design tokens visit the MetaMask design token [storybook](https://metamask.github.io/design-tokens)
+
+## Tooling
+
+To prevent color tech debt and ensure themability, accessibility, and consistency of the MetaMask brand, we recommend using [@metamask/eslint-plugin-design-tokens](https://github.com/MetaMask/eslint-plugin-design-tokens). This ESLint plugin helps enforce the usage of design tokens in your codebase.
+
+You'll first need to install [ESLint](https://eslint.org):
+
+```shell
+$ npm install --save-dev eslint
+# or
+$ yarn add --dev eslint
+```
+
+Next, install `@metamask/eslint-plugin-design-tokens`:
+
+```shell
+$ npm install --save-dev @metamask/eslint-plugin-design-tokens
+# or
+$ yarn add --dev @metamask/eslint-plugin-design-tokens
+```
+
+### Configuration
+
+Add `eslint-plugin-design-tokens` to your ESLint configuration:
+
+```json
+{
+  "plugins": ["@metamask/design-tokens"],
+  "rules": {
+    "@metamask/design-tokens/color-no-hex": "warn"
+  }
+}
+```
+
+This configuration will enforce the usage of design tokens instead of static hex color values, helping to maintain a consistent design system. See more [supported rules](https://github.com/MetaMask/eslint-plugin-design-tokens?tab=readme-ov-file#supported-rules)
 
 ## Contributing
 
