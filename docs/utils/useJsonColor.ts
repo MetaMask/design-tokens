@@ -3,13 +3,15 @@ import { useEffect, useState } from 'react';
 import figmaBrandColors from '../../src/figma/brandColors.json';
 import figmaBrandColorsBrandEvolution from '../../src/figma/brandColorsBrandEvolution.json';
 import figmaDarkTheme from '../../src/figma/darkTheme.json';
+import figmaDarkThemeBrandEvolution from '../../src/figma/darkThemeBrandEvolution.json';
 import figmaLightTheme from '../../src/figma/lightTheme.json';
+import figmaLightThemeBrandEvolution from '../../src/figma/lightThemeBrandEvolution.json';
 
 export type ColorDetails = {
   value: string; // Hex value or alias to another color
-  type: string; // Type usually color
-  parent: string; // Parent category or group of the color
-  description: string; // Description or notes about the color
+  type?: string; // Type usually color
+  parent?: string; // Parent category or group of the color
+  description?: string; // Description or notes about the color
 };
 
 export type ColorPalette = {
@@ -66,42 +68,57 @@ export const useJsonColor = (useEvolutionColors = false): CompiledColors => {
         compiledColors[themeName] = {};
         Object.entries(theme).forEach(([colorName, colorValues]) => {
           compiledColors[themeName][colorName] = {};
-          Object.entries(colorValues).forEach(([shade, details]) => {
-            const { value, description } = details;
-            let resolvedValue = parseColorValue(value, brandColors);
-            if (!isHexColor(resolvedValue)) {
-              const cleanResolvedValue = resolvedValue.slice(1, -1).split('.'); // Split the reference into parts
-              const category = cleanResolvedValue[0]; // Get the category (e.g., 'text')
-              const key = cleanResolvedValue[1]; // Get the key (e.g., 'default')
-
-              if (theme[category]?.[key]) {
-                resolvedValue = parseColorValue(
-                  theme[category][key].value,
-                  brandColors,
-                );
-              } else {
-                console.error('Invalid reference:', resolvedValue);
-              }
-            }
-            // This is where we can catch the issue. The value should be a hex value, but if it's not then it's likely referencing to an object that is within the json
-            compiledColors[themeName][colorName][shade] = {
-              ...details,
-              value: resolvedValue,
-              description:
-                description +
-                (value === resolvedValue ? '' : ` (was ${value})`),
+          if (colorValues.value) {
+            compiledColors[themeName][colorName] = {
+              ...colorValues,
+              value: colorValues.value,
+              description: colorValues.description,
             };
-          });
+          } else {
+            Object.entries(colorValues).forEach(([shade, details]) => {
+              const { value, description } = details;
+              let resolvedValue = parseColorValue(value, brandColors);
+              if (!isHexColor(resolvedValue)) {
+                const cleanResolvedValue = resolvedValue
+                  .slice(1, -1)
+                  .split('.'); // Split the reference into parts
+                const category = cleanResolvedValue[0]; // Get the category (e.g., 'text')
+                const key = cleanResolvedValue[1]; // Get the key (e.g., 'default')
+
+                if (theme[category]?.[key]) {
+                  resolvedValue = parseColorValue(
+                    theme[category][key].value,
+                    brandColors,
+                  );
+                } else {
+                  console.error('Invalid reference:', resolvedValue);
+                }
+              }
+
+              compiledColors[themeName][colorName][shade] = {
+                ...details,
+                value: resolvedValue,
+                description:
+                  description +
+                  (value === resolvedValue ? '' : ` (was ${value})`),
+              };
+            });
+          }
         });
       });
+
       return compiledColors;
     };
 
     // Compile all color themes into a single object and update the state
     const allColors = compileColors({
       brandColor: { ...brandColors },
-      lightTheme: figmaLightTheme,
-      darkTheme: figmaDarkTheme,
+      lightTheme: useEvolutionColors
+        ? figmaLightThemeBrandEvolution
+        : figmaLightTheme,
+      darkTheme: useEvolutionColors
+        ? figmaDarkThemeBrandEvolution
+        : figmaDarkTheme,
     });
     setColors(allColors);
   }, [useEvolutionColors]); // Add useEvolutionColors to dependency array to re-run effect when it changes

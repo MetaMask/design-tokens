@@ -1,2 +1,2 @@
-export { brandColorBrandEvolution } from './brandColorBrandEvolution';
+export { brandColorBrandEvolution as brandColor } from './brandColorBrandEvolution';
 export type { BrandColorBrandEvolution } from './brandColorBrandEvolution.types';

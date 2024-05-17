@@ -152,3 +152,35 @@ export const JSDarkTheme = {
     );
   },
 };
+
+export const JSLightThemeBrandEvolution = {
+  render: () => {
+    const { lightTheme } = useJsonColor(true);
+    if (!lightTheme) {
+      return null; // or some fallback component
+    }
+    return <ColorSwatchGroup swatchData={lightTheme} />;
+  },
+};
+export const JSDarkThemeBrandEvolution = {
+  render: () => {
+    const { darkTheme } = useJsonColor(true);
+    if (!darkTheme) {
+      return null; // or some fallback component
+    }
+    return (
+      <div
+        style={{
+          backgroundColor: darkTheme?.background?.default?.value,
+          margin: '-1rem',
+          padding: '1rem',
+        }}
+      >
+        <ColorSwatchGroup
+          theme={darkTheme?.background?.default?.value as string}
+          swatchData={darkTheme}
+        />
+      </div>
+    );
+  },
+};
