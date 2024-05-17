@@ -7,6 +7,10 @@ interface ColorSwatchGroupProps {
    * The color object
    */
   swatchData: Theme;
+  /**
+   * The color of text background that contains the name of the color defaults to background.default
+   */
+  textBackgroundColor?: string;
   /** Hex code value of the theme (light or dark mode) this is used to help determine the text color of each swatch when opacity is involved
    * Default is light theme #ffffff
    */
@@ -25,6 +29,7 @@ function toCamelCase(str: string) {
 
 export const ColorSwatchGroup: React.FC<ColorSwatchGroupProps> = ({
   swatchData,
+  textBackgroundColor = 'transparent',
   theme = '#ffffff',
 }) => {
   if (!swatchData) {
@@ -97,6 +102,7 @@ export const ColorSwatchGroup: React.FC<ColorSwatchGroupProps> = ({
                   color={value}
                   name={`${category}`}
                   textColor={getContrastYIQ(value, theme)}
+                  {...{ textBackgroundColor }}
                 />
                 {description && (
                   <p style={{ lineHeight: 1.3 }}>{description}</p>
