@@ -1,5 +1,5 @@
-import * as brandColors from '../../../figma/brandColors.json';
-import * as darkTheme from '../../../figma/darkTheme.json';
+import * as brandColors from '../../../figma/brandColorsBrandEvolution.json';
+import * as darkTheme from '../../../figma/darkThemeBrandEvolution.json';
 import { colors as definedColors } from './colors';
 
 type ColorDetails = {
