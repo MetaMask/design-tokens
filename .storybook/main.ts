@@ -9,6 +9,7 @@ const config: StorybookConfig = {
     // All other stories here
     '../**/*.stories.@(js|jsx|mjs|ts|tsx)',
   ],
+
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
@@ -25,12 +26,16 @@ const config: StorybookConfig = {
       },
     },
   ],
+
   framework: {
     name: '@storybook/react-vite',
     options: {},
   },
-  docs: {
-    autodocs: true,
+
+  typescript: {
+    reactDocgen: 'react-docgen-typescript',
   },
+
+  docs: {}
 };
 export default config;
