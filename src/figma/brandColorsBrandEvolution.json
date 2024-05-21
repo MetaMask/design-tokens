@@ -610,13 +610,13 @@
     }
   },
   "white": {
-    "value": "{grey.000}",
+    "value": "#ffffff",
     "type": "color",
     "parent": "Brand Colors/v2- brand evo (preview)",
     "description": ""
   },
   "black": {
-    "value": "{grey.1000}",
+    "value": "#000000",
     "type": "color",
     "parent": "Brand Colors/v2- brand evo (preview)",
     "description": ""

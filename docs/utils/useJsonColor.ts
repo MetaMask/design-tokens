@@ -1,14 +1,17 @@
 import { useEffect, useState } from 'react';
 
 import figmaBrandColors from '../../src/figma/brandColors.json';
+import figmaBrandColorsBrandEvolution from '../../src/figma/brandColorsBrandEvolution.json';
 import figmaDarkTheme from '../../src/figma/darkTheme.json';
+import figmaDarkThemeBrandEvolution from '../../src/figma/darkThemeBrandEvolution.json';
 import figmaLightTheme from '../../src/figma/lightTheme.json';
+import figmaLightThemeBrandEvolution from '../../src/figma/lightThemeBrandEvolution.json';
 
 export type ColorDetails = {
   value: string; // Hex value or alias to another color
-  type: string; // Type usually color
-  parent: string; // Parent category or group of the color
-  description: string; // Description or notes about the color
+  type?: string; // Type usually color
+  parent?: string; // Parent category or group of the color
+  description?: string; // Description or notes about the color
 };
 
 export type ColorPalette = {
@@ -23,24 +26,25 @@ type CompiledColors = {
   [themeName: string]: Theme;
 };
 
+const isHexColor = (value: string) =>
+  /^#[0-9A-F]{6}$/iu.test(value) || /^#[0-9A-F]{8}$/iu.test(value);
+
 /**
  * Custom hook for compiling color themes from Figma JSON definitions.
  * Merges brand, light, and dark theme color settings into a single object.
  *
+ * @param useEvolutionColors - Prop to use the brand evolution colors instead of the default brand colors.
  * @returns Object containing compiled color themes.
  */
-export const useJsonColor = (): CompiledColors => {
+export const useJsonColor = (useEvolutionColors = false): CompiledColors => {
   const [colors, setColors] = useState<CompiledColors>({});
 
   useEffect(() => {
-    /**
-     * Parses a referenced color value and resolves it based on the current theme.
-     * If the value is a reference (enclosed in curly braces), it navigates through the theme object.
-     *
-     * @param value - The color value or reference to resolve.
-     * @param theme - The theme object to resolve references against.
-     * @returns The resolved color value.
-     */
+    // Choose the correct brand colors based on the flag
+    const brandColors = useEvolutionColors
+      ? figmaBrandColorsBrandEvolution
+      : figmaBrandColors;
+
     const parseColorValue = (value: string, theme: Theme): string => {
       if (value.startsWith('{') && value.endsWith('}')) {
         const path = value.slice(1, -1).split('.');
@@ -56,13 +60,6 @@ export const useJsonColor = (): CompiledColors => {
       return value; // Return the direct value if not a reference.
     };
 
-    /**
-     * Compiles color themes from provided JSON theme definitions.
-     * Each color value is checked and potentially resolved using parseColorValue.
-     *
-     * @param themes - Object containing various theme definitions.
-     * @returns Object containing compiled and resolved themes.
-     */
     const compileColors = (themes: {
       [key: string]: Theme;
     }): CompiledColors => {
@@ -71,29 +68,60 @@ export const useJsonColor = (): CompiledColors => {
         compiledColors[themeName] = {};
         Object.entries(theme).forEach(([colorName, colorValues]) => {
           compiledColors[themeName][colorName] = {};
-          Object.entries(colorValues).forEach(([shade, details]) => {
-            const { value, description } = details;
-            const resolvedValue = parseColorValue(value, figmaBrandColors);
-            compiledColors[themeName][colorName][shade] = {
-              ...details,
-              value: resolvedValue,
-              description:
-                description + (value === resolvedValue ? '' : ` ${value}`),
+          if (colorValues.value) {
+            compiledColors[themeName][colorName] = {
+              ...colorValues,
+              value: colorValues.value,
+              description: colorValues.description,
             };
-          });
+          } else {
+            Object.entries(colorValues).forEach(([shade, details]) => {
+              const { value, description } = details;
+              let resolvedValue = parseColorValue(value, brandColors);
+              if (!isHexColor(resolvedValue)) {
+                const cleanResolvedValue = resolvedValue
+                  .slice(1, -1)
+                  .split('.'); // Split the reference into parts
+                const category = cleanResolvedValue[0]; // Get the category (e.g., 'text')
+                const key = cleanResolvedValue[1]; // Get the key (e.g., 'default')
+
+                if (theme[category]?.[key]) {
+                  resolvedValue = parseColorValue(
+                    theme[category][key].value,
+                    brandColors,
+                  );
+                } else {
+                  console.error('Invalid reference:', resolvedValue);
+                }
+              }
+
+              compiledColors[themeName][colorName][shade] = {
+                ...details,
+                value: resolvedValue,
+                description:
+                  (description ?? '') +
+                  (value === resolvedValue ? '' : ` (was ${value})`),
+              };
+            });
+          }
         });
       });
+
       return compiledColors;
     };
 
     // Compile all color themes into a single object and update the state
     const allColors = compileColors({
-      brandColor: { ...figmaBrandColors },
-      lightTheme: figmaLightTheme,
-      darkTheme: figmaDarkTheme,
+      brandColor: { ...brandColors },
+      lightTheme: useEvolutionColors
+        ? figmaLightThemeBrandEvolution
+        : figmaLightTheme,
+      darkTheme: useEvolutionColors
+        ? figmaDarkThemeBrandEvolution
+        : figmaDarkTheme,
     });
     setColors(allColors);
-  }, []);
+  }, [useEvolutionColors]); // Add useEvolutionColors to dependency array to re-run effect when it changes
 
   return colors;
 };

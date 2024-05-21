@@ -1,5 +1,5 @@
-import * as brandColors from '../../../figma/brandColors.json';
-import * as darkTheme from '../../../figma/darkTheme.json';
+import * as brandColors from '../../../figma/brandColorsBrandEvolution.json';
+import * as lightTheme from '../../../figma/lightThemeBrandEvolution.json';
 import { colors as definedColors } from './colors';
 
 type ColorDetails = {
@@ -38,7 +38,7 @@ function resolveColorReferences(
 }
 
 describe('Theme Color Resolution', () => {
-  const clonedTheme = JSON.parse(JSON.stringify(darkTheme)) as {
+  const clonedTheme = JSON.parse(JSON.stringify(lightTheme)) as {
     [key: string]: { [key: string]: ColorDetails };
   };
   resolveColorReferences(clonedTheme, brandColors, clonedTheme);

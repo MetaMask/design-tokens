@@ -41,7 +41,7 @@ export type BrandColor = {
   blue700: string;
   /** blue/blue800: #01253f */
   blue800: string;
-  /** blue/blue900: {blue.blue900} */
+  /** blue/blue900: #00080d */
   blue900: string;
   /** blue/blue050: #eaf6ff */
   blue050: string;
@@ -137,13 +137,13 @@ export type BrandColor = {
   orange025: string;
   /** purple/purple100: #efd2ff */
   purple100: string;
-  /** purple/purple200: {violet.violet300} */
+  /** purple/purple200: #cfb5f0 */
   purple200: string;
   /** purple/purple300: #d27dff */
   purple300: string;
   /** purple/purple400: #b864f5 */
   purple400: string;
-  /** purple/purple500: {purple.purple500} */
+  /** purple/purple500: #8b45b6 */
   purple500: string;
   /** purple/purple600: #6c2ab2 */
   purple600: string;
