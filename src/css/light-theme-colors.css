@@ -5,7 +5,7 @@
  */
 
 :root,
- [data-theme='light'] {
+[data-theme='light'] {
   /* 
   * Background
   */
@@ -42,7 +42,7 @@
   /* For default neutral icons */
   --color-icon-default: var(--color-text-default);
   /* For softer neutral icons */
-  --color-icon-alternative: var(--text-alternative);
+  --color-icon-alternative: var(--color-text-alternative);
   /* For the weakest contrast neutral icons (not accessible) */
   --color-icon-muted: var(--color-text-muted);
 
