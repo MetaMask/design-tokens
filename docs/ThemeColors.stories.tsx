@@ -43,9 +43,7 @@ export const FigmaDarkTheme = {
       >
         <ColorSwatchGroup
           swatchData={darkTheme}
-          borderColor={darkTheme.border.muted.value}
-          textBackgroundColor={darkTheme.background.default.value}
-          textColor={darkTheme.text.default.value}
+          theme={darkTheme.background.default.value}
         />
       </div>
     );
