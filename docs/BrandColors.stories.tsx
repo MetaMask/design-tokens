@@ -1,9 +1,9 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
+import { brandColor as brandColorJS } from '../src/js/brandColor';
 import { getCSSVariablesFromStylesheet, useJsonColor } from './utils';
 import { ColorSwatchGroup, ColorSwatch } from './components';
 import README from './BrandColors.mdx';
-import { brandColor } from '../src/js/brandColor';
 
 const meta: Meta<typeof ColorSwatchGroup> = {
   title: 'Colors/Brand Colors',
@@ -46,7 +46,7 @@ export const CSS: Story = {
   },
 };
 
-export const JS = {
+export const JS: Story = {
   render: () => (
     <div
       style={{
@@ -56,7 +56,7 @@ export const JS = {
       }}
     >
       {/* Mapping through each brand color and rendering a ColorSwatch component for it */}
-      {Object.entries(brandColor).map(([name, color]) => (
+      {Object.entries(brandColorJS).map(([name, color]) => (
         <ColorSwatch key={name} color={color} name={`brandColor.${name}`} />
       ))}
     </div>
