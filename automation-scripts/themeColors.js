@@ -31,7 +31,7 @@ async function generateThemeFiles(inputFilePath, colorsOutputFilePath) {
             (_, p1, p2, p3) => {
               // Replace "-" with "_" and remove "%" for percentage-based modifiers
               return `brandColor.${p1}${p2}${
-                p3 ? p3.replace('-', '_').replace('%', '') : ''
+                p3 ? p3.replace(/-/g, '_').replace(/%/g, '') : ''
               }`;
             },
           );
