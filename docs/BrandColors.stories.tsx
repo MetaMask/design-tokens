@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { getCSSVariablesFromStylesheet, useJsonColor } from './utils';
 import { ColorSwatchGroup, ColorSwatch } from './components';
 import README from './BrandColors.mdx';
-import { brandColor } from '../src/js/brandColorBrandEvolution';
+import { brandColor } from '../src/js/brandColor';
 
 const meta: Meta<typeof ColorSwatchGroup> = {
   title: 'Colors/Brand Colors',

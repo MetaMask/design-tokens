@@ -1,11 +1,8 @@
 import { useEffect, useState } from 'react';
 
 import figmaBrandColors from '../../src/figma/brandColors.json';
-import figmaBrandColorsBrandEvolution from '../../src/figma/brandColorsBrandEvolution.json';
 import figmaDarkTheme from '../../src/figma/darkTheme.json';
-import figmaDarkThemeBrandEvolution from '../../src/figma/darkThemeBrandEvolution.json';
 import figmaLightTheme from '../../src/figma/lightTheme.json';
-import figmaLightThemeBrandEvolution from '../../src/figma/lightThemeBrandEvolution.json';
 
 export type ColorDetails = {
   value: string; // Hex value or alias to another color
@@ -32,18 +29,14 @@ const isHexColor = (value: string) =>
 /**
  * Custom hook for compiling color themes from Figma JSON definitions.
  * Merges brand, light, and dark theme color settings into a single object.
- *
- * @param useEvolutionColors - Prop to use the brand evolution colors instead of the default brand colors.
  * @returns Object containing compiled color themes.
  */
-export const useJsonColor = (useEvolutionColors = false): CompiledColors => {
+export const useJsonColor = (): CompiledColors => {
   const [colors, setColors] = useState<CompiledColors>({});
 
   useEffect(() => {
     // Choose the correct brand colors based on the flag
-    const brandColors = useEvolutionColors
-      ? figmaBrandColorsBrandEvolution
-      : figmaBrandColors;
+    const brandColors = figmaBrandColors;
 
     const parseColorValue = (value: string, theme: Theme): string => {
       if (value.startsWith('{') && value.endsWith('}')) {
@@ -113,15 +106,11 @@ export const useJsonColor = (useEvolutionColors = false): CompiledColors => {
     // Compile all color themes into a single object and update the state
     const allColors = compileColors({
       brandColor: { ...brandColors },
-      lightTheme: useEvolutionColors
-        ? figmaLightThemeBrandEvolution
-        : figmaLightTheme,
-      darkTheme: useEvolutionColors
-        ? figmaDarkThemeBrandEvolution
-        : figmaDarkTheme,
+      lightTheme: figmaLightTheme,
+      darkTheme: figmaDarkTheme,
     });
     setColors(allColors);
-  }, [useEvolutionColors]); // Add useEvolutionColors to dependency array to re-run effect when it changes
+  });
 
   return colors;
 };

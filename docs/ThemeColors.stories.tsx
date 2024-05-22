@@ -1,10 +1,10 @@
 import React from 'react';
+
 import brandColor from '../src/figma/brandColors.json';
-import { lightTheme, darkTheme } from '../src/js/themes';
 import {
-  lightTheme as lightThemeBrandEvolution,
-  darkTheme as darkThemeBrandEvolution,
-} from '../src/js/themesBrandEvolution';
+  lightTheme as lightThemeJS,
+  darkTheme as darkThemeJS,
+} from '../src/js/themes';
 import { ColorSwatch, ColorSwatchGroup } from './components';
 import README from './ThemeColors.mdx';
 import { getCSSVariablesFromStylesheet, useJsonColor } from './utils';
@@ -81,31 +81,26 @@ export const CSSDarkTheme = {
     return (
       <div
         style={{
+          display: 'grid',
+          gap: '16px',
+          gridTemplateColumns: 'repeat(auto-fill, 300px)',
           backgroundColor: 'var(--color-background-default)',
           margin: '-1rem',
           padding: '1rem',
         }}
       >
-        <div
-          style={{
-            display: 'grid',
-            gap: '16px',
-            gridTemplateColumns: 'repeat(auto-fill, 300px)',
-          }}
-        >
-          {Object.entries(darkThemeColors).map(
-            ([name, { color, name: colorName }]) => (
-              <ColorSwatch
-                key={name}
-                color={color}
-                name={colorName}
-                borderColor="var(--color-border-muted)"
-                textBackgroundColor="var(--color-background-default)"
-                textColor="var(--color-text-default)"
-              />
-            ),
-          )}
-        </div>
+        {Object.entries(darkThemeColors).map(
+          ([name, { color, name: colorName }]) => (
+            <ColorSwatch
+              key={name}
+              color={color}
+              name={colorName}
+              borderColor="var(--color-border-muted)"
+              textBackgroundColor="var(--color-background-default)"
+              textColor="var(--color-text-default)"
+            />
+          ),
+        )}
       </div>
     );
   },
@@ -133,10 +128,11 @@ export const JSLightTheme = {
         display: 'grid',
         gap: '16px',
         gridTemplateColumns: 'repeat(auto-fill, 300px)',
-        padding: '16px',
+        margin: '-1rem',
+        padding: '1rem',
       }}
     >
-      {Object.entries(lightTheme.colors).flatMap(([category, colorObj]) =>
+      {Object.entries(lightThemeJS.colors).flatMap(([category, colorObj]) =>
         Object.entries(colorObj).map(([name, color]) => (
           <ColorSwatch
             key={`${category}-${name}`}
@@ -148,6 +144,7 @@ export const JSLightTheme = {
     </div>
   ),
 };
+
 export const JSDarkTheme = {
   render: () => (
     <div
@@ -155,11 +152,12 @@ export const JSDarkTheme = {
         display: 'grid',
         gap: '16px',
         gridTemplateColumns: 'repeat(auto-fill, 300px)',
-        padding: '16px',
-        backgroundColor: darkTheme.colors.background.default,
+        backgroundColor: darkThemeJS.colors.background.default,
+        margin: '-1rem',
+        padding: '1rem',
       }}
     >
-      {Object.entries(darkTheme.colors).flatMap(([category, colorObj]) =>
+      {Object.entries(darkThemeJS.colors).flatMap(([category, colorObj]) =>
         Object.entries(colorObj).map(([name, color]) => (
           <ColorSwatch
             key={`${category}-${name}`}
@@ -167,55 +165,6 @@ export const JSDarkTheme = {
             name={`color.${category}.${name}`}
           />
         )),
-      )}
-    </div>
-  ),
-};
-
-export const JSLightThemeBrandEvolution = {
-  render: () => (
-    <div
-      style={{
-        display: 'grid',
-        gap: '16px',
-        gridTemplateColumns: 'repeat(auto-fill, 300px)',
-        padding: '16px',
-      }}
-    >
-      {Object.entries(lightThemeBrandEvolution.colors).flatMap(
-        ([category, colorObj]) =>
-          Object.entries(colorObj).map(([name, color]) => (
-            <ColorSwatch
-              key={`${category}-${name}`}
-              color={color}
-              name={`color.${category}.${name}`}
-            />
-          )),
-      )}
-    </div>
-  ),
-};
-
-export const JSDarkThemeBrandEvolution = {
-  render: () => (
-    <div
-      style={{
-        display: 'grid',
-        gap: '16px',
-        gridTemplateColumns: 'repeat(auto-fill, 300px)',
-        padding: '16px',
-        backgroundColor: darkThemeBrandEvolution.colors.background.default,
-      }}
-    >
-      {Object.entries(darkThemeBrandEvolution.colors).flatMap(
-        ([category, colorObj]) =>
-          Object.entries(colorObj).map(([name, color]) => (
-            <ColorSwatch
-              key={`${category}-${name}`}
-              color={color}
-              name={`color.${category}.${name}`}
-            />
-          )),
       )}
     </div>
   ),

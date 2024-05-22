@@ -5,7 +5,7 @@ const designTokens = require('../../../figma/tokens.json');
 
 describe('Dark Theme', () => {
   it('color tokens are exported from darkTheme by checking first color token', () => {
-    expect(darkTheme.colors.background.default).toBe('#24272a');
+    expect(darkTheme.colors.background.default).toBe('#222325');
   });
 
   it('typography tokens are exported from darkTheme by checking first typography token', () => {
