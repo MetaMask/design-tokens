@@ -1,10 +1,7 @@
 import React from 'react';
 
+import { lightTheme as lightThemeJS, darkTheme as darkThemeJS } from '../src';
 import brandColor from '../src/figma/brandColors.json';
-import {
-  lightTheme as lightThemeJS,
-  darkTheme as darkThemeJS,
-} from '../src/js/themes';
 import { ColorSwatch, ColorSwatchGroup } from './components';
 import README from './ThemeColors.mdx';
 import { getCSSVariablesFromStylesheet, useJsonColor } from './utils';

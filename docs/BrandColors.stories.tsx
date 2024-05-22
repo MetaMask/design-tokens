@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-import { brandColor as brandColorJS } from '../src/js/brandColor';
+import { brandColor as brandColorJS } from '../src/js';
 import { getCSSVariablesFromStylesheet, useJsonColor } from './utils';
 import { ColorSwatchGroup, ColorSwatch } from './components';
 import README from './BrandColors.mdx';
