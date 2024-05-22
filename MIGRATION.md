@@ -35,41 +35,95 @@ This new path points to the `dist` directory, ensuring that you're importing the
 
 ### Brand Colors
 
-### Brand Colors Brand Evolution
+- Grey updates
+- grey000 added
+- grey025 added
+- grey050 added
+- grey030 removed
+- grey040 removed
+- grey750 removed
+- grey1000 added
 
 - Blue updates
-- blue000 no longer exist
+- blue000 removed
 - blue025 added
-- blue 050 added
-
-- Orange updates
-- orange000 no longer exist
-- orange 025 added
-- orange 050 added
+- blue050 added
+- blue400-15 added
+- blue500-10 added
 
 - Green updates
-- green000 no longer exist
+- green000 removed
 - green025 added
-- green 050 added
+- green050 added
+- green400-15 added
+- green500-10 added
 
 - Red updates
-- red000 no longer exist
+- red000 removed
 - red025 added
 - red050 added
+- red400-15 added
+- red500-10 added
 
 - Yellow updates
-- yellow000 no longer exist
+- yellow000 removed
 - yellow025 added
 - yellow050 added
+- yellow100-15 added
+- yellow400-15 added
+- yellow500-10 added
 - yellow700 added
 - yellow800 added
 - yellow900 added
 
-- Violet no longer exist
+- Orange updates
+- orange000 removed
+- orange025 added
+- orange050 added
+
+- Violet removed
 
 - Purple added
 
 - Lime added
+
+- White and black updates
+- white000 renamed to white
+- white010 removed
+- black000 renamed to black
+
+### Brand Colors Brand Evolution
+
+- Blue updates
+- blue300-15 added
+- blue400-15 removed
+
+- Green updates
+- green300-15 added
+- green400-15 removed
+
+- Red updates
+- red300-15 added
+- red400-15 removed
+
+### Themed Colors
+
+- overlay-inverse removed
+- primary-shadow removed
+- primary-disabled removed
+- secondary colors removed
+- error-shadow removed
+- error-disabled removed
+- warning-alternative removed
+- warning-disabled removed
+- success-alternative removed
+- success-disabled removed
+- info-alternative removed
+- info-disabled removed
+- network colors removed
+- shadow-primary added
+- shadow-error added
+- button colors removed
 
 ## Step-by-step Migration Process
 
