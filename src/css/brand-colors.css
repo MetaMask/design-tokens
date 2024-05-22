@@ -20,7 +20,7 @@
   --brand-colors-grey-grey800: #24272a;
   --brand-colors-grey-grey900: #141618;
   --brand-colors-grey-grey1000: #000000;
-  /* Blue */
+  /* Blue - primary/info */
   --brand-colors-blue-blue025: #eaf6ff;
   --brand-colors-blue-blue050: #eaf6ff;
   --brand-colors-blue-blue100: #a7d9fe;
@@ -34,7 +34,7 @@
   --brand-colors-blue-blue700: #024272;
   --brand-colors-blue-blue800: #01253f;
   --brand-colors-blue-blue900: #00080d;
-  /* Green */
+  /* Green - success */
   --brand-colors-green-green025: #f3fcf5;
   --brand-colors-green-green050: #d6ffdf;
   --brand-colors-green-green100: #afecbd;
@@ -48,7 +48,7 @@
   --brand-colors-green-green700: #145523;
   --brand-colors-green-green800: #0a2c12;
   --brand-colors-green-green900: #041007;
-  /* Red */
+  /* Red - error */
   --brand-colors-red-red025: #fcf2f3;
   --brand-colors-red-red050: #fcf2f3;
   --brand-colors-red-red100: #f7d5d8;
@@ -62,7 +62,7 @@
   --brand-colors-red-red700: #64141c;
   --brand-colors-red-red800: #3a0c10;
   --brand-colors-red-red900: #3a0c10;
-  /* Yellow */
+  /* Yellow - warning */
   --brand-colors-yellow-yellow025: #fefcde;
   --brand-colors-yellow-yellow050: #fff2c5;
   --brand-colors-yellow-yellow100: #ffdf70;
@@ -77,7 +77,7 @@
   --brand-colors-yellow-yellow700: #632b04;
   --brand-colors-yellow-yellow800: #321602;
   --brand-colors-yellow-yellow900: #321602;
-  /* Orange */
+  /* Orange - brand */
   --brand-colors-orange-orange025: #fef5ef;
   --brand-colors-orange-orange050: #fde2cf;
   --brand-colors-orange-orange100: #fbc49d;
@@ -89,7 +89,7 @@
   --brand-colors-orange-orange700: #632b04;
   --brand-colors-orange-orange800: #321602;
   --brand-colors-orange-orange900: #321602;
-  /* Purple */
+  /* Purple - brand */
   --brand-colors-purple-purple025: #fcf6ff;
   --brand-colors-purple-purple050: #fbf2ff;
   --brand-colors-purple-purple100: #efd2ff;
@@ -101,7 +101,7 @@
   --brand-colors-purple-purple700: #4c1178;
   --brand-colors-purple-purple800: #32054d;
   --brand-colors-purple-purple900: #280a00;
-  /* Lime */
+  /* Lime - brand */
   --brand-colors-lime-lime025: #effed9;
   --brand-colors-lime-lime050: #e3febd;
   --brand-colors-lime-lime100: #b8ef4a;

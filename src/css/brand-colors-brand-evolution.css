@@ -20,7 +20,7 @@
   --brand-colors-grey-grey800: #222325;
   --brand-colors-grey-grey900: #121314;
   --brand-colors-grey-grey1000: #000000;
-  /* Blue */
+  /* Blue - primary/info */
   --brand-colors-blue-blue025: #f8f9ff;
   --brand-colors-blue-blue050: #f4f5ff;
   --brand-colors-blue-blue100: #d6dbff;
@@ -34,7 +34,7 @@
   --brand-colors-blue-blue700: #1c277f;
   --brand-colors-blue-blue800: #131b59;
   --brand-colors-blue-blue900: #0b0f32;
-  /* Green */
+  /* Green - success */
   --brand-colors-green-green025: #f1faf4;
   --brand-colors-green-green050: #ebf7ee;
   --brand-colors-green-green100: #c1e6c9;
@@ -48,7 +48,7 @@
   --brand-colors-green-green700: #0d3b18;
   --brand-colors-green-green800: #092912;
   --brand-colors-green-green900: #051709;
-  /* Red */
+  /* Red - error */
   --brand-colors-red-red025: #fff6f7;
   --brand-colors-red-red050: #fff2f3;
   --brand-colors-red-red100: #ffd2d5;
@@ -62,7 +62,7 @@
   --brand-colors-red-red700: #611a20;
   --brand-colors-red-red800: #431216;
   --brand-colors-red-red900: #3b0f13;
-  /* Yellow */
+  /* Yellow - warning */
   --brand-colors-yellow-yellow025: #fff9e6;
   --brand-colors-yellow-yellow050: #fff5d5;
   --brand-colors-yellow-yellow100: #ffd957;
@@ -77,7 +77,7 @@
   --brand-colors-yellow-yellow700: #482d01;
   --brand-colors-yellow-yellow800: #321f00;
   --brand-colors-yellow-yellow900: #1c1100;
-  /* Orange */
+  /* Orange - brand */
   --brand-colors-orange-orange025: #fff8f5;
   --brand-colors-orange-orange050: #fff0ea;
   --brand-colors-orange-orange100: #ffd4c1;
@@ -89,7 +89,7 @@
   --brand-colors-orange-orange700: #631800;
   --brand-colors-orange-orange800: #451100;
   --brand-colors-orange-orange900: #280a00;
-  /* Purple */
+  /* Purple - brand */
   --brand-colors-purple-purple025: #fcf6ff;
   --brand-colors-purple-purple050: #fbf2ff;
   --brand-colors-purple-purple100: #efd2ff;
@@ -101,6 +101,18 @@
   --brand-colors-purple-purple700: #6c2ab2;
   --brand-colors-purple-purple800: #380658;
   --brand-colors-purple-purple900: #280a00;
+  /* Lime - brand */
+  --brand-colors-lime-lime025: #effed9;
+  --brand-colors-lime-lime050: #e3febd;
+  --brand-colors-lime-lime100: #b8ef4a;
+  --brand-colors-lime-lime200: #95ca45;
+  --brand-colors-lime-lime300: #7ab040;
+  --brand-colors-lime-lime400: #64993d;
+  --brand-colors-lime-lime500: #457a39;
+  --brand-colors-lime-lime600: #275b35;
+  --brand-colors-lime-lime700: #093a31;
+  --brand-colors-lime-lime800: #022321;
+  --brand-colors-lime-lime900: #011515;
   /* White */
   --brand-colors-white: #ffffff;
   /* Black */
