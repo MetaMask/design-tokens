@@ -110,7 +110,7 @@ export const useJsonColor = (): CompiledColors => {
       darkTheme: figmaDarkTheme,
     });
     setColors(allColors);
-  });
+  }, []);
 
   return colors;
 };
