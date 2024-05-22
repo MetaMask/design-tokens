@@ -4,8 +4,7 @@
  * This will insure theme compatibility
  */
 
-:root,
- [data-theme='dark'] {
+[data-theme='dark'] {
   /* 
   * Background
   */
