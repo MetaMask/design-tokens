@@ -1,6 +1,6 @@
-import type { BrandColorBrandEvolution } from './brandColorBrandEvolution.types';
+import type { BrandColor } from './brandColor.types';
 
-export const brandColorBrandEvolution: BrandColorBrandEvolution = {
+export const brandColor: BrandColor = {
   // Grey
   grey000: '#ffffff',
   grey025: '#f7f9fc',

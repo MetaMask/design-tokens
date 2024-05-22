@@ -1,4 +1,4 @@
-export type BrandColorBrandEvolution = {
+export type BrandColor = {
   /** grey/grey100: #dadce5 */
   grey100: string;
   /** grey/grey200: #b7bbc8 */
