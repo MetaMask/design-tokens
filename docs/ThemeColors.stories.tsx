@@ -22,6 +22,7 @@ export const FigmaLightTheme = {
     if (!lightTheme) {
       return null; // or some fallback component
     }
+    console.log('lightTheme', lightTheme);
     return <ColorSwatchGroup swatchData={lightTheme} />;
   },
 };
@@ -29,6 +30,7 @@ export const FigmaLightTheme = {
 export const FigmaDarkTheme = {
   render: () => {
     const { darkTheme } = useJsonColor();
+    console.log('darkTheme', darkTheme);
     if (!darkTheme) {
       return null; // or some fallback component
     }
@@ -39,7 +41,12 @@ export const FigmaDarkTheme = {
           padding: '1rem',
         }}
       >
-        <ColorSwatchGroup swatchData={darkTheme} theme="#24272a" />
+        <ColorSwatchGroup
+          swatchData={darkTheme}
+          borderColor={darkTheme.border.muted.value}
+          textBackgroundColor={darkTheme.background.default.value}
+          textColor={darkTheme.text.default.value}
+        />
       </div>
     );
   },
@@ -78,26 +85,31 @@ export const CSSDarkTheme = {
     return (
       <div
         style={{
-          display: 'grid',
-          gap: '16px',
-          gridTemplateColumns: 'repeat(auto-fill, 300px)',
           backgroundColor: 'var(--color-background-default)',
           margin: '-1rem',
           padding: '1rem',
         }}
       >
-        {Object.entries(darkThemeColors).map(
-          ([name, { color, name: colorName }]) => (
-            <ColorSwatch
-              key={name}
-              color={color}
-              name={colorName}
-              borderColor="var(--color-border-muted)"
-              textBackgroundColor="var(--color-background-default)"
-              textColor="var(--color-text-default)"
-            />
-          ),
-        )}
+        <div
+          style={{
+            display: 'grid',
+            gap: '16px',
+            gridTemplateColumns: 'repeat(auto-fill, 300px)',
+          }}
+        >
+          {Object.entries(darkThemeColors).map(
+            ([name, { color, name: colorName }]) => (
+              <ColorSwatch
+                key={name}
+                color={color}
+                name={colorName}
+                borderColor="var(--color-border-muted)"
+                textBackgroundColor="var(--color-background-default)"
+                textColor="var(--color-text-default)"
+              />
+            ),
+          )}
+        </div>
       </div>
     );
   },
@@ -125,8 +137,6 @@ export const JSLightTheme = {
         display: 'grid',
         gap: '16px',
         gridTemplateColumns: 'repeat(auto-fill, 300px)',
-        margin: '-1rem',
-        padding: '1rem',
       }}
     >
       {Object.entries(lightThemeJS.colors).flatMap(([category, colorObj]) =>
@@ -146,23 +156,37 @@ export const JSDarkTheme = {
   render: () => (
     <div
       style={{
-        display: 'grid',
-        gap: '16px',
-        gridTemplateColumns: 'repeat(auto-fill, 300px)',
         backgroundColor: darkThemeJS.colors.background.default,
         margin: '-1rem',
         padding: '1rem',
       }}
     >
-      {Object.entries(darkThemeJS.colors).flatMap(([category, colorObj]) =>
-        Object.entries(colorObj).map(([name, color]) => (
-          <ColorSwatch
-            key={`${category}-${name}`}
-            color={color}
-            name={`color.${category}.${name}`}
-          />
-        )),
-      )}
+      <div
+        style={{
+          display: 'grid',
+          gap: '16px',
+          gridTemplateColumns: 'repeat(auto-fill, 300px)',
+        }}
+      >
+        {Object.entries(darkThemeJS.colors).flatMap(([category, colorObj]) =>
+          Object.entries(colorObj).map(([name, color]) => (
+            <ColorSwatch
+              key={`${category}-${name}`}
+              color={color}
+              name={`color.${category}.${name}`}
+              borderColor={darkThemeJS.colors.border.muted}
+              textBackgroundColor={darkThemeJS.colors.background.default}
+              textColor={darkThemeJS.colors.text.default}
+            />
+          )),
+        )}
+      </div>
     </div>
   ),
+  parameters: {
+    backgrounds: {
+      default: 'dark',
+      values: [{ name: 'dark', value: darkThemeJS.colors.background.default }],
+    },
+  },
 };
