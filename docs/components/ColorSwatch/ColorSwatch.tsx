@@ -7,6 +7,10 @@ interface ColorSwatchProps {
    */
   color?: string;
   /**
+   * The background color of the swatch defaults to the color
+   */
+  backgroundColor?: string;
+  /**
    * The color of text background that contains the name of the color defaults to lightTheme.colors.background.default
    */
   textBackgroundColor?: string;
@@ -26,6 +30,7 @@ interface ColorSwatchProps {
 
 export const ColorSwatch: FunctionComponent<ColorSwatchProps> = ({
   color,
+  backgroundColor,
   borderColor = lightTheme.colors.border.muted,
   textBackgroundColor = lightTheme.colors.background.default,
   textColor = lightTheme.colors.text.default,
@@ -36,8 +41,8 @@ export const ColorSwatch: FunctionComponent<ColorSwatchProps> = ({
     <div
       style={{
         height: 120,
-        backgroundColor: color,
-        border: `1px solid ${borderColor}`,
+        backgroundColor: backgroundColor ? backgroundColor : color,
+        border: `2px solid ${borderColor}`,
         display: 'flex',
         flexDirection: 'column-reverse',
         borderRadius: '8px',
