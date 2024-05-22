@@ -4,7 +4,7 @@
  * This will insure theme compatibility
  */
 
- :root,
+:root,
  [data-theme='light'] {
    /* Background */
    --color-background-default: var(--brand-colors-grey-grey000);
