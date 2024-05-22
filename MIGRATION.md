@@ -34,6 +34,7 @@ This new path points to the `dist` directory, ensuring that you're importing the
 ## From version 3.0.0 to 4.0.0
 
 ### Brand Colors
+
 - Grey updates
 - grey000 added
 - grey025 added
@@ -92,6 +93,7 @@ This new path points to the `dist` directory, ensuring that you're importing the
 - black000 renamed to black
 
 ### Brand Colors Brand Evolution
+
 - Blue updates
 - blue300-15 added
 - blue400-15 removed
@@ -105,6 +107,7 @@ This new path points to the `dist` directory, ensuring that you're importing the
 - red400-15 removed
 
 ### Themed Colors
+
 - overlay-inverse removed
 - primary-shadow removed
 - primary-disabled removed
