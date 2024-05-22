@@ -71,7 +71,12 @@ export const CSSLightTheme = {
       >
         {Object.entries(lightThemeColors).map(
           ([name, { color, name: colorName }]) => (
-            <ColorSwatch key={name} color={color} name={colorName} />
+            <ColorSwatch
+              key={name}
+              color={color}
+              backgroundColor={colorName}
+              name={colorName}
+            />
           ),
         )}
       </div>
@@ -103,6 +108,7 @@ export const CSSDarkTheme = {
                 key={name}
                 color={color}
                 name={colorName}
+                backgroundColor={colorName}
                 borderColor="var(--color-border-muted)"
                 textBackgroundColor="var(--color-background-default)"
                 textColor="var(--color-text-default)"

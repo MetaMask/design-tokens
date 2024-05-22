@@ -39,7 +39,12 @@ export const CSS: Story = {
       >
         {/* Mapping through each brand color and rendering a ColorSwatch component for it */}
         {Object.values(cssBrandColors).map(({ color, name }) => (
-          <ColorSwatch key={name} color={color} name={name} />
+          <ColorSwatch
+            key={name}
+            color={color}
+            backgroundColor={name}
+            name={name}
+          />
         ))}
       </div>
     );
