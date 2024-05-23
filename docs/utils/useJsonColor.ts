@@ -16,30 +16,11 @@ export type ColorPalette = {
 };
 
 export type Theme = {
-  [colorName: string]: {
-    [shade: string]: {
-      value: string;
-      description: string;
-    };
-  };
+  [colorName: string]: ColorPalette;
 };
 
 type CompiledColors = {
-  [themeName: string]: {
-    [colorName: string]: {
-      [shade: string]: {
-        value: string;
-        description: string;
-      };
-    };
-  };
-};
-
-type Shade = {
-  [shade: string]: {
-    value: string;
-    description: string;
-  };
+  [themeName: string]: Theme;
 };
 
 /**
@@ -89,7 +70,7 @@ export const useJsonColor = (): CompiledColors => {
       Object.entries(themes).forEach(([themeName, theme]) => {
         const tempThemeColors: Theme = {};
         Object.entries(theme).forEach(([colorName, colorValues]) => {
-          const tempThemeColorShade: Shade = {};
+          const tempThemeColorPalette: ColorPalette = {};
           Object.entries(colorValues).forEach(([shade, details]) => {
             const { value, description } = details;
             const resolvedValue = parseColorValue(value, figmaBrandColors);
@@ -99,9 +80,9 @@ export const useJsonColor = (): CompiledColors => {
               description:
                 description + (value === resolvedValue ? '' : ` ${value}`),
             };
-            tempThemeColorShade[shade] = tempShadeColor;
+            tempThemeColorPalette[shade] = tempShadeColor;
           });
-          tempThemeColors[colorName] = tempThemeColorShade;
+          tempThemeColors[colorName] = tempThemeColorPalette;
         });
         compiledColors[themeName] = tempThemeColors;
       });
