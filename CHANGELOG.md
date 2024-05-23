@@ -7,6 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0]
+
+### Added
+
+- Enabled MetaMask security code scanner ([#635](https://github.com/MetaMask/design-tokens/pull/635)).
+- Added initial JSON generated from Figma ([#665](https://github.com/MetaMask/design-tokens/pull/665)).
+
+### Changed
+
+- Refactored color swatch component and CSS stories to use CSS variables instead of hex values ([#696](https://github.com/MetaMask/design-tokens/pull/696)).
+- Upgraded Storybook to 8.1.2 ([#690](https://github.com/MetaMask/design-tokens/pull/690)).
+- Updated README to add tooling section that links to eslint-plugin ([#689](https://github.com/MetaMask/design-tokens/pull/689)).
+- Cleaned JSON token names ([#679](https://github.com/MetaMask/design-tokens/pull/679)).
+- Refactored CSS and improved build to adhere to workspace conventions ([#676](https://github.com/MetaMask/design-tokens/pull/676)).
+- Upgraded Storybook to version 8 ([#674](https://github.com/MetaMask/design-tokens/pull/674)).
+- Added initial JSON generated from Figma variables ([#673](https://github.com/MetaMask/design-tokens/pull/673)).
+- Upgraded LavaMoat ([#670](https://github.com/MetaMask/design-tokens/pull/670)).
+- Aligned release docs with the latest standards ([#634](https://github.com/MetaMask/design-tokens/pull/634)).
+
+### Fixed
+
+- Fixed CSS theme variables doc display ([#672](https://github.com/MetaMask/design-tokens/pull/672)).
+- Fixed build to align with module template ([#667](https://github.com/MetaMask/design-tokens/pull/667)).
+
+### Security
+
+- Bumped `webpack-dev-middleware` from 6.1.1 to 6.1.2 ([#636](https://github.com/MetaMask/design-tokens/pull/636)).
+- Bumped `express` from 4.18.2 to 4.19.2 ([#638](https://github.com/MetaMask/design-tokens/pull/638)).
+- Bumped `tar` from 6.2.0 to 6.2.1 ([#652](https://github.com/MetaMask/design-tokens/pull/652)).
+
 ## [2.1.1]
 
 ### Changed
@@ -260,7 +290,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v2.1.1...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v3.0.0...HEAD
+[3.0.0]: https://github.com/MetaMask/design-tokens/compare/v2.1.1...v3.0.0
 [2.1.1]: https://github.com/MetaMask/design-tokens/compare/v2.1.0...v2.1.1
 [2.1.0]: https://github.com/MetaMask/design-tokens/compare/v2.0.3...v2.1.0
 [2.0.3]: https://github.com/MetaMask/design-tokens/compare/v2.0.2...v2.0.3
