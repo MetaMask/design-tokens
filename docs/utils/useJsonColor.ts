@@ -16,11 +16,30 @@ export type ColorPalette = {
 };
 
 export type Theme = {
-  [colorName: string]: ColorPalette;
+  [colorName: string]: {
+    [shade: string]: {
+      value: string;
+      description: string;
+    };
+  };
 };
 
 type CompiledColors = {
-  [themeName: string]: Theme;
+  [themeName: string]: {
+    [colorName: string]: {
+      [shade: string]: {
+        value: string;
+        description: string;
+      };
+    };
+  };
+};
+
+type Shade = {
+  [shade: string]: {
+    value: string;
+    description: string;
+  };
 };
 
 /**
@@ -68,20 +87,23 @@ export const useJsonColor = (): CompiledColors => {
     }): CompiledColors => {
       const compiledColors: CompiledColors = {};
       Object.entries(themes).forEach(([themeName, theme]) => {
-        compiledColors[themeName] = {};
+        const tempThemeColors: Theme = {};
         Object.entries(theme).forEach(([colorName, colorValues]) => {
-          compiledColors[themeName][colorName] = {};
+          const tempThemeColorShade: Shade = {};
           Object.entries(colorValues).forEach(([shade, details]) => {
             const { value, description } = details;
             const resolvedValue = parseColorValue(value, figmaBrandColors);
-            compiledColors[themeName][colorName][shade] = {
+            const tempShadeColor = {
               ...details,
               value: resolvedValue,
               description:
                 description + (value === resolvedValue ? '' : ` ${value}`),
             };
+            tempThemeColorShade[shade] = tempShadeColor;
           });
+          tempThemeColors[colorName] = tempThemeColorShade;
         });
+        compiledColors[themeName] = tempThemeColors;
       });
       return compiledColors;
     };
