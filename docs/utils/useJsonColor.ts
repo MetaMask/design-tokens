@@ -68,20 +68,23 @@ export const useJsonColor = (): CompiledColors => {
     }): CompiledColors => {
       const compiledColors: CompiledColors = {};
       Object.entries(themes).forEach(([themeName, theme]) => {
-        compiledColors[themeName] = {};
+        const tempThemeColors: Theme = {};
         Object.entries(theme).forEach(([colorName, colorValues]) => {
-          compiledColors[themeName][colorName] = {};
+          const tempThemeColorPalette: ColorPalette = {};
           Object.entries(colorValues).forEach(([shade, details]) => {
             const { value, description } = details;
             const resolvedValue = parseColorValue(value, figmaBrandColors);
-            compiledColors[themeName][colorName][shade] = {
+            const tempShadeColor = {
               ...details,
               value: resolvedValue,
               description:
                 description + (value === resolvedValue ? '' : ` ${value}`),
             };
+            tempThemeColorPalette[shade] = tempShadeColor;
           });
+          tempThemeColors[colorName] = tempThemeColorPalette;
         });
+        compiledColors[themeName] = tempThemeColors;
       });
       return compiledColors;
     };

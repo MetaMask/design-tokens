@@ -22,12 +22,20 @@ export const getCSSVariablesFromStylesheet = (varPrefix: string): Color => {
         // Access rules from the stylesheet, handle security errors when accessing cross-origin stylesheets
         return Array.from(styleSheet.cssRules);
       } catch (err) {
-        console.error(
-          'Access denied to stylesheet: ',
-          styleSheet.href,
-          '; Error: ',
-          err.message,
-        );
+        if (err instanceof Error) {
+          console.error(
+            'Access denied to stylesheet: ',
+            styleSheet.href,
+            '; Error: ',
+            err.message,
+          );
+        } else {
+          console.error(
+            'Access denied to stylesheet: ',
+            styleSheet.href,
+            '; Unknown error occurred.',
+          );
+        }
         return [];
       }
     })
@@ -47,7 +55,7 @@ export const getCSSVariablesFromStylesheet = (varPrefix: string): Color => {
       // Iterate over each property in the style rule
       for (let i = 0; i < style.length; i++) {
         const varName = style[i];
-        if (varName.startsWith(varPrefix)) {
+        if (varName?.startsWith(varPrefix)) {
           // Get the actual CSS variable value from the computed styles of the document's root element
           const value = getComputedStyle(document.documentElement)
             .getPropertyValue(varName)
