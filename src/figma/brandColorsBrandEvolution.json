@@ -145,18 +145,6 @@
       "type": "color",
       "parent": "Brand Colors/v2- brand evo (preview)",
       "description": ""
-    },
-    "500-10%": {
-      "value": "#4459ff1a",
-      "type": "color",
-      "parent": "Brand Colors/v2- brand evo (preview)",
-      "description": ""
-    },
-    "400-15%": {
-      "value": "#6f7eff26",
-      "type": "color",
-      "parent": "Brand Colors/v2- brand evo (preview)",
-      "description": ""
     }
   },
   "green": {
@@ -220,20 +208,8 @@
       "parent": "Brand Colors/v2- brand evo (preview)",
       "description": ""
     },
-    "500-10%": {
-      "value": "#1c7e331a",
-      "type": "color",
-      "parent": "Brand Colors/v2- brand evo (preview)",
-      "description": ""
-    },
     "025": {
       "value": "#f1faf4",
-      "type": "color",
-      "parent": "Brand Colors/v2- brand evo (preview)",
-      "description": ""
-    },
-    "400-15%": {
-      "value": "#279f4126",
       "type": "color",
       "parent": "Brand Colors/v2- brand evo (preview)",
       "description": ""
@@ -305,18 +281,6 @@
       "type": "color",
       "parent": "Brand Colors/v2- brand evo (preview)",
       "description": ""
-    },
-    "500-10%": {
-      "value": "#ca35421a",
-      "type": "color",
-      "parent": "Brand Colors/v2- brand evo (preview)",
-      "description": ""
-    },
-    "400-15%": {
-      "value": "#f74d5e26",
-      "type": "color",
-      "parent": "Brand Colors/v2- brand evo (preview)",
-      "description": ""
     }
   },
   "yellow": {
@@ -382,24 +346,6 @@
     },
     "025": {
       "value": "#fff9e6",
-      "type": "color",
-      "parent": "Brand Colors/v2- brand evo (preview)",
-      "description": ""
-    },
-    "500-10%": {
-      "value": "#9a63001a",
-      "type": "color",
-      "parent": "Brand Colors/v2- brand evo (preview)",
-      "description": ""
-    },
-    "400-15%": {
-      "value": "#c37b0226",
-      "type": "color",
-      "parent": "Brand Colors/v2- brand evo (preview)",
-      "description": ""
-    },
-    "100-15%": {
-      "value": "#ffd95726",
       "type": "color",
       "parent": "Brand Colors/v2- brand evo (preview)",
       "description": ""
@@ -608,5 +554,17 @@
       "parent": "Brand Colors/v2- brand evo (preview)",
       "description": ""
     }
+  },
+  "white": {
+    "value": "#ffffff",
+    "type": "color",
+    "parent": "Brand Colors/v2- brand evo (preview)",
+    "description": ""
+  },
+  "black": {
+    "value": "#000000",
+    "type": "color",
+    "parent": "Brand Colors/v2- brand evo (preview)",
+    "description": ""
   }
 }
