@@ -556,19 +556,15 @@
     }
   },
   "white": {
-    "white": {
-      "value": "#ffffff",
-      "type": "color",
-      "parent": "Brand Colors/v1 - current",
-      "description": ""
-    }
+    "value": "#ffffff",
+    "type": "color",
+    "parent": "Brand Colors/v1 - current",
+    "description": ""
   },
   "black": {
-    "black": {
-      "value": "#000000",
-      "type": "color",
-      "parent": "Brand Colors/v1 - current",
-      "description": ""
-    }
+    "value": "#000000",
+    "type": "color",
+    "parent": "Brand Colors/v1 - current",
+    "description": ""
   }
 }
