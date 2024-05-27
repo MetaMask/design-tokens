@@ -131,7 +131,7 @@
       "description": "For the stronger contrast primary semantic elements."
     },
     "muted": {
-      "value": "{blue.500-10%}",
+      "value": "#0376c91a",
       "type": "color",
       "parent": "Theme Colors/Light mode",
       "description": "For the weakest contrast primary semantic backgrounds."
@@ -169,7 +169,7 @@
       "description": "For the stronger contrast error semantic elements."
     },
     "muted": {
-      "value": "{red.500-10%}",
+      "value": "#d738471a",
       "type": "color",
       "parent": "Theme Colors/Light mode",
       "description": "For the weakest contrast critical alert semantic backgrounds."
@@ -201,7 +201,7 @@
       "description": "For the caution alert semantic elements. Used for text, background, icon or border"
     },
     "muted": {
-      "value": "{yellow.500-10%}",
+      "value": "#bf52081a",
       "type": "color",
       "parent": "Theme Colors/Light mode",
       "description": "For the weakest contrast caution alert semantic backgrounds."
@@ -233,7 +233,7 @@
       "description": "For the positive semantic elements. Used for text, background, icon or border"
     },
     "muted": {
-      "value": "{green.500-10%}",
+      "value": "#1c82341a",
       "type": "color",
       "parent": "Theme Colors/Light mode",
       "description": "For the weakest contrast positive semantic backgrounds."
@@ -265,7 +265,7 @@
       "description": "For informational read-only elements. Used for text, background, icon or border"
     },
     "muted": {
-      "value": "{blue.500-10%}",
+      "value": "#0376c91a",
       "type": "color",
       "parent": "Theme Colors/Light mode",
       "description": "For the weakest contrast informational semantic backgrounds."
@@ -305,7 +305,7 @@
       "description": "For primary drop shadow color."
     },
     "error": {
-      "value": "#d7384766",
+      "value": "#ca354266",
       "type": "color",
       "parent": "Theme Colors/Light mode",
       "description": "For critical/danger drop shadow color."
