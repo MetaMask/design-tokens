@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.1.0]
+
 ## [3.0.0]
 
 ### Added
@@ -290,7 +292,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v3.0.0...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v3.1.0...HEAD
+[3.1.0]: https://github.com/MetaMask/design-tokens/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/MetaMask/design-tokens/compare/v2.1.1...v3.0.0
 [2.1.1]: https://github.com/MetaMask/design-tokens/compare/v2.1.0...v2.1.1
 [2.1.0]: https://github.com/MetaMask/design-tokens/compare/v2.0.3...v2.1.0
