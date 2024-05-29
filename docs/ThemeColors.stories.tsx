@@ -1,10 +1,14 @@
 import React from 'react';
-
 import { lightTheme as lightThemeJS, darkTheme as darkThemeJS } from '../src';
 import brandColor from '../src/figma/brandColors.json';
 import { ColorSwatch, ColorSwatchGroup } from './components';
 import README from './ThemeColors.mdx';
-import { getCSSVariablesFromStylesheet, useJsonColor } from './utils';
+import {
+  getCSSVariablesFromStylesheet,
+  getContrastYIQ,
+  getJSColors,
+  useJsonColor,
+} from './utils';
 
 export default {
   title: 'Colors/Theme Colors',
@@ -43,9 +47,7 @@ export const FigmaDarkTheme = {
       >
         <ColorSwatchGroup
           swatchData={darkTheme}
-          borderColor={darkTheme.border.muted.value}
-          textBackgroundColor={darkTheme.background.default.value}
-          textColor={darkTheme.text.default.value}
+          theme={darkTheme?.background?.default?.value}
         />
       </div>
     );
@@ -74,6 +76,11 @@ export const CSSLightTheme = {
             <ColorSwatch
               key={name}
               color={color}
+              textBackgroundColor="transparent"
+              textColor={getContrastYIQ(
+                color,
+                lightThemeJS.colors.background.default, // TODO Use CSS instead of JS object once CSS object is cleaned up
+              )}
               backgroundColor={colorName}
               name={colorName}
             />
@@ -110,8 +117,11 @@ export const CSSDarkTheme = {
                 name={colorName}
                 backgroundColor={colorName}
                 borderColor="var(--color-border-muted)"
-                textBackgroundColor="var(--color-background-default)"
-                textColor="var(--color-text-default)"
+                textBackgroundColor="transparent"
+                textColor={getContrastYIQ(
+                  color,
+                  darkThemeJS.colors.background.default, // TODO Use CSS instead of JS object once CSS object is cleaned up
+                )}
               />
             ),
           )}
@@ -137,36 +147,9 @@ export const CSSDarkTheme = {
 };
 
 export const JSLightTheme = {
-  render: () => (
-    <div
-      style={{
-        display: 'grid',
-        gap: '16px',
-        gridTemplateColumns: 'repeat(auto-fill, 300px)',
-      }}
-    >
-      {Object.entries(lightThemeJS.colors).flatMap(([category, colorObj]) =>
-        Object.entries(colorObj).map(([name, color]) => (
-          <ColorSwatch
-            key={`${category}-${name}`}
-            color={color}
-            name={`color.${category}.${name}`}
-          />
-        )),
-      )}
-    </div>
-  ),
-};
-
-export const JSDarkTheme = {
-  render: () => (
-    <div
-      style={{
-        backgroundColor: darkThemeJS.colors.background.default,
-        margin: '-1rem',
-        padding: '1rem',
-      }}
-    >
+  render: () => {
+    const colors = getJSColors(lightThemeJS.colors);
+    return (
       <div
         style={{
           display: 'grid',
@@ -174,25 +157,50 @@ export const JSDarkTheme = {
           gridTemplateColumns: 'repeat(auto-fill, 300px)',
         }}
       >
-        {Object.entries(darkThemeJS.colors).flatMap(([category, colorObj]) =>
-          Object.entries(colorObj).map(([name, color]) => (
-            <ColorSwatch
-              key={`${category}-${name}`}
-              color={color}
-              name={`color.${category}.${name}`}
-              borderColor={darkThemeJS.colors.border.muted}
-              textBackgroundColor={darkThemeJS.colors.background.default}
-              textColor={darkThemeJS.colors.text.default}
-            />
-          )),
-        )}
+        {colors.map(({ name, color }) => (
+          <ColorSwatch
+            key={name}
+            color={color}
+            textBackgroundColor="transparent"
+            textColor={getContrastYIQ(
+              color,
+              lightThemeJS.colors.background.default,
+            )}
+            name={name}
+          />
+        ))}
       </div>
-    </div>
-  ),
-  parameters: {
-    backgrounds: {
-      default: 'dark',
-      values: [{ name: 'dark', value: darkThemeJS.colors.background.default }],
-    },
+    );
+  },
+};
+
+export const JSDarkTheme = {
+  render: () => {
+    const colors = getJSColors(darkThemeJS.colors);
+    return (
+      <div
+        style={{
+          display: 'grid',
+          gap: '16px',
+          gridTemplateColumns: 'repeat(auto-fill, 300px)',
+          padding: '1rem',
+          margin: '-1rem', // negates storybook padding and removes white border
+          backgroundColor: darkThemeJS.colors.background.default,
+        }}
+      >
+        {colors.map(({ name, color }) => (
+          <ColorSwatch
+            key={name}
+            color={color}
+            textBackgroundColor="transparent"
+            textColor={getContrastYIQ(
+              color,
+              darkThemeJS.colors.background.default,
+            )}
+            name={name}
+          />
+        ))}
+      </div>
+    );
   },
 };

@@ -1,7 +1,11 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { brandColor as brandColorJS } from '../src/js';
-import { getCSSVariablesFromStylesheet, useJsonColor } from './utils';
+import {
+  getCSSVariablesFromStylesheet,
+  getContrastYIQ,
+  useJsonColor,
+} from './utils';
 import { ColorSwatchGroup, ColorSwatch } from './components';
 import README from './BrandColors.mdx';
 
@@ -22,6 +26,7 @@ type Story = StoryObj<typeof ColorSwatchGroup>;
 export const Figma: Story = {
   render: () => {
     const { brandColor } = useJsonColor();
+    console.log('brandColor JSON', brandColor);
     return <ColorSwatchGroup swatchData={brandColor} />;
   },
 };
@@ -43,6 +48,8 @@ export const CSS: Story = {
             key={name}
             color={color}
             backgroundColor={name}
+            textBackgroundColor="transparent"
+            textColor={getContrastYIQ(color, color)}
             name={name}
           />
         ))}
@@ -62,7 +69,13 @@ export const JS: Story = {
     >
       {/* Mapping through each brand color and rendering a ColorSwatch component for it */}
       {Object.entries(brandColorJS).map(([name, color]) => (
-        <ColorSwatch key={name} color={color} name={`brandColor.${name}`} />
+        <ColorSwatch
+          key={name}
+          color={color}
+          textBackgroundColor="transparent"
+          textColor={getContrastYIQ(color, color)}
+          name={`brandColor.${name}`}
+        />
       ))}
     </div>
   ),

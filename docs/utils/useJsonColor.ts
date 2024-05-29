@@ -6,9 +6,9 @@ import figmaLightTheme from '../../src/figma/lightTheme.json';
 
 export type ColorDetails = {
   value: string; // Hex value or alias to another color
-  type: string; // Type usually color
-  parent: string; // Parent category or group of the color
-  description: string; // Description or notes about the color
+  type?: string; // Type usually color
+  parent?: string; // Parent category or group of the color
+  description?: string; // Description or notes about the color
 };
 
 export type ColorPalette = {
@@ -16,12 +16,15 @@ export type ColorPalette = {
 };
 
 export type Theme = {
-  [colorName: string]: ColorPalette;
+  [colorName: string]: ColorPalette | ColorDetails;
 };
 
 type CompiledColors = {
   [themeName: string]: Theme;
 };
+
+const isHexColor = (value: string) =>
+  /^#[0-9A-F]{6}$/iu.test(value) || /^#[0-9A-F]{8}$/iu.test(value);
 
 /**
  * Custom hook for compiling color themes from Figma JSON definitions.
@@ -70,22 +73,53 @@ export const useJsonColor = (): CompiledColors => {
       Object.entries(themes).forEach(([themeName, theme]) => {
         const tempThemeColors: Theme = {};
         Object.entries(theme).forEach(([colorName, colorValues]) => {
-          const tempThemeColorPalette: ColorPalette = {};
-          Object.entries(colorValues).forEach(([shade, details]) => {
-            const { value, description } = details;
-            const resolvedValue = parseColorValue(value, figmaBrandColors);
-            const tempShadeColor = {
-              ...details,
-              value: resolvedValue,
-              description:
-                description + (value === resolvedValue ? '' : ` ${value}`),
+          if (typeof colorValues.value === 'string') {
+            tempThemeColors[colorName] = {
+              ...colorValues,
+              value: parseColorValue(colorValues.value, figmaBrandColors),
             };
-            tempThemeColorPalette[shade] = tempShadeColor;
-          });
-          tempThemeColors[colorName] = tempThemeColorPalette;
+          } else {
+            const tempThemeColorPalette: ColorPalette = {};
+            Object.entries(colorValues).forEach(([shade, details]) => {
+              let resolvedValue = parseColorValue(
+                details.value,
+                figmaBrandColors,
+              );
+              if (!isHexColor(resolvedValue)) {
+                const cleanResolvedValue = resolvedValue
+                  .slice(1, -1)
+                  .split('.'); // Split the reference into parts
+                const category = cleanResolvedValue[0]; // Get the category (e.g., 'text')
+                const key = cleanResolvedValue[1]; // Get the key (e.g., 'default')
+                if (category) {
+                  if (theme[category]?.[key]) {
+                    resolvedValue = parseColorValue(
+                      theme[category][key].value,
+                      figmaBrandColors,
+                    );
+                  } else {
+                    console.error('Invalid reference:', resolvedValue);
+                  }
+                }
+              }
+
+              const description: string = details.description ?? '';
+              const valueAsString = String(details.value);
+              const additionalDescription: string =
+                details.value === resolvedValue ? '' : ` ${valueAsString}`;
+
+              tempThemeColorPalette[shade] = {
+                ...details,
+                value: resolvedValue,
+                description: description + additionalDescription,
+              };
+            });
+            tempThemeColors[colorName] = tempThemeColorPalette;
+          }
         });
         compiledColors[themeName] = tempThemeColors;
       });
+
       return compiledColors;
     };
 
