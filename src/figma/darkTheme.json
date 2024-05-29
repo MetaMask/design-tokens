@@ -13,31 +13,31 @@
       "description": "For secondary neutral backgrounds."
     },
     "default-hover": {
-      "value": "#282b2e",
+      "value": "#313235",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For \"hover\" states that use background-default."
     },
     "default-pressed": {
-      "value": "#36383b",
+      "value": "#3f4145",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For \"pressed\" states that use background-alternative."
     },
     "alternative-hover": {
-      "value": "#191b1d",
+      "value": "#1f2123",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For \"hover\" states that use background-alternative."
     },
     "alternative-pressed": {
-      "value": "#27292a",
+      "value": "#2e3033",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For \"pressed\" states that use background-alternative."
     },
     "hover": {
-      "value": "#ffffff05",
+      "value": "#ffffff0a",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For \"hover\" state that use no background fill."
