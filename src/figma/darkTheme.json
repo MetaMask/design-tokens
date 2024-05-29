@@ -97,7 +97,7 @@
       "description": "For soft contrast neutral border"
     },
     "muted": {
-      "value": "#3b4046",
+      "value": "#848c9629",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For the weakest  contrast neutral border"
@@ -299,13 +299,13 @@
       "description": "For neutral drop shadow color."
     },
     "primary": {
-      "value": "#1098fc66",
+      "value": "#43aefc33",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For primary drop shadow color."
     },
     "error": {
-      "value": "#ff526366",
+      "value": "#ff758466",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For critical/danger drop shadow color."
