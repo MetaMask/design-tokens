@@ -305,7 +305,7 @@
       "description": "For primary drop shadow color."
     },
     "error": {
-      "value": "#ca354266",
+      "value": "#d7384766",
       "type": "color",
       "parent": "Theme Colors/Light mode",
       "description": "For critical/danger drop shadow color."

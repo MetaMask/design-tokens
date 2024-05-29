@@ -13,31 +13,31 @@
       "description": "For secondary neutral backgrounds."
     },
     "default-hover": {
-      "value": "#313235",
+      "value": "#282b2e",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For \"hover\" states that use background-default."
     },
     "default-pressed": {
-      "value": "#3f4145",
+      "value": "#36383b",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For \"pressed\" states that use background-alternative."
     },
     "alternative-hover": {
-      "value": "#1f2123",
+      "value": "#191b1d",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For \"hover\" states that use background-alternative."
     },
     "alternative-pressed": {
-      "value": "#2e3033",
+      "value": "#27292a",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For \"pressed\" states that use background-alternative."
     },
     "hover": {
-      "value": "#ffffff0a",
+      "value": "#ffffff05",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For \"hover\" state that use no background fill."
@@ -97,7 +97,7 @@
       "description": "For soft contrast neutral border"
     },
     "muted": {
-      "value": "#848c9629",
+      "value": "#3b4046",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For the weakest  contrast neutral border"
@@ -299,13 +299,13 @@
       "description": "For neutral drop shadow color."
     },
     "primary": {
-      "value": "#43aefc33",
+      "value": "#1098fc66",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For primary drop shadow color."
     },
     "error": {
-      "value": "#ff758466",
+      "value": "#ff526366",
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "For critical/danger drop shadow color."
