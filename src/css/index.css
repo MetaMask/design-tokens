@@ -1,5 +1,8 @@
 @import './brand-colors.css';
-@import './light-theme-colors.css';
-@import './dark-theme-colors.css';
+@import './brand-colors-deprecated.css';
 @import './typography.css';
 @import './shadow.css';
+@import './light-theme-colors.css';
+@import './light-theme-colors-deprecated.css';
+@import './dark-theme-colors.css';
+@import './dark-theme-colors-deprecated.css';
