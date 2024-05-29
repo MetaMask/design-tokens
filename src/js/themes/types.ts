@@ -102,10 +102,6 @@ export type ThemeColors = {
     /**
      * {string} overlay.alternative - For a stronger shading layer option behind modality screens
      */
-    inverse: string;
-    /**
-     * {string} overlay.inverse - [DEPRECATED] Should be used for elements over an overlay
-     */
     alternative: string;
   };
   shadow: {
@@ -113,6 +109,14 @@ export type ThemeColors = {
      * {string} shadow.default - For neutral shadows
      */
     default: string;
+    /**
+     * {string} shadow.primary - For primary shadows
+     */
+    primary: string;
+    /**
+     * {string} shadow.error - For error shadows
+     */
+    error: string;
   };
   primary: {
     /**
@@ -139,36 +143,6 @@ export type ThemeColors = {
      * {string} primary.inverse - For elements used on top of primary/default. (Example: label of primary button, check in a checkbox)disabled state
      */
     inverse: string;
-    /**
-     * {string} primary.disabled - [DEPRECATED] Should be used for disabled state
-     */
-    disabled: string;
-    /**
-     * {string} primary.shadow - For primary button hover
-     */
-    shadow: string;
-  };
-  secondary: {
-    /**
-     * {string} secondary.default - [DEPRECATED] Should be used for any secondary actions. It should not be used for any negative connotations such as warnings or errors as it is quite closely tied to the MetaMask Fox
-     */
-    default: string;
-    /**
-     * {string} secondary.alternative - [DEPRECATED] Should be used as an alternative to secondary.default for things such as hover states
-     */
-    alternative: string;
-    /**
-     * {string} secondary.muted - [DEPRECATED] It’s a very low contrasting secondary variant for things such as alert backgrounds. secondary.muted and secondary.inverse should not be used together in a foreground and background combination
-     */
-    muted: string;
-    /**
-     * {string} secondary.inverse - [DEPRECATED] Should be used only as the foreground element on top of primary/default and primary/alternative. It is intended to be the most contrasting color to primary/default. It should meet all AA and AAA accessibility standards such as the text or icon of a primary button
-     */
-    inverse: string;
-    /**
-     * {string} secondary.disabled - [DEPRECATED] Should be used for all disabled secondary action components
-     */
-    disabled: string;
   };
   error: {
     /**
@@ -195,14 +169,6 @@ export type ThemeColors = {
      * {string} error.inverse - For elements used on top of error/default (Example: label of danger/critical button)
      */
     inverse: string;
-    /**
-     * {string} error.disabled - [DEPRECATED] Should be used for disabled state
-     */
-    disabled: string;
-    /**
-     * {string} error.shadow - For error danger/critical button hover
-     */
-    shadow: string;
   };
   warning: {
     /**
@@ -218,10 +184,6 @@ export type ThemeColors = {
      */
     defaultPressed: string;
     /**
-     * {string} warning.alternative - [DEPRECATED] Should be used as an alternative to warning/default for things like hover or pressed states
-     */
-    alternative: string;
-    /**
      * {string} warning.muted - For lowest contrast background used in warning elements. (Example: notification background)
      */
     muted: string;
@@ -229,10 +191,6 @@ export type ThemeColors = {
      * {string} warning.inverse - For elements used on top of warning/default. Used for text, icon or border
      */
     inverse: string;
-    /**
-     * {string} warning.disabled - [DEPRECATED] Should be used for disabled state
-     */
-    disabled: string;
   };
   success: {
     /**
@@ -248,10 +206,6 @@ export type ThemeColors = {
      */
     defaultPressed: string;
     /**
-     * {string} success.alternative - [DEPRECATED] Should be used as an alternative to success/default for things like hover or pressed states
-     */
-    alternative: string;
-    /**
      * {string} success.muted - For lowest contrast background used in success semantic. (Example: notification background)
      */
     muted: string;
@@ -259,20 +213,12 @@ export type ThemeColors = {
      * {string} success.inverse -  For elements used on top of success/default. Used for text, icon or border
      */
     inverse: string;
-    /**
-     * {string} success.disabled - [DEPRECATED] Should be used for disabled state
-     */
-    disabled: string;
   };
   info: {
     /**
      * {string} info.default - For informational semantic elements. Used for text, background, icon or border
      */
     default: string;
-    /**
-     * {string} info.alternative - [DEPRECATED] Should be used as an alternative to info/default for things like hover or pressed states
-     */
-    alternative: string;
     /**
      * {string} info.muted - For lowest contrast background used in informational semantic. (Example: notification background)
      */
@@ -281,42 +227,6 @@ export type ThemeColors = {
      * {string} info.inverse - For elements used on top of info/default. Used for text, icon or border
      */
     inverse: string;
-    /**
-     * {string} info.disabled - [DEPRECATED] Should be used for disabled state
-     */
-    disabled: string;
-  };
-  networks: {
-    goerli: {
-      /**
-       * {string} networks.goerli.default - For goerli test network colored elements
-       */
-      default: string;
-      /**
-       * {string} networks.goerli.inverse - For elements used on top of networks/goerli/default
-       */
-      inverse: string;
-    };
-    localhost: {
-      /**
-       * {string} networks.localhost.default - For localhost test network colored elements
-       */
-      default: string;
-      /**
-       * {string} networks.localhost.inverse - For elements used on top of networks/localhost/default
-       */
-      inverse: string;
-    };
-    sepolia: {
-      /**
-       * {string} networks.sepolia.default - For sepolia test network colored elements
-       */
-      default: string;
-      /**
-       * {string} networks.sepolia.inverse - For elements used on top of networks/sepolia/default
-       */
-      inverse: string;
-    };
   };
   flask: {
     /**

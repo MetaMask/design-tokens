@@ -3,6 +3,7 @@
 This guide provides detailed instructions for migrating your project from one version of the `@metamask/design-tokens` to another.
 
 - [From version 2.1.1 to 3.0.0](#from-version-211-to-300)
+- [From version 3.0.0 to 4.0.0](#from-version-300-to-400)
 
 ## From version 2.1.1 to 3.0.0
 
@@ -29,3 +30,91 @@ import '../../node_modules/@metamask/design-tokens/dist/styles.css';
 ```
 
 This new path points to the `dist` directory, ensuring that you're importing the most optimized and production-ready version of the stylesheet.
+
+## From version 3.0.0 to 4.0.0
+
+## Migration from Version 3.0.0 to 4.0.0
+
+### Changes to Color Tokens (Breaking Changes)
+
+In this version, significant updates have been made to color tokens, including additions, modifications, and removals. To upgrade to version 4, ensure that the following tokens are not present in your codebase:
+
+### Removed
+
+#### CSS
+
+```
+--brand-colors-grey-grey030
+--brand-colors-grey-grey040
+--brand-colors-grey-grey750
+--brand-colors-blue-blue000
+--brand-colors-green-green000
+--brand-colors-red-red000
+--brand-colors-yellow-yellow000
+--brand-colors-orange-orange000
+--brand-colors-violet
+--brand-colors-white-white010
+--color-overlay-inverse
+--color-primary-shadow
+--color-primary-disabled
+--color-secondary
+--color-error-shadow
+--color-error-disabled
+--color-warning-alternative
+--color-warning-disabled
+--color-success-alternative
+--color-success-disabled
+--color-info-alternative
+--color-info-disabled
+--color-network-
+```
+
+#### JS
+
+```
+brandColor.grey030
+brandColor.grey040
+brandColor.grey750
+brandColor.blue000
+brandColor.green000
+brandColor.red000
+brandColor.yellow000
+brandColor.orange000
+brandColor.violet
+brandColor.white010
+```
+
+### Changed
+
+#### CSS
+
+```
+--brand-colors-white-white000 to --brand-colors-white
+--brand-colors-black-black000 to --brand-colors-black
+```
+
+#### JS
+
+```
+brandColor.white000` to `brandColor.white
+brandColor.black000` to `brandColor.black
+```
+
+### Themed Colors
+
+- overlay-inverse removed
+- primary-shadow removed
+- primary-disabled removed
+- secondary colors removed
+- error-shadow removed
+- error-disabled removed
+- warning-alternative removed
+- warning-disabled removed
+- success-alternative removed
+- success-disabled removed
+- info-alternative removed
+- info-disabled removed
+- network colors removed
+- shadow-primary added
+- shadow-error added
+- button colors removed

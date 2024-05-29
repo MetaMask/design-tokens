@@ -1,81 +1,152 @@
 /*
  * Light Theme Colors
+ * Use these css variables in your code.
+ * This will insure theme compatibility
  */
+
 :root,
 [data-theme='light'] {
-  --color-background-default: var(--brand-colors-white-white000);
-  --color-background-default-hover: #fafafa;
+  /* 
+  * Background
+  */
+  /* For default neutral backgrounds */
+  --color-background-default: var(--brand-colors-grey-grey000);
+  /* For "hover" states that use background-default */
+  --color-background-default-hover: #f5f5f5;
+  /* For "pressed" states that use background-alternative */
   --color-background-default-pressed: #ebebeb;
-  --color-background-alternative: var(--brand-colors-grey-grey040);
-  --color-background-alternative-hover: #edeff1;
-  --color-background-alternative-pressed: #dfe0e2;
-  --color-background-hover: #00000005;
+  /* For secondary neutral backgrounds */
+  --color-background-alternative: var(--brand-colors-grey-grey050);
+  /* For "hover" states that use background-alternative */
+  --color-background-alternative-hover: #e7ebee;
+  /* For "pressed" states that use background-alternative */
+  --color-background-alternative-pressed: #dbe0e6;
+  /* For "hover" state that use no background fill */
+  --color-background-hover: #0000000a;
+  /* For "pressed" state that use no background fill */
   --color-background-pressed: #00000014;
-  --color-text-default: var(--brand-colors-grey-grey800);
-  --color-text-alternative: var(--brand-colors-grey-grey600);
-  --color-text-muted: var(--brand-colors-grey-grey200);
-  --color-icon-default: var(--brand-colors-grey-grey800);
-  --color-icon-alternative: var(--brand-colors-grey-grey500);
-  --color-icon-muted: var(--brand-colors-grey-grey200);
-  --color-border-default: var(--brand-colors-grey-grey200);
-  --color-border-muted: var(--brand-colors-grey-grey100);
-  --color-overlay-default: #00000099;
-  --color-overlay-alternative: #000000cc;
-  --color-overlay-inverse: var(--brand-colors-white-white010);
-  --color-shadow-default: #0000001a;
-  --color-primary-default: var(--brand-colors-blue-blue500);
-  --color-primary-default-hover: #0379ce;
-  --color-primary-default-pressed: #036db9;
-  --color-primary-alternative: var(--brand-colors-blue-blue600);
-  --color-primary-muted: #0376c919;
-  --color-primary-inverse: var(--brand-colors-white-white000);
-  --color-primary-disabled: #0376c980;
-  --color-primary-shadow: #0376c933;
-  --color-secondary-default: var(--brand-colors-orange-orange500);
-  --color-secondary-alternative: var(--brand-colors-orange-orange600);
-  --color-secondary-muted: #f66a0a19;
-  --color-secondary-inverse: var(--brand-colors-white-white000);
-  --color-secondary-disabled: #f66a0a80;
-  --color-error-default: var(--brand-colors-red-red500);
-  --color-error-default-hover: #cd4250;
-  --color-error-default-pressed: #c63441;
-  --color-error-alternative: var(--brand-colors-red-red600);
-  --color-error-muted: #d7384719;
-  --color-error-inverse: var(--brand-colors-white-white000);
-  --color-error-disabled: #d7384780;
-  --color-error-shadow: #d7384766;
-  --color-warning-default: var(--brand-colors-orange-orange600);
-  --color-warning-default-hover: #c2540a;
-  --color-warning-default-pressed: #a24507;
-  --color-warning-alternative: var(--brand-colors-yellow-yellow600);
-  --color-warning-muted: #bf520819;
-  --color-warning-inverse: var(--brand-colors-white-white000);
-  --color-warning-disabled: #ffd33d80;
-  --color-success-default: var(--brand-colors-green-green600);
-  --color-success-default-hover: #208838;
-  --color-success-default-pressed: #1b7431;
-  --color-success-alternative: var(--brand-colors-green-green500);
-  --color-success-muted: #1c823419;
-  --color-success-inverse: var(--brand-colors-white-white000);
-  --color-success-disabled: #28a74580;
-  --color-info-default: var(--brand-colors-blue-blue500);
-  --color-info-alternative: var(--brand-colors-blue-blue600);
-  --color-info-muted: #0376c919;
-  --color-info-inverse: var(--brand-colors-white-white000);
-  --color-info-disabled: #0376c980;
-  --color-network-goerli-default: var(--brand-colors-blue-blue400);
-  --color-network-goerli-inverse: var(--brand-colors-white-white010);
-  --color-network-localhost-default: var(--brand-colors-grey-grey200);
-  --color-network-localhost-inverse: var(--brand-colors-white-white010);
-  --color-network-sepolia-default: var(--brand-colors-violet-violet300);
-  --color-network-sepolia-inverse: var(--brand-colors-white-white010);
-  --color-flask-default: var(--brand-colors-purple-purple500);
-  --color-flask-inverse: var(--brand-colors-white-white010);
 
-  /* Components */
-  /* button */
-  --component-button-primary-shadow: var(--shadow-size-sm)
-    var(--color-primary-shadow);
-  --component-button-danger-shadow: var(--shadow-size-sm)
-    var(--color-error-shadow);
+  /* 
+  * Text
+  */
+  /* For default neutral text */
+  --color-text-default: var(--brand-colors-grey-grey900);
+  /* For softer contrast neutral text */
+  --color-text-alternative: var(--brand-colors-grey-grey500);
+  /* For the softest contrast neutral text (not accessible) */
+  --color-text-muted: var(--brand-colors-grey-grey300);
+
+  /* 
+  * Icon
+  */
+  /* For default neutral icons */
+  --color-icon-default: var(--color-text-default);
+  /* For softer neutral icons */
+  --color-icon-alternative: var(--color-text-alternative);
+  /* For the weakest contrast neutral icons (not accessible) */
+  --color-icon-muted: var(--color-text-muted);
+
+  /* 
+  * Border
+  */
+  /* For soft contrast neutral border */
+  --color-border-default: var(--brand-colors-grey-grey200);
+  /* For the weakest contrast neutral border */
+  --color-border-muted: #bbc0c566;
+
+  /* 
+  * Overlay
+  */
+  /* For the default shade of screen */
+  --color-overlay-default: #00000099;
+  /* For a stronger shade of screen */
+  --color-overlay-alternative: #000000cc;
+
+  /* 
+  * Primary
+  */
+  /* For interactive, active, and selected semantics. Used for text, background, icon or border */
+  --color-primary-default: var(--brand-colors-blue-blue500);
+  /* For the "hover" state of primary-default elements */
+  --color-primary-default-hover: #036ab5;
+  /* For the "pressed" state of primary-default elements */
+  --color-primary-default-pressed: #025ea1;
+  /* For the stronger contrast primary semantic elements */
+  --color-primary-alternative: var(--brand-colors-blue-blue600);
+  /* For the weakest contrast primary semantic backgrounds */
+  --color-primary-muted: var(--brand-colors-blue-blue500-10);
+  /* For elements used on top of primary/default. Used for text, icon or border */
+  --color-primary-inverse: var(--brand-colors-grey-grey000);
+
+  /* 
+  * Error
+  */
+  /* For the critical alert semantic elements. Used for text, background, icon or border */
+  --color-error-default: var(--brand-colors-red-red500);
+  /* For the "hover" state of error-default elements */
+  --color-error-default-hover: #d02a3a;
+  /* For the "pressed" state of error-default elements */
+  --color-error-default-pressed: #bf2635;
+  /* For the stronger contrast error semantic elements */
+  --color-error-alternative: var(--brand-colors-red-red600);
+  /* For the weakest contrast critical alert semantic backgrounds */
+  --color-error-muted: var(--brand-colors-red-red500-10);
+  /* For elements used on top of error/default. Used for text, icon or border */
+  --color-error-inverse: var(--brand-colors-grey-grey000);
+
+  /* 
+  * Warning
+  */
+  /* For the caution alert semantic elements. Used for text, background, icon or border */
+  --color-warning-default: var(--brand-colors-yellow-yellow500);
+  /* For the "hover" state of warning-default elements */
+  --color-warning-default-hover: #ac4a07;
+  /* For the "pressed" state of warning-default elements */
+  --color-warning-default-pressed: #984106;
+  /* For the weakest contrast caution alert semantic backgrounds */
+  --color-warning-muted: var(--brand-colors-yellow-yellow500-10);
+  /* For elements used on top of warning/default. Used for text, icon or border */
+  --color-warning-inverse: var(--brand-colors-grey-grey000);
+
+  /* 
+  * Success
+  */
+  /* For the positive semantic elements. Used for text, background, icon or border */
+  --color-success-default: var(--brand-colors-green-green500);
+  /* For the "hover" state of success-default elements */
+  --color-success-default-hover: #18712d;
+  /* For the "pressed" state of success-default elements */
+  --color-success-default-pressed: #156127;
+  /* For the weakest contrast positive semantic backgrounds */
+  --color-success-muted: var(--brand-colors-green-green500-10);
+  /* For elements used on top of success/default. Used for text, icon or border */
+  --color-success-inverse: var(--brand-colors-grey-grey000);
+
+  /* 
+  * Info
+  */
+  /* For informational read-only elements. Used for text, background, icon or border */
+  --color-info-default: var(--brand-colors-blue-blue500);
+  /* For the weakest contrast informational semantic backgrounds */
+  --color-info-muted: var(--brand-colors-blue-blue500-10);
+  /* For elements used on top of info/default. Used for text, icon or border */
+  --color-info-inverse: var(--brand-colors-grey-grey000);
+
+  /* 
+  * Flask
+  */
+  /* For Flask primary accent color */
+  --color-flask-default: var(--brand-colors-purple-purple500);
+  /* For elements used on top of flask/default. Used for text, icon or border */
+  --color-flask-inverse: var(--brand-colors-grey-grey000);
+
+  /* 
+  * Shadow
+  */
+  /* For neutral drop shadow color */
+  --color-shadow-default: #0000001a;
+  /* For primary drop shadow color */
+  --color-shadow-primary: #0376c933;
+  /* For critical/danger drop shadow color */
+  --color-shadow-error: #d7384766;
 }

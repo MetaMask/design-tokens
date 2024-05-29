@@ -3,11 +3,9 @@ import { darkTheme } from './darkTheme';
 
 const designTokens = require('../../../figma/tokens.json');
 
-describe('dark Theme', () => {
+describe('Dark Theme', () => {
   it('color tokens are exported from darkTheme by checking first color token', () => {
-    expect(darkTheme.colors.background.default).toStrictEqual(
-      designTokens.dark.colors.background.default.value,
-    );
+    expect(darkTheme.colors.background.default).toBe('#24272a');
   });
 
   it('typography tokens are exported from darkTheme by checking first typography token', () => {
@@ -18,7 +16,7 @@ describe('dark Theme', () => {
 
   it('shadow tokens are exported from darkTheme by checking first shadow size object', () => {
     expect(darkTheme.shadows.size.xs).toStrictEqual({
-      shadowColor: designTokens.dark.shadows.xs.value.color,
+      shadowColor: designTokens.dark.shadows.xs.value.color.toLowerCase(),
       shadowOffset: {
         width: Number(designTokens.dark.shadows.xs.value.x),
         height: Number(designTokens.dark.shadows.xs.value.y),
