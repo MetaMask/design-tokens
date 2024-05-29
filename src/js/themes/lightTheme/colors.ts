@@ -72,6 +72,6 @@ export const colors: ThemeColors = {
   shadow: {
     default: '#0000001a', // For neutral drop shadow color.
     primary: '#0376c933', // For primary drop shadow color.
-    error: '#d7384766', // For critical/danger drop shadow color.
+    error: '#ca354266', // For critical/danger drop shadow color.
   },
 };
