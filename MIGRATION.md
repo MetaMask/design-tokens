@@ -34,7 +34,6 @@ brandColor.black000 modified to brandColor.black
 #### JS Tokens
 
 ```
-colors.overlay.inverse removed
 colors.primary.shadow modified to colors.shadow.primary
 colors.primary.disabled removed
 colors.secondary.default removed
