@@ -1,15 +1,12 @@
 /**
+ * @deprecated these brand colors have been deprecated in favor of the new brand colors
  * Brand Colors
  * Do not use "--brand-colors" in your code
  * Instead use the "--color-" variables to ensure
  * theme compatible styles
  */
-
 :root {
   /* Grey */
-  --brand-colors-grey-grey000: #ffffff;
-  --brand-colors-grey-grey025: #fafbfc;
-  --brand-colors-grey-grey050: #f2f4f6;
   --brand-colors-grey-grey100: #d6d9dc;
   --brand-colors-grey-grey200: #bbc0c5;
   --brand-colors-grey-grey300: #9fa6ae;
@@ -20,66 +17,58 @@
   --brand-colors-grey-grey800: #24272a;
   --brand-colors-grey-grey900: #141618;
   --brand-colors-grey-grey1000: #000000;
-  /* Blue - primary/info */
-  --brand-colors-blue-blue025: #eaf6ff;
-  --brand-colors-blue-blue050: #eaf6ff;
+  --brand-colors-grey-grey050: #f2f4f6;
+  --brand-colors-grey-grey000: #ffffff;
+  --brand-colors-grey-grey025: #fafbfc;
+  /* Blue */
   --brand-colors-blue-blue100: #a7d9fe;
   --brand-colors-blue-blue200: #75c4fd;
   --brand-colors-blue-blue300: #43aefc;
   --brand-colors-blue-blue400: #1098fc;
-  --brand-colors-blue-blue400-15: #1098fc26;
   --brand-colors-blue-blue500: #0376c9;
-  --brand-colors-blue-blue500-10: #0376c91a;
   --brand-colors-blue-blue600: #0260a4;
   --brand-colors-blue-blue700: #024272;
   --brand-colors-blue-blue800: #01253f;
   --brand-colors-blue-blue900: #00080d;
-  /* Green - success */
-  --brand-colors-green-green025: #f3fcf5;
-  --brand-colors-green-green050: #d6ffdf;
+  --brand-colors-blue-blue050: #eaf6ff;
+  --brand-colors-blue-blue025: #eaf6ff;
+  /* Green */
   --brand-colors-green-green100: #afecbd;
   --brand-colors-green-green200: #5dd879;
   --brand-colors-green-green300: #28a745;
   --brand-colors-green-green400: #28a745;
-  --brand-colors-green-green400-15: #28a74526;
   --brand-colors-green-green500: #1c8234;
-  --brand-colors-green-green500-10: #1c82341a;
   --brand-colors-green-green600: #145523;
   --brand-colors-green-green700: #145523;
   --brand-colors-green-green800: #0a2c12;
   --brand-colors-green-green900: #041007;
-  /* Red - error */
-  --brand-colors-red-red025: #fcf2f3;
-  --brand-colors-red-red050: #fcf2f3;
+  --brand-colors-green-green050: #d6ffdf;
+  --brand-colors-green-green025: #f3fcf5;
+  /* Red */
   --brand-colors-red-red100: #f7d5d8;
   --brand-colors-red-red200: #f1b9be;
   --brand-colors-red-red300: #e88f97;
   --brand-colors-red-red400: #e06470;
-  --brand-colors-red-red400-15: #e0647026;
   --brand-colors-red-red500: #d73847;
-  --brand-colors-red-red500-10: #d738471a;
   --brand-colors-red-red600: #8e1d28;
   --brand-colors-red-red700: #64141c;
   --brand-colors-red-red800: #3a0c10;
   --brand-colors-red-red900: #3a0c10;
-  /* Yellow - warning */
-  --brand-colors-yellow-yellow025: #fefcde;
-  --brand-colors-yellow-yellow050: #fff2c5;
+  --brand-colors-red-red050: #fcf2f3;
+  --brand-colors-red-red025: #fcf2f3;
+  /* Yellow */
   --brand-colors-yellow-yellow100: #ffdf70;
-  --brand-colors-yellow-yellow100-15: #ffdf7026;
   --brand-colors-yellow-yellow200: #ffc70a;
   --brand-colors-yellow-yellow300: #f8883b;
   --brand-colors-yellow-yellow400: #f66a0a;
-  --brand-colors-yellow-yellow400-15: #f66a0a26;
   --brand-colors-yellow-yellow500: #bf5208;
-  --brand-colors-yellow-yellow500-10: #bf52081a;
   --brand-colors-yellow-yellow600: #954005;
   --brand-colors-yellow-yellow700: #632b04;
   --brand-colors-yellow-yellow800: #321602;
   --brand-colors-yellow-yellow900: #321602;
-  /* Orange - brand */
-  --brand-colors-orange-orange025: #fef5ef;
-  --brand-colors-orange-orange050: #fde2cf;
+  --brand-colors-yellow-yellow050: #fff2c5;
+  --brand-colors-yellow-yellow025: #fefcde;
+  /* Orange */
   --brand-colors-orange-orange100: #fbc49d;
   --brand-colors-orange-orange200: #faa66c;
   --brand-colors-orange-orange300: #f8883b;
@@ -89,9 +78,9 @@
   --brand-colors-orange-orange700: #632b04;
   --brand-colors-orange-orange800: #321602;
   --brand-colors-orange-orange900: #321602;
-  /* Purple - brand */
-  --brand-colors-purple-purple025: #fcf6ff;
-  --brand-colors-purple-purple050: #fbf2ff;
+  --brand-colors-orange-orange050: #fde2cf;
+  --brand-colors-orange-orange025: #fef5ef;
+  /* Purple */
   --brand-colors-purple-purple100: #efd2ff;
   --brand-colors-purple-purple200: #cfb5f0;
   --brand-colors-purple-purple300: #d27dff;
@@ -101,9 +90,9 @@
   --brand-colors-purple-purple700: #4c1178;
   --brand-colors-purple-purple800: #32054d;
   --brand-colors-purple-purple900: #280a00;
-  /* Lime - brand */
-  --brand-colors-lime-lime025: #effed9;
-  --brand-colors-lime-lime050: #e3febd;
+  --brand-colors-purple-purple050: #fbf2ff;
+  --brand-colors-purple-purple025: #fcf6ff;
+  /* Lime */
   --brand-colors-lime-lime100: #b8ef4a;
   --brand-colors-lime-lime200: #95ca45;
   --brand-colors-lime-lime300: #7ab040;
@@ -113,4 +102,9 @@
   --brand-colors-lime-lime700: #093a31;
   --brand-colors-lime-lime800: #022321;
   --brand-colors-lime-lime900: #011515;
+  --brand-colors-lime-lime025: #effed9;
+  --brand-colors-lime-lime050: #e3febd;
+  /* White and Black */
+  --brand-colors-white: #ffffff;
+  --brand-colors-black: #000000;
 }
