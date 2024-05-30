@@ -3,6 +3,82 @@
 This guide provides detailed instructions for migrating your project from one version of the `@metamask/design-tokens` to another.
 
 - [From version 2.1.1 to 3.0.0](#from-version-211-to-300)
+- [From version 3.0.0 to 4.0.0](#from-version-300-to-400)
+
+## From version 3.0.0 to 4.0.0
+
+### Changes to Color Tokens (Breaking Changes)
+
+In this version, significant updates have been made to color tokens, including modifications and removals. To upgrade to version 4, ensure that the following tokens have been updated in your codebase:
+
+### Removed
+
+#### CSS
+
+```
+### Brand colors
+--brand-colors-grey-grey750
+--brand-colors-violet-violet300
+--brand-colors-white-white010
+
+### Theme colors
+--color-primary-disabled
+--color-secondary-default
+--color-secondary-alternative
+--color-secondary-muted
+--color-secondary-inverse
+--color-secondary-disabled
+--color-error-disabled
+--color-warning-alternative
+--color-warning-disabled
+--color-success-alternative
+--color-success-disabled
+--color-info-alternative
+--color-info-disabled
+--color-network-goerli-default
+--color-network-goerli-inverse
+--color-network-localhost-default
+--color-network-localhost-inverse
+--color-network-sepolia-default
+--color-network-sepolia-inverse
+
+### Component colors
+--component-button-primary-shadow
+--component-button-danger-shadow
+```
+
+#### JS
+
+```
+TBC
+```
+
+### Changed
+
+#### CSS
+
+```
+### Brand colors
+--brand-colors-grey-grey030 modified to --brand-colors-grey-grey025
+--brand-colors-grey-grey040 modified to --brand-colors-grey-grey050
+--brand-colors-blue-blue000 modified to --brand-colors-blue-blue025
+--brand-colors-green-green000 modified to --brand-colors-green-green025
+--brand-colors-red-red000 modified to --brand-colors-red-red025
+--brand-colors-yellow-yellow000 modified to --brand-colors-yellow-yellow025
+--brand-colors-orange-orange000 modified to --brand-colors-orange-orange025
+--brand-colors-white-white000 modified to --brand-colors-white
+--brand-colors-black-black000 modified to --brand-colors-black
+
+## Theme colors
+--color-primary-shadow modified to --color-shadow-primary
+--color-error-shadow modified to --color-shadow-primary
+```
+
+#### JS
+
+```
+TBC
+```
 
 ## From version 2.1.1 to 3.0.0
 
