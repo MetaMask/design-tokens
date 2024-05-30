@@ -1,13 +1,14 @@
 /* eslint-disable @typescript-eslint/no-var-requires, @typescript-eslint/no-require-imports */
 import { lightTheme } from './lightTheme';
 
+const jsonLightThemeTokens = require('../../../figma/lightTheme.json');
 const designTokens = require('../../../figma/tokens.json');
 
 describe('Light Theme', () => {
-  it('color tokens are exported from lightTheme by checking first color token', () => {
-    expect(lightTheme.colors.background.default).toStrictEqual(
-      designTokens.light.colors.background.default.value,
-    );
+  it('color tokens are exported from lightTheme by checking a random color token', () => {
+    expect(
+      lightTheme.colors.background.defaultHover.toLowerCase(),
+    ).toStrictEqual(jsonLightThemeTokens.background['default-hover'].value);
   });
 
   it('typography tokens are exported from lightTheme by checking first typography token', () => {
@@ -18,7 +19,7 @@ describe('Light Theme', () => {
 
   it('shadow tokens are exported from lightTheme by checking first shadow size object', () => {
     expect(lightTheme.shadows.size.xs).toStrictEqual({
-      shadowColor: designTokens.light.shadows.xs.value.color,
+      shadowColor: jsonLightThemeTokens.shadow.default.value,
       shadowOffset: {
         width: Number(designTokens.light.shadows.xs.value.x),
         height: Number(designTokens.light.shadows.xs.value.y),

@@ -29,8 +29,6 @@ export const colors: ThemeColors = {
   overlay: {
     default: '#00000099', // For the default shade of screen
     alternative: '#000000cc', // For a stronger shade of screen
-    // Deprecated - to be removed
-    inverse: brandColor.white010,
   },
   primary: {
     default: brandColor.blue500, // For interactive, active, and selected semantics. Used for text, background, icon or border
@@ -39,18 +37,6 @@ export const colors: ThemeColors = {
     inverse: brandColor.grey000, // For elements used on top of primary/default. Used for text, icon or border
     defaultHover: '#036ab5', // For the "hover" state of primary-default elements
     defaultPressed: '#025ea1', // For the "pressed" state of primary-default elements
-    // Deprecated - to be removed
-    disabled: '#0376c980',
-    // Deprecated - to be removed
-    shadow: '#0376c933',
-  },
-  // Deprecated - to be removed
-  secondary: {
-    default: brandColor.orange500,
-    alternative: brandColor.orange600,
-    muted: '#f66a0a19',
-    inverse: brandColor.white,
-    disabled: '#f66a0a80',
   },
   error: {
     default: brandColor.red500, // For the critical alert semantic elements. Used for text, background, icon or border
@@ -59,10 +45,6 @@ export const colors: ThemeColors = {
     inverse: brandColor.grey000, // For elements used on top of error/default. Used for text, icon or border
     defaultHover: '#d02a3a', // For the "hover" state of error-default elements.
     defaultPressed: '#bf2635', // For the "pressed" state of error-default elements.
-    // Deprecated - to be removed
-    disabled: '#d7384780',
-    // Deprecated - to be removed
-    shadow: '#d7384766',
   },
   warning: {
     default: brandColor.yellow500, // For the caution alert semantic elements. Used for text, background, icon or border
@@ -70,10 +52,6 @@ export const colors: ThemeColors = {
     inverse: brandColor.grey000, // For elements used on top of warning/default. Used for text, icon or border
     defaultHover: '#ac4a07', // For the "hover" state of warning-default elements
     defaultPressed: '#984106', // For the "pressed" state of warning-default elements
-    // Deprecated - to be removed
-    alternative: brandColor.yellow600,
-    // Deprecated - to be removed
-    disabled: '#ffd33d80',
   },
   success: {
     default: brandColor.green500, // For the positive semantic elements. Used for text, background, icon or border
@@ -81,19 +59,11 @@ export const colors: ThemeColors = {
     inverse: brandColor.grey000, // For elements used on top of success/default. Used for text, icon or border
     defaultHover: '#18712d', // For the "hover" state of success-default elements
     defaultPressed: '#156127', // For the "pressed" state of success-default elements
-    // Deprecated - to be removed
-    alternative: brandColor.green500,
-    // Deprecated - to be removed
-    disabled: '#28a74580',
   },
   info: {
     default: brandColor.blue500, // For informational read-only elements. Used for text, background, icon or border
     muted: '#0376c91a', // For the weakest contrast informational semantic backgrounds.
     inverse: brandColor.grey000, // For elements used on top of info/default. Used for text, icon or border
-    // Deprecated - to be removed
-    alternative: brandColor.blue600,
-    // Deprecated - to be removed
-    disabled: '#0376c980',
   },
   flask: {
     default: brandColor.purple500, // For Flask primary accent color.
@@ -103,20 +73,5 @@ export const colors: ThemeColors = {
     default: '#0000001a', // For neutral drop shadow color.
     primary: '#0376c933', // For primary drop shadow color.
     error: '#ca354266', // For critical/danger drop shadow color.
-  },
-  // Deprecated - to be removed
-  networks: {
-    goerli: {
-      default: '#1098FC',
-      inverse: '#FCFCFC',
-    },
-    localhost: {
-      default: '#BBC0C5',
-      inverse: '#FCFCFC',
-    },
-    sepolia: {
-      default: '#CFB5F0',
-      inverse: '#FCFCFC',
-    },
   },
 };
