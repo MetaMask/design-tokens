@@ -11,7 +11,7 @@ This guide provides detailed instructions for migrating your project from one ve
 
 In this version, significant updates have been made to color tokens, including modifications and removals. To upgrade to version 4, ensure that the following tokens have been updated in your codebase:
 
-###
+### Removed
 
 #### CSS
 
