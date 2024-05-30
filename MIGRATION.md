@@ -31,7 +31,7 @@ In this version, significant updates have been made to color tokens, including m
 
 ### Themed Colors
 
-#### CSS Tokens
+#### CSS Variables
 
 ```
 --color-overlay-inverse removed
