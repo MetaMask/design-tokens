@@ -98,4 +98,31 @@
   --color-shadow-primary: #43aefc33;
   /* For critical/danger drop shadow color. */
   --color-shadow-error: #ff758466;
+  /* Deprecated - To be removed */
+  --color-overlay-inverse: var(--brand-colors-white-white010);
+  --color-primary-disabled: #1098fc80;
+  --color-primary-shadow: #0376c933;
+  --color-secondary-default: var(--brand-colors-orange-orange400);
+  --color-secondary-alternative: var(--brand-colors-orange-orange300);
+  --color-secondary-muted: #f8883b26;
+  --color-secondary-inverse: var(--brand-colors-grey-grey900);
+  --color-secondary-disabled: #f8883b80;
+  --color-error-disabled: #d7384780;
+  --color-error-shadow: #ff526366;
+  --color-warning-alternative: var(--brand-colors-yellow-yellow400);
+  --color-warning-disabled: #ffd33d80;
+  --color-success-alternative: var(--brand-colors-green-green400);
+  --color-success-disabled: #28a74580;
+  --color-info-alternative: var(--brand-colors-blue-blue300);
+  --color-info-disabled: #0376c980;
+  --color-network-goerli-default: var(--brand-colors-blue-blue400);
+  --color-network-goerli-inverse: var(--brand-colors-white-white010);
+  --color-network-localhost-default: var(--brand-colors-grey-grey200);
+  --color-network-localhost-inverse: var(--brand-colors-white-white010);
+  --color-network-sepolia-default: var(--brand-colors-violet-violet300);
+  --color-network-sepolia-inverse: var(--brand-colors-white-white010);
+  --component-button-primary-shadow: var(--shadow-size-sm)
+    var(--color-primary-shadow);
+  --component-button-danger-shadow: var(--shadow-size-sm)
+    var(--color-error-shadow);
 }
