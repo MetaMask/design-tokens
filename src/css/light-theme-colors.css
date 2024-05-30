@@ -39,6 +39,8 @@
   --color-overlay-default: #00000099;
   /* For a stronger shade of screen */
   --color-overlay-alternative: #000000cc;
+  /* For elements used on top of overlay/alternative. Used for text, icon or border */
+  --color-overlay-inverse: var(--brand-colors-grey-grey000);
   /* For interactive, active, and selected semantics. Used for text, background, icon or border */
   --color-primary-default: var(--brand-colors-blue-blue500);
   /* For the stronger contrast primary semantic elements. */

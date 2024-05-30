@@ -34,7 +34,6 @@ In this version, significant updates have been made to color tokens, including m
 #### CSS Variables
 
 ```
---color-overlay-inverse removed
 --color-primary-shadow modified to --color-shadow-primary
 --color-primary-disabled removed
 --color-secondary-default removed
