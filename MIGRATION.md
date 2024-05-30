@@ -8,7 +8,7 @@ This guide provides detailed instructions for migrating your project from one ve
 
 ### Changes to Color Tokens (Breaking Changes)
 
-In this version, significant updates have been made to color tokens, including additions, modifications, and removals. To upgrade to version 4, ensure that the following tokens are not present in your codebase:
+In this version, significant updates have been made to color tokens, including modifications and removals. To upgrade to version 4, ensure that the following tokens are not present in your codebase:
 
 ### Brand Colors
 
