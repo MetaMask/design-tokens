@@ -55,7 +55,7 @@ In this version, significant updates have been made to color tokens, including a
 - white-010 removed
 - black-000 modified to black
 
-#### CSS Tokens
+#### CSS Variables
 
 ```
 --brand-colors-grey-grey030 modified to --brand-colors-grey-grey025
