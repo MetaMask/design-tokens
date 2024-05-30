@@ -12,122 +12,24 @@ In this version, significant updates have been made to color tokens, including a
 
 ### Brand Colors
 
-- grey-030 modified to grey-025
-- grey-040 modified to grey-050
-- grey-750 removed
-- grey-1000 added
-- blue-000 modified to blue-025
-- blue-050 added
-- green-000 modified to green-025
-- green-050 added
-- red-000 modified to red-025
-- red-050 added
-- yellow-000 modified to yellow-025
-- yellow-050 added
-- yellow-700 added
-- yellow-800 added
-- yellow-900 added
-- orange-000 modified to orange-025
-- orange-050 added
-- purple-025 added
-- purple-050 added
-- purple-100 added
-- purple-200 added
-- purple-300 added
-- purple-400 added
-- purple-600 added
-- purple-700 added
-- purple-800 added
-- purple-900 added
-- violet-300 removed
-- lime-025 added
-- lime-050 added
-- lime-100 added
-- lime-200 added
-- lime-300 added
-- lime-400 added
-- lime-500 added
-- lime-600 added
-- lime-700 added
-- lime-800 added
-- lime-900 added
-- white-000 modified to white
-- white-010 removed
-- black-000 modified to black
-
 #### JS Tokens
 
 ```
 brandColor.grey030 modified to brandColor.grey025
 brandColor.grey040 modified to brandColor.grey050
 brandColor.grey750 removed
-brandColor.grey1000 added
 brandColor.blue000 modified to brandColor.blue025
-brandColor.blue050 added
 brandColor.green000 modified to brandColor.green025
-brandColor.green050 added
 brandColor.red000 modified to brandColor.red025
-brandColor.red050 added
 brandColor.yellow000 modified to brandColor.yellow025
-brandColor.yellow050 added
-brandColor.yellow700 added
-brandColor.yellow800 added
-brandColor.yellow900 added
 brandColor.orange000 modified to brandColor.orange025
-brandColor.orange050 added
-brandColor.purple025 added
-brandColor.purple050 added
-brandColor.purple100 added
-brandColor.purple200 added
-brandColor.purple300 added
-brandColor.purple400 added
-brandColor.purple600 added
-brandColor.purple700 added
-brandColor.purple800 added
-brandColor.purple900 added
 brandColor.violet300 removed
-brandColor.lime025 added
-brandColor.lime050 added
-brandColor.lime100 added
-brandColor.lime200 added
-brandColor.lime300 added
-brandColor.lime400 added
-brandColor.lime500 added
-brandColor.lime600 added
-brandColor.lime700 added
-brandColor.lime800 added
-brandColor.lime900 added
 brandColor.white000 modified to brandColor.white
 brandColor.white010 removed
 brandColor.black000 modified to brandColor.black
 ```
 
 ### Themed Colors
-
-- overlay-inverse removed
-- primary-shadow modified to shadow-primary
-- primary-disabled removed
-- secondary-default removed
-- secondary-alternative removed
-- secondary-muted removed
-- secondary-inverse removed
-- secondary-disabled removed
-- error-shadow modified to shadow-primary
-- error-disabled removed
-- warning-alternative removed
-- warning-disabled removed
-- success-alternative removed
-- success-disabled removed
-- info-alternative removed
-- info-disabled removed
-- network-goerli-default removed
-- network-goerli-inverse removed
-- network-localhost-default removed
-- network-localhost-inverse removed
-- network-sepolia-default removed
-- network-sepolia-inverse removed
-- component-button-primary-shadow removed
-- component-button-danger-shadow removed
 
 #### JS Tokens
 
