@@ -183,4 +183,15 @@ export type BrandColor = {
   white: string;
   /** black: #000000 */
   black: string;
+  /* Deprecated - To be removed */
+  grey030: string;
+  grey040: string;
+  grey750: string;
+  blue000: string;
+  green000: string;
+  red000: string;
+  yellow000: string;
+  orange000: string;
+  violet300: string;
+  white010: string;
 };

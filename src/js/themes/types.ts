@@ -103,6 +103,8 @@ export type ThemeColors = {
      * {string} overlay.alternative - For a stronger shade of screen
      */
     alternative: string;
+    // Deprecated - to be removed
+    inverse: string;
   };
   shadow: {
     /**
@@ -143,6 +145,18 @@ export type ThemeColors = {
      * {string} primary.inverse - For elements used on top of primary/default. (Example: label of primary button, check in a checkbox)disabled state
      */
     inverse: string;
+    // Deprecated - to be removed
+    disabled: string;
+    // Deprecated - to be removed
+    shadow: string;
+  };
+  // Deprecated - to be removed
+  secondary: {
+    default: string;
+    alternative: string;
+    muted: string;
+    inverse: string;
+    disabled: string;
   };
   error: {
     /**
@@ -169,6 +183,10 @@ export type ThemeColors = {
      * {string} error.inverse - For elements used on top of error/default (Example: label of danger/critical button)
      */
     inverse: string;
+    // Deprecated - to be removed
+    disabled: string;
+    // Deprecated - to be removed
+    shadow: string;
   };
   warning: {
     /**
@@ -191,6 +209,10 @@ export type ThemeColors = {
      * {string} warning.inverse - For elements used on top of warning/default. Used for text, icon or border
      */
     inverse: string;
+    // Deprecated -to be removed
+    alternative: string;
+    // Deprecated -to be removed
+    disabled: string;
   };
   success: {
     /**
@@ -213,6 +235,10 @@ export type ThemeColors = {
      * {string} success.inverse -  For elements used on top of success/default. Used for text, icon or border
      */
     inverse: string;
+    // Deprecated -to be removed
+    alternative: string;
+    // Deprecated -to be removed
+    disabled: string;
   };
   info: {
     /**
@@ -227,6 +253,10 @@ export type ThemeColors = {
      * {string} info.inverse - For elements used on top of info/default. Used for text, icon or border
      */
     inverse: string;
+    // Deprecated -to be removed
+    alternative: string;
+    // Deprecated -to be removed
+    disabled: string;
   };
   flask: {
     /**
@@ -237,6 +267,21 @@ export type ThemeColors = {
      * {string} flask.inverse - For elements used on top of flask/default
      */
     inverse: string;
+  };
+  // Deprecated -to be removed
+  networks: {
+    goerli: {
+      default: string;
+      inverse: string;
+    };
+    localhost: {
+      default: string;
+      inverse: string;
+    };
+    sepolia: {
+      default: string;
+      inverse: string;
+    };
   };
 };
 

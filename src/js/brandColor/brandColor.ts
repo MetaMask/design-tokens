@@ -185,4 +185,15 @@ export const brandColor: BrandColor = {
   white: '#ffffff',
   // Black
   black: '#000000',
+  /* Deprecated - To be removed */
+  grey030: '#fafbfc',
+  grey040: '#f2f4f6',
+  grey750: '#2e3339',
+  blue000: '#eaf6ff',
+  green000: '#f3fcf5',
+  red000: '#fcf2f3',
+  yellow000: '#fffdf8',
+  orange000: '#fef5ef',
+  violet300: '#cfb5f0',
+  white010: '#fcfcfc',
 };

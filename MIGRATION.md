@@ -148,12 +148,12 @@ colors.success.alternative removed
 colors.success.disabled removed
 colors.info.alternative removed
 colors.info.disabled removed
-colors.network.goerli.default removed
-colors.network.goerli.inverse removed
-colors.network.localhost.default removed
-colors.network.localhost.inverse removed
-colors.network.sepolia.default removed
-colors.network.sepolia.inverse removed
+colors.networks.goerli.default removed
+colors.networks.goerli.inverse removed
+colors.networks.localhost.default removed
+colors.networks.localhost.inverse removed
+colors.networks.sepolia.default removed
+colors.networks.sepolia.inverse removed
 ```
 
 - [From version 2.1.1 to 3.0.0](#from-version-211-to-300)
