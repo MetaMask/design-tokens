@@ -2,61 +2,6 @@
 
 This guide provides detailed instructions for migrating your project from one version of the `@metamask/design-tokens` to another.
 
-## From version 3.0.0 to 4.0.0
-
-## Migration from Version 3.0.0 to 4.0.0
-
-### Changes to Color Tokens (Breaking Changes)
-
-In this version, significant updates have been made to color tokens, including modifications and removals. To upgrade to version 4, ensure that the following tokens are not present in your codebase:
-
-### Brand Colors
-
-#### JS Tokens
-
-```
-brandColor.grey030 modified to brandColor.grey025
-brandColor.grey040 modified to brandColor.grey050
-brandColor.grey750 removed
-brandColor.blue000 modified to brandColor.blue025
-brandColor.green000 modified to brandColor.green025
-brandColor.red000 modified to brandColor.red025
-brandColor.yellow000 modified to brandColor.yellow025
-brandColor.orange000 modified to brandColor.orange025
-brandColor.violet300 removed
-brandColor.white000 modified to brandColor.white
-brandColor.white010 removed
-brandColor.black000 modified to brandColor.black
-```
-
-### Themed Colors
-
-#### JS Tokens
-
-```
-colors.primary.shadow modified to colors.shadow.primary
-colors.primary.disabled removed
-colors.secondary.default removed
-colors.secondary.alternative removed
-colors.secondary.muted removed
-colors.secondary.inverse removed
-colors.secondary.disabled removed
-colors.error.shadow modified to colors.shadow.primary
-colors.error.disabled removed
-colors.warning.alternative removed
-colors.warning.disabled removed
-colors.success.alternative removed
-colors.success.disabled removed
-colors.info.alternative removed
-colors.info.disabled removed
-colors.networks.goerli.default removed
-colors.networks.goerli.inverse removed
-colors.networks.localhost.default removed
-colors.networks.localhost.inverse removed
-colors.networks.sepolia.default removed
-colors.networks.sepolia.inverse removed
-```
-
 - [From version 2.1.1 to 3.0.0](#from-version-211-to-300)
 - [From version 3.0.0 to 4.0.0](#from-version-300-to-400)
 
@@ -66,7 +11,7 @@ colors.networks.sepolia.inverse removed
 
 In this version, significant updates have been made to color tokens, including modifications and removals. To upgrade to version 4, ensure that the following tokens have been updated in your codebase:
 
-### Removed
+###
 
 #### CSS
 
@@ -105,7 +50,32 @@ In this version, significant updates have been made to color tokens, including m
 #### JS
 
 ```
-TBC
+### Brand colors
+brandColor.grey750
+brandColor.violet300
+brandColor.white010
+
+### Theme colors
+colors.primary.disabled
+colors.secondary.default
+colors.secondary.alternative
+colors.secondary.muted
+colors.secondary.inverse
+colors.secondary.disabled
+colors.error.disabled
+colors.warning.alternative
+colors.warning.disabled
+colors.success.alternative
+colors.success.disabled
+colors.info.alternative
+colors.info.disabled
+colors.networks.goerli.default
+colors.networks.goerli.inverse
+colors.networks.localhost.default
+colors.networks.localhost.inverse
+colors.networks.sepolia.default
+colors.networks.sepolia.inverse
+
 ```
 
 ### Changed
@@ -132,7 +102,20 @@ TBC
 #### JS
 
 ```
-TBC
+### Brand colors
+brandColor.grey030 modified to brandColor.grey025
+brandColor.grey040 modified to brandColor.grey050
+brandColor.blue000 modified to brandColor.blue025
+brandColor.green000 modified to brandColor.green025
+brandColor.red000 modified to brandColor.red025
+brandColor.yellow000 modified to brandColor.yellow025
+brandColor.orange000 modified to brandColor.orange025
+brandColor.white000 modified to brandColor.white
+brandColor.black000 modified to brandColor.black
+
+### Theme colors
+colors.primary.shadow modified to colors.shadow.primary
+colors.error.shadow modified to colors.shadow.primary
 ```
 
 ## From version 2.1.1 to 3.0.0
