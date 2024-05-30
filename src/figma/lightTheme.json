@@ -115,6 +115,12 @@
       "type": "color",
       "parent": "Theme Colors/Light mode",
       "description": "For a stronger shade of screen"
+    },
+    "inverse": {
+      "value": "{grey.000}",
+      "type": "color",
+      "parent": "Theme Colors/Light mode",
+      "description": "For elements used on top of overlay/alternative. Used for text, icon or border"
     }
   },
   "primary": {
