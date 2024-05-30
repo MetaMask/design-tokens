@@ -4,38 +4,22 @@ import { brandColor } from './brandColor';
 const designTokens = require('../../figma/tokens.json');
 
 describe('Brand Color', () => {
-  describe('White', () => {
-    it('js tokens for white000 matches figma tokens white000', () => {
-      expect(brandColor.white000).toStrictEqual(
-        designTokens.global.brandColors.white.white000.value.toLowerCase(),
-      );
-    });
-
-    it('js tokens for white010 matches figma tokens white010', () => {
-      expect(brandColor.white010).toStrictEqual(
-        designTokens.global.brandColors.white.white010.value.toLowerCase(),
-      );
-    });
-  });
-
-  describe('Black', () => {
-    it('js tokens for black000 matches figma tokens black000', () => {
-      expect(brandColor.black000).toStrictEqual(
-        designTokens.global.brandColors.black.black000.value.toLowerCase(),
-      );
-    });
-  });
-
   describe('Grey', () => {
-    it('js tokens for grey030 matches figma tokens grey030', () => {
-      expect(brandColor.grey030).toStrictEqual(
-        designTokens.global.brandColors.grey.grey030.value.toLowerCase(),
+    it('js tokens for grey000 matches figma tokens grey000', () => {
+      expect(brandColor.grey000).toStrictEqual(
+        designTokens.global.brandColors.grey.grey000.value.toLowerCase(),
       );
     });
 
-    it('js tokens for grey040 matches figma tokens grey040', () => {
-      expect(brandColor.grey040).toStrictEqual(
-        designTokens.global.brandColors.grey.grey040.value.toLowerCase(),
+    it('js tokens for grey025 matches figma tokens grey025', () => {
+      expect(brandColor.grey025).toStrictEqual(
+        designTokens.global.brandColors.grey.grey025.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for grey050 matches figma tokens grey050', () => {
+      expect(brandColor.grey050).toStrictEqual(
+        designTokens.global.brandColors.grey.grey050.value.toLowerCase(),
       );
     });
 
@@ -81,12 +65,6 @@ describe('Brand Color', () => {
       );
     });
 
-    it('js tokens for grey750 matches figma tokens grey750', () => {
-      expect(brandColor.grey750).toStrictEqual(
-        designTokens.global.brandColors.grey.grey750.value.toLowerCase(),
-      );
-    });
-
     it('js tokens for grey800 matches figma tokens grey800', () => {
       expect(brandColor.grey800).toStrictEqual(
         designTokens.global.brandColors.grey.grey800.value.toLowerCase(),
@@ -98,12 +76,24 @@ describe('Brand Color', () => {
         designTokens.global.brandColors.grey.grey900.value.toLowerCase(),
       );
     });
+
+    it('js tokens for grey1000 matches figma tokens grey1000', () => {
+      expect(brandColor.grey1000).toStrictEqual(
+        designTokens.global.brandColors.grey.grey1000.value.toLowerCase(),
+      );
+    });
   });
 
   describe('Blue', () => {
-    it('js tokens for blue000 matches figma tokens blue000', () => {
-      expect(brandColor.blue000).toStrictEqual(
-        designTokens.global.brandColors.blue.blue000.value.toLowerCase(),
+    it('js tokens for blue025 matches figma tokens blue025', () => {
+      expect(brandColor.blue025).toStrictEqual(
+        designTokens.global.brandColors.blue.blue025.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for blue050 matches figma tokens blue050', () => {
+      expect(brandColor.blue050).toStrictEqual(
+        designTokens.global.brandColors.blue.blue050.value.toLowerCase(),
       );
     });
 
@@ -162,72 +152,16 @@ describe('Brand Color', () => {
     });
   });
 
-  describe('Orange', () => {
-    it('js tokens for orange000 matches figma tokens orange000', () => {
-      expect(brandColor.orange000).toStrictEqual(
-        designTokens.global.brandColors.orange.orange000.value.toLowerCase(),
-      );
-    });
-
-    it('js tokens for orange100 matches figma tokens orange100', () => {
-      expect(brandColor.orange100).toStrictEqual(
-        designTokens.global.brandColors.orange.orange100.value.toLowerCase(),
-      );
-    });
-
-    it('js tokens for orange200 matches figma tokens orange200', () => {
-      expect(brandColor.orange200).toStrictEqual(
-        designTokens.global.brandColors.orange.orange200.value.toLowerCase(),
-      );
-    });
-
-    it('js tokens for orange300 matches figma tokens orange300', () => {
-      expect(brandColor.orange300).toStrictEqual(
-        designTokens.global.brandColors.orange.orange300.value.toLowerCase(),
-      );
-    });
-
-    it('js tokens for orange400 matches figma tokens orange400', () => {
-      expect(brandColor.orange400).toStrictEqual(
-        designTokens.global.brandColors.orange.orange400.value.toLowerCase(),
-      );
-    });
-
-    it('js tokens for orange500 matches figma tokens orange500', () => {
-      expect(brandColor.orange500).toStrictEqual(
-        designTokens.global.brandColors.orange.orange500.value.toLowerCase(),
-      );
-    });
-
-    it('js tokens for orange600 matches figma tokens orange600', () => {
-      expect(brandColor.orange600).toStrictEqual(
-        designTokens.global.brandColors.orange.orange600.value.toLowerCase(),
-      );
-    });
-
-    it('js tokens for orange700 matches figma tokens orange700', () => {
-      expect(brandColor.orange700).toStrictEqual(
-        designTokens.global.brandColors.orange.orange700.value.toLowerCase(),
-      );
-    });
-
-    it('js tokens for orange800 matches figma tokens orange800', () => {
-      expect(brandColor.orange800).toStrictEqual(
-        designTokens.global.brandColors.orange.orange800.value.toLowerCase(),
-      );
-    });
-
-    it('js tokens for orange900 matches figma tokens orange900', () => {
-      expect(brandColor.orange900).toStrictEqual(
-        designTokens.global.brandColors.orange.orange900.value.toLowerCase(),
-      );
-    });
-  });
-
   describe('Green', () => {
-    it('js tokens for green000 matches figma tokens green000', () => {
-      expect(brandColor.green000).toStrictEqual(
-        designTokens.global.brandColors.green.green000.value.toLowerCase(),
+    it('js tokens for green025 matches figma tokens green025', () => {
+      expect(brandColor.green025).toStrictEqual(
+        designTokens.global.brandColors.green.green025.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for green050 matches figma tokens green050', () => {
+      expect(brandColor.green050).toStrictEqual(
+        designTokens.global.brandColors.green.green050.value.toLowerCase(),
       );
     });
 
@@ -287,9 +221,15 @@ describe('Brand Color', () => {
   });
 
   describe('Red', () => {
-    it('js tokens for red000 matches figma tokens red000', () => {
-      expect(brandColor.red000).toStrictEqual(
-        designTokens.global.brandColors.red.red000.value.toLowerCase(),
+    it('js tokens for red025 matches figma tokens red025', () => {
+      expect(brandColor.red025).toStrictEqual(
+        designTokens.global.brandColors.red.red025.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for red050 matches figma tokens red050', () => {
+      expect(brandColor.red050).toStrictEqual(
+        designTokens.global.brandColors.red.red050.value.toLowerCase(),
       );
     });
 
@@ -348,26 +288,16 @@ describe('Brand Color', () => {
     });
   });
 
-  describe('Purple', () => {
-    it('js tokens for purple500 matches figma tokens purple500', () => {
-      expect(brandColor.purple500).toStrictEqual(
-        designTokens.global.brandColors.purple.purple500.value.toLowerCase(),
-      );
-    });
-  });
-
-  describe('Violet', () => {
-    it('js tokens for violet300 matches figma tokens violet300', () => {
-      expect(brandColor.violet300).toStrictEqual(
-        designTokens.global.brandColors.violet.violet300.value.toLowerCase(),
-      );
-    });
-  });
-
   describe('Yellow', () => {
-    it('js tokens for yellow000 matches figma tokens yellow000', () => {
-      expect(brandColor.yellow000).toStrictEqual(
-        designTokens.global.brandColors.yellow.yellow000.value.toLowerCase(),
+    it('js tokens for yellow025 matches figma tokens yellow025', () => {
+      expect(brandColor.yellow025).toStrictEqual(
+        designTokens.global.brandColors.yellow.yellow025.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for yellow050 matches figma tokens yellow050', () => {
+      expect(brandColor.yellow050).toStrictEqual(
+        designTokens.global.brandColors.yellow.yellow050.value.toLowerCase(),
       );
     });
 
@@ -404,6 +334,244 @@ describe('Brand Color', () => {
     it('js tokens for yellow600 matches figma tokens yellow600', () => {
       expect(brandColor.yellow600).toStrictEqual(
         designTokens.global.brandColors.yellow.yellow600.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for yellow700 matches figma tokens yellow700', () => {
+      expect(brandColor.yellow700).toStrictEqual(
+        designTokens.global.brandColors.yellow.yellow700.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for yellow800 matches figma tokens yellow800', () => {
+      expect(brandColor.yellow800).toStrictEqual(
+        designTokens.global.brandColors.yellow.yellow800.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for yellow900 matches figma tokens yellow900', () => {
+      expect(brandColor.yellow900).toStrictEqual(
+        designTokens.global.brandColors.yellow.yellow900.value.toLowerCase(),
+      );
+    });
+  });
+
+  describe('Orange', () => {
+    it('js tokens for orange025 matches figma tokens orange025', () => {
+      expect(brandColor.orange025).toStrictEqual(
+        designTokens.global.brandColors.orange.orange025.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for orange050 matches figma tokens orange050', () => {
+      expect(brandColor.orange050).toStrictEqual(
+        designTokens.global.brandColors.orange.orange050.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for orange100 matches figma tokens orange100', () => {
+      expect(brandColor.orange100).toStrictEqual(
+        designTokens.global.brandColors.orange.orange100.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for orange200 matches figma tokens orange200', () => {
+      expect(brandColor.orange200).toStrictEqual(
+        designTokens.global.brandColors.orange.orange200.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for orange300 matches figma tokens orange300', () => {
+      expect(brandColor.orange300).toStrictEqual(
+        designTokens.global.brandColors.orange.orange300.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for orange400 matches figma tokens orange400', () => {
+      expect(brandColor.orange400).toStrictEqual(
+        designTokens.global.brandColors.orange.orange400.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for orange500 matches figma tokens orange500', () => {
+      expect(brandColor.orange500).toStrictEqual(
+        designTokens.global.brandColors.orange.orange500.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for orange600 matches figma tokens orange600', () => {
+      expect(brandColor.orange600).toStrictEqual(
+        designTokens.global.brandColors.orange.orange600.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for orange700 matches figma tokens orange700', () => {
+      expect(brandColor.orange700).toStrictEqual(
+        designTokens.global.brandColors.orange.orange700.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for orange800 matches figma tokens orange800', () => {
+      expect(brandColor.orange800).toStrictEqual(
+        designTokens.global.brandColors.orange.orange800.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for orange900 matches figma tokens orange900', () => {
+      expect(brandColor.orange900).toStrictEqual(
+        designTokens.global.brandColors.orange.orange900.value.toLowerCase(),
+      );
+    });
+  });
+
+  describe('Purple', () => {
+    it('js tokens for purple025 matches figma tokens purple025', () => {
+      expect(brandColor.purple025).toStrictEqual(
+        designTokens.global.brandColors.purple.purple025.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for purple050 matches figma tokens purple050', () => {
+      expect(brandColor.purple050).toStrictEqual(
+        designTokens.global.brandColors.purple.purple050.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for purple100 matches figma tokens purple100', () => {
+      expect(brandColor.purple100).toStrictEqual(
+        designTokens.global.brandColors.purple.purple100.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for purple200 matches figma tokens purple200', () => {
+      expect(brandColor.purple200).toStrictEqual(
+        designTokens.global.brandColors.purple.purple200.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for purple300 matches figma tokens purple300', () => {
+      expect(brandColor.purple300).toStrictEqual(
+        designTokens.global.brandColors.purple.purple300.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for purple400 matches figma tokens purple400', () => {
+      expect(brandColor.purple400).toStrictEqual(
+        designTokens.global.brandColors.purple.purple400.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for purple500 matches figma tokens purple500', () => {
+      expect(brandColor.purple500).toStrictEqual(
+        designTokens.global.brandColors.purple.purple500.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for purple600 matches figma tokens purple600', () => {
+      expect(brandColor.purple600).toStrictEqual(
+        designTokens.global.brandColors.purple.purple600.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for purple700 matches figma tokens purple700', () => {
+      expect(brandColor.purple700).toStrictEqual(
+        designTokens.global.brandColors.purple.purple700.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for purple800 matches figma tokens purple800', () => {
+      expect(brandColor.purple800).toStrictEqual(
+        designTokens.global.brandColors.purple.purple800.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for purple900 matches figma tokens purple900', () => {
+      expect(brandColor.purple900).toStrictEqual(
+        designTokens.global.brandColors.purple.purple900.value.toLowerCase(),
+      );
+    });
+  });
+
+  describe('Lime', () => {
+    it('js tokens for lime025 matches figma tokens lime025', () => {
+      expect(brandColor.lime025).toStrictEqual(
+        designTokens.global.brandColors.lime.lime025.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for lime050 matches figma tokens lime050', () => {
+      expect(brandColor.lime050).toStrictEqual(
+        designTokens.global.brandColors.lime.lime050.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for lime100 matches figma tokens lime100', () => {
+      expect(brandColor.lime100).toStrictEqual(
+        designTokens.global.brandColors.lime.lime100.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for lime200 matches figma tokens lime200', () => {
+      expect(brandColor.lime200).toStrictEqual(
+        designTokens.global.brandColors.lime.lime200.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for lime300 matches figma tokens lime300', () => {
+      expect(brandColor.lime300).toStrictEqual(
+        designTokens.global.brandColors.lime.lime300.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for lime400 matches figma tokens lime400', () => {
+      expect(brandColor.lime400).toStrictEqual(
+        designTokens.global.brandColors.lime.lime400.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for lime500 matches figma tokens lime500', () => {
+      expect(brandColor.lime500).toStrictEqual(
+        designTokens.global.brandColors.lime.lime500.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for lime600 matches figma tokens lime600', () => {
+      expect(brandColor.lime600).toStrictEqual(
+        designTokens.global.brandColors.lime.lime600.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for lime700 matches figma tokens lime700', () => {
+      expect(brandColor.lime700).toStrictEqual(
+        designTokens.global.brandColors.lime.lime700.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for lime800 matches figma tokens lime800', () => {
+      expect(brandColor.lime800).toStrictEqual(
+        designTokens.global.brandColors.lime.lime800.value.toLowerCase(),
+      );
+    });
+
+    it('js tokens for lime900 matches figma tokens lime900', () => {
+      expect(brandColor.lime900).toStrictEqual(
+        designTokens.global.brandColors.lime.lime900.value.toLowerCase(),
+      );
+    });
+  });
+
+  describe('White', () => {
+    it('js tokens for white matches figma tokens white', () => {
+      expect(brandColor.white).toStrictEqual(
+        designTokens.global.brandColors.white.value.toLowerCase(),
+      );
+    });
+  });
+
+  describe('Black', () => {
+    it('js tokens for black000 matches figma tokens black000', () => {
+      expect(brandColor.black).toStrictEqual(
+        designTokens.global.brandColors.black.value.toLowerCase(),
       );
     });
   });

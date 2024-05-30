@@ -112,30 +112,6 @@ describe('Light Theme Colors', () => {
     );
   });
 
-  it('js tokens for overlay.inverse matches figma tokens overlay.inverse', () => {
-    expect(importableColors.overlay.inverse).toStrictEqual(
-      designTokens.light.colors.overlay.inverse.value,
-    );
-  });
-
-  it('js tokens for shadow.default matches figma tokens light.shadows.xs.value.color', () => {
-    expect(importableColors.shadow.default).toStrictEqual(
-      designTokens.light.shadows.xs.value.color,
-    );
-
-    expect(importableColors.shadow.default).toStrictEqual(
-      designTokens.light.shadows.sm.value.color,
-    );
-
-    expect(importableColors.shadow.default).toStrictEqual(
-      designTokens.light.shadows.md.value.color,
-    );
-
-    expect(importableColors.shadow.default).toStrictEqual(
-      designTokens.light.shadows.lg.value.color,
-    );
-  });
-
   it('js tokens for primary.default matches figma tokens primary.default', () => {
     expect(importableColors.primary.default).toStrictEqual(
       designTokens.light.colors.primary.default.value,
@@ -169,36 +145,6 @@ describe('Light Theme Colors', () => {
   it('js tokens for primary.inverse matches figma tokens primary.inverse', () => {
     expect(importableColors.primary.inverse).toStrictEqual(
       designTokens.light.colors.primary.inverse.value,
-    );
-  });
-
-  it('js tokens for primary.shadow matches figma tokens shadows.primary', () => {
-    expect(importableColors.primary.shadow).toStrictEqual(
-      designTokens.light.shadows.primary.value.color,
-    );
-  });
-
-  it('js tokens for secondary.default matches figma tokens secondary.default', () => {
-    expect(importableColors.secondary.default).toStrictEqual(
-      designTokens.light.colors.secondary.default.value,
-    );
-  });
-
-  it('js tokens for secondary.alternative matches figma tokens secondary.alternative', () => {
-    expect(importableColors.secondary.alternative).toStrictEqual(
-      designTokens.light.colors.secondary.alternative.value,
-    );
-  });
-
-  it('js tokens for secondary.muted matches figma tokens secondary.muted', () => {
-    expect(importableColors.secondary.muted).toStrictEqual(
-      designTokens.light.colors.secondary.muted.value,
-    );
-  });
-
-  it('js tokens for secondary.inverse matches figma tokens secondary.inverse', () => {
-    expect(importableColors.secondary.inverse).toStrictEqual(
-      designTokens.light.colors.secondary.inverse.value,
     );
   });
 
@@ -238,12 +184,6 @@ describe('Light Theme Colors', () => {
     );
   });
 
-  it('js tokens for error.shadow matches figma tokens shadows.error', () => {
-    expect(importableColors.error.shadow).toStrictEqual(
-      designTokens.light.shadows.error.value.color,
-    );
-  });
-
   it('js tokens for warning.default matches figma tokens warning.default', () => {
     expect(importableColors.warning.default).toStrictEqual(
       designTokens.light.colors.warning.default.value,
@@ -259,12 +199,6 @@ describe('Light Theme Colors', () => {
   it('js tokens for warning.default-pressed matches figma tokens warning.default-pressed', () => {
     expect(importableColors.warning.defaultPressed).toStrictEqual(
       designTokens.light.colors.warning['default-pressed'].value,
-    );
-  });
-
-  it('js tokens for warning.alternative matches figma tokens warning.alternative', () => {
-    expect(importableColors.warning.alternative).toStrictEqual(
-      designTokens.light.colors.warning.alternative.value,
     );
   });
 
@@ -298,12 +232,6 @@ describe('Light Theme Colors', () => {
     );
   });
 
-  it('js tokens for success.alternative matches figma tokens success.alternative', () => {
-    expect(importableColors.success.alternative).toStrictEqual(
-      designTokens.light.colors.success.alternative.value,
-    );
-  });
-
   it('js tokens for success.muted matches figma tokens success.muted', () => {
     expect(importableColors.success.muted).toStrictEqual(
       designTokens.light.colors.success.muted.value,
@@ -322,12 +250,6 @@ describe('Light Theme Colors', () => {
     );
   });
 
-  it('js tokens for info.alternative matches figma tokens info.alternative', () => {
-    expect(importableColors.info.alternative).toStrictEqual(
-      designTokens.light.colors.info.alternative.value,
-    );
-  });
-
   it('js tokens for info.muted matches figma tokens info.muted', () => {
     expect(importableColors.info.muted).toStrictEqual(
       designTokens.light.colors.info.muted.value,
@@ -340,42 +262,6 @@ describe('Light Theme Colors', () => {
     );
   });
 
-  it('js tokens for networks.goerli.default matches figma tokens networks.goerli.default', () => {
-    expect(importableColors.networks.goerli.default).toStrictEqual(
-      designTokens.light.colors.networks.goerli.default.value,
-    );
-  });
-
-  it('js tokens for networks.goerli.inverse matches figma tokens networks.goerli.inverse', () => {
-    expect(importableColors.networks.goerli.inverse).toStrictEqual(
-      designTokens.light.colors.networks.goerli.inverse.value,
-    );
-  });
-
-  it('js tokens for networks.localhost.default matches figma tokens networks.localhost.default', () => {
-    expect(importableColors.networks.localhost.default).toStrictEqual(
-      designTokens.light.colors.networks.localhost.default.value,
-    );
-  });
-
-  it('js tokens for networks.localhost.inverse matches figma tokens networks.localhost.inverse', () => {
-    expect(importableColors.networks.localhost.inverse).toStrictEqual(
-      designTokens.light.colors.networks.localhost.inverse.value,
-    );
-  });
-
-  it('js tokens for networks.sepolia.default matches figma tokens networks.sepolia.default', () => {
-    expect(importableColors.networks.sepolia.default).toStrictEqual(
-      designTokens.light.colors.networks.sepolia.default.value,
-    );
-  });
-
-  it('js tokens for networks.sepolia.inverse matches figma tokens networks.sepolia.inverse', () => {
-    expect(importableColors.networks.sepolia.inverse).toStrictEqual(
-      designTokens.light.colors.networks.sepolia.inverse.value,
-    );
-  });
-
   it('js tokens for flask.default matches figma tokens flask.default', () => {
     expect(importableColors.flask.default).toStrictEqual(
       designTokens.light.colors.flask.default.value,
@@ -385,6 +271,36 @@ describe('Light Theme Colors', () => {
   it('js tokens for flask.inverse matches figma tokens flask.inverse', () => {
     expect(importableColors.flask.inverse).toStrictEqual(
       designTokens.light.colors.flask.inverse.value,
+    );
+  });
+
+  it('js tokens for shadow.default matches figma tokens light.shadows.xs.value.color', () => {
+    expect(importableColors.shadow.default).toStrictEqual(
+      designTokens.light.shadows.xs.value.color,
+    );
+
+    expect(importableColors.shadow.default).toStrictEqual(
+      designTokens.light.shadows.sm.value.color,
+    );
+
+    expect(importableColors.shadow.default).toStrictEqual(
+      designTokens.light.shadows.md.value.color,
+    );
+
+    expect(importableColors.shadow.default).toStrictEqual(
+      designTokens.light.shadows.lg.value.color,
+    );
+  });
+
+  it('js tokens for shadow.primary matches figma tokens shadows.primary', () => {
+    expect(importableColors.shadow.primary).toStrictEqual(
+      designTokens.light.shadows.primary.value.color,
+    );
+  });
+
+  it('js tokens for shadow.error matches figma tokens shadows.error', () => {
+    expect(importableColors.shadow.error).toStrictEqual(
+      designTokens.light.shadows.error.value.color,
     );
   });
 });
