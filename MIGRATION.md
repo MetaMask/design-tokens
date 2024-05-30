@@ -18,18 +18,15 @@ In this version, significant updates have been made to color tokens, including a
 --brand-colors-grey-grey030
 --brand-colors-grey-grey040
 --brand-colors-grey-grey750
---brand-colors-blue-blue000
---brand-colors-green-green000
---brand-colors-red-red000
---brand-colors-yellow-yellow000
---brand-colors-orange-orange000
 --brand-colors-violet
 --brand-colors-white-white010
 --color-overlay-inverse
---color-primary-shadow
 --color-primary-disabled
---color-secondary
---color-error-shadow
+--color-secondary-default
+--color-secondary-alternative
+--color-secondary-muted
+--color-secondary-inverse
+--color-secondary-disabled
 --color-error-disabled
 --color-warning-alternative
 --color-warning-disabled
@@ -37,7 +34,14 @@ In this version, significant updates have been made to color tokens, including a
 --color-success-disabled
 --color-info-alternative
 --color-info-disabled
---color-network-
+--color-network-goerli-default
+--color-network-goerli-inverse
+--color-network-localhost-default
+--color-network-localhost-inverse
+--color-network-sepolia-default
+--color-network-sepolia-inverse
+--component-button-primary-shadow
+--component-button-danger-shadow
 ```
 
 ### Changed
@@ -45,8 +49,15 @@ In this version, significant updates have been made to color tokens, including a
 #### CSS
 
 ```
+--brand-colors-blue-blue000 to --brand-colors-blue-blue025
+--brand-colors-green-green000 to --brand-colors-green-green025
+--brand-colors-red-red000 to --brand-colors-red-red025
+--brand-colors-yellow-yellow000 to --brand-colors-yellow-yellow025
+--brand-colors-orange-orange000 to --brand-colors-orange-orange025
 --brand-colors-white-white000 to --brand-colors-white
 --brand-colors-black-black000 to --brand-colors-black
+--color-primary-shadow
+--color-error-shadow
 ```
 
 ### Themed Colors
