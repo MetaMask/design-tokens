@@ -133,14 +133,14 @@ brandColor.black000 modified to brandColor.black
 
 ```
 colors.overlay.inverse removed
-colors.primary.shadow modified to shadow.primary
+colors.primary.shadow modified to colors.shadow.primary
 colors.primary.disabled removed
 colors.secondary.default removed
 colors.secondary.alternative removed
 colors.secondary.muted removed
 colors.secondary.inverse removed
 colors.secondary.disabled removed
-colors.error.shadow modified to shadow.primary
+colors.error.shadow modified to colors.shadow.primary
 colors.error.disabled removed
 colors.warning.alternative removed
 colors.warning.disabled removed
