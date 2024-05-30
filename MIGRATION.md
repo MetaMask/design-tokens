@@ -50,7 +50,32 @@ In this version, significant updates have been made to color tokens, including m
 #### JS
 
 ```
-TBC
+### Brand colors
+brandColor.grey750
+brandColor.violet300
+brandColor.white010
+
+### Theme colors
+colors.primary.disabled
+colors.secondary.default
+colors.secondary.alternative
+colors.secondary.muted
+colors.secondary.inverse
+colors.secondary.disabled
+colors.error.disabled
+colors.warning.alternative
+colors.warning.disabled
+colors.success.alternative
+colors.success.disabled
+colors.info.alternative
+colors.info.disabled
+colors.networks.goerli.default
+colors.networks.goerli.inverse
+colors.networks.localhost.default
+colors.networks.localhost.inverse
+colors.networks.sepolia.default
+colors.networks.sepolia.inverse
+
 ```
 
 ### Changed
@@ -77,7 +102,20 @@ TBC
 #### JS
 
 ```
-TBC
+### Brand colors
+brandColor.grey030 modified to brandColor.grey025
+brandColor.grey040 modified to brandColor.grey050
+brandColor.blue000 modified to brandColor.blue025
+brandColor.green000 modified to brandColor.green025
+brandColor.red000 modified to brandColor.red025
+brandColor.yellow000 modified to brandColor.yellow025
+brandColor.orange000 modified to brandColor.orange025
+brandColor.white000 modified to brandColor.white
+brandColor.black000 modified to brandColor.black
+
+### Theme colors
+colors.primary.shadow modified to colors.shadow.primary
+colors.error.shadow modified to colors.shadow.primary
 ```
 
 ## From version 2.1.1 to 3.0.0

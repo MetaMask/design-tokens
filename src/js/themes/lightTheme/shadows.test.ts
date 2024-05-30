@@ -1,12 +1,13 @@
 /* eslint-disable @typescript-eslint/no-var-requires, @typescript-eslint/no-require-imports */
 import { shadows } from './shadows';
 
+const jsonLightThemeTokens = require('../../../figma/lightTheme.json');
 const designTokens = require('../../../figma/tokens.json');
 
 describe('Shadows', () => {
   it('js tokens shadows.size.xs matches figma tokens shadows.xs', () => {
-    expect(shadows.size.xs.shadowColor).toStrictEqual(
-      designTokens.light.shadows.xs.value.color,
+    expect(shadows.size.xs.shadowColor.toLowerCase()).toStrictEqual(
+      jsonLightThemeTokens.shadow.default.value,
     );
 
     expect(shadows.size.xs.shadowOffset.width).toStrictEqual(
@@ -25,8 +26,8 @@ describe('Shadows', () => {
   });
 
   it('js tokens shadows.size.sm matches figma tokens shadows.sm', () => {
-    expect(shadows.size.sm.shadowColor).toStrictEqual(
-      designTokens.light.shadows.sm.value.color,
+    expect(shadows.size.sm.shadowColor.toLowerCase()).toStrictEqual(
+      jsonLightThemeTokens.shadow.default.value,
     );
 
     expect(shadows.size.sm.shadowOffset.width).toStrictEqual(
@@ -45,8 +46,8 @@ describe('Shadows', () => {
   });
 
   it('js tokens shadows.size.md matches figma tokens shadows.md', () => {
-    expect(shadows.size.md.shadowColor).toStrictEqual(
-      designTokens.light.shadows.md.value.color,
+    expect(shadows.size.md.shadowColor.toLowerCase()).toStrictEqual(
+      jsonLightThemeTokens.shadow.default.value,
     );
 
     expect(shadows.size.md.shadowOffset.width).toStrictEqual(
@@ -65,8 +66,8 @@ describe('Shadows', () => {
   });
 
   it('js tokens shadows.size.lg matches figma tokens shadows.lg', () => {
-    expect(shadows.size.lg.shadowColor).toStrictEqual(
-      designTokens.light.shadows.lg.value.color,
+    expect(shadows.size.lg.shadowColor.toLowerCase()).toStrictEqual(
+      jsonLightThemeTokens.shadow.default.value,
     );
 
     expect(shadows.size.lg.shadowOffset.width).toStrictEqual(

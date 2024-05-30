@@ -1,110 +1,78 @@
+import { brandColor } from '../../brandColor';
 import type { ThemeColors } from '../types';
-
-/**
- * Dark theme colors
- */
 
 export const colors: ThemeColors = {
   background: {
-    default: '#24272A',
-    defaultHover: '#282B2E',
-    defaultPressed: '#36383B',
-    alternative: '#141618',
-    alternativeHover: '#191B1D',
-    alternativePressed: '#27292A',
-    hover: '#FFFFFF05',
-    pressed: '#FFFFFF14',
+    default: brandColor.grey800, // For default neutral backgrounds
+    alternative: brandColor.grey900, // For secondary neutral backgrounds.
+    defaultHover: '#313235', // For "hover" states that use background-default.
+    defaultPressed: '#3f4145', // For "pressed" states that use background-alternative.
+    alternativeHover: '#1f2123', // For "hover" states that use background-alternative.
+    alternativePressed: '#2e3033', // For "pressed" states that use background-alternative.
+    hover: '#ffffff0a', // For "hover" state that use no background fill.
+    pressed: '#ffffff14', // For "pressed" state that use no background fill.
   },
   text: {
-    default: '#FFFFFF',
-    alternative: '#D6D9DC',
-    muted: '#9FA6AE',
+    default: brandColor.grey000, // For default neutral text.
+    alternative: brandColor.grey200, // For softer contrast neutral text
+    muted: brandColor.grey400, // For the softest contrast neutral text (not accessible)
   },
   icon: {
-    default: '#FFFFFF',
-    alternative: '#BBC0C5',
-    muted: '#9FA6AE',
+    default: brandColor.grey000, // For default neutral icons
+    alternative: brandColor.grey200, // For softer neutral icons
+    muted: brandColor.grey400, // For the weakest contrast neutral icons (not accessible)
   },
   border: {
-    default: '#848C96',
-    muted: '#3B4046',
+    default: brandColor.grey400, // For soft contrast neutral border
+    muted: '#848c9629', // For the weakest  contrast neutral border
   },
   overlay: {
-    default: '#00000099',
-    inverse: '#FCFCFC',
-    alternative: '#000000CC',
-  },
-  shadow: {
-    default: '#00000066',
+    default: '#00000099', // For the default shade of screen
+    alternative: '#000000cc', // For a stronger shade of screen
+    inverse: brandColor.grey000, // For elements used on top of overlay/alternative. Used for text, icon or border
   },
   primary: {
-    default: '#1098FC',
-    defaultHover: '#0092FA',
-    defaultPressed: '#54B6FC',
-    alternative: '#43AEFC',
-    muted: '#1098FC26',
-    inverse: '#141618',
-    disabled: '#1098FC80',
-    shadow: '#1098FC66',
-  },
-  secondary: {
-    default: '#F8883B',
-    alternative: '#FAA66C',
-    muted: '#F8883B26',
-    inverse: '#FCFCFC',
-    disabled: '#F8883B80',
+    default: brandColor.blue300, // For interactive, active, and selected semantics. Used for text, background, icon or border
+    alternative: brandColor.blue200, // For the stronger contrast primary semantic elements.
+    muted: '#43aefc26', // For the weakest contrast primary semantic backgrounds.
+    inverse: brandColor.grey900, // For elements used on top of primary/default. Used for text, icon or border
+    defaultHover: '#26a2fc', // For the "hover" state of primary-default elements
+    defaultPressed: '#3baafd', // For the "pressed" state of primary-default elements
   },
   error: {
-    default: '#FF5263',
-    defaultHover: '#FF4D58',
-    defaultPressed: '#F9868E',
-    alternative: '#E88F97',
-    muted: '#FF526326',
-    inverse: '#141618',
-    disabled: '#D7384780',
-    shadow: '#FF526366',
+    default: brandColor.red300, // For the critical alert semantic elements. Used for text, background, icon or border
+    alternative: brandColor.red200, // For the stronger contrast error semantic elements.
+    muted: '#e88f9726', // For the weakest contrast critical alert semantic backgrounds.
+    inverse: brandColor.grey900, // For elements used on top of error/default. Used for text, icon or border
+    defaultHover: '#e47782', // For the "hover" state of error-default elements.
+    defaultPressed: '#e78891', // For the "pressed" state of error-default elements.
   },
   warning: {
-    default: '#FFD33D',
-    defaultHover: '#FFC60A',
-    defaultPressed: '#FFEAA3D1',
-    alternative: '#FFDF70',
-    muted: '#FFD33D26',
-    inverse: '#141618',
-    disabled: '#FFD33D80',
+    default: brandColor.yellow100, // For the caution alert semantic elements. Used for text, background, icon or border
+    muted: '#ffdf7026', // For the weakest contrast caution alert semantic backgrounds.
+    inverse: brandColor.grey900, // For elements used on top of warning/default. Used for text, icon or border
+    defaultHover: '#ffe485', // For the "hover" state of warning-default elements
+    defaultPressed: '#ffe899', // For the "pressed" state of warning-default elements
   },
   success: {
-    default: '#28A745',
-    defaultHover: '#05B82F',
-    defaultPressed: '#6AEC88',
-    alternative: '#5DD879',
-    muted: '#28A74526',
-    inverse: '#141618',
-    disabled: '#28A74580',
+    default: brandColor.green300, // For the positive semantic elements. Used for text, background, icon or border
+    muted: '#28a74526', // For the weakest contrast positive semantic backgrounds.
+    inverse: brandColor.grey900, // For elements used on top of success/default. Used for text, icon or border
+    defaultHover: '#2cb94c', // For the "hover" state of success-default elements
+    defaultPressed: '#30ca53', // For the "pressed" state of success-default elements
   },
   info: {
-    default: '#1098FC',
-    alternative: '#43AEFC',
-    muted: '#1098FC26',
-    inverse: '#141618',
-    disabled: '#0376C980',
-  },
-  networks: {
-    goerli: {
-      default: '#1098FC',
-      inverse: '#FCFCFC',
-    },
-    localhost: {
-      default: '#BBC0C5',
-      inverse: '#FCFCFC',
-    },
-    sepolia: {
-      default: '#CFB5F0',
-      inverse: '#FCFCFC',
-    },
+    default: brandColor.blue300, // For informational read-only elements. Used for text, background, icon or border
+    muted: '#43aefc26', // For the weakest contrast informational semantic backgrounds.
+    inverse: brandColor.grey900, // For elements used on top of info/default. Used for text, icon or border
   },
   flask: {
-    default: '#8B45B6',
-    inverse: '#FCFCFC',
+    default: brandColor.purple300, // For Flask primary accent color.
+    inverse: brandColor.grey900, // For elements used on top of flask/default. Used for text, icon or border
+  },
+  shadow: {
+    default: '#00000066', // For neutral drop shadow color.
+    primary: '#43aefc33', // For primary drop shadow color.
+    error: '#ff758466', // For critical/danger drop shadow color.
   },
 };
