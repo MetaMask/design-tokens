@@ -29,6 +29,7 @@ export const colors: ThemeColors = {
   overlay: {
     default: '#00000099', // For the default shade of screen
     alternative: '#000000cc', // For a stronger shade of screen
+    inverse: brandColor.grey000, // For elements used on top of overlay/alternative. Used for text, icon or border
   },
   primary: {
     default: brandColor.blue300, // For interactive, active, and selected semantics. Used for text, background, icon or border

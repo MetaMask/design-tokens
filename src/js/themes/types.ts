@@ -103,6 +103,10 @@ export type ThemeColors = {
      * {string} overlay.alternative - For a stronger shading layer option behind modality screens
      */
     alternative: string;
+    /**
+     * {string} overlay.inverse - For elements used on top of overlay/alternative. Used for text, icon or border
+     */
+    inverse: string;
   };
   shadow: {
     /**
