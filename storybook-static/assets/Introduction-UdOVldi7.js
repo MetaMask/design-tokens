@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime-qGIIFXMu.js";import{useMDXComponents as s}from"./index-CqcSDpoT.js";import{M as a,d as r}from"./index-ko3NSW-A.js";import"./index-CDs2tPxN.js";import"./iframe-BEg4ME4K.js";import"../sb-preview/runtime.js";import"./index-B-yFm4aN.js";import"./index-DYADbu9O.js";import"./index-BbYVc9ui.js";import"./index-DrFu-skq.js";const i=`# MetaMask Design Tokens 🪙
+import{j as e}from"./jsx-runtime-qGIIFXMu.js";import{useMDXComponents as s}from"./index-CqcSDpoT.js";import{M as a,e as r}from"./index-BR0YrJte.js";import"./index-CDs2tPxN.js";import"./iframe-z1W86DVB.js";import"../sb-preview/runtime.js";import"./index-B-yFm4aN.js";import"./index-DYADbu9O.js";import"./index-BbYVc9ui.js";import"./index-DrFu-skq.js";const i=`# MetaMask Design Tokens 🪙
 
 [![npm version](https://badge.fury.io/js/@metamask%2Fdesign-tokens.svg)](https://npmjs.com/package/@metamask/design-tokens) [![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://metamask.github.io/design-tokens)
 
