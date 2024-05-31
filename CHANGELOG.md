@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [4.0.0]
 
-### Uncategorized
+### Changed
 
 - chore: updated js variables based on updated json ([#709](https://github.com/MetaMask/design-tokens/pull/709))
 - chore: updated css variables based on updated json ([#708](https://github.com/MetaMask/design-tokens/pull/708))
