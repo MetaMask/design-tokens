@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.0.0]
+
+### Changed
+
+- chore: updated js variables based on updated json ([#709](https://github.com/MetaMask/design-tokens/pull/709))
+- chore: updated css variables based on updated json ([#708](https://github.com/MetaMask/design-tokens/pull/708))
+- chore: adding overlay.inverse colors to json ([#715](https://github.com/MetaMask/design-tokens/pull/715))
+- chore: upgrading storybook to 8.1.4 ([#703](https://github.com/MetaMask/design-tokens/pull/703))
+- chore: updating doc components and helpers ([#706](https://github.com/MetaMask/design-tokens/pull/706))
+- fix: updating brand color figma json ([#702](https://github.com/MetaMask/design-tokens/pull/702))
+
 ## [3.0.0]
 
 ### Added
@@ -290,7 +301,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v3.0.0...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v4.0.0...HEAD
+[4.0.0]: https://github.com/MetaMask/design-tokens/compare/v3.0.0...v4.0.0
 [3.0.0]: https://github.com/MetaMask/design-tokens/compare/v2.1.1...v3.0.0
 [2.1.1]: https://github.com/MetaMask/design-tokens/compare/v2.1.0...v2.1.1
 [2.1.0]: https://github.com/MetaMask/design-tokens/compare/v2.0.3...v2.1.0
