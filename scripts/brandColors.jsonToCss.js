@@ -37,6 +37,7 @@ for (const color in brandColors) {
       cssContent += `  ${variableName}: ${colorValue};\n`;
     }
   } else {
+    cssContent += `  /* ${color.charAt(0).toUpperCase() + color.slice(1)} */\n`;
     const variableName = `--brand-colors-${color}`;
     const colorValue = brandColors[color].value;
     cssContent += `  ${variableName}: ${colorValue};\n`;
