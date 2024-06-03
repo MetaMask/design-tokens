@@ -1,10 +1,10 @@
 /**
- * @deprecated these brand colors have been deprecated in favor of the new brand colors
  * Brand Colors
  * Do not use "--brand-colors" in your code
  * Instead use the "--color-" variables to ensure
  * theme compatible styles
  */
+
 :root {
   /* Grey */
   --brand-colors-grey-grey100: #d6d9dc;
@@ -104,7 +104,6 @@
   --brand-colors-lime-lime900: #011515;
   --brand-colors-lime-lime025: #effed9;
   --brand-colors-lime-lime050: #e3febd;
-  /* White and Black */
   --brand-colors-white: #ffffff;
   --brand-colors-black: #000000;
 }
