@@ -19,6 +19,16 @@ const darkThemeCSSPath = path.resolve(
 const lightTheme = JSON.parse(fs.readFileSync(lightThemePath, 'utf8'));
 const darkTheme = JSON.parse(fs.readFileSync(darkThemePath, 'utf8'));
 
+function convertColorString(colorString) {
+  // Remove the curly braces and split the string by the dot
+  const parts = colorString.replace(/[{}]/gu, '').split('.');
+
+  // Join the parts with hyphens and repeat the first part for the desired output
+  const convertedString = `var(--brand-colors-${parts[0]}-${parts[0]}${parts[1]})`;
+
+  return convertedString;
+}
+
 function generateThemeCSS(theme, themeName) {
   let cssContent = `/*
  * ${themeName} Theme Colors
@@ -27,7 +37,9 @@ function generateThemeCSS(theme, themeName) {
  */
 
 ${
-  themeName === 'Light' ? ":root, [data-theme='light']" : "[data-theme='dark']"
+  themeName === 'Light'
+    ? ":root, \n[data-theme='light']"
+    : "[data-theme='dark']"
 } {
 `;
 
@@ -37,7 +49,7 @@ ${
       const { value } = theme[section][key];
       const { description } = theme[section][key];
       const cssValue = value.startsWith('{')
-        ? `var(--brand-colors-${value.slice(1, -1).replace('.', '-')})`
+        ? convertColorString(value)
         : value;
       cssContent += `  /* ${description} */\n  ${variableName}: ${cssValue};\n`;
     }

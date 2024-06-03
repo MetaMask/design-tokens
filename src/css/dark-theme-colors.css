@@ -1,6 +1,9 @@
-/**
+/*
  * Dark Theme Colors
-*/
+ * Use these css variables in your code.
+ * This will ensure theme compatibility
+ */
+
 [data-theme='dark'] {
   /* For default neutral backgrounds */
   --color-background-default: var(--brand-colors-grey-grey800);
