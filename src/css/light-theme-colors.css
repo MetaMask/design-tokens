@@ -1,6 +1,9 @@
 /*
  * Light Theme Colors
+ * Use these css variables in your code.
+ * This will ensure theme compatibility
  */
+
 :root,
 [data-theme='light'] {
   /* For default neutral backgrounds */
