@@ -1,5 +1,3 @@
-/* eslint-disable guard-for-in */
-/* eslint-disable @typescript-eslint/restrict-template-expressions */
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
 
@@ -11,20 +9,26 @@ const brandColorsCSS = readFileSync(brandColorsCSSPath, 'utf8');
 
 describe('Brand Colors CSS', () => {
   for (const color in brandColors) {
-    if (color !== 'white' && color !== 'black') {
-      for (const shade in brandColors[color]) {
-        const variableName = `--brand-colors-${color}-${color}${shade}`;
-        const colorValue = brandColors[color][shade].value;
+    if (Object.prototype.hasOwnProperty.call(brandColors, color)) {
+      if (color !== 'white' && color !== 'black') {
+        for (const shade in brandColors[color]) {
+          if (Object.prototype.hasOwnProperty.call(brandColors[color], shade)) {
+            const variableName = `--brand-colors-${color}-${color}${shade}`;
+            const colorValue: string = brandColors[color][shade].value;
+            it(`should have the correct value for ${variableName}`, () => {
+              expect(brandColorsCSS).toContain(
+                `${variableName}: ${colorValue};`,
+              );
+            });
+          }
+        }
+      } else {
+        const variableName = `--brand-colors-${color}`;
+        const colorValue: string = brandColors[color].value;
         it(`should have the correct value for ${variableName}`, () => {
           expect(brandColorsCSS).toContain(`${variableName}: ${colorValue};`);
         });
       }
-    } else {
-      const variableName = `--brand-colors-${color}`;
-      const colorValue = brandColors[color].value;
-      it(`should have the correct value for ${variableName}`, () => {
-        expect(brandColorsCSS).toContain(`${variableName}: ${colorValue};`);
-      });
     }
   }
 });
