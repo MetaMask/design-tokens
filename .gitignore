@@ -1,5 +1,5 @@
 .DS_Store
-dist/
+# dist/ TODO ensure dist is not ignored when merged to main
 coverage/
 
 # Logs

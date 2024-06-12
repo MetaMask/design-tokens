@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/js/typography/fontWeights.ts"],"names":[],"mappings":";AAAO,IAAM,cAAc;AAAA,EACzB,SAAS;AAAA,EACT,QAAQ;AAAA,EACR,MAAM;AACR","sourcesContent":["export const fontWeights = {\n  regular: '400',\n  medium: '500',\n  bold: '700',\n};\n"]}
