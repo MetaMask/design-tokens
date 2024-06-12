@@ -1,0 +1,1 @@
+"use strict";//# sourceMappingURL=brandColor.types.js.map

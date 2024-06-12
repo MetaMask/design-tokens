@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/js/typography/letterSpacing.ts"],"sourcesContent":["export const letterSpacing = {\n  letterSpacing0: 0,\n  letterSpacing1: 0.25,\n};\n"],"mappings":";AAAO,IAAM,gBAAgB;AAAA,EAC3B,gBAAgB;AAAA,EAChB,gBAAgB;AAClB;","names":[]}

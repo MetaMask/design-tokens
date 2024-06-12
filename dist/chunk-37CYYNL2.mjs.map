@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/js/typography/fontFamilies.ts"],"sourcesContent":["export const fontFamilies = {\n  euclidCircularB: 'Euclid Circular B',\n};\n"],"mappings":";AAAO,IAAM,eAAe;AAAA,EAC1B,iBAAiB;AACnB;","names":[]}
