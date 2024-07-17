@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [5.0.0-alpha.1]
+
+### Uncategorized
+
+- chore: temporarily adding the dist folder to brand evolution branch to test in other projects
+- refactor: updated css variables naming
+- feat: updated css variables based on json
+- feat: updating json css and js with brand evolution colors
+
 ## [3.0.0]
 
 ### Added
@@ -290,7 +299,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v3.0.0...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v5.0.0-alpha.1...HEAD
+[5.0.0-alpha.1]: https://github.com/MetaMask/design-tokens/compare/v3.0.0...v5.0.0-alpha.1
 [3.0.0]: https://github.com/MetaMask/design-tokens/compare/v2.1.1...v3.0.0
 [2.1.1]: https://github.com/MetaMask/design-tokens/compare/v2.1.0...v2.1.1
 [2.1.0]: https://github.com/MetaMask/design-tokens/compare/v2.0.3...v2.1.0
