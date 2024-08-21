@@ -1,7 +1,8 @@
 /**
  * Dark Theme Colors
 */
-[data-theme='dark'] {
+[data-theme='dark'],
+.dark {
   /* For default neutral backgrounds */
   --color-background-default: var(--brand-colors-grey-grey800);
   /* For secondary neutral backgrounds. */
