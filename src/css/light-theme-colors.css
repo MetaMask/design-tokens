@@ -2,7 +2,8 @@
  * Light Theme Colors
  */
 :root,
-[data-theme='light'] {
+[data-theme='light'],
+.light {
   /* For default neutral backgrounds */
   --color-background-default: var(--brand-colors-grey-grey000);
   /* For secondary neutral backgrounds. */
