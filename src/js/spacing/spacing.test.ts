@@ -1,4 +1,4 @@
-import { spacing, getSpacing } from '../spacing/spacing';
+import { spacing, getSpacing } from './spacing';
 
 describe('spacing tokens', () => {
   it('spacing object contains all expected keys', () => {
@@ -41,7 +41,7 @@ describe('spacing tokens', () => {
     ];
 
     expectedKeys.forEach((key) => {
-      expect(spacing).toHaveProperty(key);
+      expect(spacing[key as keyof typeof spacing]).toBeDefined();
     });
   });
 
