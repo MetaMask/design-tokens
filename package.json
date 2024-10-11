@@ -119,7 +119,8 @@
     "allowScripts": {
       "@lavamoat/preinstall-always-fail": false,
       "tsup>esbuild": true,
-      "vite>esbuild": false
+      "vite>esbuild": false,
+      "storybook>@storybook/core>esbuild": false
     }
   }
 }
