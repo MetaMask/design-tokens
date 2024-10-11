@@ -5,7 +5,7 @@ import { spacing } from '../src/js/spacing/spacing';
 import README from './Spacing.mdx';
 
 const meta: Meta = {
-  title: 'Tokens/Spacing',
+  title: 'Spacing/Spacing',
   parameters: {
     docs: {
       page: README,
