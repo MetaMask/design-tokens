@@ -1,0 +1,144 @@
+{
+  "spacing": {
+    "0": {
+      "value": "0px",
+      "type": "spacing"
+    },
+    "px": {
+      "value": "1px",
+      "type": "spacing"
+    },
+    "0.5": {
+      "value": "2px",
+      "type": "spacing"
+    },
+    "1": {
+      "value": "4px",
+      "type": "spacing"
+    },
+    "1.5": {
+      "value": "6px",
+      "type": "spacing"
+    },
+    "2": {
+      "value": "8px",
+      "type": "spacing"
+    },
+    "2.5": {
+      "value": "10px",
+      "type": "spacing"
+    },
+    "3": {
+      "value": "12px",
+      "type": "spacing"
+    },
+    "3.5": {
+      "value": "14px",
+      "type": "spacing"
+    },
+    "4": {
+      "value": "16px",
+      "type": "spacing"
+    },
+    "5": {
+      "value": "20px",
+      "type": "spacing"
+    },
+    "6": {
+      "value": "24px",
+      "type": "spacing"
+    },
+    "7": {
+      "value": "28px",
+      "type": "spacing"
+    },
+    "8": {
+      "value": "32px",
+      "type": "spacing"
+    },
+    "9": {
+      "value": "36px",
+      "type": "spacing"
+    },
+    "10": {
+      "value": "40px",
+      "type": "spacing"
+    },
+    "11": {
+      "value": "44px",
+      "type": "spacing"
+    },
+    "12": {
+      "value": "48px",
+      "type": "spacing"
+    },
+    "14": {
+      "value": "56px",
+      "type": "spacing"
+    },
+    "16": {
+      "value": "64px",
+      "type": "spacing"
+    },
+    "20": {
+      "value": "80px",
+      "type": "spacing"
+    },
+    "24": {
+      "value": "96px",
+      "type": "spacing"
+    },
+    "28": {
+      "value": "112px",
+      "type": "spacing"
+    },
+    "32": {
+      "value": "128px",
+      "type": "spacing"
+    },
+    "36": {
+      "value": "144px",
+      "type": "spacing"
+    },
+    "40": {
+      "value": "160px",
+      "type": "spacing"
+    },
+    "44": {
+      "value": "176px",
+      "type": "spacing"
+    },
+    "48": {
+      "value": "192px",
+      "type": "spacing"
+    },
+    "52": {
+      "value": "208px",
+      "type": "spacing"
+    },
+    "56": {
+      "value": "224px",
+      "type": "spacing"
+    },
+    "60": {
+      "value": "240px",
+      "type": "spacing"
+    },
+    "64": {
+      "value": "256px",
+      "type": "spacing"
+    },
+    "72": {
+      "value": "288px",
+      "type": "spacing"
+    },
+    "80": {
+      "value": "320px",
+      "type": "spacing"
+    },
+    "96": {
+      "value": "384px",
+      "type": "spacing"
+    }
+  }
+}
