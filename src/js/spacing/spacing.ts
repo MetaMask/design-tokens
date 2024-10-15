@@ -39,12 +39,3 @@ export const spacing: { [key: string]: string } = {
   80: '20rem',
   96: '24rem',
 };
-
-/**
- * Get a spacing value by key.
- * @param key - The spacing key.
- * @returns The spacing value or undefined if not found.
- */
-export function getSpacing(key: string): string | undefined {
-  return spacing[key];
-}

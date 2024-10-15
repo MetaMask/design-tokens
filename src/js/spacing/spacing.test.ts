@@ -1,4 +1,13 @@
-import { spacing, getSpacing } from './spacing';
+import { spacing } from './spacing';
+
+/**
+ * Get a spacing value by key.
+ * @param key - The spacing key.
+ * @returns The spacing value or undefined if not found.
+ */
+function getSpacing(key: string): string | undefined {
+  return spacing[key];
+}
 
 describe('spacing tokens', () => {
   it('spacing object contains all expected keys', () => {
