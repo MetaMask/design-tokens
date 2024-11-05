@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/MetaMask/design-tokens.git"
   },
-  "license": "MIT",
+  "license": "(MIT OR Apache-2.0)",
   "exports": {
     ".": {
       "types": "./dist/types/index.d.ts",
