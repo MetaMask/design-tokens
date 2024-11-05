@@ -120,7 +120,8 @@
       "@lavamoat/preinstall-always-fail": false,
       "tsup>esbuild": true,
       "vite>esbuild": false,
-      "storybook>@storybook/core>esbuild": false
+      "storybook>@storybook/core>esbuild": false,
+      "sass>@parcel/watcher": false
     }
   }
 }
