@@ -56,7 +56,9 @@ const spacingData = [
 export const Default: StoryObj = {
   render: () => (
     <div>
-      <Text as="p">Name | Size | Pixels</Text>
+      <Text as="p" style={{ marginBottom: spacing.px }}>
+        Name | Size | Pixels
+      </Text>
       {spacingData.map((item) => (
         <SpacingSwatch
           key={item.name}
