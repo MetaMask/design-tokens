@@ -12,6 +12,12 @@
       "parent": "Theme Colors/Dark mode",
       "description": "For sunken neutral surface below background/default."
     },
+    "muted": {
+      "value": "{grey.800}",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": "For raised neutral surface above background/default."
+    },
     "default-hover": {
       "value": "#1E2124",
       "type": "color",
@@ -36,24 +42,6 @@
       "parent": "Theme Colors/Dark mode",
       "description": "Pressed state surface for background/alternative."
     },
-    "hover": {
-      "value": "#ffffff0a",
-      "type": "color",
-      "parent": "Theme Colors/Dark mode",
-      "description": "General purpose hover tint."
-    },
-    "pressed": {
-      "value": "#ffffff14",
-      "type": "color",
-      "parent": "Theme Colors/Dark mode",
-      "description": "General purpose pressed tint."
-    },
-    "muted": {
-      "value": "{grey.800}",
-      "type": "color",
-      "parent": "Theme Colors/Dark mode",
-      "description": "For raised neutral surface above background/default."
-    },
     "muted-hover": {
       "value": "#2D3034",
       "type": "color",
@@ -65,6 +53,18 @@
       "type": "color",
       "parent": "Theme Colors/Dark mode",
       "description": "Pressed state surface for background/muted."
+    },
+    "hover": {
+      "value": "#ffffff0a",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": "General purpose hover state tint."
+    },
+    "pressed": {
+      "value": "#ffffff14",
+      "type": "color",
+      "parent": "Theme Colors/Dark mode",
+      "description": "General purpose pressed state tint."
     }
   },
   "text": {
