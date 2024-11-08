@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.1.0]
+
+### Added
+
+- Adding (MIT OR Apache 2.0) license aligning with MetaMask’s open-source standards ([#738](https://github.com/MetaMask/design-tokens/pull/738))
+- Adding dark/light classname ([#729](https://github.com/MetaMask/design-tokens/pull/729))
+
 ## [4.0.0]
 
 ### Changed
@@ -301,7 +308,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v4.0.0...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v4.1.0...HEAD
+[4.1.0]: https://github.com/MetaMask/design-tokens/compare/v4.0.0...v4.1.0
 [4.0.0]: https://github.com/MetaMask/design-tokens/compare/v3.0.0...v4.0.0
 [3.0.0]: https://github.com/MetaMask/design-tokens/compare/v2.1.1...v3.0.0
 [2.1.1]: https://github.com/MetaMask/design-tokens/compare/v2.1.0...v2.1.1
