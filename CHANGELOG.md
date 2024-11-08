@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.1.0]
+
+### Uncategorized
+
+- chore: adding license ([#738](https://github.com/MetaMask/design-tokens/pull/738))
+- chore: updating dependencies ([#739](https://github.com/MetaMask/design-tokens/pull/739))
+- chore: updating lavamoat allow-scripts dependencies ([#734](https://github.com/MetaMask/design-tokens/pull/734))
+- feat: add dark/light classname ([#729](https://github.com/MetaMask/design-tokens/pull/729))
+- feat: Created Unit Tests for CSS Color Variables Alignment with Figma Token JSON ([#719](https://github.com/MetaMask/design-tokens/pull/719))
+
 ## [4.0.0]
 
 ### Changed
@@ -301,7 +311,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release.
 
-[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v4.0.0...HEAD
+[Unreleased]: https://github.com/MetaMask/design-tokens/compare/v4.1.0...HEAD
+[4.1.0]: https://github.com/MetaMask/design-tokens/compare/v4.0.0...v4.1.0
 [4.0.0]: https://github.com/MetaMask/design-tokens/compare/v3.0.0...v4.0.0
 [3.0.0]: https://github.com/MetaMask/design-tokens/compare/v2.1.1...v3.0.0
 [2.1.1]: https://github.com/MetaMask/design-tokens/compare/v2.1.0...v2.1.1
